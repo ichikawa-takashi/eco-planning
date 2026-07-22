@@ -4,41 +4,24 @@
 
 .sub-service__fv {
   position: relative;
-  height: rem(670);
+  width: 100%;
   overflow: hidden;
-
-  @include mq("lg") {
-    height: rem(590);
-  }
-
-  @include mq("md") {
-    height: rem(530);
-  }
 }
 
 .sub-service__fv-image {
-  position: absolute;
-  inset: 0;
+  width: 100%;
 }
 
 .sub-service__fv-image img {
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.sub-service__fv-overlay {
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(180deg, rgba($black, 0.3) 0%, rgba($black, 0) 42%),
-    linear-gradient(90deg, rgba($black, 0.28) 0%, rgba($black, 0) 58%);
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .sub-service__fv-heading {
   position: absolute;
-  left: rem(100);
-  bottom: rem(105);
+  left: rem(110);
+  bottom: rem(115);
   color: $white;
 
   @include mq("lg") {
@@ -47,63 +30,31 @@
   }
 
   @include mq("md") {
-    left: rem(25);
-    bottom: rem(72);
+    left: rem(20);
+    bottom: rem(48);
   }
 }
 
 .sub-service__fv-title {
   font-family: $en;
-  @include font(76, 82, 0, $semi);
+  @include font(120, 140, 20, $bold);
 
   @include mq("md") {
-    @include font(48, 54, 0, $semi);
+    @include font(40, 44, 0, $bold);
   }
 }
 
 .sub-service__fv-subtitle {
   margin-top: rem(5);
-  @include font(17, 27, 50, $bold);
+  @include font(24, 27, 0, $bold);
 
   @include mq("md") {
-    @include font(14, 22, 50, $bold);
+    @include font(13, 18, 50, $bold);
   }
-}
-
-.sub-service__breadcrumb {
-  position: absolute;
-  right: rem(35);
-  bottom: rem(25);
-  left: rem(35);
-  display: flex;
-  align-items: center;
-  gap: rem(11);
-  color: $white;
-  @include font(10, 16, 0, $medium);
-
-  @include mq("md") {
-    right: rem(20);
-    bottom: rem(18);
-    left: rem(20);
-    gap: rem(7);
-    overflow: hidden;
-    white-space: nowrap;
-    @include font(9, 14, 0, $medium);
-  }
-}
-
-.sub-service__breadcrumb-link:hover {
-  @media (hover: hover) {
-    opacity: 0.65;
-  }
-}
-
-.sub-service__breadcrumb-separator {
-  opacity: 0.65;
 }
 
 .sub-service__intro {
-  padding-top: rem(105);
+  padding-top: rem(130);
 
   @include mq("md") {
     padding-top: rem(65);
@@ -112,10 +63,9 @@
 
 .sub-service__intro-inner {
   display: grid;
-  grid-template-columns: minmax(0, rem(715)) minmax(rem(280), rem(335));
+  grid-template-columns: minmax(0, rem(760)) minmax(rem(280), rem(320));
   justify-content: space-between;
-  gap: rem(80);
-  max-width: rem(1240);
+  gap: rem(112);
 
   @include mq("lg") {
     gap: rem(50);
@@ -127,7 +77,7 @@
 }
 
 .sub-service__intro-title {
-  @include font(38, 60, 50, $bold);
+  @include font(42, 64, 0, $bold);
 
   @include mq("lg") {
     @include font(34, 54, 50, $bold);
@@ -139,8 +89,8 @@
 }
 
 .sub-service__intro-text {
-  margin-top: rem(52);
-  @include font(15, 34, 20, $regular);
+  margin-top: rem(60);
+  @include font(20, 40, -20, $regular);
 
   @include mq("md") {
     margin-top: rem(34);
@@ -149,10 +99,8 @@
 }
 
 .sub-service__contents {
-  padding-top: rem(8);
 
   @include mq("md") {
-    padding-top: 0;
     margin-top: rem(52);
   }
 }
@@ -160,28 +108,32 @@
 .sub-service__contents-title {
   color: $blue;
   font-family: $en;
-  @include font(21, 28, 0, $bold);
+  @include font(24, 40, 20, $semi);
+
+  @include mq("md") {
+    @include font(18, 28, 20, $semi);
+  }
 }
 
 .sub-service__contents-list {
-  margin-top: rem(18);
+  margin-top: rem(5);
 }
 
 .sub-service__contents-item {
-  border-bottom: rem(1) solid #d9dfe4;
+  border-bottom: rem(1) solid #cccccc;
 }
 
 .sub-service__contents-link {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: rem(61);
+  min-height: rem(68);
   gap: rem(20);
-  padding-right: rem(5);
-  @include font(14, 22, 0, $bold);
+  @include font(18, 22, 0, $bold);
 
   @include mq("md") {
     min-height: rem(56);
+    @include font(15, 22, 0, $bold);
   }
 }
 
@@ -192,13 +144,13 @@
 }
 
 .sub-service__contents-icon {
-  width: rem(20);
-  height: rem(20);
+  width: rem(24);
+  height: rem(24);
   background-color: $light-blue;
 }
 
 .sub-service__contents-icon img {
-  width: rem(5);
+  width: rem(10);
 }
 
 .sub-service__overview {
@@ -209,22 +161,13 @@
   }
 }
 
-.sub-service__overview-inner {
-  max-width: rem(1250);
-}
-
 .sub-service__section-heading {
-  padding-left: rem(100);
-
-  @include mq("md") {
-    padding-left: 0;
-  }
 }
 
 .sub-service__section-title {
   color: $blue;
   font-family: $en;
-  @include font(58, 62, 0, $semi);
+  @include font(84, 84, 20, $semi);
 
   @include mq("md") {
     @include font(42, 46, 0, $semi);
@@ -232,9 +175,9 @@
 }
 
 .sub-service__section-subtitle {
-  margin-top: rem(4);
+  margin-top: rem(22);
   color: $blue;
-  @include font(16, 24, 50, $bold);
+  @include font(24, 24, 0, $bold);
 
   @include mq("md") {
     @include font(14, 22, 50, $bold);
@@ -254,7 +197,7 @@
 }
 
 .sub-service__item + .sub-service__item {
-  margin-top: rem(105);
+  margin-top: rem(130);
 
   @include mq("md") {
     margin-top: rem(72);
@@ -263,17 +206,8 @@
 
 .sub-service__item-image {
   width: 100vw;
-  height: rem(550);
   margin-left: calc(50% - 50vw);
   overflow: hidden;
-
-  @include mq("lg") {
-    height: rem(500);
-  }
-
-  @include mq("md") {
-    height: rem(270);
-  }
 }
 
 .sub-service__item-image img {
@@ -284,16 +218,15 @@
 
 .sub-service__item-body {
   display: grid;
-  grid-template-columns: rem(150) minmax(0, 1fr);
-  gap: rem(52);
-  max-width: rem(1070);
-  margin-top: rem(68);
+  grid-template-columns: rem(170) minmax(0, 1fr);
+  gap: rem(44);
+  margin-top: rem(88);
   margin-right: auto;
   margin-left: auto;
 
   @include mq("lg") {
-    grid-template-columns: rem(125) minmax(0, 1fr);
-    gap: rem(38);
+    grid-template-columns: rem(145) minmax(0, 1fr);
+    gap: rem(30);
     max-width: rem(1020);
   }
 
@@ -306,9 +239,8 @@
 .sub-service__item-number {
   display: flex;
   flex-direction: column;
-  min-height: rem(175);
-  padding-top: rem(8);
-  border-right: rem(1) solid #707070;
+  height: rem(220);
+  border-right: rem(1) solid $black;
 
   @include mq("md") {
     display: grid;
@@ -316,7 +248,7 @@
     align-items: end;
     justify-content: start;
     gap: rem(9);
-    min-height: 0;
+ height: auto;
     padding-top: 0;
     border-right: 0;
   }
@@ -325,7 +257,7 @@
 .sub-service__item-number-label {
   color: $blue;
   font-family: $en;
-  @include font(8, 13, 80, $medium);
+  @include font(12, 32, 200, $medium);
 
   @include mq("md") {
     padding-bottom: rem(7);
@@ -336,11 +268,11 @@
   margin-top: rem(6);
   color: $blue;
   font-family: $en;
-  @include font(66, 66, 0, $medium);
+  @include font(96, 96, 20, $semi);
 
   @include mq("md") {
     margin-top: 0;
-    @include font(45, 48, 0, $medium);
+    @include font(45, 48, 0, $semi);
   }
 }
 
@@ -351,7 +283,7 @@
 }
 
 .sub-service__item-title {
-  @include font(31, 44, 20, $bold);
+  @include font(42, 64, 0, $bold);
 
   @include mq("md") {
     @include font(24, 35, 20, $bold);
@@ -359,22 +291,22 @@
 }
 
 .sub-service__item-lead {
-  margin-top: rem(30);
-  @include font(17, 28, 20, $bold);
+  margin-top: rem(40);
+  @include font(24, 28, 0, $bold);
 
   @include mq("md") {
     margin-top: rem(20);
-    @include font(15, 25, 20, $bold);
+    @include font(15, 25, -20, $bold);
   }
 }
 
 .sub-service__item-text {
   margin-top: rem(25);
-  @include font(14, 29, 20, $regular);
+  @include font(20, 40, -20, $regular);
 
   @include mq("md") {
     margin-top: rem(18);
-    @include font(13, 26, 20, $regular);
+    @include font(14, 28, -20, $regular);
   }
 }
 
@@ -384,23 +316,24 @@
   justify-content: space-between;
   gap: rem(30);
   width: fit-content;
-  min-width: rem(260);
-  min-height: rem(68);
-  padding-right: rem(12);
-  padding-left: rem(34);
-  margin-top: rem(28);
+  min-width: rem(360);
+  min-height: rem(96);
+  padding-right: rem(18);
+  padding-left: rem(51);
+  margin-top: rem(25);
   margin-left: auto;
   border: rem(1) solid $blue;
-  border-radius: rem(40);
+  border-radius: rem(48);
   background-color: $blue;
   color: $white;
-  @include font(14, 22, 20, $bold);
+  @include font(24,48, 0, $bold);
 
   @include mq("md") {
     min-width: rem(220);
     min-height: rem(58);
     padding-right: rem(10);
     padding-left: rem(27);
+    @include font(15, 24, 0, $bold);
   }
 }
 
@@ -412,8 +345,8 @@
 }
 
 .sub-service__item-button-icon {
-  width: rem(44);
-  height: rem(44);
+  width: rem(64);
+  height: rem(64);
   background-color: $navy;
 
   @include mq("md") {
@@ -423,7 +356,7 @@
 }
 
 .sub-service__item-button-icon img {
-  width: rem(12);
+  width: rem(20);
   filter: brightness(0) invert(1);
 }
 
@@ -438,7 +371,7 @@
 .sub-service__unwanted-features {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: rem(32);
+  gap: rem(27);
 
   @include mq("lg") {
     gap: rem(20);
@@ -451,20 +384,24 @@
 }
 
 .sub-service__unwanted-feature {
-  min-height: rem(285);
-  padding-top: rem(34);
-  padding-right: rem(34);
-  padding-left: rem(34);
+  display: grid;
+  grid-template-rows: rem(80) 1fr;
+  align-content: start;
+  min-height: rem(300);
+  padding-top: rem(28);
+padding-inline: rem(25);
   border-radius: rem(10);
   background-color: $light-blue;
 
   @include mq("lg") {
+    grid-template-rows: rem(80) 1fr;
     min-height: rem(270);
     padding-right: rem(24);
     padding-left: rem(24);
   }
 
   @include mq("md") {
+    grid-template-rows: auto auto;
     min-height: 0;
     padding-top: rem(25);
     padding-right: rem(22);
@@ -475,7 +412,7 @@
 
 .sub-service__unwanted-feature-title {
   color: $blue;
-  @include font(19, 31, 20, $bold);
+  @include font(18, 32, 0, $bold);
 
   @include mq("lg") {
     @include font(17, 29, 20, $bold);
@@ -483,16 +420,16 @@
 }
 
 .sub-service__unwanted-feature-text {
-  margin-top: rem(42);
-  @include font(14, 27, 20, $medium);
+  margin-top: rem(28);
+  @include font(14, 28, -20, $regular);
 
   @include mq("lg") {
-    margin-top: rem(30);
-    @include font(13, 25, 20, $medium);
+    @include font(13, 25, -20, $regular);
   }
 
   @include mq("md") {
     margin-top: rem(18);
+    @include font(14, 28, -20, $regular);
   }
 }
 
@@ -506,20 +443,20 @@
 
 .sub-service__collection-title {
   padding-bottom: rem(15);
-  border-bottom: rem(1) solid #707070;
-  @include font(24, 36, 20, $medium);
+  border-bottom: rem(1) solid $black;
+  @include font(24, 36, 0, $regular);
 
   @include mq("md") {
     padding-bottom: rem(10);
-    @include font(20, 31, 20, $medium);
+    @include font(20, 31, 0, $regular);
   }
 }
 
 .sub-service__collection-list {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: rem(32);
-  margin-top: rem(48);
+  gap: rem(27);
+  margin-top: rem(45);
 
   @include mq("lg") {
     gap: rem(20);
@@ -533,9 +470,7 @@
 }
 
 .sub-service__collection-image {
-  height: rem(180);
-  overflow: hidden;
-  border-radius: rem(10);
+width: 100%;
 
   @include mq("md") {
     height: rem(120);
@@ -549,29 +484,39 @@
   object-position: center;
 }
 
+.sub-service__collection-item {
+  display: grid;
+  grid-template-rows: auto rem(78) 1fr;
+  align-content: start;
+
+  @include mq("md") {
+    grid-template-rows: auto rem(60) 1fr;
+  }
+}
+
 .sub-service__collection-item-title {
   margin-top: rem(22);
   text-align: center;
-  @include font(17, 27, 20, $bold);
+  @include font(18, 32, 0, $bold);
 
   @include mq("md") {
     margin-top: rem(14);
-    @include font(14, 23, 20, $bold);
+    @include font(14, 23, 0, $bold);
   }
 }
 
 .sub-service__collection-text {
-  margin-top: rem(32);
-  @include font(13, 25, 20, $medium);
+  margin-top: rem(12);
+  @include font(14, 28, -20, $regular);
 
   @include mq("md") {
     margin-top: rem(15);
-    @include font(12, 22, 20, $regular);
+    @include font(14, 26, -20, $regular);
   }
 }
 
 .sub-service__price {
-  margin-top: rem(100);
+  margin-top: rem(106);
 
   @include mq("md") {
     margin-top: rem(65);
@@ -581,8 +526,8 @@
 .sub-service__price-list {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: rem(28);
-  margin-top: rem(48);
+  gap: rem(22);
+  margin-top: rem(35);
 
   @include mq("md") {
     grid-template-columns: 1fr;
@@ -592,9 +537,8 @@
 }
 
 .sub-service__price-image {
-  height: rem(245);
   overflow: hidden;
-  border-radius: rem(15);
+  width: 100%;
 
   @include mq("lg") {
     height: rem(210);
@@ -613,9 +557,10 @@
 }
 
 .sub-service__price-title {
-  margin-top: rem(24);
+  margin-top: rem(27);
+  margin-bottom: 0;
   text-align: center;
-  @include font(16, 26, 20, $bold);
+  @include font(24, 30, 0, $bold);
 
   @include mq("md") {
     margin-top: rem(17);
@@ -624,13 +569,14 @@
 }
 
 .sub-service__price-value {
-  margin-top: rem(4);
+  margin-top: rem(25);
   color: $blue;
   text-align: center;
-  @include font(25, 34, 20, $bold);
+  font-family: $en;
+  @include font(36, 38, 0, $semi);
 
   @include mq("md") {
-    @include font(22, 31, 20, $bold);
+    @include font(22, 31, 0, $semi);
   }
 }
 
@@ -643,19 +589,16 @@
 }
 
 .sub-service__price-note {
-  @include font(12, 23, 20, $regular);
+  @include font(20, 40, 0, $regular);
 
   @include mq("md") {
-    @include font(11, 21, 20, $regular);
+    @include font(11, 21, 0, $regular);
   }
 }
 
-.sub-service__price-note + .sub-service__price-note {
-  margin-top: rem(3);
-}
 
 .sub-service__comparison {
-  margin-top: rem(105);
+  margin-top: rem(96);
 
   @include mq("md") {
     margin-top: rem(70);
@@ -663,7 +606,7 @@
 }
 
 .sub-service__flow {
-  margin-top: rem(105);
+  margin-top: rem(109);
 
   @include mq("md") {
     margin-top: rem(70);
@@ -672,17 +615,14 @@
 
 .sub-service__contact {
   padding-top: rem(140);
-  padding-bottom: rem(130);
 
   @include mq("md") {
     padding-top: rem(90);
-    padding-bottom: rem(85);
   }
 }
 
 .sub-service__house-cleaning {
-  padding-top: rem(130);
-  padding-bottom: rem(20);
+  padding-top: rem(150);
 
   @include mq("md") {
     padding-top: rem(85);
@@ -690,11 +630,10 @@
 }
 
 .sub-service__house-cleaning-inner {
-  max-width: rem(1250);
 }
 
 .sub-service__recycled-products {
-  margin-top: rem(115);
+  margin-top: rem(96);
 
   @include mq("md") {
     margin-top: rem(75);
@@ -703,20 +642,20 @@
 
 .sub-service__recycled-products-heading {
   padding-bottom: rem(16);
-  border-bottom: rem(1) solid #707070;
-  @include font(22, 33, 20, $medium);
+  border-bottom: rem(1) solid $black;
+  @include font(24, 48, 0, $regular);
 
   @include mq("md") {
     padding-bottom: rem(11);
-    @include font(19, 30, 20, $medium);
+    @include font(19, 30, 0, $regular);
   }
 }
 
 .sub-service__recycled-products-list {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: rem(30);
-  margin-top: rem(48);
+  gap: rem(23);
+  margin-top: rem(37);
 
   @include mq("lg") {
     gap: rem(22);
@@ -730,18 +669,7 @@
 }
 
 .sub-service__recycled-product-image {
-  height: rem(230);
-  overflow: hidden;
-  border-radius: rem(14);
-
-  @include mq("lg") {
-    height: rem(200);
-  }
-
-  @include mq("md") {
-    height: rem(245);
-    border-radius: rem(9);
-  }
+width: 100%;
 }
 
 .sub-service__recycled-product-image img {
@@ -751,35 +679,30 @@
 }
 
 .sub-service__recycled-product-title {
-  margin-top: rem(22);
+  margin-top: rem(35);
   text-align: center;
-  @include font(17, 27, 20, $bold);
+  @include font(24, 27, 0, $bold);
 
   @include mq("md") {
     margin-top: rem(16);
-    @include font(16, 26, 20, $bold);
+    @include font(16, 26, 0, $bold);
   }
 }
 
 .sub-service__recycled-product-information,
 .sub-service__recycled-product-description,
 .sub-service__recycled-product-price {
-  margin-top: rem(25);
-  @include font(11, 22, 20, $regular);
+  margin-top: rem(40);
+  @include font(16, 32, -20, $regular);
 
   @include mq("md") {
     margin-top: rem(18);
-    @include font(12, 23, 20, $regular);
+    @include font(14, 26, -20, $regular);
   }
 }
 
-.sub-service__recycled-product-label {
-  margin-bottom: rem(8);
-  @include font(11, 20, 20, $medium);
-}
-
 .sub-service__house-cleaning-flow {
-  margin-top: rem(115);
+  margin-top: rem(120);
 
   @include mq("md") {
     margin-top: rem(75);
@@ -787,7 +710,7 @@
 }
 
 .sub-service__overseas {
-  padding-top: rem(130);
+  padding-top: rem(135);
   padding-bottom: rem(130);
 
   @include mq("md") {
@@ -797,11 +720,10 @@
 }
 
 .sub-service__overseas-inner {
-  max-width: rem(1250);
 }
 
 .sub-service__overseas-details {
-  margin-top: rem(115);
+  margin-top: rem(90);
 
   @include mq("md") {
     margin-top: rem(75);
@@ -809,7 +731,7 @@
 }
 
 .sub-service__overseas-section + .sub-service__overseas-section {
-  margin-top: rem(105);
+  margin-top: rem(90);
 
   @include mq("md") {
     margin-top: rem(70);
@@ -817,12 +739,12 @@
 }
 
 .sub-service__overseas-text {
-  margin-top: rem(42);
-  @include font(14, 30, 20, $medium);
+  margin-top: rem(51);
+  @include font(20,40, -20, $regular);
 
   @include mq("md") {
     margin-top: rem(27);
-    @include font(13, 26, 20, $regular);
+    @include font(14, 28, 20, $regular);
   }
 }
 
@@ -831,19 +753,12 @@
 }
 
 .sub-service__overseas-wide-image {
-  height: rem(570);
-  margin-top: rem(70);
+  margin-top: rem(60);
   overflow: hidden;
-  border-radius: rem(18);
 
-  @include mq("lg") {
-    height: rem(500);
-  }
 
   @include mq("md") {
-    height: rem(280);
     margin-top: rem(40);
-    border-radius: rem(10);
   }
 }
 
@@ -854,7 +769,7 @@
 }
 
 .sub-service__overseas-text--after-image {
-  margin-top: rem(65);
+  margin-top: rem(80);
 
   @include mq("md") {
     margin-top: rem(35);
@@ -864,7 +779,7 @@
 .sub-service__overseas-gallery {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: rem(70);
+  gap: rem(75);
   margin-top: rem(45);
 
   @include mq("lg") {
@@ -879,18 +794,7 @@
 }
 
 .sub-service__overseas-gallery-image {
-  height: rem(350);
-  overflow: hidden;
-  border-radius: rem(18);
-
-  @include mq("lg") {
-    height: rem(300);
-  }
-
-  @include mq("md") {
-    height: rem(240);
-    border-radius: rem(10);
-  }
+width: 100%;
 }
 
 .sub-service__overseas-gallery-image img {
@@ -900,20 +804,20 @@
 }
 
 .sub-service__overseas-caption {
-  margin-top: rem(22);
-  @include font(13, 24, 20, $medium);
+  margin-top: rem(30);
+  @include font(20, 40, -20, $regular);
 
   @include mq("md") {
     margin-top: rem(14);
-    @include font(12, 22, 20, $regular);
+    @include font(12, 22, -20, $regular);
   }
 }
 
 .sub-service__partner-intro {
   display: grid;
-  grid-template-columns: rem(520) minmax(0, 1fr);
-  gap: rem(55);
-  margin-top: rem(68);
+  grid-template-columns: rem(560) minmax(0, 1fr);
+  gap: rem(50);
+  margin-top: rem(78);
 
   @include mq("lg") {
     grid-template-columns: rem(450) minmax(0, 1fr);
@@ -927,14 +831,7 @@
 }
 
 .sub-service__partner-image {
-  height: rem(385);
-  overflow: hidden;
-  border-radius: rem(18);
-
-  @include mq("md") {
-    height: rem(300);
-    border-radius: rem(10);
-  }
+width: 100%;
 }
 
 .sub-service__partner-image img {
@@ -944,26 +841,28 @@
 }
 
 .sub-service__partner-content {
-  padding-top: rem(5);
 
   @include mq("md") {
-    padding-top: 0;
     margin-top: rem(28);
   }
 }
 
 .sub-service__partner-name {
   font-family: $en;
-  @include font(22, 32, 20, $bold);
+  @include font(24, 32, 0, $bold);
+
+  @include mq("md") {
+    @include font(18, 28, 0, $bold);
+  }
 }
 
 .sub-service__partner-text {
-  margin-top: rem(30);
-  @include font(13, 28, 20, $medium);
+  margin-top: rem(41);
+  @include font(16, 32, -20, $regular);
 
   @include mq("md") {
     margin-top: rem(18);
-    @include font(12, 25, 20, $regular);
+    @include font(14, 27, -20, $regular);
   }
 }
 
@@ -972,7 +871,7 @@
 }
 
 .sub-service__partner-profile {
-  margin-top: rem(80);
+  margin-top: rem(100);
 
   @include mq("md") {
     margin-top: rem(50);
@@ -981,11 +880,12 @@
 
 .sub-service__partner-profile-row {
   display: grid;
-  grid-template-columns: rem(140) minmax(0, 1fr);
-  gap: rem(15);
+  grid-template-columns: rem(85) minmax(0, 1fr);
+  align-items: baseline;
+  gap: rem(70);
   padding-top: rem(25);
   padding-bottom: rem(25);
-  border-bottom: rem(1) solid #d9dfe4;
+  border-bottom: rem(1) solid #dcdcdc;
 
   @include mq("md") {
     display: block;
@@ -994,30 +894,26 @@
   }
 }
 
+.sub-service__partner-profile-row:first-child{
+  padding-top: 0;
+}
+
 .sub-service__partner-profile-term {
-  @include font(12, 24, 20, $bold);
+  @include font(16, 24, 0, $bold);
 }
 
 .sub-service__partner-profile-description {
-  @include font(12, 24, 20, $medium);
+  @include font(16, 40, 0, $regular);
 
   @include mq("md") {
     margin-top: rem(8);
-    @include font(11, 22, 20, $regular);
+    @include font(14, 26, 0, $regular);
   }
 }
 
 .sub-service__partner-map {
-  height: rem(390);
-  margin-top: rem(65);
-  overflow: hidden;
-  border-radius: rem(16);
-
-  @include mq("md") {
-    height: rem(280);
-    margin-top: rem(40);
-    border-radius: rem(10);
-  }
+width: 100%;
+  margin-top: rem(60);
 }
 
 .sub-service__partner-map img {
