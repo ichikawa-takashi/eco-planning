@@ -51,6 +51,7 @@
 
 .site-header__logo img {
   height: auto;
+  transition: filter 0.3s ease;
 }
 
 .site-header__nav {
@@ -161,6 +162,7 @@
   border-radius: rem(25);
   background-color: $white;
   color: $blue;
+  text-transform: uppercase;
   @include font(15, 48, 0, $bold);
 
   @include mq("lg") {
@@ -265,4 +267,49 @@
 .site-header__hamburger.is-open .site-header__hamburger-line:nth-child(3) {
   top: rem(22);
   transform: translateX(-50%) rotate(-45deg);
+}
+
+.site-header--light {
+  color: $black;
+}
+
+.site-header--light.is-drawer-open .site-header__logo img {
+  @include mq("md") {
+    filter: brightness(0) invert(1);
+  }
+}
+
+.site-header--light .site-header__button {
+  background-color: $blue;
+  color: $white;
+}
+
+.site-header--light .site-header__button--contact {
+  background-color: #2590d3;
+}
+
+.site-header--light .site-header__button-icon {
+  background-color: $navy;
+}
+
+.site-header--light .site-header__button--contact .site-header__button-icon {
+  background-color: $blue;
+}
+
+.site-header--light .site-header__button:not(.site-header__button--contact):hover {
+  @media (hover: hover) {
+    background-color: $navy;
+  }
+}
+
+.site-header--light .site-header__button--contact:hover {
+  @media (hover: hover) {
+    background-color: $blue;
+  }
+}
+
+.site-header--light .site-header__nav {
+  @include mq("md") {
+    color: $white;
+  }
 }

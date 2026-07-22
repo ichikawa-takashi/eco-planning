@@ -42,6 +42,7 @@
 
 .sub-service__fv-title {
   font-family: $en;
+  text-transform: uppercase;
   @include font(120, 140, 20, $bold);
 
   @include mq("md") {
@@ -172,6 +173,7 @@
 .sub-service__section-title {
   color: $blue;
   font-family: $en;
+  text-transform: uppercase;
   @include font(84, 84, 20, $semi);
 
   @include mq("md") {
@@ -267,6 +269,7 @@
 .sub-service__item-number-label {
   color: $blue;
   font-family: $en;
+  text-transform: uppercase;
   @include font(12, 32, 200, $medium);
 
   @include mq("md") {
@@ -963,4 +966,339 @@ padding-inline: rem(25);
 
 .sub-service__visual-contact {
   width: 100%;
+}
+
+.sub-service-detail__hero {
+  padding-top: rem(260);
+  padding-bottom: rem(130);
+
+  @include mq("md") {
+    padding-top: rem(135);
+    padding-bottom: rem(50);
+  }
+}
+
+.sub-service-detail__hero-title {
+  color: $blue;
+  font-family: $en;
+  text-transform: uppercase;
+  @include font(120, 130, 20, $bold);
+
+  @include mq("md") {
+    @include font(48, 54, 0, $bold);
+  }
+}
+
+.sub-service-detail__hero-subtitle {
+  margin-top: rem(4);
+  color: $blue;
+  @include font(24, 30, 0, $bold);
+
+  @include mq("md") {
+    @include font(15, 24, 0, $bold);
+  }
+}
+
+.sub-service-detail__hero-bottom {
+  padding-top: rem(30);
+  margin-top: rem(44);
+  border-top: rem(1) solid $blue;
+
+  @include mq("md") {
+    display: none;
+  }
+}
+
+.sub-service-detail__hero-bottom .breadcrumb--static {
+  margin-top: 0;
+}
+
+.sub-service-detail__visual {
+  overflow: hidden;
+}
+
+.sub-service-detail__visual-main {
+  width: 100%;
+  border-radius: rem(30);
+  overflow: hidden;
+
+  @include mq("md") {
+    border-radius: rem(15);
+  }
+}
+
+.sub-service-detail__visual-main img {
+  width: 100%;
+  height: auto;
+}
+
+.sub-service-detail__visual-gallery {
+  margin-top: rem(30);
+  overflow: hidden;
+
+  @include mq("md") {
+    margin-top: rem(15);
+  }
+}
+
+.sub-service-detail__visual-gallery-track {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(0, 8fr) minmax(0, 8fr) minmax(0, 4fr);
+  gap: rem(30);
+  width: 100%;
+
+  @include mq("md") {
+    gap: rem(10);
+  }
+}
+
+.sub-service-detail__visual-gallery-item {
+  border-radius: rem(20);
+  overflow: hidden;
+
+  @include mq("md") {
+    border-radius: rem(12);
+  }
+}
+
+.sub-service-detail__visual-gallery-item:first-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.sub-service-detail__visual-gallery-item:last-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.sub-service-detail__visual-gallery-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.sub-service-detail__introduction {
+  padding-top: rem(120);
+
+  @include mq("md") {
+    padding-top: rem(65);
+  }
+}
+
+.sub-service-detail__introduction-title {
+  @include font(54, 72, 0, $bold);
+
+  @include mq("md") {
+    @include font(26, 41, 0, $bold);
+  }
+}
+
+.sub-service-detail__introduction-text {
+  margin-top: rem(80);
+  @include font(20, 40, -20, $regular);
+
+  @include mq("md") {
+    margin-top: rem(35);
+    @include font(14, 28, -20, $regular);
+  }
+}
+
+.sub-service-detail__section-title {
+  color: $blue;
+  font-family: $en;
+  text-transform: uppercase;
+  @include font(84, 90, 20, $semi);
+
+  @include mq("md") {
+    @include font(38, 44, 0, $semi);
+  }
+}
+
+.sub-service-detail__section-subtitle {
+  margin-top: rem(10);
+  color: $blue;
+  @include font(24, 28, 0, $bold);
+
+  @include mq("md") {
+    @include font(14, 22, 0, $bold);
+  }
+}
+
+.sub-service-detail__price {
+  margin-top: rem(100);
+  padding-top: rem(100);
+  padding-bottom: rem(110);
+  background-color: $light-blue;
+
+  @include mq("md") {
+    margin-top: rem(70);
+    padding-top: rem(60);
+    padding-bottom: rem(70);
+  }
+}
+
+.sub-service-detail__price-description {
+  margin-top: rem(55);
+  color: $blue;
+  @include font(20, 40, -20, $medium);
+
+  @include mq("md") {
+    margin-top: rem(30);
+    @include font(14, 27, -20, $medium);
+  }
+}
+
+.sub-service-detail__price-description br {
+  @include mq("md") {
+    display: none;
+  }
+}
+
+.sub-service-detail__table-group {
+  margin-top: rem(65);
+
+  @include mq("md") {
+    margin-top: rem(45);
+  }
+}
+
+.sub-service-detail__table-group + .sub-service-detail__table-group {
+  margin-top: rem(75);
+
+  @include mq("md") {
+    margin-top: rem(55);
+  }
+}
+
+.sub-service-detail__table-scroll {
+  margin-top: rem(30);
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  border-radius: rem(20);
+  -webkit-overflow-scrolling: touch;
+
+  @include mq("md") {
+    width: 100vw;
+    padding-right: rem(15);
+    padding-left: rem(15);
+    margin-top: rem(20);
+    margin-left: calc(50% - 50vw);
+    border-radius: 0;
+  }
+}
+
+.sub-service-detail__table {
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 0;
+  border-collapse: separate;
+  background-color: $white;
+  @include font(24, 30, 0, $regular);
+
+  @include mq("md") {
+    min-width: rem(620);
+    border-radius: rem(10);
+    @include font(14, 22, 0, $regular);
+  }
+}
+
+.sub-service-detail__table th,
+.sub-service-detail__table td {
+  height: rem(80);
+  padding: rem(18) rem(69);
+  border-bottom: rem(2) solid #eaf0f3;
+  text-align: center;
+  vertical-align: middle;
+
+  @include mq("md") {
+    height: rem(66);
+    padding: rem(14) rem(20);
+  }
+}
+
+.sub-service-detail__table th:last-child,
+.sub-service-detail__table td:last-child {
+  border-right: 0;
+}
+
+.sub-service-detail__table th:not(:first-child):not(:last-child),
+.sub-service-detail__table td:not(:first-child):not(:last-child) {
+  border-right: 0;
+}
+
+.sub-service-detail__table thead th {
+  height: rem(105);
+  border-bottom-color: #eaf0f3;
+  @include font(24,40,0,$bold);
+
+  @include mq("md") {
+    height: rem(66);
+    @include font(16,20,0,$bold);
+  }
+}
+
+.sub-service-detail__table thead th:first-child {
+  border-bottom-color: $white;
+
+  @include mq("md") {
+    border-top-left-radius: rem(10);
+  }
+}
+
+.sub-service-detail__table thead th:last-child {
+  @include mq("md") {
+    border-top-right-radius: rem(10);
+  }
+}
+
+.sub-service-detail__table th:first-child,
+.sub-service-detail__table td:first-child {
+  width: var(--service-detail-table-label-width, 40%);
+  background-color: #cfdfe7;
+}
+
+.sub-service-detail__table tbody th {
+  font-weight: $regular;
+  text-align: left;
+  border-bottom: rem(2) solid $white;
+}
+
+.sub-service-detail__table tbody tr:last-child th:first-child {
+  @include mq("md") {
+    border-bottom-left-radius: rem(10);
+  }
+}
+
+.sub-service-detail__table tbody tr:last-child td:last-child {
+  @include mq("md") {
+    border-bottom-right-radius: rem(10);
+  }
+}
+
+
+.sub-service-detail__flow {
+  padding-top: rem(100);
+  background-color: $white;
+
+  @include mq("md") {
+    padding-top: rem(60);
+  }
+}
+
+.sub-service-detail__flow .site-flow {
+  margin-top: rem(70);
+
+  @include mq("md") {
+    margin-top: rem(45);
+  }
+}
+
+.sub-service-detail__flow .site-flow__list {
+  margin-top: 0;
+}
+
+.sub-service-detail__flow .site-flow__text br {
+  @include mq("md") {
+    display: none;
+  }
 }

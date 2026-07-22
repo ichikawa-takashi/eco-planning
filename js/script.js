@@ -73,6 +73,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
 
     function openDrawer() {
+        $(".site-header").addClass("is-drawer-open");
         $(".js-drawer").addClass("is-open");
         $(".js-hamburger").addClass("is-open");
         $(".js-hamburger").attr("aria-label", "メニューを閉じる");
@@ -80,6 +81,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
 
     function closeDrawer() {
+        $(".site-header").removeClass("is-drawer-open");
         $(".js-drawer").removeClass("is-open");
         $(".js-hamburger").removeClass("is-open");
         $(".js-hamburger").attr("aria-label", "メニューを開く");

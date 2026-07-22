@@ -137,6 +137,7 @@
   border-radius: rem(25);
   color: $white;
   font-family: $en;
+  text-transform: uppercase;
   @include font(15, 20, 0, $bold);
 
   @include mq("md") {
