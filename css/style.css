@@ -721,11 +721,13 @@ html.is-fixed body {
 
 .site-flow__image {
   overflow: hidden;
+  border-radius: 0.9375rem;
 }
 @media screen and (max-width: 768px) {
   .site-flow__image {
     grid-column: 2;
     grid-row: 1;
+    border-radius: 0.625rem;
   }
 }
 
@@ -1032,6 +1034,7 @@ html.is-fixed body {
   .site-contact--visual {
     aspect-ratio: auto;
     min-height: 0;
+    border-radius: 0.75rem;
   }
 }
 
@@ -1850,7 +1853,13 @@ a {
 .sub-service__fv {
   position: relative;
   width: 100%;
+  border-radius: 0 0 1.875rem 1.875rem;
   overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .sub-service__fv {
+    border-radius: 0 0 0.9375rem 0.9375rem;
+  }
 }
 
 .sub-service__fv-image {
@@ -2124,7 +2133,13 @@ a {
 .sub-service__item-image {
   width: 100vw;
   margin-left: calc(50% - 50vw);
+  border-radius: 1.875rem;
   overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .sub-service__item-image {
+    border-radius: 0.9375rem;
+  }
 }
 
 .sub-service__item-image img {
@@ -2485,11 +2500,13 @@ a {
 
 .sub-service__collection-image {
   width: 100%;
+  border-radius: 0.625rem;
+  overflow: hidden;
 }
 @media screen and (max-width: 768px) {
   .sub-service__collection-image {
     height: 7.5rem;
-    border-radius: 0.4375rem;
+    border-radius: 0.5rem;
   }
 }
 
@@ -2574,6 +2591,7 @@ a {
 .sub-service__price-image {
   overflow: hidden;
   width: 100%;
+  border-radius: 1.25rem;
 }
 @media screen and (max-width: 1280px) {
   .sub-service__price-image {
@@ -2583,7 +2601,7 @@ a {
 @media screen and (max-width: 768px) {
   .sub-service__price-image {
     height: 13.75rem;
-    border-radius: 0.625rem;
+    border-radius: 0.75rem;
   }
 }
 
@@ -2741,6 +2759,13 @@ a {
 
 .sub-service__recycled-product-image {
   width: 100%;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .sub-service__recycled-product-image {
+    border-radius: 0.75rem;
+  }
 }
 
 .sub-service__recycled-product-image img {
@@ -2852,10 +2877,12 @@ a {
 .sub-service__overseas-wide-image {
   margin-top: 3.75rem;
   overflow: hidden;
+  border-radius: 1.25rem;
 }
 @media screen and (max-width: 768px) {
   .sub-service__overseas-wide-image {
     margin-top: 2.5rem;
+    border-radius: 0.75rem;
   }
 }
 
@@ -2897,6 +2924,13 @@ a {
 
 .sub-service__overseas-gallery-image {
   width: 100%;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .sub-service__overseas-gallery-image {
+    border-radius: 0.75rem;
+  }
 }
 
 .sub-service__overseas-gallery-image img {
@@ -2945,6 +2979,13 @@ a {
 
 .sub-service__partner-image {
   width: 100%;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .sub-service__partner-image {
+    border-radius: 0.75rem;
+  }
 }
 
 .sub-service__partner-image img {
@@ -3056,6 +3097,13 @@ a {
 .sub-service__partner-map {
   width: 100%;
   margin-top: 3.75rem;
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .sub-service__partner-map {
+    border-radius: 0.5rem;
+  }
 }
 
 .sub-service__partner-map img {

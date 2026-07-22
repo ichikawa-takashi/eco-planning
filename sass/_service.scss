@@ -5,7 +5,12 @@
 .sub-service__fv {
   position: relative;
   width: 100%;
+  border-radius: 0 0 rem(30) rem(30);
   overflow: hidden;
+
+  @include mq("md") {
+    border-radius: 0 0 rem(15) rem(15);
+  }
 }
 
 .sub-service__fv-image {
@@ -207,7 +212,12 @@
 .sub-service__item-image {
   width: 100vw;
   margin-left: calc(50% - 50vw);
+  border-radius: rem(30);
   overflow: hidden;
+
+  @include mq("md") {
+    border-radius: rem(15);
+  }
 }
 
 .sub-service__item-image img {
@@ -470,11 +480,13 @@ padding-inline: rem(25);
 }
 
 .sub-service__collection-image {
-width: 100%;
+  width: 100%;
+  border-radius: rem(10);
+  overflow: hidden;
 
   @include mq("md") {
     height: rem(120);
-    border-radius: rem(7);
+    border-radius: rem(8);
   }
 }
 
@@ -539,6 +551,7 @@ width: 100%;
 .sub-service__price-image {
   overflow: hidden;
   width: 100%;
+  border-radius: rem(20);
 
   @include mq("lg") {
     height: rem(210);
@@ -546,7 +559,7 @@ width: 100%;
 
   @include mq("md") {
     height: rem(220);
-    border-radius: rem(10);
+    border-radius: rem(12);
   }
 }
 
@@ -669,7 +682,13 @@ width: 100%;
 }
 
 .sub-service__recycled-product-image {
-width: 100%;
+  width: 100%;
+  border-radius: rem(20);
+  overflow: hidden;
+
+  @include mq("md") {
+    border-radius: rem(12);
+  }
 }
 
 .sub-service__recycled-product-image img {
@@ -755,10 +774,12 @@ width: 100%;
 .sub-service__overseas-wide-image {
   margin-top: rem(60);
   overflow: hidden;
+  border-radius: rem(20);
 
 
   @include mq("md") {
     margin-top: rem(40);
+    border-radius: rem(12);
   }
 }
 
@@ -794,7 +815,13 @@ width: 100%;
 }
 
 .sub-service__overseas-gallery-image {
-width: 100%;
+  width: 100%;
+  border-radius: rem(20);
+  overflow: hidden;
+
+  @include mq("md") {
+    border-radius: rem(12);
+  }
 }
 
 .sub-service__overseas-gallery-image img {
@@ -831,7 +858,13 @@ width: 100%;
 }
 
 .sub-service__partner-image {
-width: 100%;
+  width: 100%;
+  border-radius: rem(20);
+  overflow: hidden;
+
+  @include mq("md") {
+    border-radius: rem(12);
+  }
 }
 
 .sub-service__partner-image img {
@@ -912,8 +945,14 @@ width: 100%;
 }
 
 .sub-service__partner-map {
-width: 100%;
+  width: 100%;
   margin-top: rem(60);
+  border-radius: rem(10);
+  overflow: hidden;
+
+  @include mq("md") {
+    border-radius: rem(8);
+  }
 }
 
 .sub-service__partner-map img {

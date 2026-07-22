@@ -400,10 +400,12 @@ html.is-fixed body {
 
 .site-flow__image {
   overflow: hidden;
+  border-radius: rem(15);
 
   @include mq("md") {
     grid-column: 2;
     grid-row: 1;
+    border-radius: rem(10);
   }
 }
 
@@ -626,6 +628,7 @@ html.is-fixed body {
   @include mq("md") {
     aspect-ratio: auto;
     min-height: 0;
+    border-radius: rem(12);
   }
 }
 
