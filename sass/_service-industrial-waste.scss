@@ -1,0 +1,765 @@
+.sub-service-industrial-waste {
+  background-color: $white;
+}
+
+.sub-service-industrial-waste .sub-service-detail__hero {
+  padding-bottom: 0;
+}
+
+.sub-service-industrial-waste .sub-service-detail__visual {
+  margin-top: rem(124);
+
+  @include mq("md") {
+    margin-top: rem(50);
+  }
+}
+
+.sub-service-industrial-waste .sub-service-detail__introduction {
+  padding-bottom: 0;
+}
+
+.sub-service-industrial-waste__recommended {
+  padding-top: rem(100);
+
+  @include mq("md") {
+    padding-top: rem(65);
+  }
+}
+
+.sub-service-industrial-waste__recommended .sub-service-detail__band-title {
+  justify-items: start;
+  text-align: left;
+}
+
+.sub-service-industrial-waste__recommended-list {
+  display: grid;
+  gap: rem(25);
+  margin-top: rem(36);
+
+  @include mq("md") {
+    gap: rem(18);
+    margin-top: rem(30);
+  }
+}
+
+.sub-service-industrial-waste__recommended-item {
+  padding: rem(50);
+  border-radius: rem(20);
+  background-color: $light-blue;
+
+  @include mq("md") {
+    padding: rem(28) rem(22);
+    border-radius: rem(12);
+  }
+}
+
+.sub-service-industrial-waste__recommended-heading {
+  display: flex;
+  align-items: center;
+  gap: rem(18);
+  color: $blue;
+  @include font(24, 36, 0, $bold);
+
+  @include mq("md") {
+    gap: rem(14);
+    @include font(18, 28, 0, $bold);
+  }
+}
+
+.sub-service-industrial-waste__recommended-heading .sub-service-detail__check {
+  width: rem(36);
+}
+
+.sub-service-industrial-waste__recommended-heading .sub-service-detail__check img {
+  width: rem(19);
+}
+
+.sub-service-industrial-waste__recommended-text {
+  margin-top: rem(30);
+  @include font(20, 40, -20, $regular);
+
+  @include mq("md") {
+    margin-top: rem(18);
+    @include font(14, 27, -20, $regular);
+  }
+}
+
+.sub-service-industrial-waste__concerns {
+  padding-top: rem(100);
+  margin-top: rem(120);
+  background-color: $light-blue;
+
+  @include mq("md") {
+    padding-top: rem(65);
+    margin-top: rem(70);
+  }
+}
+
+.sub-service-industrial-waste__concerns .sub-service-detail__concern-item:first-child .sub-service-detail__concern-icon img {
+  width: rem(139);
+
+  @include mq("md") {
+    width: rem(90);
+  }
+}
+
+.sub-service-industrial-waste__concerns .sub-service-detail__concern-item:nth-child(2) .sub-service-detail__concern-icon img {
+  width: rem(99);
+
+  @include mq("md") {
+    width: rem(64);
+  }
+}
+
+.sub-service-industrial-waste__concerns .sub-service-detail__concern-item:nth-child(3) .sub-service-detail__concern-icon img {
+  width: rem(94);
+
+  @include mq("md") {
+    width: rem(61);
+  }
+}
+
+.sub-service-industrial-waste__concerns .sub-service-detail__concern-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sub-service-industrial-waste__concerns .sub-service-detail__concern-text {
+  width: max-content;
+  text-align: center;
+  white-space: nowrap;
+
+  @include mq("md") {
+    width: auto;
+    white-space: normal;
+  }
+}
+
+.sub-service-industrial-waste__features {
+  padding-top: rem(55);
+  background-color: $light-blue;
+
+  @include mq("md") {
+    padding-top: rem(75);
+  }
+}
+
+.sub-service-industrial-waste__feature-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: rem(20);
+  row-gap: 0;
+
+  @include mq("md") {
+    grid-template-columns: 1fr;
+    gap: rem(60);
+  }
+}
+
+.sub-service-industrial-waste__feature-item {
+  display: grid;
+  grid-row: span 6;
+  grid-template-rows: subgrid;
+
+  @include mq("md") {
+    display: block;
+    grid-row: auto;
+  }
+}
+
+.sub-service-industrial-waste__feature-item::after {
+  display: block;
+  height: rem(65);
+  content: "";
+
+  @include mq("md") {
+    display: none;
+  }
+}
+
+.sub-service-industrial-waste__feature-item:nth-last-child(-n + 3)::after {
+  height: 0;
+}
+
+.sub-service-industrial-waste__feature-label {
+  color: $blue;
+  font-family: $en;
+  text-transform: uppercase;
+  @include font(12, 18, 200, $medium);
+
+  @include mq("md") {
+    @include font(12, 17, 250, $medium);
+  }
+}
+
+.sub-service-industrial-waste__feature-number {
+  margin-top: rem(8);
+  color: $blue;
+  font-family: $en;
+  @include font(64, 72, 0, $semi);
+
+  @include mq("md") {
+    margin-top: rem(8);
+    @include font(50, 54, 0, $semi);
+  }
+}
+
+.sub-service-industrial-waste__feature-image {
+  width: 100%;
+  margin-top: rem(20);
+  aspect-ratio: 360 / 225;
+  border-radius: rem(20);
+  object-fit: cover;
+
+  @include mq("md") {
+    margin-top: rem(14);
+    border-radius: rem(12);
+  }
+}
+
+.sub-service-industrial-waste__feature-title {
+  display: grid;
+  margin-top: rem(30);
+  text-align: center;
+  @include font(24, 36, 0, $bold);
+
+  @include mq("md") {
+    display: block;
+    margin-top: rem(22);
+    @include font(20, 31, 0, $bold);
+  }
+}
+
+.sub-service-industrial-waste__feature-text {
+  margin-top: rem(30);
+  @include font(16, 32, -20, $regular);
+
+  @include mq("md") {
+    margin-top: rem(16);
+    @include font(14, 27, -20, $regular);
+  }
+}
+
+.sub-service-industrial-waste__feature-link {
+  color: $blue;
+}
+
+.sub-service-industrial-waste__compatible {
+  padding-top: rem(150);
+  padding-bottom: rem(116);
+  background-color: $light-blue;
+
+  @include mq("md") {
+    padding-top: rem(75);
+    padding-bottom: rem(50);
+  }
+}
+
+.sub-service-industrial-waste__compatible-description {
+  margin-top: rem(60);
+  color: $blue;
+  @include font(20, 34, -20, $medium);
+
+  @include mq("md") {
+    margin-top: rem(30);
+    @include font(14, 27, -20, $medium);
+  }
+}
+
+.sub-service-industrial-waste__compatible-groups {
+  margin-top: rem(65);
+
+  @include mq("md") {
+    margin-top: rem(42);
+  }
+}
+
+.sub-service-industrial-waste__compatible .sub-service-detail__table th,
+.sub-service-industrial-waste__compatible .sub-service-detail__table td {
+  padding-right: rem(38);
+  padding-left: rem(38);
+  text-align: left;
+
+  @include mq("md") {
+    padding-right: rem(20);
+    padding-left: rem(20);
+  }
+}
+
+.sub-service-industrial-waste__compatible .sub-service-detail__table thead th {
+  text-align: center;
+}
+
+.sub-service-industrial-waste__compatible .sub-service-detail__table tbody td {
+  @include font(18, 30, 0, $regular);
+
+  @include mq("md") {
+    @include font(14, 22, 0, $regular);
+  }
+}
+
+.sub-service-industrial-waste__sales-table th,
+.sub-service-industrial-waste__sales-table td {
+  width: 33.333%;
+  text-align: center;
+}
+
+.sub-service-industrial-waste__sales-table tbody td:nth-child(2) {
+  @include font(24, 32, 0, $regular);
+  text-align: center;
+
+  @include mq("md") {
+    @include font(16, 24, 0, $regular);
+  }
+}
+
+.sub-service-industrial-waste__process {
+  padding-top: rem(130);
+  background-color: $white;
+
+  @include mq("md") {
+    padding-top: rem(75);
+  }
+}
+
+.sub-service-industrial-waste__process-panel {
+  padding: rem(50) rem(50) rem(55) rem(50);
+  margin-top: rem(70);
+  border-radius: rem(20);
+  background-color: $light-blue;
+
+  @include mq("md") {
+    padding: rem(30) rem(20);
+    margin-top: rem(42);
+    border-radius: rem(12);
+  }
+}
+
+.sub-service-industrial-waste__process-list {
+  display: grid;
+}
+
+.sub-service-industrial-waste__process-list--top {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: rem(55);
+
+  @include mq("md") {
+    grid-template-columns: 1fr;
+    gap: rem(42);
+  }
+}
+
+.sub-service-industrial-waste__process-list--bottom {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: rem(40);
+  max-width: rem(880);
+  margin-right: auto;
+  margin-left: auto;
+
+  @include mq("md") {
+    grid-template-columns: 1fr;
+    gap: rem(42);
+    margin-top: rem(42);
+  }
+}
+
+.sub-service-industrial-waste__process-item {
+  position: relative;
+  min-height: rem(235);
+  padding: rem(30) rem(35);
+  border-radius: rem(10);
+  background-color: $white;
+
+  @include mq("md") {
+    min-height: 0;
+    padding: rem(25) rem(20);
+    border-radius: rem(8);
+  }
+}
+
+.sub-service-industrial-waste__process-list--top .sub-service-industrial-waste__process-item:not(:last-child)::before {
+  position: absolute;
+  top: 50%;
+  right: rem(-19);
+  width: rem(19);
+  height: rem(2);
+  background-color: $blue;
+  content: "";
+  transform: translateY(-50%);
+
+  @include mq("md") {
+    top: auto;
+    right: auto;
+    bottom: rem(-15);
+    left: 50%;
+    width: rem(2);
+    height: rem(15);
+    transform: translateX(-50%);
+  }
+}
+
+.sub-service-industrial-waste__process-list--top .sub-service-industrial-waste__process-item:not(:last-child)::after {
+  position: absolute;
+  top: 50%;
+  right: rem(-41);
+  width: 0;
+  height: 0;
+  border-top: rem(6.5) solid transparent;
+  border-bottom: rem(6.5) solid transparent;
+  border-left: rem(22) solid $blue;
+  content: "";
+  transform: translateY(-50%);
+
+  @include mq("md") {
+    top: auto;
+    right: auto;
+    bottom: rem(-37);
+    left: 50%;
+    border-top: rem(22) solid $blue;
+    border-right: rem(7) solid transparent;
+    border-bottom: 0;
+    border-left: rem(7) solid transparent;
+    transform: translateX(-50%);
+  }
+}
+
+.sub-service-industrial-waste__process-heading {
+  display: flex;
+  align-items: center;
+  gap: rem(28);
+
+  @include mq("md") {
+    gap: rem(18);
+  }
+}
+
+.sub-service-industrial-waste__process-icon {
+  width: rem(72);
+  height: rem(76);
+  object-fit: contain;
+
+  @include mq("md") {
+    width: rem(60);
+    height: rem(55);
+  }
+}
+
+.sub-service-industrial-waste__process-list--top .sub-service-industrial-waste__process-item:first-child .sub-service-industrial-waste__process-icon {
+  width: rem(107);
+
+  @include mq("md") {
+    width: rem(72);
+  }
+}
+
+.sub-service-industrial-waste__process-list--bottom .sub-service-industrial-waste__process-item:last-child .sub-service-industrial-waste__process-icon {
+  width: rem(93);
+
+  @include mq("md") {
+    width: rem(65);
+  }
+}
+
+.sub-service-industrial-waste__process-title {
+  color: $blue;
+  @include font(32, 64, 0, $bold);
+
+  @include mq("md") {
+    @include font(20, 30, 0, $bold);
+  }
+}
+
+.sub-service-industrial-waste__process-title small {
+  display: block;
+  @include font(16, 18, 0, $bold);
+}
+
+.sub-service-industrial-waste__process-text {
+  margin-top: rem(25);
+  color: $blue;
+  @include font(16, 27, 0, $regular);
+
+  @include mq("md") {
+    margin-top: rem(18);
+    @include font(14, 25, 0, $regular);
+  }
+}
+
+.sub-service-industrial-waste__process-branch {
+  position: relative;
+  width: rem(462);
+  height: rem(103);
+  margin-right: auto;
+  margin-left: auto;
+  background-image:
+    linear-gradient($blue, $blue),
+    linear-gradient($blue, $blue);
+  background-repeat: no-repeat;
+  background-position:
+    left rem(35),
+    right rem(35);
+  background-size:
+    rem(2) rem(48),
+    rem(2) rem(48);
+
+  @include mq("md") {
+    display: none;
+  }
+}
+
+.sub-service-industrial-waste__process-branch::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: rem(2);
+  height: rem(35);
+  background-color: $blue;
+  content: "";
+  transform: translateX(-50%);
+}
+
+.sub-service-industrial-waste__process-branch::after {
+  position: absolute;
+  top: rem(34);
+  right: 0;
+  left: 0;
+  height: rem(2);
+  background-color: $blue;
+  content: "";
+}
+
+.sub-service-industrial-waste__process-list--bottom .sub-service-industrial-waste__process-item::before {
+  position: absolute;
+  top: rem(-22);
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-top: rem(22) solid $blue;
+  border-right: rem(7) solid transparent;
+  border-left: rem(7) solid transparent;
+  content: "";
+  transform: translateX(-50%);
+
+  @include mq("md") {
+    display: none;
+  }
+}
+
+.sub-service-industrial-waste__process-list--bottom .sub-service-industrial-waste__process-item:first-child::before {
+  @include mq("md") {
+    display: block;
+    top: auto;
+    bottom: rem(-15);
+    width: rem(2);
+    height: rem(15);
+    border: 0;
+    background-color: $blue;
+  }
+}
+
+.sub-service-industrial-waste__process-list--bottom .sub-service-industrial-waste__process-item:first-child::after {
+  @include mq("md") {
+    position: absolute;
+    bottom: rem(-37);
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-top: rem(22) solid $blue;
+    border-right: rem(7) solid transparent;
+    border-left: rem(7) solid transparent;
+    content: "";
+    transform: translateX(-50%);
+  }
+}
+
+.sub-service-industrial-waste__recycling {
+  margin-top: rem(127);
+  padding-top: rem(130);
+  padding-bottom: rem(111);
+  background-color: $light-blue;
+
+  @include mq("md") {
+    padding-top: rem(75);
+    padding-bottom: rem(60);
+  }
+}
+
+.sub-service-industrial-waste__recycling-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: rem(24);
+  margin-top: rem(65);
+
+  @include mq("lg") {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @include mq("md") {
+    grid-template-columns: 1fr;
+    gap: rem(20);
+    margin-top: rem(42);
+  }
+}
+
+.sub-service-industrial-waste__recycling-card {
+  display: flex;
+  flex-direction: column;
+  min-height: rem(455);
+  padding: rem(33) ;
+  border-radius: rem(20);
+  background-color: $white;
+
+  @include mq("md") {
+    min-height: 0;
+    padding: rem(27) rem(22);
+    border-radius: rem(12);
+  }
+}
+
+.sub-service-industrial-waste__recycling-heading {
+  display: flex;
+  align-items: center;
+  gap: rem(20);
+  padding-bottom: rem(22);
+  border-bottom: rem(1) solid $light-blue;
+
+  @include mq("md") {
+    gap: rem(15);
+    padding-bottom: rem(18);
+  }
+}
+
+.sub-service-industrial-waste__recycling-thumbnail {
+  flex-shrink: 0;
+  width: rem(60);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+
+  @include mq("md") {
+    width: rem(48);
+  }
+}
+
+.sub-service-industrial-waste__recycling-title {
+  color: $blue;
+  @include font(24, 34, 0, $bold);
+
+  @include mq("md") {
+    @include font(19, 28, 0, $bold);
+  }
+}
+
+.sub-service-industrial-waste__recycling-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding-top: rem(10);
+  margin-top: 0;
+
+  @include mq("md") {
+    padding-top: rem(18);
+  }
+}
+
+.sub-service-industrial-waste__recycling-description {
+  @include font(14, 28, -20, $regular);
+
+  @include mq("md") {
+    @include font(14, 25, -20, $regular);
+  }
+}
+
+.sub-service-industrial-waste__recycling-label {
+  margin-top: rem(20);
+  color: $blue;
+  @include font(14, 28, 0, $bold);
+
+  @include mq("md") {
+    margin-top: rem(18);
+    @include font(14, 22, 0, $bold);
+  }
+}
+
+.sub-service-industrial-waste__recycling-result {
+  @include font(14, 28, -20, $regular);
+
+  @include mq("md") {
+    margin-top: rem(8);
+    @include font(14, 25, -20, $regular);
+  }
+}
+
+ol.sub-service-industrial-waste__recycling-result {
+  padding-left: rem(22);
+  list-style: decimal;
+}
+
+.sub-service-industrial-waste__recycling-link {
+  width: fit-content;
+  margin-top: rem(10);
+  color: $blue;
+  text-decoration: underline;
+  text-decoration-thickness: rem(1);
+  text-underline-offset: rem(4);
+  @include font(14, 28, -20, $regular);
+
+  @include mq("md") {
+    @include font(14, 24, -20, $regular);
+  }
+}
+
+.sub-service-industrial-waste__recycling-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: rem(9);
+  padding-top: rem(25);
+
+  @include mq("md") {
+    margin-top: rem(20);
+    padding-top: 0;
+  }
+}
+
+.sub-service-industrial-waste__recycling-tags li {
+  display: grid;
+  place-items: center;
+  min-width: rem(70);
+  min-height: rem(36);
+  padding: rem(4) rem(14);
+  border: rem(1) solid $blue;
+  border-radius: rem(18);
+  color: $blue;
+  @include font(14, 20, 0, $regular);
+
+  @include mq("md") {
+    min-width: rem(56);
+    min-height: rem(30);
+    padding: rem(4) rem(12);
+    @include font(12, 18, 0, $regular);
+  }
+}
+
+.sub-service-industrial-waste__flow-note {
+  margin-top: rem(30);
+
+  @include mq("md") {
+    margin-top: rem(24);
+  }
+}
+
+.sub-service-industrial-waste__flow-note a {
+  color: $blue;
+  text-decoration: underline;
+  text-underline-offset: rem(8);
+}
+
+.sub-service-industrial-waste .site-contact-section {
+  padding-top: rem(110);
+  background-color: $white;
+
+  @include mq("md") {
+    padding-top: rem(70);
+  }
+}

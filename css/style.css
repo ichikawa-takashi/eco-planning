@@ -3280,10 +3280,14 @@ a {
 }
 
 .sub-service-detail__visual-gallery-track {
-  display: grid;
-  grid-template-columns: minmax(0, 7fr) minmax(0, 8fr) minmax(0, 8fr) minmax(0, 4fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   gap: 1.875rem;
-  width: 100%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  will-change: transform;
 }
 @media screen and (max-width: 768px) {
   .sub-service-detail__visual-gallery-track {
@@ -3291,32 +3295,64 @@ a {
   }
 }
 
+.sub-service-detail__visual-gallery-track.is-loop-ready {
+  -webkit-animation: service-detail-gallery-loop 48s linear infinite;
+          animation: service-detail-gallery-loop 48s linear infinite;
+  -webkit-animation-delay: -12s;
+          animation-delay: -12s;
+}
+@media (prefers-reduced-motion: reduce) {
+  .sub-service-detail__visual-gallery-track.is-loop-ready {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
+
 .sub-service-detail__visual-gallery-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 clamp(18.75rem, 27vw, 24.375rem);
+          flex: 0 0 clamp(18.75rem, 27vw, 24.375rem);
+  aspect-ratio: 1/1;
   border-radius: 1.25rem;
   overflow: hidden;
 }
 @media screen and (max-width: 768px) {
   .sub-service-detail__visual-gallery-item {
+    -ms-flex-preferred-size: min(33vw, 15rem);
+        flex-basis: min(33vw, 15rem);
     border-radius: 0.75rem;
   }
-}
-
-.sub-service-detail__visual-gallery-item:first-child {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.sub-service-detail__visual-gallery-item:last-child {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
 }
 
 .sub-service-detail__visual-gallery-item img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
+@-webkit-keyframes service-detail-gallery-loop {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  to {
+    -webkit-transform: translate3d(var(--service-detail-gallery-distance, 0), 0, 0);
+            transform: translate3d(var(--service-detail-gallery-distance, 0), 0, 0);
+  }
+}
+
+@keyframes service-detail-gallery-loop {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  to {
+    -webkit-transform: translate3d(var(--service-detail-gallery-distance, 0), 0, 0);
+            transform: translate3d(var(--service-detail-gallery-distance, 0), 0, 0);
+  }
+}
 .sub-service-detail__introduction {
   padding-top: 7.5rem;
 }
@@ -3548,6 +3584,14 @@ a {
   }
 }
 
+.sub-service-detail__table thead th:not(:first-child):not(:last-child) {
+  border-right: 0.125rem solid #eaf0f3;
+}
+
+.sub-service-detail__table tbody td:not(:first-child):not(:last-child) {
+  border-right: 0.125rem solid #eaf0f3;
+}
+
 .sub-service-detail__table th:first-child,
 .sub-service-detail__table td:first-child {
   width: var(--service-detail-table-label-width, 40%);
@@ -3599,6 +3643,434 @@ a {
   .sub-service-detail__flow .site-flow__text br {
     display: none;
   }
+}
+
+.sub-service-detail__band-title {
+  display: grid;
+  place-items: center;
+  min-height: 5rem;
+  padding: 0.9375rem 1.875rem;
+  border-radius: 0.625rem;
+  color: #ffffff;
+  text-align: center;
+  background: -webkit-gradient(linear, left top, right top, from(#1c499e), to(#038be0));
+  background: linear-gradient(90deg, #1c499e 0%, #038be0 100%);
+  font-size: 1.75rem;
+  line-height: 1.4285714286;
+  letter-spacing: 0em;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-detail__band-title {
+    min-height: 3.75rem;
+    padding: 0.75rem 0.9375rem;
+    border-radius: 0.4375rem;
+    font-size: 1.125rem;
+    line-height: 1.5555555556;
+    letter-spacing: 0em;
+    font-weight: 700;
+  }
+}
+
+.sub-service-detail__concern-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 5rem;
+  max-width: 56.25rem;
+  margin-top: 3.75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-detail__concern-list {
+    grid-template-columns: 1fr;
+    gap: 2.375rem;
+    margin-top: 2.625rem;
+  }
+}
+
+.sub-service-detail__concern-item {
+  text-align: center;
+}
+
+.sub-service-detail__concern-icon {
+  display: grid;
+  place-items: center;
+  width: 15rem;
+  aspect-ratio: 1/1;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-detail__concern-icon {
+    width: 9.6875rem;
+  }
+}
+
+.sub-service-detail__concern-icon img {
+  width: 7.1875rem;
+  max-height: 7.1875rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-detail__concern-icon img {
+    width: 4.75rem;
+    max-height: 4.75rem;
+  }
+}
+
+.sub-service-detail__concern-text {
+  margin-top: 2.375rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0em;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-detail__concern-text {
+    margin-top: 1.25rem;
+    font-size: 1.0625rem;
+    line-height: 1.6470588235;
+    letter-spacing: 0em;
+    font-weight: 700;
+  }
+}
+
+.sub-service-detail__solution {
+  position: relative;
+  padding-top: 5.125rem;
+  margin-top: 4.6875rem;
+  border-top: 0.0625rem solid #1c499e;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-detail__solution {
+    padding-top: 3.25rem;
+    margin-top: 3rem;
+  }
+}
+
+.sub-service-detail__solution::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-top: 1.875rem solid #1c499e;
+  border-right: 2.625rem solid transparent;
+  border-left: 2.625rem solid transparent;
+  content: "";
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+@media screen and (max-width: 768px) {
+  .sub-service-detail__solution::before {
+    border-top-width: 1.25rem;
+    border-right-width: 1.75rem;
+    border-left-width: 1.75rem;
+  }
+}
+
+.sub-service-detail__solution-title {
+  color: #1c499e;
+  text-align: center;
+  font-size: 2.625rem;
+  line-height: 1.2857142857;
+  letter-spacing: 0em;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-detail__solution-title {
+    font-size: 1.4375rem;
+    line-height: 1.5217391304;
+    letter-spacing: 0em;
+    font-weight: 700;
+  }
+}
+
+.sub-service-detail__solution-text {
+  margin-top: 3rem;
+  font-size: 1.25rem;
+  line-height: 1.9;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-detail__solution-text {
+    margin-top: 1.75rem;
+    font-size: 0.875rem;
+    line-height: 1.9285714286;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+  }
+}
+
+.sub-service-detail__check {
+  display: grid;
+  place-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 2.75rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: #00a0e9;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-detail__check {
+    width: 2.25rem;
+  }
+}
+
+.sub-service-detail__check img {
+  width: 1.3125rem;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-detail__check img {
+    width: 1.0625rem;
+  }
+}
+
+.sub-service-detail__application {
+  padding-top: 8.125rem;
+  background-color: #eaf0f3;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-detail__application {
+    padding-top: 4.6875rem;
+  }
+}
+
+.sub-service-detail__application-inner {
+  padding-inline: 1.25rem;
+  max-width: 1440px;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-detail__application-inner {
+    max-width: 500px;
+  }
+}
+
+.sub-service-detail__application-panel {
+  padding: 6.875rem;
+  border-radius: 1.875rem;
+  background-color: #1c499e;
+  background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.021) 0, rgba(255, 255, 255, 0.009) 0.09375rem, transparent 0.25rem), -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(rgba(255, 255, 255, 0.005)), color-stop(50%, rgba(255, 255, 255, 0.014)), color-stop(rgba(255, 255, 255, 0.005)), to(transparent)), -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(255, 255, 255, 0.005)), color-stop(50%, rgba(255, 255, 255, 0.014)), color-stop(rgba(255, 255, 255, 0.005)), to(transparent));
+  background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.021) 0, rgba(255, 255, 255, 0.009) 0.09375rem, transparent 0.25rem), linear-gradient(to bottom, transparent calc(50% - 0.1875rem), rgba(255, 255, 255, 0.005) calc(50% - 0.125rem), rgba(255, 255, 255, 0.014) 50%, rgba(255, 255, 255, 0.005) calc(50% + 0.125rem), transparent calc(50% + 0.1875rem)), linear-gradient(90deg, transparent calc(50% - 0.1875rem), rgba(255, 255, 255, 0.005) calc(50% - 0.125rem), rgba(255, 255, 255, 0.014) 50%, rgba(255, 255, 255, 0.005) calc(50% + 0.125rem), transparent calc(50% + 0.1875rem));
+  background-size: 1.125rem 1.125rem;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-detail__application-panel {
+    padding: 2.8125rem 1.25rem;
+    border-radius: 1.125rem;
+    background-size: 0.9375rem 0.9375rem;
+  }
+}
+
+.sub-service-detail__application-title {
+  color: #ffffff;
+  font-size: 2.625rem;
+  line-height: 1.2857142857;
+  letter-spacing: 0em;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-detail__application-title {
+    text-align: center;
+    font-size: 1.5625rem;
+    line-height: 1.44;
+    letter-spacing: 0em;
+    font-weight: 700;
+  }
+}
+
+.sub-service-detail__application-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5625rem;
+  margin-top: 3.4375rem;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-detail__application-list {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 2.1875rem;
+  }
+}
+
+.sub-service-detail__application-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 6rem;
+  padding-right: 1.125rem;
+  padding-left: 3.125rem;
+  border-radius: 3rem;
+  background-color: #ffffff;
+  color: #1c499e;
+  font-size: 1.5rem;
+  line-height: 1.3333333333;
+  letter-spacing: 0em;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-detail__application-link {
+    min-height: 4.125rem;
+    padding-right: 0.625rem;
+    padding-left: 1.5625rem;
+    border-radius: 2.0625rem;
+    font-size: 1rem;
+    line-height: 1.5625;
+    letter-spacing: 0em;
+    font-weight: 700;
+  }
+}
+
+@media (hover: hover) {
+  .sub-service-detail__application-link:hover {
+    background-color: #f2f7fa;
+  }
+}
+
+.sub-service-detail__application-icon {
+  width: 4rem;
+  height: 4rem;
+  background-color: #eaf0f3;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-detail__application-icon {
+    width: 2.875rem;
+    height: 2.875rem;
+  }
+}
+
+.sub-service-detail__application-icon img {
+  width: 1.25rem;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-detail__application-icon img {
+    width: 0.9375rem;
+  }
+}
+
+.sub-service-detail__data-group + .sub-service-detail__data-group {
+  margin-top: 4.375rem;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-detail__data-group + .sub-service-detail__data-group {
+    margin-top: 3.125rem;
+  }
+}
+
+.sub-service-detail__data-summary {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 4.5rem;
+  padding-right: 4.0625rem;
+  padding-left: 2.1875rem;
+  border-radius: 0.625rem;
+  color: #ffffff;
+  cursor: pointer;
+  list-style: none;
+  background: -webkit-gradient(linear, left top, right top, from(#1c499e), to(#038be0));
+  background: linear-gradient(90deg, #1c499e 0%, #038be0 100%);
+  font-size: 1.5rem;
+  line-height: 1.4166666667;
+  letter-spacing: 0em;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-detail__data-summary {
+    min-height: 3.625rem;
+    padding-right: 3rem;
+    padding-left: 1.125rem;
+    border-radius: 0.4375rem;
+    font-size: 1.0625rem;
+    line-height: 1.5294117647;
+    letter-spacing: 0em;
+    font-weight: 700;
+  }
+}
+
+.sub-service-detail__data-summary::-webkit-details-marker {
+  display: none;
+}
+
+.sub-service-detail__data-summary::after {
+  position: absolute;
+  top: 50%;
+  right: 1.75rem;
+  width: 0.6875rem;
+  height: 0.6875rem;
+  border-right: 0.1875rem solid #ffffff;
+  border-bottom: 0.1875rem solid #ffffff;
+  border-radius: 0.125rem;
+  content: "";
+  -webkit-transform: translateY(-65%) rotate(45deg);
+          transform: translateY(-65%) rotate(45deg);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-detail__data-summary::after {
+    right: 1.125rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-right-width: 0.125rem;
+    border-bottom-width: 0.125rem;
+    border-radius: 0.0625rem;
+  }
+}
+
+.sub-service-detail__data-group:not([open]) .sub-service-detail__data-summary::after {
+  -webkit-transform: translateY(-35%) rotate(-135deg);
+          transform: translateY(-35%) rotate(-135deg);
+}
+
+.sub-service-detail__data-group .sub-service-detail__table-scroll {
+  margin-top: 2.1875rem;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-detail__data-group .sub-service-detail__table-scroll {
+    margin-top: 1.375rem;
+  }
+}
+
+.sub-service-detail__table-note {
+  margin-top: 1.5625rem;
+  font-size: 1.25rem;
+  line-height: 2;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-detail__table-note {
+    margin-top: 1.125rem;
+    font-size: 0.8125rem;
+    line-height: 1.7692307692;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+  }
+}
+
+.sub-service-detail__table-alert {
+  color: #ff3030;
 }
 
 .sub-service-demolition {
@@ -4324,5 +4796,980 @@ a {
     line-height: 1.6666666667;
     letter-spacing: 0em;
     font-weight: 700;
+  }
+}
+
+.sub-service-industrial-waste {
+  background-color: #ffffff;
+}
+
+.sub-service-industrial-waste .sub-service-detail__hero {
+  padding-bottom: 0;
+}
+
+.sub-service-industrial-waste .sub-service-detail__visual {
+  margin-top: 7.75rem;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste .sub-service-detail__visual {
+    margin-top: 3.125rem;
+  }
+}
+
+.sub-service-industrial-waste .sub-service-detail__introduction {
+  padding-bottom: 0;
+}
+
+.sub-service-industrial-waste__recommended {
+  padding-top: 6.25rem;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__recommended {
+    padding-top: 4.0625rem;
+  }
+}
+
+.sub-service-industrial-waste__recommended .sub-service-detail__band-title {
+  justify-items: start;
+  text-align: left;
+}
+
+.sub-service-industrial-waste__recommended-list {
+  display: grid;
+  gap: 1.5625rem;
+  margin-top: 2.25rem;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__recommended-list {
+    gap: 1.125rem;
+    margin-top: 1.875rem;
+  }
+}
+
+.sub-service-industrial-waste__recommended-item {
+  padding: 3.125rem;
+  border-radius: 1.25rem;
+  background-color: #eaf0f3;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__recommended-item {
+    padding: 1.75rem 1.375rem;
+    border-radius: 0.75rem;
+  }
+}
+
+.sub-service-industrial-waste__recommended-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.125rem;
+  color: #1c499e;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0em;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__recommended-heading {
+    gap: 0.875rem;
+    font-size: 1.125rem;
+    line-height: 1.5555555556;
+    letter-spacing: 0em;
+    font-weight: 700;
+  }
+}
+
+.sub-service-industrial-waste__recommended-heading .sub-service-detail__check {
+  width: 2.25rem;
+}
+
+.sub-service-industrial-waste__recommended-heading .sub-service-detail__check img {
+  width: 1.1875rem;
+}
+
+.sub-service-industrial-waste__recommended-text {
+  margin-top: 1.875rem;
+  font-size: 1.25rem;
+  line-height: 2;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__recommended-text {
+    margin-top: 1.125rem;
+    font-size: 0.875rem;
+    line-height: 1.9285714286;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+  }
+}
+
+.sub-service-industrial-waste__concerns {
+  padding-top: 6.25rem;
+  margin-top: 7.5rem;
+  background-color: #eaf0f3;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__concerns {
+    padding-top: 4.0625rem;
+    margin-top: 4.375rem;
+  }
+}
+
+.sub-service-industrial-waste__concerns .sub-service-detail__concern-item:first-child .sub-service-detail__concern-icon img {
+  width: 8.6875rem;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__concerns .sub-service-detail__concern-item:first-child .sub-service-detail__concern-icon img {
+    width: 5.625rem;
+  }
+}
+
+.sub-service-industrial-waste__concerns .sub-service-detail__concern-item:nth-child(2) .sub-service-detail__concern-icon img {
+  width: 6.1875rem;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__concerns .sub-service-detail__concern-item:nth-child(2) .sub-service-detail__concern-icon img {
+    width: 4rem;
+  }
+}
+
+.sub-service-industrial-waste__concerns .sub-service-detail__concern-item:nth-child(3) .sub-service-detail__concern-icon img {
+  width: 5.875rem;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__concerns .sub-service-detail__concern-item:nth-child(3) .sub-service-detail__concern-icon img {
+    width: 3.8125rem;
+  }
+}
+
+.sub-service-industrial-waste__concerns .sub-service-detail__concern-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sub-service-industrial-waste__concerns .sub-service-detail__concern-text {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  text-align: center;
+  white-space: nowrap;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__concerns .sub-service-detail__concern-text {
+    width: auto;
+    white-space: normal;
+  }
+}
+
+.sub-service-industrial-waste__features {
+  padding-top: 3.4375rem;
+  background-color: #eaf0f3;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__features {
+    padding-top: 4.6875rem;
+  }
+}
+
+.sub-service-industrial-waste__feature-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  -webkit-column-gap: 1.25rem;
+     -moz-column-gap: 1.25rem;
+          column-gap: 1.25rem;
+  row-gap: 0;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__feature-list {
+    grid-template-columns: 1fr;
+    gap: 3.75rem;
+  }
+}
+
+.sub-service-industrial-waste__feature-item {
+  display: grid;
+  grid-row: span 6;
+  grid-template-rows: subgrid;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__feature-item {
+    display: block;
+    grid-row: auto;
+  }
+}
+
+.sub-service-industrial-waste__feature-item::after {
+  display: block;
+  height: 4.0625rem;
+  content: "";
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__feature-item::after {
+    display: none;
+  }
+}
+
+.sub-service-industrial-waste__feature-item:nth-last-child(-n+3)::after {
+  height: 0;
+}
+
+.sub-service-industrial-waste__feature-label {
+  color: #1c499e;
+  font-family: "Jost", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__feature-label {
+    font-size: 0.75rem;
+    line-height: 1.4166666667;
+    letter-spacing: 0.25em;
+    font-weight: 500;
+  }
+}
+
+.sub-service-industrial-waste__feature-number {
+  margin-top: 0.5rem;
+  color: #1c499e;
+  font-family: "Jost", sans-serif;
+  font-size: 4rem;
+  line-height: 1.125;
+  letter-spacing: 0em;
+  font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__feature-number {
+    margin-top: 0.5rem;
+    font-size: 3.125rem;
+    line-height: 1.08;
+    letter-spacing: 0em;
+    font-weight: 600;
+  }
+}
+
+.sub-service-industrial-waste__feature-image {
+  width: 100%;
+  margin-top: 1.25rem;
+  aspect-ratio: 360/225;
+  border-radius: 1.25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__feature-image {
+    margin-top: 0.875rem;
+    border-radius: 0.75rem;
+  }
+}
+
+.sub-service-industrial-waste__feature-title {
+  display: grid;
+  margin-top: 1.875rem;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0em;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__feature-title {
+    display: block;
+    margin-top: 1.375rem;
+    font-size: 1.25rem;
+    line-height: 1.55;
+    letter-spacing: 0em;
+    font-weight: 700;
+  }
+}
+
+.sub-service-industrial-waste__feature-text {
+  margin-top: 1.875rem;
+  font-size: 1rem;
+  line-height: 2;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__feature-text {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.9285714286;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+  }
+}
+
+.sub-service-industrial-waste__feature-link {
+  color: #1c499e;
+}
+
+.sub-service-industrial-waste__compatible {
+  padding-top: 9.375rem;
+  padding-bottom: 7.25rem;
+  background-color: #eaf0f3;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__compatible {
+    padding-top: 4.6875rem;
+    padding-bottom: 3.125rem;
+  }
+}
+
+.sub-service-industrial-waste__compatible-description {
+  margin-top: 3.75rem;
+  color: #1c499e;
+  font-size: 1.25rem;
+  line-height: 1.7;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__compatible-description {
+    margin-top: 1.875rem;
+    font-size: 0.875rem;
+    line-height: 1.9285714286;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+  }
+}
+
+.sub-service-industrial-waste__compatible-groups {
+  margin-top: 4.0625rem;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__compatible-groups {
+    margin-top: 2.625rem;
+  }
+}
+
+.sub-service-industrial-waste__compatible .sub-service-detail__table th,
+.sub-service-industrial-waste__compatible .sub-service-detail__table td {
+  padding-right: 2.375rem;
+  padding-left: 2.375rem;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__compatible .sub-service-detail__table th,
+  .sub-service-industrial-waste__compatible .sub-service-detail__table td {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+  }
+}
+
+.sub-service-industrial-waste__compatible .sub-service-detail__table thead th {
+  text-align: center;
+}
+
+.sub-service-industrial-waste__compatible .sub-service-detail__table tbody td {
+  font-size: 1.125rem;
+  line-height: 1.6666666667;
+  letter-spacing: 0em;
+  font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__compatible .sub-service-detail__table tbody td {
+    font-size: 0.875rem;
+    line-height: 1.5714285714;
+    letter-spacing: 0em;
+    font-weight: 400;
+  }
+}
+
+.sub-service-industrial-waste__sales-table th,
+.sub-service-industrial-waste__sales-table td {
+  width: 33.333%;
+  text-align: center;
+}
+
+.sub-service-industrial-waste__sales-table tbody td:nth-child(2) {
+  font-size: 1.5rem;
+  line-height: 1.3333333333;
+  letter-spacing: 0em;
+  font-weight: 400;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__sales-table tbody td:nth-child(2) {
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    font-weight: 400;
+  }
+}
+
+.sub-service-industrial-waste__process {
+  padding-top: 8.125rem;
+  background-color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__process {
+    padding-top: 4.6875rem;
+  }
+}
+
+.sub-service-industrial-waste__process-panel {
+  padding: 3.125rem 3.125rem 3.4375rem 3.125rem;
+  margin-top: 4.375rem;
+  border-radius: 1.25rem;
+  background-color: #eaf0f3;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__process-panel {
+    padding: 1.875rem 1.25rem;
+    margin-top: 2.625rem;
+    border-radius: 0.75rem;
+  }
+}
+
+.sub-service-industrial-waste__process-list {
+  display: grid;
+}
+
+.sub-service-industrial-waste__process-list--top {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 3.4375rem;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__process-list--top {
+    grid-template-columns: 1fr;
+    gap: 2.625rem;
+  }
+}
+
+.sub-service-industrial-waste__process-list--bottom {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.5rem;
+  max-width: 55rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__process-list--bottom {
+    grid-template-columns: 1fr;
+    gap: 2.625rem;
+    margin-top: 2.625rem;
+  }
+}
+
+.sub-service-industrial-waste__process-item {
+  position: relative;
+  min-height: 14.6875rem;
+  padding: 1.875rem 2.1875rem;
+  border-radius: 0.625rem;
+  background-color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__process-item {
+    min-height: 0;
+    padding: 1.5625rem 1.25rem;
+    border-radius: 0.5rem;
+  }
+}
+
+.sub-service-industrial-waste__process-list--top .sub-service-industrial-waste__process-item:not(:last-child)::before {
+  position: absolute;
+  top: 50%;
+  right: -1.1875rem;
+  width: 1.1875rem;
+  height: 0.125rem;
+  background-color: #1c499e;
+  content: "";
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__process-list--top .sub-service-industrial-waste__process-item:not(:last-child)::before {
+    top: auto;
+    right: auto;
+    bottom: -0.9375rem;
+    left: 50%;
+    width: 0.125rem;
+    height: 0.9375rem;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+.sub-service-industrial-waste__process-list--top .sub-service-industrial-waste__process-item:not(:last-child)::after {
+  position: absolute;
+  top: 50%;
+  right: -2.5625rem;
+  width: 0;
+  height: 0;
+  border-top: 0.40625rem solid transparent;
+  border-bottom: 0.40625rem solid transparent;
+  border-left: 1.375rem solid #1c499e;
+  content: "";
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__process-list--top .sub-service-industrial-waste__process-item:not(:last-child)::after {
+    top: auto;
+    right: auto;
+    bottom: -2.3125rem;
+    left: 50%;
+    border-top: 1.375rem solid #1c499e;
+    border-right: 0.4375rem solid transparent;
+    border-bottom: 0;
+    border-left: 0.4375rem solid transparent;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+.sub-service-industrial-waste__process-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.75rem;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__process-heading {
+    gap: 1.125rem;
+  }
+}
+
+.sub-service-industrial-waste__process-icon {
+  width: 4.5rem;
+  height: 4.75rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__process-icon {
+    width: 3.75rem;
+    height: 3.4375rem;
+  }
+}
+
+.sub-service-industrial-waste__process-list--top .sub-service-industrial-waste__process-item:first-child .sub-service-industrial-waste__process-icon {
+  width: 6.6875rem;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__process-list--top .sub-service-industrial-waste__process-item:first-child .sub-service-industrial-waste__process-icon {
+    width: 4.5rem;
+  }
+}
+
+.sub-service-industrial-waste__process-list--bottom .sub-service-industrial-waste__process-item:last-child .sub-service-industrial-waste__process-icon {
+  width: 5.8125rem;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__process-list--bottom .sub-service-industrial-waste__process-item:last-child .sub-service-industrial-waste__process-icon {
+    width: 4.0625rem;
+  }
+}
+
+.sub-service-industrial-waste__process-title {
+  color: #1c499e;
+  font-size: 2rem;
+  line-height: 2;
+  letter-spacing: 0em;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__process-title {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    font-weight: 700;
+  }
+}
+
+.sub-service-industrial-waste__process-title small {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.125;
+  letter-spacing: 0em;
+  font-weight: 700;
+}
+
+.sub-service-industrial-waste__process-text {
+  margin-top: 1.5625rem;
+  color: #1c499e;
+  font-size: 1rem;
+  line-height: 1.6875;
+  letter-spacing: 0em;
+  font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__process-text {
+    margin-top: 1.125rem;
+    font-size: 0.875rem;
+    line-height: 1.7857142857;
+    letter-spacing: 0em;
+    font-weight: 400;
+  }
+}
+
+.sub-service-industrial-waste__process-branch {
+  position: relative;
+  width: 28.875rem;
+  height: 6.4375rem;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1c499e), to(#1c499e)), -webkit-gradient(linear, left top, left bottom, from(#1c499e), to(#1c499e));
+  background-image: linear-gradient(#1c499e, #1c499e), linear-gradient(#1c499e, #1c499e);
+  background-repeat: no-repeat;
+  background-position: left 2.1875rem, right 2.1875rem;
+  background-size: 0.125rem 3rem, 0.125rem 3rem;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__process-branch {
+    display: none;
+  }
+}
+
+.sub-service-industrial-waste__process-branch::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0.125rem;
+  height: 2.1875rem;
+  background-color: #1c499e;
+  content: "";
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.sub-service-industrial-waste__process-branch::after {
+  position: absolute;
+  top: 2.125rem;
+  right: 0;
+  left: 0;
+  height: 0.125rem;
+  background-color: #1c499e;
+  content: "";
+}
+
+.sub-service-industrial-waste__process-list--bottom .sub-service-industrial-waste__process-item::before {
+  position: absolute;
+  top: -1.375rem;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-top: 1.375rem solid #1c499e;
+  border-right: 0.4375rem solid transparent;
+  border-left: 0.4375rem solid transparent;
+  content: "";
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__process-list--bottom .sub-service-industrial-waste__process-item::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__process-list--bottom .sub-service-industrial-waste__process-item:first-child::before {
+    display: block;
+    top: auto;
+    bottom: -0.9375rem;
+    width: 0.125rem;
+    height: 0.9375rem;
+    border: 0;
+    background-color: #1c499e;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__process-list--bottom .sub-service-industrial-waste__process-item:first-child::after {
+    position: absolute;
+    bottom: -2.3125rem;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-top: 1.375rem solid #1c499e;
+    border-right: 0.4375rem solid transparent;
+    border-left: 0.4375rem solid transparent;
+    content: "";
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+.sub-service-industrial-waste__recycling {
+  margin-top: 7.9375rem;
+  padding-top: 8.125rem;
+  padding-bottom: 6.9375rem;
+  background-color: #eaf0f3;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__recycling {
+    padding-top: 4.6875rem;
+    padding-bottom: 3.75rem;
+  }
+}
+
+.sub-service-industrial-waste__recycling-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 4.0625rem;
+}
+@media screen and (max-width: 1280px) {
+  .sub-service-industrial-waste__recycling-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__recycling-list {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-top: 2.625rem;
+  }
+}
+
+.sub-service-industrial-waste__recycling-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 28.4375rem;
+  padding: 2.0625rem;
+  border-radius: 1.25rem;
+  background-color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__recycling-card {
+    min-height: 0;
+    padding: 1.6875rem 1.375rem;
+    border-radius: 0.75rem;
+  }
+}
+
+.sub-service-industrial-waste__recycling-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.25rem;
+  padding-bottom: 1.375rem;
+  border-bottom: 0.0625rem solid #eaf0f3;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__recycling-heading {
+    gap: 0.9375rem;
+    padding-bottom: 1.125rem;
+  }
+}
+
+.sub-service-industrial-waste__recycling-thumbnail {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 3.75rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__recycling-thumbnail {
+    width: 3rem;
+  }
+}
+
+.sub-service-industrial-waste__recycling-title {
+  color: #1c499e;
+  font-size: 1.5rem;
+  line-height: 1.4166666667;
+  letter-spacing: 0em;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__recycling-title {
+    font-size: 1.1875rem;
+    line-height: 1.4736842105;
+    letter-spacing: 0em;
+    font-weight: 700;
+  }
+}
+
+.sub-service-industrial-waste__recycling-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 0.625rem;
+  margin-top: 0;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__recycling-body {
+    padding-top: 1.125rem;
+  }
+}
+
+.sub-service-industrial-waste__recycling-description {
+  font-size: 0.875rem;
+  line-height: 2;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__recycling-description {
+    font-size: 0.875rem;
+    line-height: 1.7857142857;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+  }
+}
+
+.sub-service-industrial-waste__recycling-label {
+  margin-top: 1.25rem;
+  color: #1c499e;
+  font-size: 0.875rem;
+  line-height: 2;
+  letter-spacing: 0em;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__recycling-label {
+    margin-top: 1.125rem;
+    font-size: 0.875rem;
+    line-height: 1.5714285714;
+    letter-spacing: 0em;
+    font-weight: 700;
+  }
+}
+
+.sub-service-industrial-waste__recycling-result {
+  font-size: 0.875rem;
+  line-height: 2;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__recycling-result {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.7857142857;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+  }
+}
+
+ol.sub-service-industrial-waste__recycling-result {
+  padding-left: 1.375rem;
+  list-style: decimal;
+}
+
+.sub-service-industrial-waste__recycling-link {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 0.625rem;
+  color: #1c499e;
+  text-decoration: underline;
+  text-decoration-thickness: 0.0625rem;
+  text-underline-offset: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 2;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__recycling-link {
+    font-size: 0.875rem;
+    line-height: 1.7142857143;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+  }
+}
+
+.sub-service-industrial-waste__recycling-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0.5625rem;
+  padding-top: 1.5625rem;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__recycling-tags {
+    margin-top: 1.25rem;
+    padding-top: 0;
+  }
+}
+
+.sub-service-industrial-waste__recycling-tags li {
+  display: grid;
+  place-items: center;
+  min-width: 4.375rem;
+  min-height: 2.25rem;
+  padding: 0.25rem 0.875rem;
+  border: 0.0625rem solid #1c499e;
+  border-radius: 1.125rem;
+  color: #1c499e;
+  font-size: 0.875rem;
+  line-height: 1.4285714286;
+  letter-spacing: 0em;
+  font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__recycling-tags li {
+    min-width: 3.5rem;
+    min-height: 1.875rem;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    font-weight: 400;
+  }
+}
+
+.sub-service-industrial-waste__flow-note {
+  margin-top: 1.875rem;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste__flow-note {
+    margin-top: 1.5rem;
+  }
+}
+
+.sub-service-industrial-waste__flow-note a {
+  color: #1c499e;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+
+.sub-service-industrial-waste .site-contact-section {
+  padding-top: 6.875rem;
+  background-color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .sub-service-industrial-waste .site-contact-section {
+    padding-top: 4.375rem;
   }
 }

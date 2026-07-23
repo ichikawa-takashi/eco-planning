@@ -251,6 +251,15 @@ $blue-gradient: linear-gradient(90deg, #1c499e 0%, #038be0 100%);
   background: $blue-gradient;
 }
 
+@mixin blue-grid-background {
+  background-color: $blue;
+  background-image:
+    radial-gradient(circle at 50% 50%, rgba($white, 0.021) 0, rgba($white, 0.009) rem(1.5), transparent rem(4)),
+    linear-gradient(to bottom, transparent calc(50% - rem(3)), rgba($white, 0.005) calc(50% - rem(2)), rgba($white, 0.014) 50%, rgba($white, 0.005) calc(50% + rem(2)), transparent calc(50% + rem(3))),
+    linear-gradient(90deg, transparent calc(50% - rem(3)), rgba($white, 0.005) calc(50% - rem(2)), rgba($white, 0.014) 50%, rgba($white, 0.005) calc(50% + rem(2)), transparent calc(50% + rem(3)));
+  background-size: rem(18) rem(18);
+}
+
 body {
   font-family: $sans;
   color: $black;
@@ -312,3 +321,4 @@ $breakpoints: (
 @import "footer";
 @import "service";
 @import "service-demolition";
+@import "service-industrial-waste";

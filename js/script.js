@@ -88,6 +88,51 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         $("html").removeClass("is-fixed");
     }
 
+    // サービス詳細ページのループギャラリー
+    $(".sub-service-detail__visual-gallery-track").each(function () {
+        var track = this;
+        var originalItems = Array.from(track.children);
+
+        if (!originalItems.length || track.classList.contains("is-loop-ready")) return;
+
+        originalItems.forEach(function (item) {
+            item.dataset.galleryOriginal = "true";
+        });
+
+        for (var setIndex = 1; setIndex <= 2; setIndex++) {
+            originalItems.forEach(function (item, itemIndex) {
+                var clone = item.cloneNode(true);
+                clone.dataset.galleryClone = String(setIndex);
+                clone.removeAttribute("data-gallery-original");
+                clone.setAttribute("aria-hidden", "true");
+
+                var cloneImage = clone.querySelector("img");
+                if (cloneImage) cloneImage.setAttribute("alt", "");
+
+                if (itemIndex === 0) clone.dataset.galleryCloneStart = String(setIndex);
+                track.appendChild(clone);
+            });
+        }
+
+        function updateGalleryDistance() {
+            var firstOriginal = track.querySelector("[data-gallery-original='true']");
+            var firstClone = track.querySelector("[data-gallery-clone-start='1']");
+
+            if (!firstOriginal || !firstClone) return;
+
+            var distance = firstClone.offsetLeft - firstOriginal.offsetLeft;
+            track.style.setProperty("--service-detail-gallery-distance", -distance + "px");
+        }
+
+        updateGalleryDistance();
+        requestAnimationFrame(function () {
+            updateGalleryDistance();
+            track.classList.add("is-loop-ready");
+        });
+
+        $(window).on("resize", updateGalleryDistance);
+    });
+
     // modal
     $(".js-modal-open").each(function () {
         $(this).on("click", function (e) {
