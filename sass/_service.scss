@@ -324,25 +324,11 @@
 }
 
 .sub-service__item-button {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: rem(30);
-  width: fit-content;
-  min-width: rem(360);
-  min-height: rem(96);
-  padding-right: rem(18);
-  padding-left: rem(51);
   margin-top: rem(25);
   margin-left: auto;
-  border: rem(1) solid $blue;
-  border-radius: rem(48);
-  background-color: $blue;
-  color: $white;
-  @include font(24,48, 0, $bold);
 
   @include mq("md") {
-    min-width: rem(220);
+    max-width: rem(220);
     min-height: rem(58);
     padding-right: rem(10);
     padding-left: rem(27);
@@ -350,27 +336,11 @@
   }
 }
 
-.sub-service__item-button:hover {
-  @media (hover: hover) {
-    background-color: $white;
-    color: $blue;
-  }
-}
-
 .sub-service__item-button-icon {
-  width: rem(64);
-  height: rem(64);
-  background-color: $navy;
-
   @include mq("md") {
     width: rem(38);
     height: rem(38);
   }
-}
-
-.sub-service__item-button-icon img {
-  width: rem(20);
-  filter: brightness(0) invert(1);
 }
 
 .sub-service__unwanted-details {
@@ -949,6 +919,7 @@ padding-inline: rem(25);
 
 .sub-service__partner-map {
   width: 100%;
+  aspect-ratio: 2400 / 800;
   margin-top: rem(60);
   border-radius: rem(10);
   overflow: hidden;
@@ -958,10 +929,11 @@ padding-inline: rem(25);
   }
 }
 
-.sub-service__partner-map img {
+.sub-service__partner-map iframe {
+  display: block;
+  width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  border: 0;
 }
 
 .sub-service__visual-contact {
@@ -1284,6 +1256,10 @@ padding-inline: rem(25);
   border-bottom: rem(2) solid $white;
 }
 
+.sub-service-detail__table tbody tr:last-child th {
+  border-bottom: 0;
+}
+
 .sub-service-detail__table tbody tr:last-child th:first-child {
   @include mq("md") {
     border-bottom-left-radius: rem(10);
@@ -1528,18 +1504,10 @@ padding-inline: rem(25);
 }
 
 .sub-service-detail__application-link {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: rem(96);
-  padding-right: rem(18);
-  padding-left: rem(50);
-  border-radius: rem(48);
-  background-color: $white;
-  color: $blue;
-  @include font(24, 32, 0, $bold);
+  justify-self: center;
 
   @include mq("md") {
+    max-width: none;
     min-height: rem(66);
     padding-right: rem(10);
     padding-left: rem(25);
@@ -1548,17 +1516,7 @@ padding-inline: rem(25);
   }
 }
 
-.sub-service-detail__application-link:hover {
-  @media (hover: hover) {
-    background-color: #f2f7fa;
-  }
-}
-
 .sub-service-detail__application-icon {
-  width: rem(64);
-  height: rem(64);
-  background-color: $light-blue;
-
   @include mq("md") {
     width: rem(46);
     height: rem(46);
@@ -1566,8 +1524,6 @@ padding-inline: rem(25);
 }
 
 .sub-service-detail__application-icon img {
-  width: rem(20);
-
   @include mq("md") {
     width: rem(15);
   }

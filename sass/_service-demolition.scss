@@ -5,13 +5,13 @@
 .sub-service-demolition__concerns {
   padding-top: rem(100);
   margin-top: rem(120);
-  padding-bottom: rem(140);
+  padding-bottom: rem(145);
   background-color: $light-blue;
 
   @include mq("md") {
     margin-top: rem(70);
     padding-top: rem(60);
-    padding-bottom: rem(65);
+    padding-bottom: rem(70);
   }
 }
 
@@ -225,7 +225,7 @@
 }
 
 .sub-service-demolition__consultation {
-  background-color: $white;
+  margin-top: rem(-15);
 }
 
 .sub-service-demolition__consultation-image {
@@ -433,10 +433,24 @@
 
 .sub-service-demolition__aftercare {
   background-color: $light-blue;
+  background-image: linear-gradient(
+    to bottom,
+    $white 0,
+    $white rem(30),
+    $light-blue rem(30),
+    $light-blue 100%
+  );
   margin-top: rem(160);
 
   @include mq('md'){
     margin-top: rem(70);
+    background-image: linear-gradient(
+      to bottom,
+      $white 0,
+      $white rem(12),
+      $light-blue rem(12),
+      $light-blue 100%
+    );
   }
 }
 
@@ -558,5 +572,26 @@
   @include mq("md") {
     margin-top: rem(18);
     @include font(15, 25, 0, $bold);
+  }
+}
+
+.sub-service-demolition__aftercare + .site-contact-section {
+  background-color: $white;
+  background-image: linear-gradient(
+    to bottom,
+    $light-blue 0,
+    $light-blue rem(20),
+    $white rem(20),
+    $white 100%
+  );
+
+  @include mq("md") {
+    background-image: linear-gradient(
+      to bottom,
+      $light-blue 0,
+      $light-blue rem(12),
+      $white rem(12),
+      $white 100%
+    );
   }
 }

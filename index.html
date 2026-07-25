@@ -6,16 +6,1266 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
-  <!-- <link rel="stylesheet" href="./css/style.css"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&amp;family=Noto+Sans+JP:wght@100..900&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/style.css">
-  <title>Document</title>
+  <title>ECO PLANNING</title>
 </head>
 
-<body>
+<body class="home">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="#">
+        <img src="./img/common/logo-white.png" alt="ECO PLANNING">
+      </a>
+
+      <nav class="site-header__nav js-drawer" aria-label="グローバルナビゲーション">
+        <ul class="site-header__nav-list">
+          <li class="site-header__nav-item">
+            <a class="site-header__nav-link" href="#">私たちについて</a>
+          </li>
+          <li class="site-header__nav-item">
+            <a class="site-header__nav-link" href="#">事業紹介</a>
+          </li>
+          <li class="site-header__nav-item">
+            <a class="site-header__nav-link" href="#">実績・お客様の声</a>
+          </li>
+          <li class="site-header__nav-item">
+            <a class="site-header__nav-link" href="#">ニュース／スタッフ紹介</a>
+          </li>
+        </ul>
+
+        <div class="site-header__buttons">
+          <a class="site-header__button" href="#">
+            <span>recruit</span>
+            <span class="site-arrow-icon site-header__button-icon" aria-hidden="true">
+              <img src="./img/common/arrow-blue.png" alt="">
+            </span>
+          </a>
+          <a class="site-header__button site-header__button--contact" href="#">
+            <span>contact</span>
+            <span class="site-arrow-icon site-header__button-icon" aria-hidden="true">
+              <img src="./img/common/arrow-blue.png" alt="">
+            </span>
+          </a>
+        </div>
+      </nav>
+
+      <button class="site-header__hamburger js-hamburger" type="button" aria-label="メニューを開く">
+        <span class="site-header__hamburger-line"></span>
+        <span class="site-header__hamburger-line"></span>
+        <span class="site-header__hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="top-hero-about">
+      <div class="top-hero-about__background" aria-hidden="true">
+        <div class="top-hero-about__background-sticky">
+          <div class="top-hero-about__slide js-top-background-slide is-active">
+            <img src="./img/top/fv-01.jpg" alt="">
+          </div>
+          <div class="top-hero-about__slide js-top-background-slide">
+            <img src="./img/top/fv-02.jpg" alt="">
+          </div>
+          <div class="top-hero-about__slide js-top-background-slide">
+            <img src="./img/top/fv-03.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="top-hero-about__content">
+        <section class="top-fv">
+          <div class="top-fv__inner">
+            <div class="top-fv__copy">
+              <p class="top-fv__copy-jp">街の純度を高め、人々の暮らしを守る</p>
+              <h1 class="top-fv__copy-en">clean cities.<br>safe lives.</h1>
+            </div>
+          </div>
+        </section>
+
+        <section class="top-about">
+          <div class="top-about__inner inner">
+            <div class="top-about__content">
+              <div class="top-about__heading">
+                <h2 class="top-about__title site-heading site-heading--section-en">about us</h2>
+                <p class="top-about__subtitle">私たちについて</p>
+              </div>
+
+              <p class="top-about__lead">お客様と社会の課題に、<br>私たちはチャレンジし続けます</p>
+
+              <div class="top-about__texts">
+                <p class="top-about__text">2014年の事業スタート以来、三重から東海、関東、そして全国へ。私たちは解体工事や産業廃棄物処理、リサイクル事業のプロとして、全力で駆け抜けてきました。今では全国のハウスメーカー様など、1,400社を超えるお客様に選ばれる実績を築いています。</p>
+                <p class="top-about__text">私たちが何より大切にしているのは、関わるすべての人に対して「誠実であること」です。解体や産業廃棄物の処分は、目の前の課題を解決する手段に過ぎません。お客様の不安や不満に寄り添い、その「困った」を心までスッキリさせるために力を続けること。それこそが私たちの存在意義です。未来を共につくるパートナーとして、ぜひエコ・プランニングを頼ってください。</p>
+              </div>
+
+              <a class="site-wide-button site-wide-button--white top-about__button" href="#">
+                <span>私たちについて</span>
+                <span class="site-arrow-icon site-wide-button__icon top-about__button-icon" aria-hidden="true">
+                  <img src="./img/common/arrow-blue.png" alt="">
+                </span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <section class="top-services">
+      <div class="site-raised-panel top-services__panel">
+        <div class="top-services__inner inner">
+          <div class="top-services__heading">
+            <h2 class="top-services__title site-heading site-heading--section-en">services</h2>
+            <p class="top-services__subtitle">事業内容</p>
+          </div>
+
+          <p class="top-services__lead">各種建物解体工事、産業廃棄物の運搬・リサイクルや処理に至るまで、トータルで行います。</p>
+
+          <ol class="top-services__list">
+            <li class="top-services__item">
+              <div class="top-services__image">
+                <img src="./img/service/service-demolition.jpg" alt="解体工事を行うスタッフ">
+              </div>
+              <div class="top-services__item-body">
+                <div class="top-services__number">
+                  <span class="top-services__number-label">service</span>
+                  <span class="top-services__number-value">01</span>
+                </div>
+                <div class="top-services__item-content">
+                  <h3 class="top-services__item-title">解体・アスベスト</h3>
+                  <p class="top-services__item-text">解体工事とは、今まで家族が過ごした大切な家を壊す工事。または仲間と過ごした場所、快適に過ごした会社や施設を壊す工事。そんな思い出が沢山つまった家を「ただ壊せばいい」そんな思いで仕事をしたくありません。</p>
+                  <a class="top-services__item-link" href="#">
+                    <span>詳しくはこちら</span>
+                    <span class="site-arrow-icon top-services__item-link-icon" aria-hidden="true">
+                      <img src="./img/common/arrow-white.png" alt="">
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="top-services__item">
+              <div class="top-services__image">
+                <img src="./img/service/service-collection.jpg" alt="産業廃棄物を回収する作業車">
+              </div>
+              <div class="top-services__item-body">
+                <div class="top-services__number">
+                  <span class="top-services__number-label">service</span>
+                  <span class="top-services__number-value">02</span>
+                </div>
+                <div class="top-services__item-content">
+                  <h3 class="top-services__item-title">産業廃棄物回収</h3>
+                  <p class="top-services__item-text">解体現場や建設現場から毎日排出される様々な産業廃棄物。エコ・プランニングは現場から産業廃棄物を速やかに回収し、処分することで、現場管理や美化のサポートをいたします。</p>
+                  <a class="top-services__item-link" href="#">
+                    <span>詳しくはこちら</span>
+                    <span class="site-arrow-icon top-services__item-link-icon" aria-hidden="true">
+                      <img src="./img/common/arrow-white.png" alt="">
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="top-services__item">
+              <div class="top-services__image">
+                <img src="./img/service/service-drop-off.jpg" alt="産業廃棄物を運搬するトラック">
+              </div>
+              <div class="top-services__item-body">
+                <div class="top-services__number">
+                  <span class="top-services__number-label">service</span>
+                  <span class="top-services__number-value">03</span>
+                </div>
+                <div class="top-services__item-content">
+                  <h3 class="top-services__item-title">産業廃棄物持ち込み</h3>
+                  <p class="top-services__item-text">通常時間中は予約なしで即日持ち込み対応可能です。また、ご予約いただければ早朝から夜間・休日に至るまで受け入れ可能ですので、まずはお気軽にご相談ください。</p>
+                  <a class="top-services__item-link" href="#">
+                    <span>詳しくはこちら</span>
+                    <span class="site-arrow-icon top-services__item-link-icon" aria-hidden="true">
+                      <img src="./img/common/arrow-white.png" alt="">
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="top-services__item">
+              <div class="top-services__image">
+                <img src="./img/service/service-unwanted-items.jpg" alt="不用品回収前の室内">
+              </div>
+              <div class="top-services__item-body">
+                <div class="top-services__number">
+                  <span class="top-services__number-label">service</span>
+                  <span class="top-services__number-value">04</span>
+                </div>
+                <div class="top-services__item-content">
+                  <h3 class="top-services__item-title">不用品回収・買取</h3>
+                  <p class="top-services__item-text">解体工事や産廃処理の過程で回収した廃材・金属・木材などを再資源化し、リサイクル商品として販売しています。</p>
+                  <a class="top-services__item-link" href="#">
+                    <span>詳しくはこちら</span>
+                    <span class="site-arrow-icon top-services__item-link-icon" aria-hidden="true">
+                      <img src="./img/common/arrow-white.png" alt="">
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="top-services__item">
+              <div class="top-services__image">
+                <img src="./img/service/service-house-cleaning.jpg" alt="ハウスクリーニングの様子">
+              </div>
+              <div class="top-services__item-body">
+                <div class="top-services__number">
+                  <span class="top-services__number-label">service</span>
+                  <span class="top-services__number-value">05</span>
+                </div>
+                <div class="top-services__item-content">
+                  <h3 class="top-services__item-title">ハウスクリーニング</h3>
+                  <p class="top-services__item-text">元タレントの実業家・入江慎也氏が率いる清掃のプロ「ピカピカ」とのFC契約により実現した、ハウスクリーニング。解体・不用品回収との相乗効果を活かし、住まいの困りごと全般をワンストップで解決いたします。</p>
+                  <a class="top-services__item-link" href="#">
+                    <span>詳しくはこちら</span>
+                    <span class="site-arrow-icon top-services__item-link-icon" aria-hidden="true">
+                      <img src="./img/common/arrow-white.png" alt="">
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="top-services__item">
+              <div class="top-services__image">
+                <img src="./img/service/service-overseas.jpg" alt="都市と握手を組み合わせたイメージ">
+              </div>
+              <div class="top-services__item-body">
+                <div class="top-services__number">
+                  <span class="top-services__number-label">service</span>
+                  <span class="top-services__number-value">06</span>
+                </div>
+                <div class="top-services__item-content">
+                  <h3 class="top-services__item-title">海外事業</h3>
+                  <p class="top-services__item-text">JICAと連携し、南米ペルーのゴミ問題解決と雇用の創出を計画。将来的には中南米全域への技術移転を通して、グローバルな循環型社会の構築を目指しています。</p>
+                  <a class="top-services__item-link" href="#">
+                    <span>詳しくはこちら</span>
+                    <span class="site-arrow-icon top-services__item-link-icon" aria-hidden="true">
+                      <img src="./img/common/arrow-white.png" alt="">
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ol>
+
+          <a class="site-wide-button site-wide-button--blue top-services__button" href="#">
+            <span>事業内容一覧</span>
+            <span class="site-arrow-icon site-wide-button__icon top-services__button-icon" aria-hidden="true">
+              <img src="./img/common/arrow-white.png" alt="">
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="top-reasons">
+      <div class="top-reasons__heading inner">
+        <h2 class="top-reasons__title site-heading site-heading--section-en">reasons</h2>
+        <p class="top-reasons__subtitle">エコ・プランニングが選ばれる5つの理由</p>
+      </div>
+
+      <div class="swiper top-reasons__slider js-top-reasons-slider">
+        <div class="swiper-wrapper">
+          <article class="swiper-slide top-reasons__slide">
+            <div class="top-reasons__card">
+              <div class="top-reasons__number">
+                <span class="top-reasons__number-label">reason</span>
+                <span class="top-reasons__number-value">01</span>
+              </div>
+              <div class="top-reasons__image">
+                <img src="./img/service-industrial-waste/feature-trust.jpg" alt="重機を操作するスタッフ">
+              </div>
+              <div class="top-reasons__content">
+                <p class="top-reasons__tag">エコ・プランニングが選ばれる理由</p>
+                <h3 class="top-reasons__card-title">創業60年の圧倒的な<br>キャリア</h3>
+                <p class="top-reasons__text">解体工事、産業廃棄物処理という業界で、環境や社会の為に様々な変化と挑戦をし続けて参りました。</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="swiper-slide top-reasons__slide">
+            <div class="top-reasons__card">
+              <div class="top-reasons__number">
+                <span class="top-reasons__number-label">reason</span>
+                <span class="top-reasons__number-value">02</span>
+              </div>
+              <div class="top-reasons__image">
+                <img src="./img/common/flow-document-application.jpg" alt="パソコンを使用するスタッフ">
+              </div>
+              <div class="top-reasons__content">
+                <p class="top-reasons__tag">エコ・プランニングが選ばれる理由</p>
+                <h3 class="top-reasons__card-title">土曜・祝日も稼働。<br>夜間工事にも対応可能</h3>
+                <p class="top-reasons__text">土曜や祝日も稼働しており、早朝の持ち込みや夜間工事などご要望をお気軽にご相談ください。</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="swiper-slide top-reasons__slide">
+            <div class="top-reasons__card">
+              <div class="top-reasons__number">
+                <span class="top-reasons__number-label">reason</span>
+                <span class="top-reasons__number-value">03</span>
+              </div>
+              <div class="top-reasons__image">
+                <img src="./img/service-demolition/aftercare.jpg" alt="現場で働く3名のスタッフ">
+              </div>
+              <div class="top-reasons__content">
+                <p class="top-reasons__tag">エコ・プランニングが選ばれる理由</p>
+                <h3 class="top-reasons__card-title">お客様も自分たちも<br>ワクワクできるよう、<br>常に変化し続ける</h3>
+                <p class="top-reasons__text">リサイクル率の向上を追求しながら、お客様が驚くような満足を追求し続けます！</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="swiper-slide top-reasons__slide">
+            <div class="top-reasons__card">
+              <div class="top-reasons__number">
+                <span class="top-reasons__number-label">reason</span>
+                <span class="top-reasons__number-value">04</span>
+              </div>
+              <div class="top-reasons__image">
+                <img src="./img/service-drop-off/feature-factories.jpg" alt="エコ・プランニングの処理工場">
+              </div>
+              <div class="top-reasons__content">
+                <p class="top-reasons__tag">エコ・プランニングが選ばれる理由</p>
+                <h3 class="top-reasons__card-title">自社最終処分場を保有</h3>
+                <p class="top-reasons__text">収集運搬から最終処分まで一元管理。不透明なリスクを排除し、確実な適正処理を約束。</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="swiper-slide top-reasons__slide">
+            <div class="top-reasons__card">
+              <div class="top-reasons__number">
+                <span class="top-reasons__number-label">reason</span>
+                <span class="top-reasons__number-value">05</span>
+              </div>
+              <div class="top-reasons__image">
+                <img src="./img/service-industrial-waste/feature-demolition.jpg" alt="フォークリフトを操作するスタッフ">
+              </div>
+              <div class="top-reasons__content">
+                <p class="top-reasons__tag">エコ・プランニングが選ばれる理由</p>
+                <h3 class="top-reasons__card-title">年間1万件の<br>圧倒的な回収実績</h3>
+                <p class="top-reasons__text">三重県下最大級の取引額と豊富な車両。現場を止めない圧倒的なスピード回収を叶えます。</p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <button class="top-reasons__navigation top-reasons__navigation--prev" type="button" aria-label="前の理由を表示">←</button>
+        <button class="top-reasons__navigation top-reasons__navigation--next" type="button" aria-label="次の理由を表示">→</button>
+        <div class="swiper-pagination top-reasons__pagination"></div>
+      </div>
+    </section>
+
+    <section class="top-strengths">
+      <img class="top-strengths__pattern top-strengths__pattern--01" src="./img/top/strength-pattern-01.png" alt="" aria-hidden="true">
+      <img class="top-strengths__pattern top-strengths__pattern--02" src="./img/top/strength-pattern-02.png" alt="" aria-hidden="true">
+
+      <div class="top-strengths__inner inner">
+        <div class="top-strengths__heading">
+          <h2 class="top-strengths__title site-heading site-heading--section-en">strengths</h2>
+          <p class="top-strengths__subtitle">他社との違い</p>
+        </div>
+
+        <ol class="top-strengths__list">
+          <li class="top-strengths__item">
+            <div class="top-strengths__image">
+              <img src="./img/top/strength-01.jpg" alt="解体現場に立つスタッフ">
+            </div>
+            <div class="top-strengths__content">
+              <div class="top-strengths__label">
+                <div class="top-strengths__number">
+                  <span class="top-strengths__number-label">strength</span>
+                  <span class="top-strengths__number-value">01</span>
+                </div>
+                <span class="top-strengths__keyword">challenge</span>
+              </div>
+              <h3 class="top-strengths__item-title">「きつい・汚い・危険」を<br>ひっくり返す、常識破りの挑戦。</h3>
+              <p class="top-strengths__text">建築業界につきまとう「きつい・汚い・危険」という旧態依然としたイメージ。私たちはこれを「かっこいい・稼げる・感動」の新しいスタンダードへと変革すべく、常識にとらわれない挑戦を続けています。例えば、ペルーでの環境・リサイクル事業への進出や、地域を巻き込んだ大型フェスの開催など、同業他社が踏み込まない領域にも果敢に挑戦。「世間が抱く業界のイメージを打破しよう」という強い意志のもと、常にワクワクしながら新しい価値を創造し、業界の未来を面白く切り拓く開拓者であり続けます。</p>
+            </div>
+          </li>
+
+          <li class="top-strengths__item top-strengths__item--reverse">
+            <div class="top-strengths__content">
+              <div class="top-strengths__label">
+                <div class="top-strengths__number">
+                  <span class="top-strengths__number-label">strength</span>
+                  <span class="top-strengths__number-value">02</span>
+                </div>
+                <span class="top-strengths__keyword">purity</span>
+              </div>
+              <h3 class="top-strengths__item-title">街の純度を高める<br>「地域社会へのインフラ<br>としての自負」</h3>
+              <p class="top-strengths__text">私たちが日々向き合っているのは、単なる「ゴミ」や「古い建物」ではありません。建物を解体し、廃棄物を適正に処理しリサイクルして循環させることで、その先にある「地域の皆さまの安全で快適な暮らし」を支えています。「街の純度を高め、人々の暮らしを守る」というパーパスを胸に、地域社会に必要不可欠なインフラであるという強い自負を持っています。</p>
+            </div>
+            <div class="top-strengths__image">
+              <img src="./img/top/strength-02.jpg" alt="街を行き交う人々">
+            </div>
+          </li>
+
+          <li class="top-strengths__item">
+            <div class="top-strengths__image">
+              <img src="./img/service/fv.jpg" alt="現場で打ち合わせを行うスタッフ">
+            </div>
+            <div class="top-strengths__content">
+              <div class="top-strengths__label">
+                <div class="top-strengths__number">
+                  <span class="top-strengths__number-label">strength</span>
+                  <span class="top-strengths__number-value">03</span>
+                </div>
+                <span class="top-strengths__keyword">diversity</span>
+              </div>
+              <h3 class="top-strengths__item-title">若い力と多様性が生み出す<br>「人に尽くすプロ集団」</h3>
+              <p class="top-strengths__text">エコ・プランニング最大の原動力は、年齢や国籍、経歴もバラバラな個性豊かな社員たちです。異業種から飛び込んできたメンバーも多く、従来の業界にはなかった柔軟な発想や高いホスピタリティを持ち合わせています。「自ら楽しみながら、関わる人達に尽くそう」という価値観を共有し、既成概念のない親しみやすい対応で、お客様の細かな「困った」に寄り添います。多様なバックグラウンドを持つメンバーが集まることで生まれる化学反応が、枠にとらわれない柔軟な課題解決力と、誠実で心温まるサービスを生み出しています。</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <div class="top-strengths__keywords">
+        <div class="top-strengths__keyword-loop js-keyword-loop">
+          <div class="top-strengths__keyword-motion">
+            <ul class="top-strengths__keyword-track">
+              <li class="top-strengths__keyword-item"><img src="./img/top/keyword-one-stop.png" alt=""><span>ワンストップ対応</span></li>
+              <li class="top-strengths__keyword-item"><img src="./img/top/keyword-demolition.png" alt=""><span>解体のプロ</span></li>
+              <li class="top-strengths__keyword-item"><img src="./img/top/keyword-industrial-waste.png" alt=""><span>産廃もおまかせ</span></li>
+              <li class="top-strengths__keyword-item"><img src="./img/top/keyword-contract.png" alt=""><span>電子契約OK</span></li>
+              <li class="top-strengths__keyword-item"><img src="./img/top/keyword-disposal-site.png" alt=""><span>自社処分場あり</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="top-strengths__keyword-loop top-strengths__keyword-loop--reverse js-keyword-loop">
+          <div class="top-strengths__keyword-motion">
+            <ul class="top-strengths__keyword-track">
+              <li class="top-strengths__keyword-item"><img src="./img/top/keyword-credit-card.png" alt=""><span>クレカ決済可</span></li>
+              <li class="top-strengths__keyword-item"><img src="./img/top/keyword-field.png" alt=""><span>現場に強い</span></li>
+              <li class="top-strengths__keyword-item"><img src="./img/top/keyword-documents.png" alt=""><span>書類も安心</span></li>
+              <li class="top-strengths__keyword-item"><img src="./img/top/keyword-recycled-stone.png" alt=""><span>再生砕石販売</span></li>
+              <li class="top-strengths__keyword-item"><img src="./img/top/keyword-local.png" alt=""><span>地元密着</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="top-voices">
+      <div class="top-voices__panel">
+        <div class="top-voices__heading inner">
+          <div>
+            <h2 class="top-voices__title site-heading site-heading--section-en">voices</h2>
+            <p class="top-voices__subtitle">お客様の声</p>
+          </div>
+          <p class="top-voices__lead">エコ・プランニングに届いた<br>お客様のお喜びの声を、一部ですがご紹介させていただいております</p>
+        </div>
+
+        <div class="swiper top-voices__slider js-top-voices-slider">
+          <div class="swiper-wrapper">
+            <article class="swiper-slide top-voices__slide">
+              <div class="top-voices__image">
+                <img src="./img/service-drop-off/feature-total-support.jpg" alt="お客様へのインタビュー">
+              </div>
+              <div class="top-voices__card-body">
+                <p class="top-voices__number"><span>voice</span><strong>#1</strong></p>
+                <div class="top-voices__content">
+                  <ul class="top-voices__tags">
+                    <li>不用品回収</li>
+                  </ul>
+                  <p class="top-voices__company">三重県　○○様</p>
+                  <h3 class="top-voices__card-title">ダミー：記事タイトルです 新着順でトップページにも表示します。</h3>
+                  <a class="top-voices__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-voices__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="swiper-slide top-voices__slide">
+              <div class="top-voices__image">
+                <img src="./img/service-demolition/consultation.jpg" alt="施工を担当したスタッフ">
+              </div>
+              <div class="top-voices__card-body">
+                <p class="top-voices__number"><span>voice</span><strong>#2</strong></p>
+                <div class="top-voices__content">
+                  <ul class="top-voices__tags">
+                    <li>解体工事</li>
+                    <li>産業廃棄物回収</li>
+                  </ul>
+                  <p class="top-voices__company">株式会社○○　○○様</p>
+                  <h3 class="top-voices__card-title">ダミー：記事タイトルです 新着順でトップページにも表示します。</h3>
+                  <a class="top-voices__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-voices__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="swiper-slide top-voices__slide">
+              <div class="top-voices__image">
+                <img src="./img/service-drop-off/feature-contract.jpg" alt="お客様対応を行うスタッフ">
+              </div>
+              <div class="top-voices__card-body">
+                <p class="top-voices__number"><span>voice</span><strong>#3</strong></p>
+                <div class="top-voices__content">
+                  <ul class="top-voices__tags">
+                    <li>電子マニフェスト対応代行</li>
+                  </ul>
+                  <p class="top-voices__company">株式会社○○　○○様</p>
+                  <h3 class="top-voices__card-title">ダミー：記事タイトルです 新着順でトップページにも表示します。</h3>
+                  <a class="top-voices__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-voices__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="swiper-slide top-voices__slide">
+              <div class="top-voices__image">
+                <img src="./img/service-drop-off/feature-factories.jpg" alt="産業廃棄物の処理工場">
+              </div>
+              <div class="top-voices__card-body">
+                <p class="top-voices__number"><span>voice</span><strong>#4</strong></p>
+                <div class="top-voices__content">
+                  <ul class="top-voices__tags">
+                    <li>産業廃棄物持込</li>
+                  </ul>
+                  <p class="top-voices__company">三重県　○○様</p>
+                  <h3 class="top-voices__card-title">ダミー：記事タイトルです 新着順でトップページにも表示します。</h3>
+                  <a class="top-voices__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-voices__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="swiper-slide top-voices__slide">
+              <div class="top-voices__image">
+                <img src="./img/service-industrial-waste/feature-demolition.jpg" alt="回収作業を行うスタッフ">
+              </div>
+              <div class="top-voices__card-body">
+                <p class="top-voices__number"><span>voice</span><strong>#5</strong></p>
+                <div class="top-voices__content">
+                  <ul class="top-voices__tags">
+                    <li>産業廃棄物回収</li>
+                  </ul>
+                  <p class="top-voices__company">株式会社○○　○○様</p>
+                  <h3 class="top-voices__card-title">ダミー：記事タイトルです 新着順でトップページにも表示します。</h3>
+                  <a class="top-voices__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-voices__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <button class="top-voices__navigation top-voices__navigation--prev" type="button" aria-label="前のお客様の声を表示">
+            <img src="./img/common/arrow-blue.png" alt="">
+          </button>
+          <button class="top-voices__navigation top-voices__navigation--next" type="button" aria-label="次のお客様の声を表示">
+            <img src="./img/common/arrow-blue.png" alt="">
+          </button>
+        </div>
+
+        <div class="top-voices__bottom inner">
+          <a class="site-wide-button site-wide-button--blue top-voices__button" href="#">
+            <span>お客様の声一覧</span>
+            <span class="site-arrow-icon site-wide-button__icon top-voices__button-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="top-works">
+      <div class="top-works__mark" aria-hidden="true"></div>
+
+      <div class="top-works__heading inner">
+        <div>
+          <h2 class="top-works__title site-heading site-heading--section-en">works</h2>
+          <p class="top-works__subtitle">実績のご紹介</p>
+        </div>
+        <div class="top-works__heading-text">
+          <p class="top-works__lead">エコ・プランニングがこれまでに携わった<br>解体工事や、さまざまなソリューションの実績をご紹介します</p>
+          <p class="top-works__note">掲載内容は一部です。より詳しい施工内容はお問い合わせください</p>
+        </div>
+      </div>
+
+      <div class="swiper top-works__slider js-top-works-slider">
+        <div class="swiper-wrapper">
+          <article class="swiper-slide top-works__slide">
+            <div class="top-works__image">
+              <img src="./img/service/service-demolition.jpg" alt="解体工事の施工実績">
+            </div>
+            <p class="top-works__number"><span>works</span><strong>01</strong></p>
+            <div class="top-works__content">
+              <div class="top-works__meta">
+                <span class="top-works__tag">解体工事</span>
+                <span class="top-works__company">株式会社○○　○○様</span>
+              </div>
+              <h3 class="top-works__card-title">ダミー：記事タイトルです 新着順でトップページにも表示します。</h3>
+              <a class="top-works__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-works__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
+            </div>
+          </article>
+
+          <article class="swiper-slide top-works__slide">
+            <div class="top-works__image">
+              <img src="./img/service-industrial-waste/disposal-thumbnail.jpg" alt="産業廃棄物回収の実績">
+            </div>
+            <p class="top-works__number"><span>works</span><strong>02</strong></p>
+            <div class="top-works__content">
+              <div class="top-works__meta">
+                <span class="top-works__tag">産業廃棄物回収</span>
+                <span class="top-works__company">株式会社○○　○○様</span>
+              </div>
+              <h3 class="top-works__card-title">ダミー：記事タイトルです 新着順でトップページにも表示します。</h3>
+              <a class="top-works__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-works__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
+            </div>
+          </article>
+
+          <article class="swiper-slide top-works__slide">
+            <div class="top-works__image">
+              <img src="./img/service-drop-off/feature-factories.jpg" alt="工場への持ち込み実績">
+            </div>
+            <p class="top-works__number"><span>works</span><strong>03</strong></p>
+            <div class="top-works__content">
+              <div class="top-works__meta">
+                <span class="top-works__tag">産業廃棄物持込</span>
+                <span class="top-works__company">株式会社○○　○○様</span>
+              </div>
+              <h3 class="top-works__card-title">ダミー：記事タイトルです 新着順でトップページにも表示します。</h3>
+              <a class="top-works__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-works__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
+            </div>
+          </article>
+
+          <article class="swiper-slide top-works__slide">
+            <div class="top-works__image">
+              <img src="./img/service-industrial-waste/feature-demolition.jpg" alt="廃棄物処理の実績">
+            </div>
+            <p class="top-works__number"><span>works</span><strong>04</strong></p>
+            <div class="top-works__content">
+              <div class="top-works__meta">
+                <span class="top-works__tag">廃棄物処理</span>
+                <span class="top-works__company">株式会社○○　○○様</span>
+              </div>
+              <h3 class="top-works__card-title">ダミー：記事タイトルです 新着順でトップページにも表示します。</h3>
+              <a class="top-works__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-works__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
+            </div>
+          </article>
+
+          <article class="swiper-slide top-works__slide">
+            <div class="top-works__image">
+              <img src="./img/service-drop-off/feature-contract.jpg" alt="電子契約を活用した対応実績">
+            </div>
+            <p class="top-works__number"><span>works</span><strong>05</strong></p>
+            <div class="top-works__content">
+              <div class="top-works__meta">
+                <span class="top-works__tag">電子契約対応</span>
+                <span class="top-works__company">株式会社○○　○○様</span>
+              </div>
+              <h3 class="top-works__card-title">ダミー：記事タイトルです 新着順でトップページにも表示します。</h3>
+              <a class="top-works__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-works__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
+            </div>
+          </article>
+        </div>
+
+        <button class="top-works__navigation top-works__navigation--prev" type="button" aria-label="前の実績を表示">
+          <img src="./img/common/arrow-blue.png" alt="">
+        </button>
+        <button class="top-works__navigation top-works__navigation--next" type="button" aria-label="次の実績を表示">
+          <img src="./img/common/arrow-blue.png" alt="">
+        </button>
+      </div>
+
+      <div class="top-works__bottom inner">
+        <a class="site-wide-button site-wide-button--blue top-works__button" href="#">
+          <span>実績一覧</span>
+          <span class="site-arrow-icon site-wide-button__icon top-works__button-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="top-flow">
+      <div class="site-raised-panel top-flow__panel">
+        <div class="top-flow__inner inner">
+          <div class="top-flow__heading">
+            <h2 class="top-flow__title site-heading site-heading--section-en">flow</h2>
+            <p class="top-flow__subtitle site-heading-subtitle site-heading-subtitle--default">ご依頼の流れ</p>
+          </div>
+
+          <div class="top-flow__tabs" role="tablist" aria-label="サービス別のご依頼の流れ">
+            <button class="top-flow__tab js-top-flow-tab is-active" id="top-flow-tab-demolition" type="button" role="tab" aria-selected="true" aria-controls="top-flow-panel-demolition" data-flow-target="demolition">解体・アスベスト</button>
+            <button class="top-flow__tab js-top-flow-tab" id="top-flow-tab-industrial-waste" type="button" role="tab" aria-selected="false" aria-controls="top-flow-panel-industrial-waste" data-flow-target="industrial-waste" tabindex="-1">産業廃棄物回収</button>
+            <button class="top-flow__tab js-top-flow-tab" id="top-flow-tab-drop-off" type="button" role="tab" aria-selected="false" aria-controls="top-flow-panel-drop-off" data-flow-target="drop-off" tabindex="-1">産業廃棄物持ち込み</button>
+            <button class="top-flow__tab js-top-flow-tab" id="top-flow-tab-unwanted" type="button" role="tab" aria-selected="false" aria-controls="top-flow-panel-unwanted" data-flow-target="unwanted" tabindex="-1">不用品回収・買取</button>
+            <button class="top-flow__tab js-top-flow-tab" id="top-flow-tab-house-cleaning" type="button" role="tab" aria-selected="false" aria-controls="top-flow-panel-house-cleaning" data-flow-target="house-cleaning" tabindex="-1">ハウスクリーニング</button>
+          </div>
+
+          <div class="top-flow__content js-top-flow-panel" id="top-flow-panel-demolition" role="tabpanel" aria-labelledby="top-flow-tab-demolition" data-flow-panel="demolition">
+            <div class="site-flow">
+              <ol class="site-flow__list">
+                <li class="site-flow__item">
+                  <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">01</span></div>
+                  <div class="site-flow__image"><img src="./img/common/flow-contact.jpg" alt="電話でお問い合わせを受けるスタッフ"></div>
+                  <div class="site-flow__content">
+                    <h3 class="site-flow__title">お問い合わせ</h3>
+                    <p class="site-flow__text">電話またはお問い合わせフォームより、<br>ご連絡お願いいたします。</p>
+                  </div>
+                </li>
+                <li class="site-flow__item">
+                  <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">02</span></div>
+                  <div class="site-flow__image"><img src="./img/common/flow-site-survey.jpg" alt="解体現場を調査するスタッフ"></div>
+                  <div class="site-flow__content">
+                    <h3 class="site-flow__title">現地調査・お見積り</h3>
+                    <p class="site-flow__text">現地調査を行ない、詳細なお見積りを<br>ご提出させていただきます。</p>
+                  </div>
+                </li>
+                <li class="site-flow__item">
+                  <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">03</span></div>
+                  <div class="site-flow__image"><img src="./img/common/flow-contract.jpg" alt="契約を交わす様子"></div>
+                  <div class="site-flow__content">
+                    <h3 class="site-flow__title">ご契約</h3>
+                    <p class="site-flow__text">施工内容やお見積り金額に疑問や<br>不満がなければご契約成立となります。</p>
+                  </div>
+                </li>
+                <li class="site-flow__item">
+                  <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">04</span></div>
+                  <div class="site-flow__image"><img src="./img/common/flow-document-application.jpg" alt="申請書類を作成する様子"></div>
+                  <div class="site-flow__content">
+                    <h3 class="site-flow__title">リサイクル法届出書役所申請</h3>
+                    <p class="site-flow__text">弊社にて各種提出書類を作成し、提出しますので、<br>お手を煩わせません。</p>
+                  </div>
+                </li>
+                <li class="site-flow__item">
+                  <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">05</span></div>
+                  <div class="site-flow__image"><img src="./img/common/flow-estimate.jpg" alt="近隣へ挨拶するスタッフ"></div>
+                  <div class="site-flow__content">
+                    <h3 class="site-flow__title">近隣挨拶</h3>
+                    <p class="site-flow__text">下記はすべてダミーテキストです。<br>この度は、弊社をご利用いただき誠にありがとうございます。</p>
+                  </div>
+                </li>
+                <li class="site-flow__item">
+                  <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">06</span></div>
+                  <div class="site-flow__image"><img src="./img/common/flow-demolition-work.jpg" alt="解体工事を行うスタッフ"></div>
+                  <div class="site-flow__content">
+                    <h3 class="site-flow__title">解体工事</h3>
+                    <p class="site-flow__text">細心の注意を払い、慎重かつ迅速に解体工事を進めさせていただきます。</p>
+                  </div>
+                </li>
+                <li class="site-flow__item">
+                  <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">07</span></div>
+                  <div class="site-flow__image"><img src="./img/common/flow-completion-inspection.jpg" alt="解体工事完了後の立ち合い"></div>
+                  <div class="site-flow__content">
+                    <h3 class="site-flow__title">工事完了立ち合い</h3>
+                    <p class="site-flow__text">解体後、お客様に現場を見ていただき、OKをいただきましたら、<br>完了となります。</p>
+                  </div>
+                </li>
+                <li class="site-flow__item">
+                  <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">08</span></div>
+                  <div class="site-flow__image"><img src="./img/common/flow-invoice-payment.jpg" alt="請求と支払いについて案内するスタッフ"></div>
+                  <div class="site-flow__content">
+                    <h3 class="site-flow__title">請求書の発行・お支払</h3>
+                    <p class="site-flow__text">後日、請求書を発行いたしますので、お支払いをお願いいたします。<br>現地調査を行ない、詳細なお見積りをご提出させていただきます。</p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="top-flow__content js-top-flow-panel" id="top-flow-panel-industrial-waste" role="tabpanel" aria-labelledby="top-flow-tab-industrial-waste" data-flow-panel="industrial-waste" hidden>
+            <div class="site-flow">
+              <ol class="site-flow__list">
+                <li class="site-flow__item">
+                  <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">01</span></div>
+                  <div class="site-flow__image"><img src="./img/common/flow-contact.jpg" alt="電話でお問い合わせを受けるスタッフ"></div>
+                  <div class="site-flow__content">
+                    <h3 class="site-flow__title">お問い合わせ</h3>
+                    <p class="site-flow__text">電話またはお問い合わせフォームより、<br>ご連絡お願いいたします。</p>
+                  </div>
+                </li>
+                <li class="site-flow__item">
+                  <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">02</span></div>
+                  <div class="site-flow__image"><img src="./img/common/flow-site-survey.jpg" alt="産業廃棄物を確認するスタッフ"></div>
+                  <div class="site-flow__content">
+                    <h3 class="site-flow__title">訪問および現場確認</h3>
+                    <p class="site-flow__text">現地、御社事務所等にて廃棄物の確認をさせていただきます。<br>設置場所の地図と設置箇所の図面等をお送りください。<br>契約や見積もりもその後提出いたします。</p>
+                    <p class="site-flow__text"><a class="top-flow__text-link" href="#">お持込の方</a>については、これ以上の手続きは必要ありません。<br>予約不要でいつでも持込可能です。</p>
+                  </div>
+                </li>
+                <li class="site-flow__item">
+                  <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">03</span></div>
+                  <div class="site-flow__image"><img src="./img/service-industrial-waste/feature-container.jpg" alt="産業廃棄物回収用のコンテナ"></div>
+                  <div class="site-flow__content">
+                    <h3 class="site-flow__title">コンテナ設置</h3>
+                    <p class="site-flow__text">お電話、LINE、メールにて弊社事務所まで所定の依頼書をお送りいただき、その後現場にお伺いします。必要な情報をご提供いただき、使用用途に応じてご希望のサイズのコンテナを設置させていただきます。</p>
+                  </div>
+                </li>
+                <li class="site-flow__item">
+                  <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">04</span></div>
+                  <div class="site-flow__image"><img src="./img/common/flow-request.jpg" alt="電話で回収依頼を受けるスタッフ"></div>
+                  <div class="site-flow__content">
+                    <h3 class="site-flow__title">回収依頼の連絡</h3>
+                    <p class="site-flow__text">お電話、LINE、メールにて弊社事務所まで所定の依頼書をお送りいただき、その後現場にお伺いします。<br>最短で翌日〜3日にて回収にお伺いいたします。</p>
+                  </div>
+                </li>
+                <li class="site-flow__item">
+                  <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">05</span></div>
+                  <div class="site-flow__image"><img src="./img/common/flow-collection.jpg" alt="工場で産業廃棄物を回収する様子"></div>
+                  <div class="site-flow__content">
+                    <h3 class="site-flow__title">回収</h3>
+                    <p class="site-flow__text">内容物に応じて適切な工場に搬入し、処分いたします。</p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="top-flow__content js-top-flow-panel" id="top-flow-panel-drop-off" role="tabpanel" aria-labelledby="top-flow-tab-drop-off" data-flow-panel="drop-off" hidden>
+            <div class="site-flow">
+              <ol class="site-flow__list">
+                <li class="site-flow__item">
+                  <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">01</span></div>
+                  <div class="site-flow__image"><img src="./img/service-drop-off/feature-factories.jpg" alt="産業廃棄物を持ち込む工場"></div>
+                  <div class="site-flow__content">
+                    <h3 class="site-flow__title">工場へ持込</h3>
+                    <p class="site-flow__text">予約不要でいつでも持込可能です。<br>搬入可能日：月曜日〜土曜日<br>搬入可能時間：8:00〜12:00、12:50〜17:00<br>土曜日や祝日も稼働しておりますので、他社に搬入ができない場合は安心してお持ち込みください。</p>
+                  </div>
+                </li>
+                <li class="site-flow__item">
+                  <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">02</span></div>
+                  <div class="site-flow__image"><img src="./img/common/flow-collection.jpg" alt="工場で産業廃棄物を回収する様子"></div>
+                  <div class="site-flow__content">
+                    <h3 class="site-flow__title">回収</h3>
+                    <p class="site-flow__text">内容物に応じて適切な工場に搬入し、処分いたします。</p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="top-flow__content js-top-flow-panel" id="top-flow-panel-unwanted" role="tabpanel" aria-labelledby="top-flow-tab-unwanted" data-flow-panel="unwanted" hidden>
+            <div class="site-flow">
+              <ol class="site-flow__list">
+                <li class="site-flow__item">
+                  <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">01</span></div>
+                  <div class="site-flow__image"><img src="./img/common/flow-contact.jpg" alt="電話でお問い合わせを受けるスタッフ"></div>
+                  <div class="site-flow__content">
+                    <h3 class="site-flow__title">お問い合わせ</h3>
+                    <p class="site-flow__text">電話またはお問い合わせフォームより、<br>ご連絡お願いいたします。</p>
+                  </div>
+                </li>
+                <li class="site-flow__item">
+                  <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">02</span></div>
+                  <div class="site-flow__image"><img src="./img/common/flow-estimate.jpg" alt="訪問先で見積もりを行うスタッフ"></div>
+                  <div class="site-flow__content">
+                    <h3 class="site-flow__title">下見・お見積り</h3>
+                    <p class="site-flow__text">下見を行ない、詳細なお見積りをご提出させていただきます。</p>
+                  </div>
+                </li>
+                <li class="site-flow__item">
+                  <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">03</span></div>
+                  <div class="site-flow__image"><img src="./img/common/flow-contract.jpg" alt="契約を交わす様子"></div>
+                  <div class="site-flow__content">
+                    <h3 class="site-flow__title">ご契約</h3>
+                    <p class="site-flow__text">お見積りにご納得頂けましたら、はじめてご契約となります。お見積りに不安が残る場合は、お気軽にご相談ください。また、この時点でのキャンセルも承っておりますので、ご安心ください。</p>
+                  </div>
+                </li>
+                <li class="site-flow__item">
+                  <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">04</span></div>
+                  <div class="site-flow__image"><img src="./img/common/flow-work.jpg" alt="不用品を回収するスタッフ"></div>
+                  <div class="site-flow__content">
+                    <h3 class="site-flow__title">作業開始</h3>
+                    <p class="site-flow__text">スタッフが丁寧かつスピーディに不用品を回収・買取させていただきます。</p>
+                  </div>
+                </li>
+                <li class="site-flow__item">
+                  <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">05</span></div>
+                  <div class="site-flow__image"><img src="./img/common/flow-confirmation.jpg" alt="作業完了後に確認するお客様"></div>
+                  <div class="site-flow__content">
+                    <h3 class="site-flow__title">作業確認</h3>
+                    <p class="site-flow__text">不用品の回収・買取が終わったところで最終的にお客様に現場を確認いただき、作業終了となります。また、買取の場合は金額の確認もして頂きます。</p>
+                  </div>
+                </li>
+                <li class="site-flow__item">
+                  <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">06</span></div>
+                  <div class="site-flow__image"><img src="./img/common/flow-payment.jpg" alt="作業完了後の支払い"></div>
+                  <div class="site-flow__content">
+                    <h3 class="site-flow__title">お支払い</h3>
+                    <p class="site-flow__text">作業完了をご確認いただいた後、お支払いとなります。お支払い方法は現金やクレジットカードにも対応しておりますので、お気軽にお申し出ください。買取の場合は、買取金額を確認して頂きお支払いになります。</p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="top-flow__content js-top-flow-panel" id="top-flow-panel-house-cleaning" role="tabpanel" aria-labelledby="top-flow-tab-house-cleaning" data-flow-panel="house-cleaning" hidden>
+            <div class="site-flow">
+              <ol class="site-flow__list">
+                <li class="site-flow__item">
+                  <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">01</span></div>
+                  <div class="site-flow__image"><img src="./img/common/flow-contact.jpg" alt="電話で相談を受けるスタッフ"></div>
+                  <div class="site-flow__content">
+                    <h3 class="site-flow__title">お問い合わせ・ご相談</h3>
+                    <p class="site-flow__text">まずはお電話またはLINE・メールフォームにてご連絡ください。<br>ご希望の品目や数量、納期、ご用途などをお伺いします。</p>
+                  </div>
+                </li>
+                <li class="site-flow__item">
+                  <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">02</span></div>
+                  <div class="site-flow__image"><img src="./img/common/flow-guide.jpg" alt="見積もりを作成する様子"></div>
+                  <div class="site-flow__content">
+                    <h3 class="site-flow__title">ご案内・お見積もり</h3>
+                    <p class="site-flow__text">お伺いした内容をもとに、在庫状況や価格、納品方法などをご案内します。<br>必要に応じてお見積書を発行いたします。</p>
+                  </div>
+                </li>
+                <li class="site-flow__item">
+                  <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">03</span></div>
+                  <div class="site-flow__image"><img src="./img/common/flow-contract.jpg" alt="注文を確定する様子"></div>
+                  <div class="site-flow__content">
+                    <h3 class="site-flow__title">ご注文確定</h3>
+                    <p class="site-flow__text">内容にご納得いただけましたら、ご注文確定となります。<br>支払方法についてもご相談可能です（現金・クレジットカードなど対応）。</p>
+                  </div>
+                </li>
+                <li class="site-flow__item">
+                  <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">04</span></div>
+                  <div class="site-flow__image"><img src="./img/common/flow-confirmation.jpg" alt="商品を引き渡す様子"></div>
+                  <div class="site-flow__content">
+                    <h3 class="site-flow__title">お引き渡し・納品</h3>
+                    <p class="site-flow__text">ご指定の日時に、現地引き取りまたは現場への配送にてお渡しいたします。<br>配送可能エリアはご相談ください。</p>
+                  </div>
+                </li>
+                <li class="site-flow__item">
+                  <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">05</span></div>
+                  <div class="site-flow__image"><img src="./img/common/flow-support.jpg" alt="アフターサポートを行うスタッフ"></div>
+                  <div class="site-flow__content">
+                    <h3 class="site-flow__title">アフターサポート</h3>
+                    <p class="site-flow__text">納品後のご質問や、継続的なご発注にも迅速に対応いたします。<br>大量注文や定期購入のご相談も歓迎です。</p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="site-contact-section">
+      <div class="site-contact site-contact--visual">
+        <div class="site-contact__background">
+          <img src="./img/common/contact-bg.jpg" alt="">
+        </div>
+        <div class="site-contact__visual-content">
+          <div class="site-contact__heading">
+            <h2 class="site-contact__title site-heading site-heading--section-en">contact</h2>
+            <p class="site-contact__subtitle site-heading-subtitle site-heading-subtitle--default">お問い合わせ</p>
+          </div>
+          <p class="site-contact__lead">
+            解体、産業廃棄物回収・持込、<br>
+            不用品回収からハウスクリーニングまで<br>
+            お困りごとは何でもお気軽にご相談ください。
+          </p>
+
+          <div class="site-contact__list">
+            <div class="site-contact__card site-contact__card--phone">
+              <img class="site-contact__icon" src="./img/common/icon-contact-phone.png" alt="">
+              <p class="site-contact__card-title">お電話でのお問い合わせ</p>
+              <a class="site-contact__phone-number" href="tel:0595833330">0595-83-3330</a>
+              <p class="site-contact__note">お電話の際に「ホームページを見て」<br>とお伝えください。</p>
+            </div>
+
+            <div class="site-contact__card site-contact__card--mail">
+              <img class="site-contact__icon" src="./img/common/icon-contact-mail.png" alt="">
+              <p class="site-contact__card-title">メールでのお問い合わせ</p>
+              <a class="site-contact__button" href="#">
+                <span>お問い合わせ</span>
+                <span class="site-arrow-icon site-contact__button-icon" aria-hidden="true">
+                  <img src="./img/common/arrow-blue.png" alt="">
+                </span>
+              </a>
+            </div>
+
+            <div class="site-contact__card site-contact__card--line">
+              <img class="site-contact__icon" src="./img/common/icon-contact-line.png" alt="">
+              <p class="site-contact__card-title">LINEでのお問い合わせ</p>
+              <a class="site-contact__button" href="#">
+                <span>LINE 友達追加</span>
+                <span class="site-arrow-icon site-contact__button-icon" aria-hidden="true">
+                  <img src="./img/common/arrow-blue.png" alt="">
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="top-staff">
+      <div class="top-staff__layout inner">
+        <div class="top-staff__information">
+          <div class="top-staff__heading">
+            <h2 class="top-staff__title site-heading site-heading--section-en">staff</h2>
+            <p class="top-staff__subtitle site-heading-subtitle site-heading-subtitle--default">スタッフ紹介</p>
+          </div>
+
+          <ul class="top-staff__tags">
+            <li>部署名など</li>
+            <li>タグは自由に登録</li>
+            <li>例：広報課など</li>
+            <li>例：現場管理</li>
+            <li>例：マネージャー職</li>
+            <li>例：メディア掲載</li>
+            <li>例：営業部</li>
+          </ul>
+
+          <div class="top-staff__navigation">
+            <button class="top-staff__navigation-button top-staff__navigation-button--prev" type="button" aria-label="前のスタッフを表示">
+              <img src="./img/common/arrow-blue.png" alt="">
+            </button>
+            <button class="top-staff__navigation-button top-staff__navigation-button--next" type="button" aria-label="次のスタッフを表示">
+              <img src="./img/common/arrow-blue.png" alt="">
+            </button>
+          </div>
+
+          <a class="site-wide-button site-wide-button--blue top-staff__button" href="#">
+            <span>スタッフ紹介一覧</span>
+            <span class="site-arrow-icon site-wide-button__icon top-staff__button-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span>
+          </a>
+        </div>
+
+        <div class="swiper top-staff__slider js-top-staff-slider">
+          <div class="swiper-wrapper">
+            <article class="swiper-slide top-staff__slide">
+              <div class="top-staff__image"><img src="./img/common/flow-invoice-payment.jpg" alt="スタッフのプロフィール写真"></div>
+              <div class="top-staff__card-content">
+                <span class="top-staff__card-tag">部署名など</span>
+                <h3 class="top-staff__card-title">ダミー：インタビュー記事タイトルです 新着順でトップページにも表示します。</h3>
+                <a class="top-staff__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-staff__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
+              </div>
+            </article>
+
+            <article class="swiper-slide top-staff__slide">
+              <div class="top-staff__image"><img src="./img/service-industrial-waste/feature-trust.jpg" alt="スタッフのプロフィール写真"></div>
+              <div class="top-staff__card-content">
+                <span class="top-staff__card-tag">部署名など</span>
+                <h3 class="top-staff__card-title">ダミー：インタビュー記事タイトルです 新着順でトップページにも表示します。</h3>
+                <a class="top-staff__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-staff__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
+              </div>
+            </article>
+
+            <article class="swiper-slide top-staff__slide">
+              <div class="top-staff__image"><img src="./img/service-drop-off/feature-total-support.jpg" alt="スタッフのプロフィール写真"></div>
+              <div class="top-staff__card-content">
+                <span class="top-staff__card-tag">部署名など</span>
+                <h3 class="top-staff__card-title">ダミー：インタビュー記事タイトルです 新着順でトップページにも表示します。</h3>
+                <a class="top-staff__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-staff__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
+              </div>
+            </article>
+
+            <article class="swiper-slide top-staff__slide">
+              <div class="top-staff__image"><img src="./img/common/flow-request.jpg" alt="スタッフのプロフィール写真"></div>
+              <div class="top-staff__card-content">
+                <span class="top-staff__card-tag">部署名など</span>
+                <h3 class="top-staff__card-title">ダミー：インタビュー記事タイトルです 新着順でトップページにも表示します。</h3>
+                <a class="top-staff__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-staff__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
+              </div>
+            </article>
+
+            <article class="swiper-slide top-staff__slide">
+              <div class="top-staff__image"><img src="./img/service-demolition/strength-one-stop.jpg" alt="スタッフのプロフィール写真"></div>
+              <div class="top-staff__card-content">
+                <span class="top-staff__card-tag">部署名など</span>
+                <h3 class="top-staff__card-title">ダミー：インタビュー記事タイトルです 新着順でトップページにも表示します。</h3>
+                <a class="top-staff__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-staff__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="top-recruit">
+      <div class="top-recruit__visual">
+        <img class="top-recruit__image" src="./img/service-demolition/aftercare.jpg" alt="現場で働くスタッフ">
+        <div class="top-recruit__overlay" aria-hidden="true"></div>
+        <div class="top-recruit__content">
+          <div class="top-recruit__heading">
+            <h2 class="top-recruit__title site-heading site-heading--section-en">recruit</h2>
+            <p class="top-recruit__subtitle site-heading-subtitle site-heading-subtitle--default">採用情報</p>
+          </div>
+          <p class="top-recruit__lead">エコ・プランニングの採用情報は、こちらをご覧ください。</p>
+          <a class="site-wide-button site-wide-button--blue top-recruit__button" href="#">
+            <span>採用情報</span>
+            <span class="site-arrow-icon site-wide-button__icon top-recruit__button-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="top-news">
+      <div class="top-news__inner inner">
+        <div class="top-news__header">
+          <div class="top-news__heading">
+            <h2 class="top-news__title site-heading site-heading--section-en">news</h2>
+            <p class="top-news__subtitle site-heading-subtitle site-heading-subtitle--default">ニュース</p>
+          </div>
+
+          <ul class="top-news__filter-list">
+            <li><a href="#">例：イベント</a></li>
+            <li><a href="#">例：プレスリリース</a></li>
+            <li><a href="#">タグは自由に登録</a></li>
+            <li><a href="#">例：メディア掲載</a></li>
+            <li><a href="#">例：イベント</a></li>
+            <li><a href="#">例：プレスリリース</a></li>
+            <li><a href="#">タグは自由に登録</a></li>
+            <li><a href="#">例：イベント</a></li>
+            <li><a href="#">例：プレスリリース</a></li>
+            <li><a href="#">タグは自由に登録</a></li>
+          </ul>
+        </div>
+
+        <div class="top-news__list">
+          <article class="top-news__item">
+            <a class="top-news__image" href="#">
+              <img src="./img/common/flow-invoice-payment.jpg" alt="ニュース記事のイメージ">
+            </a>
+            <div class="top-news__content">
+              <span class="top-news__category">カテゴリー</span>
+              <h3 class="top-news__item-title">ダミー：記事タイトルです 新着順でトップページにも表示します。</h3>
+              <a class="top-news__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-news__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
+            </div>
+          </article>
+
+          <article class="top-news__item">
+            <a class="top-news__image" href="#">
+              <img src="./img/service-drop-off/feature-total-support.jpg" alt="ニュース記事のイメージ">
+            </a>
+            <div class="top-news__content">
+              <span class="top-news__category">カテゴリー</span>
+              <h3 class="top-news__item-title">ダミー：記事タイトルです 新着順でトップページにも表示します。</h3>
+              <a class="top-news__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-news__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
+            </div>
+          </article>
+
+          <article class="top-news__item">
+            <a class="top-news__image" href="#">
+              <img src="./img/service-industrial-waste/feature-trust.jpg" alt="ニュース記事のイメージ">
+            </a>
+            <div class="top-news__content">
+              <span class="top-news__category">カテゴリー</span>
+              <h3 class="top-news__item-title">ダミー：記事タイトルです 新着順でトップページにも表示します。</h3>
+              <a class="top-news__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-news__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="top-news__bottom">
+          <a class="site-wide-button site-wide-button--blue top-news__button" href="#">
+            <span>ニュース一覧</span>
+            <span class="site-arrow-icon site-wide-button__icon top-news__button-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="top-company">
+      <div class="top-company__visual">
+        <img class="top-company__background" src="./img/top/reasons-bg.jpg" alt="">
+        <div class="top-company__overlay" aria-hidden="true"></div>
+        <div class="top-company__content">
+          <div class="top-company__heading">
+            <h2 class="top-company__title site-heading site-heading--section-en">company</h2>
+            <p class="top-company__subtitle site-heading-subtitle site-heading-subtitle--default">会社概要</p>
+          </div>
+          <p class="top-company__lead">エコ・プランニングの会社概要は、こちらをご覧ください。</p>
+          <a class="site-wide-button site-wide-button--blue top-company__button" href="#">
+            <span>会社概要</span>
+            <span class="site-arrow-icon site-wide-button__icon top-company__button-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner inner">
+      <div class="site-footer__top">
+        <div class="site-footer__brand">
+          <a class="site-footer__logo" href="#">
+            <img src="./img/common/logo-blue.png" alt="ECO PLANNING">
+          </a>
+          <div class="site-footer__certifications">
+            <img src="./img/common/logo-mems.png" alt="M-EMS">
+            <img src="./img/common/logo-sdgs.png" alt="SDGs">
+          </div>
+        </div>
+
+        <div class="site-footer__navigation">
+          <nav class="site-footer__nav" aria-label="フッターナビゲーション">
+            <div class="site-footer__nav-group">
+              <a class="site-footer__nav-heading" href="#">私たちについて</a>
+              <a class="site-footer__nav-link" href="#">会社概要</a>
+            </div>
+            <div class="site-footer__nav-group">
+              <a class="site-footer__nav-heading" href="#">事業紹介</a>
+              <a class="site-footer__nav-link" href="#">解体・アスベスト除去</a>
+              <a class="site-footer__nav-link" href="#">産業廃棄物回収</a>
+              <a class="site-footer__nav-link" href="#">産業廃棄物持ち込み</a>
+            </div>
+            <div class="site-footer__nav-group">
+              <a class="site-footer__nav-heading" href="#">実績 / お客様の声</a>
+              <a class="site-footer__nav-heading" href="#">ニュース / スタッフ紹介</a>
+              <a class="site-footer__nav-heading" href="#">募集要項一覧</a>
+            </div>
+          </nav>
+
+          <div class="site-footer__buttons">
+            <a class="site-footer__button site-footer__button--recruit" href="#">
+              <span>recruit</span>
+              <span class="site-arrow-icon site-footer__button-icon" aria-hidden="true">
+                <img src="./img/common/arrow-white.png" alt="">
+              </span>
+            </a>
+            <a class="site-footer__button site-footer__button--contact" href="#">
+              <span>contact</span>
+              <span class="site-arrow-icon site-footer__button-icon" aria-hidden="true">
+                <img src="./img/common/arrow-white.png" alt="">
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-footer__concept">
+        <img class="site-footer__concept-mark" src="./img/common/concept-mark.png" alt="">
+        <p class="site-footer__concept-copy">
+          誠実に、<br>
+          つくそう。
+        </p>
+      </div>
+
+      <div class="site-footer__bottom">
+        <div class="site-footer__information">
+          <p class="site-footer__description">解体工事、収集運搬、産廃処理なら三重県津市の株式会社エコ・プランニング</p>
+          <p class="site-footer__copyright">Copyright © 2025 Eco planning. All right reserved.</p>
+        </div>
+
+        <div class="site-footer__socials">
+          <a class="site-footer__social-link" href="#" aria-label="Facebook">
+            <img src="./img/common/icon-facebook.png" alt="">
+          </a>
+          <a class="site-footer__social-link" href="#" aria-label="X">
+            <img src="./img/common/icon-x.png" alt="">
+          </a>
+          <a class="site-footer__social-link" href="#" aria-label="Instagram">
+            <img src="./img/common/icon-instagram.png" alt="">
+          </a>
+          <a class="site-footer__social-link" href="#" aria-label="YouTube">
+            <img src="./img/common/icon-youtube.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/gsap.js"></script>
 </body>
-<script src="./js/script.js"></script>
-<script src="./js/gsap.js"></script>
 
 </html>

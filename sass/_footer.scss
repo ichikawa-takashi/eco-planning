@@ -1,6 +1,9 @@
 .site-footer {
+  position: relative;
+  z-index: 1;
   padding-top: rem(95);
   padding-bottom: rem(90);
+  background-color: $white;
 
   @include mq("md") {
     padding-top: rem(80);

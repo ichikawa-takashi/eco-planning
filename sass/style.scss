@@ -242,9 +242,9 @@ $extra: 900;
 $black: #000;
 $white: #ffffff;
 $blue: #1c499e;
+$cyan: #4d9cce;
 $navy: #143572;
 $light-blue: #eaf0f3;
-$l-blue: $light-blue;
 $blue-gradient: linear-gradient(90deg, #1c499e 0%, #038be0 100%);
 
 @mixin blue-gradient {
@@ -319,6 +319,8 @@ $breakpoints: (
 @import "page";
 @import "header";
 @import "footer";
+@import "top";
 @import "service";
 @import "service-demolition";
 @import "service-industrial-waste";
+@import "service-drop-off";
