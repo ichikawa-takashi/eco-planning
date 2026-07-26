@@ -88,8 +88,8 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         $("html").removeClass("is-fixed");
     }
 
-    // サービス詳細ページのループギャラリー
-    $(".sub-service-detail__visual-gallery-track").each(function () {
+    // 共通ループギャラリー
+    $(".js-loop-gallery-track").each(function () {
         var track = this;
         var originalItems = Array.from(track.children);
 
@@ -121,7 +121,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             if (!firstOriginal || !firstClone) return;
 
             var distance = firstClone.offsetLeft - firstOriginal.offsetLeft;
-            track.style.setProperty("--service-detail-gallery-distance", -distance + "px");
+            track.style.setProperty("--site-loop-gallery-distance", -distance + "px");
         }
 
         updateGalleryDistance();
@@ -225,7 +225,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             },
             breakpoints: {
                 769: {
-                    spaceBetween: 55
+                    spaceBetween: 100
                 }
             }
         });
@@ -248,6 +248,25 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             breakpoints: {
                 769: {
                     spaceBetween: 10
+                }
+            }
+        });
+    }
+
+    var companyHistorySlider = document.querySelector(".js-company-history-slider");
+
+    if (companyHistorySlider && typeof Swiper !== "undefined") {
+        new Swiper(companyHistorySlider, {
+            slidesPerView: "auto",
+            spaceBetween: 12,
+            speed: 700,
+            navigation: {
+                prevEl: ".sub-company__history-navigation--prev",
+                nextEl: ".sub-company__history-navigation--next"
+            },
+            breakpoints: {
+                769: {
+                    spaceBetween: 20
                 }
             }
         });

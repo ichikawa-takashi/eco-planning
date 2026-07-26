@@ -1,0 +1,496 @@
+.sub-company {
+  background-color: $white;
+}
+
+.sub-company__fv-image img {
+  @include mq("md") {
+    object-position: 58% center;
+  }
+}
+
+.sub-company__fv-subtitle {
+  margin-top: rem(14);
+}
+
+.sub-company__history {
+  margin-top: rem(130);
+
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}
+
+.sub-company__history-header {
+  display: grid;
+  align-items: start;
+  grid-template-columns: auto minmax(0, 1.25fr);
+  gap: rem(150);
+
+  @include mq("md") {
+    display: block;
+  }
+}
+
+.sub-company__history-heading {
+  color: $blue;
+}
+
+.sub-company__history-title {
+  line-height: 1;
+}
+
+.sub-company__history-subtitle {
+  margin-top: rem(14);
+}
+
+.sub-company__history-lead {
+  @include font(16, 32, -20, $regular);
+
+  @include mq("md") {
+    margin-top: rem(38);
+    @include font(15, 29, -20, $regular);
+  }
+}
+
+.sub-company__history-slider-shell {
+  position: relative;
+  margin-top: rem(75);
+
+  @include mq("md") {
+    margin-top: rem(48);
+  }
+}
+
+.sub-company__history-slider {
+  width: calc(
+    100% + max(rem(25), (100vw - rem(1200)) / 2)
+  );
+  overflow: hidden;
+
+  @include mq("md") {
+    width: calc(
+      100% + rem(15) + max(0px, (100vw - rem(500)) / 2)
+    );
+  }
+}
+
+.sub-company__history-card {
+  display: flex;
+  flex-direction: column;
+  width: rem(386);
+  height: auto;
+  min-height: rem(580);
+  padding: rem(40) rem(40) rem(35);
+  border-radius: rem(30);
+  background-color: $light-blue;
+
+  @include mq("md") {
+    width: min(calc(100vw - rem(65)), rem(330));
+    min-height: rem(450);
+    padding: rem(30) rem(24) rem(24);
+    border-radius: rem(18);
+  }
+}
+
+.sub-company__history-year {
+  color: $blue;
+  font-family: $en;
+  @include font(64, 70, 20, $bold);
+
+  @include mq("md") {
+    @include font(48, 54, 20, $bold);
+  }
+}
+
+.sub-company__history-text {
+  margin-top: rem(30);
+  @include font(16, 32, -20, $medium);
+
+  @include mq("md") {
+    margin-top: rem(22);
+    @include font(15, 28, -20, $regular);
+  }
+}
+
+.sub-company__history-image {
+  width: rem(200);
+  aspect-ratio: 1;
+  margin-top: auto;
+  margin-right: auto;
+  margin-left: auto;
+  object-fit: contain;
+
+  @include mq("md") {
+    width: rem(150);
+  }
+}
+
+.sub-company__history-navigation {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  display: grid;
+  place-items: center;
+  width: rem(64);
+  height: rem(64);
+  border-radius: 50%;
+  background-color: #a6a6a6;
+  transform: translateY(-50%);
+
+  @include mq("md") {
+    width: rem(42);
+    height: rem(42);
+  }
+}
+
+.sub-company__history-navigation img {
+  width: rem(18);
+
+  @include mq("md") {
+    width: rem(12);
+  }
+}
+
+.sub-company__history-navigation--prev {
+  left: rem(25);
+  transform: translate(-50%, -50%);
+
+  @include mq("lg") {
+    left: rem(32);
+  }
+
+  @include mq("md") {
+    left: rem(21);
+  }
+}
+
+.sub-company__history-navigation--prev img {
+  transform: rotate(180deg);
+}
+
+.sub-company__history-navigation--next {
+  left: rem(1233);
+  transform: translate(-50%, -50%);
+
+  @include mq("lg") {
+    right: rem(40);
+    left: auto;
+    transform: translate(50%, -50%);
+  }
+
+  @include mq("md") {
+    right: auto;
+    left: calc(
+      rem(15) +
+      min(calc(100vw - rem(65)), rem(330)) +
+      rem(6)
+    );
+    transform: translate(-50%, -50%);
+  }
+}
+
+.sub-company__history-navigation:hover {
+  @media (hover: hover) {
+    background-color: $blue;
+  }
+}
+
+.sub-company__history-navigation.swiper-button-disabled {
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.sub-company__data {
+  margin-top: rem(155);
+
+  @include mq("md") {
+    margin-top: rem(85);
+  }
+}
+
+.sub-company__section-heading {
+  color: $blue;
+}
+
+.sub-company__section-heading--white {
+  color: $white;
+}
+
+
+.sub-company__section-subtitle {
+  margin-top: rem(14);
+
+  @include mq("md") {
+    margin-top: rem(8);
+  }
+}
+
+.sub-company__data-list {
+  margin-top: rem(125);
+
+  @include mq("md") {
+    margin-top: rem(50);
+  }
+}
+
+.sub-company__data-row {
+  display: grid;
+  grid-template-columns: rem(250) minmax(0, 1fr);
+  gap: rem(34);
+  padding: rem(31) 0;
+  border-bottom: rem(1) solid rgba($black, 0.16);
+
+  @include mq("md") {
+    display: block;
+    padding: rem(24) 0;
+  }
+}
+
+.sub-company__data-term {
+  @include font(16, 32, 0, $bold);
+
+  @include mq("md") {
+    @include font(15, 25, 0, $bold);
+  }
+}
+
+.sub-company__data-description {
+  min-width: 0;
+  @include font(18, 32, 0, $regular);
+
+  @include mq("md") {
+    margin-top: rem(10);
+    @include font(15, 27, 0, $regular);
+  }
+}
+
+.sub-company__data-line {
+  margin-top: rem(12);
+
+  @include mq("md") {
+    margin-top: rem(8);
+  }
+}
+
+.sub-company__data-lines {
+  display: grid;
+  gap: rem(12);
+
+  @include mq("md") {
+    gap: rem(8);
+  }
+}
+
+.sub-company__data-area-label {
+  margin-top: rem(48);
+
+  @include mq("md") {
+    margin-top: rem(28);
+  }
+}
+
+.sub-company__data-area-note {
+  margin-top: rem(48);
+
+  @include mq("md") {
+    margin-top: rem(28);
+  }
+}
+
+.sub-company__map-link {
+  color: $blue;
+  text-decoration: underline;
+  text-decoration-thickness: rem(1);
+  text-underline-offset: rem(9);
+  transition: opacity 0.3s ease;
+}
+
+.sub-company__map-link:hover {
+  @media (hover: hover) {
+    opacity: 0.6;
+  }
+}
+
+.sub-company__access {
+  margin-top: rem(140);
+  padding: rem(125) 0 rem(165);
+  color: $white;
+  @include blue-grid-background;
+
+  @include mq("md") {
+    margin-top: rem(80);
+    padding: rem(75) 0 rem(80);
+  }
+}
+
+.sub-company__access-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: rem(80);
+  margin-top: rem(85);
+
+  @include mq("md") {
+    grid-template-columns: minmax(0, 1fr);
+    gap: rem(55);
+    margin-top: rem(48);
+  }
+}
+
+.sub-company__access-map {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  overflow: hidden;
+  border-radius: rem(15);
+
+  @include mq("md") {
+    aspect-ratio: 16 / 10;
+    border-radius: rem(10);
+  }
+}
+
+.sub-company__access-map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.sub-company__access-name {
+  margin-top: rem(38);
+  @include font(24, 36, 0, $bold);
+
+  @include mq("md") {
+    margin-top: rem(22);
+    @include font(20, 30, 0, $bold);
+  }
+}
+
+.sub-company__access-address {
+  margin-top: rem(24);
+  @include font(16, 40, 0, $regular);
+
+  @include mq("md") {
+    margin-top: rem(15);
+    @include font(15, 27, 0, $regular);
+  }
+}
+
+.sub-company__access-tel {
+  margin-top: rem(12);
+  @include font(16, 40, 0, $regular);
+
+  @include mq("md") {
+    margin-top: rem(8);
+    @include font(15, 27, 0, $regular);
+  }
+}
+
+.sub-company__map-link--white {
+  color: $white;
+}
+
+.sub-company__privacy {
+  margin-top: rem(162);
+
+  @include mq("md") {
+    margin-top: rem(85);
+  }
+}
+
+.sub-company__privacy-introduction {
+  margin-top: rem(90);
+  @include font(16, 32, -20, $regular);
+
+  @include mq("md") {
+    margin-top: rem(48);
+    @include font(15, 29, -20, $regular);
+  }
+}
+
+.sub-company__privacy-content {
+  margin-top: rem(70);
+  padding-top: rem(70);
+  border-top: rem(1) solid rgba($black, 0.16);
+
+  @include mq("md") {
+    margin-top: rem(48);
+    padding-top: rem(45);
+  }
+}
+
+.sub-company__privacy-block {
+  margin-top: rem(90);
+
+  @include mq("md") {
+    margin-top: rem(55);
+  }
+}
+
+.sub-company__privacy-block:first-child {
+  margin-top: 0;
+}
+
+.sub-company__privacy-heading {
+  @include font(24, 42, 0, $bold);
+
+  @include mq("md") {
+    @include font(20, 31, 0, $bold);
+  }
+}
+
+.sub-company__privacy-text {
+  margin-top: rem(32);
+  @include font(16, 32, -20, $regular);
+
+  @include mq("md") {
+    margin-top: rem(22);
+    @include font(15, 29, -20, $regular);
+  }
+}
+
+.sub-company__privacy-list {
+  display: grid;
+  gap: rem(12);
+  margin-top: rem(32);
+  @include font(16, 32, -20, $regular);
+
+  @include mq("md") {
+    gap: rem(10);
+    margin-top: rem(22);
+    @include font(15, 27, 0, $regular);
+  }
+}
+
+.sub-company__privacy-list li {
+  position: relative;
+  padding-left: rem(24);
+
+  @include mq("md") {
+    padding-left: rem(18);
+  }
+}
+
+.sub-company__privacy-list li::before {
+  position: absolute;
+  top: rem(12);
+  left: 0;
+  width: rem(9);
+  height: rem(9);
+  border-radius: 50%;
+  background-color: $blue;
+  content: "";
+
+  @include mq("md") {
+    top: rem(10);
+    width: rem(6);
+    height: rem(6);
+  }
+}
+
+.sub-company__contact {
+  margin-top: rem(190);
+
+  @include mq("md") {
+    margin-top: rem(85);
+  }
+}

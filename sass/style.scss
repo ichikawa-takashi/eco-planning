@@ -210,9 +210,6 @@ html {
     font-size: 16px;
   }
 
-  @media (max-width: 375px) {
-    font-size: vw(375, 16);
-  }
 }
 
 /*--------------------------
@@ -324,3 +321,5 @@ $breakpoints: (
 @import "service-demolition";
 @import "service-industrial-waste";
 @import "service-drop-off";
+@import "about";
+@import "company";

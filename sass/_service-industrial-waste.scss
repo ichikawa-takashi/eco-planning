@@ -759,27 +759,6 @@ ol.sub-service-industrial-waste__recycling-result {
   }
 }
 
-.sub-service-industrial-waste__flow-note {
-  margin-top: rem(30);
-
-  @include mq("md") {
-    margin-top: rem(24);
-  }
-}
-
-.sub-service-industrial-waste__flow-note a {
-  color: $blue;
-  text-decoration: underline;
-  text-underline-offset: rem(8);
-  transition: opacity 0.3s ease;
-}
-
-.sub-service-industrial-waste__flow-note a:hover {
-  @media (hover: hover) {
-    opacity: 0.65;
-  }
-}
-
 .sub-service-industrial-waste .site-contact-section {
   padding-top: rem(140);
   background-color: $white;

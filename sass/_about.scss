@@ -1,0 +1,348 @@
+.sub-about {
+  background-color: $white;
+}
+
+.sub-about__fv-image img {
+  @include mq("md") {
+    object-position: 48% center;
+  }
+}
+
+.sub-about__introduction {
+  margin-top: rem(120);
+
+  @include mq("md") {
+    margin-top: rem(70);
+  }
+}
+
+.sub-about__introduction-inner {
+  display: grid;
+  align-items: start;
+  grid-template-columns: auto minmax(0, 1.1fr);
+  gap: rem(90);
+
+  @include mq("md") {
+    display: block;
+  }
+}
+
+.sub-about__introduction-title{
+    font-size: rem(72);
+
+    @include mq("md") {
+        @include font(28, 42, 0, $bold);
+      }
+}
+
+.sub-about__introduction-subtitle {
+  margin-top: rem(30);
+  color: $blue;
+
+  @include mq("md") {
+    margin-top: rem(12);
+  }
+}
+
+.sub-about__introduction-text {
+  @include font(20, 40, -20, $medium);
+
+  @include mq("md") {
+    margin-top: rem(38);
+    @include font(15, 29, -20, $regular);
+  }
+}
+
+.sub-about__message {
+  margin-top: rem(140);
+
+  @include mq("md") {
+    margin-top: rem(70);
+  }
+}
+
+.sub-about__message-texts {
+  margin-top: rem(110);
+
+  @include mq("md") {
+    margin-top: rem(38);
+  }
+}
+
+.sub-about__message-text {
+  @include font(20, 40, -20, $regular);
+
+  @include mq("md") {
+    @include font(15, 29, -20, $regular);
+  }
+}
+
+.sub-about__message-text + .sub-about__message-text {
+  margin-top: rem(42);
+
+  @include mq("md") {
+    margin-top: rem(25);
+  }
+}
+
+.sub-about__representative {
+  margin-top: rem(145);
+
+  @include mq("md") {
+    margin-top: rem(70);
+  }
+}
+
+.sub-about__representative-inner {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 100%;
+  max-width: rem(1440);
+  margin-right: auto;
+  margin-left: auto;
+
+  @include mq("md") {
+    display: block;
+  }
+}
+
+.sub-about__representative-image {
+  overflow: hidden;
+  border-radius: 0 rem(30) rem(30) 0;
+
+  @media screen and (min-width: 1441px) {
+    border-radius: rem(30);
+  }
+
+  @include mq("md") {
+    width: calc(100% - rem(30));
+    max-width: rem(470);
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: rem(12);
+  }
+}
+
+.sub-about__representative-image img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.sub-about__representative-content {
+  width: 100%;
+  max-width: rem(575);
+  padding-left: rem(90);
+  margin-top: rem(60);
+
+  @include mq("md") {
+    max-width: 500px;
+    padding-right: rem(15);
+    padding-left: rem(15);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: rem(45);
+  }
+}
+
+.sub-about__representative-position {
+  @include font(16, 30, 0, $regular);
+
+  @include mq("md") {
+    @include font(14, 24, 0, $regular);
+  }
+}
+
+.sub-about__representative-name {
+  margin-top: rem(18);
+  @include font(42, 60, 0, $bold);
+
+  @include mq("md") {
+    margin-top: rem(10);
+    @include font(30, 42, 0, $bold);
+  }
+}
+
+.sub-about__representative-profile-title {
+  margin-top: rem(72);
+  @include font(24, 40, 0, $bold);
+
+  @include mq("md") {
+    margin-top: rem(42);
+    @include font(20, 30, 0, $bold);
+  }
+}
+
+.sub-about__representative-profile {
+  margin-top: rem(38);
+
+  @include mq("md") {
+    margin-top: rem(25);
+  }
+}
+
+.sub-about__representative-profile-row {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: rem(12);
+  @include font(16, 30, 0, $regular);
+
+  @include mq("md") {
+    grid-template-columns: rem(62) minmax(0, 1fr);
+    gap: rem(8);
+    @include font(14, 25, 0, $regular);
+  }
+}
+
+.sub-about__representative-profile-row + .sub-about__representative-profile-row {
+  margin-top: rem(8);
+}
+
+.sub-about__principles {
+  position: relative;
+  margin-top: rem(117);
+  color: $white;
+  @include blue-grid-background;
+
+  @include mq("md") {
+    margin-top: rem(70);
+  }
+}
+
+.sub-about__principles::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vw * 300 / 1440);
+  background-color: $white;
+  pointer-events: none;
+}
+
+.sub-about__principle {
+  position: relative;
+  z-index: 1;
+}
+
+.sub-about__principle + .sub-about__principle {
+  margin-top: rem(100);
+
+  @include mq("md") {
+    margin-top: rem(75);
+  }
+}
+
+.sub-about__principle-image {
+  width: 100vw;
+  overflow: hidden;
+  border-radius: rem(30);
+
+  @include mq("md") {
+    border-radius: rem(12);
+  }
+}
+
+.sub-about__principle-image img {
+  width: 100%;
+  aspect-ratio: 1440 / 640;
+  object-fit: cover;
+
+  @include mq("md") {
+    aspect-ratio: 5 / 3;
+  }
+}
+
+.sub-about__principle-inner {
+  display: grid;
+  align-items: start;
+  grid-template-columns: auto minmax(0, rem(685));
+  gap: rem(50);
+  margin-top: rem(100);
+  justify-content: space-between;
+
+  @include mq("md") {
+    display: block;
+    margin-top: rem(50);
+  }
+}
+
+.sub-about__principle-title {
+  line-height: 1;
+  font-size: rem(85);
+
+  @include mq("md") {
+    @include font(42, 48, 0, $semi);
+  }
+}
+
+.sub-about__principle-subtitle {
+  margin-top: rem(14);
+
+  @include mq("md") {
+    margin-top: rem(7);
+  }
+}
+
+.sub-about__principle-content {
+  @include mq("md") {
+    margin-top: rem(42);
+  }
+}
+
+.sub-about__principle-lead {
+  @include font(42, 50, 0, $bold);
+
+  @include mq("md") {
+    @include font(23, 36, 0, $bold);
+  }
+}
+
+.sub-about__principle-lead--value {
+  @include font(24, 42, 0, $bold);
+
+  @include mq("md") {
+    @include font(17, 29, 0, $bold);
+  }
+}
+
+.sub-about__principle-text {
+  margin-top: rem(65);
+  @include font(20, 40, -20, $regular);
+
+  @include mq("md") {
+    margin-top: rem(30);
+    @include font(15, 29, -20, $regular);
+  }
+}
+
+.sub-about__contact {
+  position: relative;
+  padding-top: rem(111);
+  @include blue-grid-background;
+
+  @include mq("md") {
+    padding-top: rem(75);
+  }
+}
+
+.sub-about__contact::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: rem(20);
+  background-color: $white;
+  pointer-events: none;
+
+  @include mq("md") {
+    height: rem(12);
+  }
+}
+
+.sub-about__contact .site-contact {
+  z-index: 1;
+}
