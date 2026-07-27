@@ -1,0 +1,920 @@
+.sub-recruit {
+  background-color: $white;
+}
+
+.sub-recruit__fv-image img {
+
+  @include mq("md") {
+    object-position: 56% center;
+  }
+}
+
+.sub-recruit__fv-heading {
+  bottom: rem(108);
+  max-width: calc(100% - rem(220));
+
+  @include mq("md") {
+    bottom: rem(45);
+    max-width: calc(100% - rem(30));
+  }
+}
+
+.sub-recruit__fv-title {
+  @include font(54, 72, 0, $bold);
+
+  @include mq("md") {
+    @include font(27, 42, 0, $bold);
+  }
+}
+
+.sub-recruit__fv-copy {
+  margin-top: rem(20);
+  font-family: $en;
+  @include font(24, 20, 0, $semi);
+
+  @include mq("md") {
+    margin-top: rem(10);
+    @include font(13, 20, 0, $medium);
+  }
+}
+
+.sub-recruit__breadcrumb {
+  z-index: 2;
+}
+
+.sub-recruit__gallery {
+  width: 100vw;
+  margin-top: rem(60);
+  margin-right: auto;
+  margin-left: auto;
+
+  @include mq("md") {
+    margin-top: rem(50);
+  }
+}
+
+.sub-recruit__gallery > .sub-recruit__gallery-track {
+  display: flex;
+  align-items: flex-start;
+  gap: rem(40);
+  width: max-content;
+  padding-left: 0;
+
+  @include mq("md") {
+    gap: rem(14);
+    padding-left: 0;
+  }
+}
+
+.sub-recruit__gallery-item {
+  flex: none;
+  overflow: hidden;
+  border-radius: rem(20);
+}
+
+.sub-recruit__gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sub-recruit__gallery-item--01 {
+  width: rem(540);
+  aspect-ratio: 540 / 360;
+
+  @include mq("md") {
+    width: min(64vw, rem(240));
+  }
+}
+
+.sub-recruit__gallery-item--02 {
+  width: rem(400);
+  aspect-ratio: 400 / 262;
+  margin-top: rem(100);
+
+  @include mq("md") {
+    width: min(70vw, rem(260));
+    margin-top: rem(44);
+  }
+}
+
+.sub-recruit__gallery-item--03 {
+  width: rem(320);
+  aspect-ratio: 320 / 480;
+  margin-top: rem(10);
+
+  @include mq("md") {
+    width: min(56vw, rem(210));
+    margin-top: rem(14);
+  }
+}
+
+.sub-recruit__gallery-item--04 {
+  width: rem(480);
+  aspect-ratio: 480 / 320;
+  margin-top: rem(130);
+
+  @include mq("md") {
+    width: min(72vw, rem(270));
+    margin-top: rem(64);
+  }
+}
+
+.sub-recruit__gallery-item--05 {
+  width: rem(600);
+  aspect-ratio: 60 / 46;
+  margin-top: rem(25);
+
+  @include mq("md") {
+    width: min(70vw, rem(260));
+    margin-top: rem(14);
+  }
+}
+
+.sub-recruit__message {
+  margin-top: rem(60);
+  background-color: $white;
+}
+
+.sub-recruit__message-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 39%) minmax(0, 61%);
+  width: 100%;
+  max-width: rem(1440);
+  min-height: rem(1280);
+  margin-right: auto;
+  margin-left: auto;
+
+  @include mq("md") {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+}
+
+.sub-recruit__message-visual {
+  padding-left: rem(35);
+  display: flex;
+  align-items: flex-end;
+  min-width: 0;
+}
+
+.sub-recruit__message-visual img {
+  width: 100%;
+  object-fit: contain;
+  object-position: left bottom;
+
+  @include mq("md") {
+    width: min(92%, rem(350));
+    max-height: none;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.sub-recruit__message-content {
+  min-width: 0;
+  padding: rem(90) rem(115) rem(130) rem(55);
+
+  @include mq("md") {
+    padding: rem(58) rem(15) rem(70);
+    max-width: 500px;
+    margin-inline: auto;
+  }
+}
+
+.sub-recruit__message-title {
+  color: $blue;
+}
+
+.sub-recruit__message-text {
+  margin-top: rem(48);
+
+  @include mq("md") {
+    margin-top: rem(32);
+  }
+}
+
+.sub-recruit__message-text p {
+  @include font(20, 40, -20, $regular);
+
+  @include mq("md") {
+    @include font(15, 29, -20, $regular);
+  }
+}
+
+.sub-recruit__message-text br {
+  @include mq("md") {
+    display: none;
+  }
+}
+
+.sub-recruit__message-signature {
+  margin-top: rem(30);
+  text-align: right;
+
+  @include mq("md") {
+    margin-top: rem(32);
+  }
+}
+
+.sub-recruit__message-position {
+  @include font(16, 28, 0, $regular);
+
+  @include mq("md") {
+    @include font(14, 24, 0, $regular);
+  }
+}
+
+.sub-recruit__message-name {
+  margin-top: rem(2);
+  @include font(30, 40, 0, $regular);
+
+  @include mq("md") {
+    @include font(24, 34, 0, $regular);
+  }
+}
+
+.sub-recruit__message-links {
+  display: flex;
+  align-items: flex-start;
+  gap: rem(100);
+  margin-top: rem(55);
+
+  @include mq("md") {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: rem(30);
+    margin-top: rem(50);
+  }
+}
+
+.sub-recruit__message-link-title {
+  color: $blue;
+  font-family: $en;
+  text-transform: uppercase;
+  @include font(32, 40, 20, $bold);
+
+  @include mq("md") {
+    @include font(21, 30, 20, $bold);
+  }
+}
+
+.sub-recruit__message-socials {
+  display: flex;
+  align-items: center;
+  gap: rem(23);
+  margin-top: rem(37);
+
+  @include mq("md") {
+    flex-wrap: wrap;
+    gap: rem(18);
+    margin-top: rem(20);
+  }
+}
+
+.sub-recruit__message-social-link {
+  display: block;
+  width: rem(27);
+  transition: opacity 0.3s ease;
+
+  @include mq("md") {
+    width: rem(22);
+  }
+}
+
+.sub-recruit__message-social-link:hover {
+  opacity: 0.6;
+}
+
+.sub-recruit__message-social-link img {
+  width: 100%;
+}
+
+.sub-recruit__message-media-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: rem(133);
+  min-height: rem(36);
+  padding: rem(5) rem(20);
+  margin-top: rem(30);
+  border: rem(1) solid $blue;
+  border-radius: rem(18);
+  color: $blue;
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease;
+  @include font(14, 22, 0, $regular);
+
+  @include mq("md") {
+    min-width: 0;
+    min-height: rem(34);
+    padding: rem(5) rem(14);
+    margin-top: rem(18);
+    @include font(12, 20, 0, $regular);
+  }
+}
+
+.sub-recruit__message-media-link:hover {
+  color: $white;
+  background-color: $blue;
+}
+
+.sub-recruit__culture {
+  padding-top: rem(120);
+  padding-bottom: rem(110);
+  background-color: $light-blue;
+
+  @include mq("md") {
+    padding-top: rem(75);
+    padding-bottom: rem(80);
+  }
+}
+
+.sub-recruit__culture-heading {
+  color: $blue;
+}
+
+.sub-recruit__culture-title {
+  line-height: 1;
+  font-size: rem(85);
+
+  @include mq("md") {
+    @include font(42, 48, 0, $semi);
+  }
+}
+
+.sub-recruit__culture-subtitle {
+  margin-top: rem(13);
+}
+
+.sub-recruit__culture-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: rem(25);
+  row-gap: rem(40);
+  margin-top: rem(60);
+
+  @include mq("md") {
+    grid-template-columns: 1fr;
+    gap: rem(52);
+    margin-top: rem(48);
+  }
+}
+
+.sub-recruit__culture-item {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  min-width: 0;
+}
+
+.sub-recruit__culture-image {
+  width: 100%;
+  aspect-ratio: 385 / 240;
+  border-radius: rem(20);
+  object-fit: cover;
+
+  @include mq("md") {
+    border-radius: rem(12);
+  }
+}
+
+.sub-recruit__culture-item-title {
+  margin-top: rem(26);
+  text-align: center;
+  @include font(24, 36, 0, $bold);
+
+  @include mq("md") {
+    margin-top: rem(20);
+    @include font(20, 30, 0, $bold);
+  }
+}
+
+.sub-recruit__culture-text {
+  margin-top: rem(22);
+  @include font(16, 32, 0, $regular);
+
+  @include mq("md") {
+    margin-top: rem(16);
+    @include font(15, 29, 0, $regular);
+  }
+}
+
+.sub-recruit__standard {
+  background-color: $blue;
+}
+
+.sub-recruit__standard-visual-area {
+  background-image: linear-gradient(
+    to bottom,
+    $light-blue 0,
+    $light-blue calc(100% - rem(30)),
+    $blue calc(100% - rem(30)),
+    $blue 100%
+  );
+
+  @include mq("md") {
+    background-image: linear-gradient(
+      to bottom,
+      $light-blue 0,
+      $light-blue calc(100% - rem(18)),
+      $blue calc(100% - rem(18)),
+      $blue 100%
+    );
+  }
+}
+
+.sub-recruit__standard-visual {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.sub-recruit__standard-visual img {
+  width: 100%;
+  aspect-ratio: 1440 / 640;
+  border-radius: rem(30);
+  object-fit: cover;
+
+  @include mq("md") {
+    aspect-ratio: 5 / 3;
+    border-radius: rem(18);
+  }
+}
+
+.sub-recruit__standard-content {
+  padding-top: rem(120);
+  padding-bottom: rem(130);
+  color: $white;
+  @include blue-grid-background;
+
+  @include mq("md") {
+    padding-top: rem(65);
+    padding-bottom: rem(80);
+  }
+}
+
+.sub-recruit__standard-header {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: rem(50);
+  align-items: start;
+
+  @include mq("md") {
+    display: block;
+  }
+}
+
+.sub-recruit__standard-title {
+  color: $white;
+  font-size: rem(85);
+
+  @include mq("md") {
+    @include font(42, 48, 0, $semi);
+  }
+}
+
+.sub-recruit__standard-subtitle {
+  margin-top: rem(15);
+}
+
+.sub-recruit__standard-introduction {
+  padding-top: rem(4);
+
+  @include mq("md") {
+    padding-top: 0;
+    margin-top: rem(48);
+  }
+}
+
+.sub-recruit__standard-lead {
+  @include font(42, 50, 0, $bold);
+
+  @include mq("md") {
+    @include font(23, 36, 0, $bold);
+  }
+}
+
+.sub-recruit__standard-en {
+  margin-top: rem(12);
+  font-family: $en;
+  @include font(24, 30, 20, $medium);
+
+  @include mq("md") {
+    margin-top: rem(5);
+    @include font(15, 24, 0, $medium);
+  }
+}
+
+.sub-recruit__standard-description {
+  margin-top: rem(45);
+  @include font(20, 40, -20, $regular);
+
+  @include mq("md") {
+    margin-top: rem(28);
+    @include font(15, 29, -20, $regular);
+  }
+}
+
+.sub-recruit__standard-description br {
+  @include mq("md") {
+    display: none;
+  }
+}
+
+.sub-recruit__standard-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: rem(44);
+  row-gap: rem(34);
+  margin-top: rem(65);
+
+  @include mq("md") {
+    grid-template-columns: minmax(0, 1fr);
+    gap: rem(28);
+    margin-top: rem(55);
+  }
+}
+
+.sub-recruit__standard-item {
+  display: grid;
+  grid-template-columns: rem(80) minmax(0, 1fr);
+  align-items: start;
+  gap: rem(18);
+
+  @include mq("md") {
+    grid-template-columns: rem(52) minmax(0, 1fr);
+    gap: rem(10);
+  }
+}
+
+.sub-recruit__standard-number {
+  color: $white;
+  font-family: $en;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sub-recruit__standard-number span {
+  display: block;
+  @include font(12, 18, 200, $medium);
+
+  @include mq("md") {
+    @include font(9, 15, 200, $medium);
+  }
+}
+
+.sub-recruit__standard-number strong {
+  display: block;
+  margin-top: rem(8);
+  @include font(62, 64, 0, $semi);
+
+  @include mq("md") {
+    margin-top: rem(4);
+    @include font(40, 44, 0, $semi);
+  }
+}
+
+.sub-recruit__standard-card {
+  margin: 0;
+  min-height: rem(250);
+  padding: rem(30);
+  border-radius: rem(20);
+  color: $black;
+  background-color: $white;
+  height: 100%;
+
+  @include mq("md") {
+    min-height: 0;
+    padding: rem(24) rem(20);
+    border-radius: rem(14);
+  }
+}
+
+.sub-recruit__standard-card-title {
+  @include font(24, 42, 0, $bold);
+
+  @include mq("md") {
+    @include font(18, 30, 0, $bold);
+  }
+}
+
+.sub-recruit__standard-card-text {
+  margin-top: rem(18);
+  @include font(16, 32, -20, $regular);
+
+  @include mq("md") {
+    margin-top: rem(17);
+    @include font(14, 27, -20, $regular);
+  }
+}
+
+.sub-recruit__standard-card-title br {
+  @include mq("md") {
+    display: none;
+  }
+}
+
+.sub-recruit__welfare {
+  padding-top: rem(120);
+  padding-bottom: rem(130);
+  background-color: $white;
+
+  @include mq("md") {
+    padding-top: rem(75);
+    padding-bottom: rem(80);
+  }
+}
+
+.sub-recruit__welfare-heading {
+  color: $blue;
+}
+
+.sub-recruit__welfare-title {
+  line-height: 1;
+}
+
+.sub-recruit__welfare-subtitle {
+  margin-top: rem(13);
+}
+
+.sub-recruit__welfare-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: rem(25);
+  row-gap: rem(60);
+  margin-top: rem(70);
+
+  @include mq("md") {
+    grid-template-columns: minmax(0, 1fr);
+    gap: rem(52);
+    margin-top: rem(48);
+  }
+}
+
+.sub-recruit__welfare-item {
+}
+
+.sub-recruit__welfare-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: rem(20);
+  object-fit: cover;
+
+  @include mq("md") {
+    border-radius: rem(12);
+  }
+}
+
+.sub-recruit__welfare-item-title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: rem(22);
+  text-align: center;
+  @include font(24, 34, 0, $bold);
+  margin: 0;
+
+  @include mq("md") {
+    padding-top: rem(18);
+    @include font(20, 30, 0, $bold);
+  }
+}
+
+.sub-recruit__welfare-text {
+  margin-top: rem(23);
+  @include font(16, 32, -20, $regular);
+
+  @include mq("md") {
+    margin-top: rem(15);
+    @include font(15, 29, -20, $regular);
+  }
+}
+
+.sub-recruit__jobs {
+  padding-top: rem(115);
+  padding-bottom: rem(140);
+  color: $white;
+  @include blue-grid-background;
+  background-color: $cyan;
+
+  @include mq("md") {
+    padding-top: rem(75);
+    padding-bottom: rem(80);
+  }
+}
+
+.sub-recruit__jobs-title {
+  line-height: 1;
+}
+
+.sub-recruit__jobs-subtitle {
+  margin-top: rem(16);
+}
+
+.sub-recruit__jobs-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: rem(25);
+  margin-top: rem(70);
+
+  @include mq("md") {
+    grid-template-columns: minmax(0, 1fr);
+    gap: rem(48);
+    margin-top: rem(48);
+  }
+}
+
+.sub-recruit__jobs-image {
+  width: 100%;
+  aspect-ratio: 384 / 240;
+  border-radius: rem(20);
+  object-fit: cover;
+
+  @include mq("md") {
+    border-radius: rem(12);
+  }
+}
+
+.sub-recruit__jobs-meta {
+  display: flex;
+  align-items: center;
+  gap: rem(25);
+  margin-top: rem(30);
+
+  @include mq("md") {
+    margin-top: rem(18);
+  }
+}
+
+.sub-recruit__jobs-area {
+  display: inline-flex;
+  align-items: center;
+  gap: rem(6);
+  @include font(14, 22, 0, $bold);
+}
+
+.sub-recruit__jobs-area img {
+  width: rem(12);
+  height: auto;
+}
+
+.sub-recruit__jobs-tag {
+  padding: rem(4) rem(13);
+  border-radius: rem(5);
+  color: $blue;
+  background-color: $white;
+  @include font(14, 20, 0, $bold);
+}
+
+.sub-recruit__jobs-card-title {
+  margin-top: rem(25);
+  @include font(21, 36, 0, $bold);
+
+  @include mq("md") {
+    margin-top: rem(17);
+    @include font(16, 29, 0, $bold);
+  }
+}
+
+.sub-recruit__jobs-bottom {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: rem(65);
+
+  @include mq("md") {
+    justify-content: center;
+    margin-top: rem(48);
+  }
+}
+
+.sub-recruit__jobs-button {
+  @include mq("md") {
+    max-width: rem(280);
+    min-height: rem(68);
+    padding-right: rem(10);
+    padding-left: rem(28);
+    @include font(17, 28, 0, $bold);
+  }
+}
+
+.sub-recruit__jobs-button .site-wide-button__icon {
+  @include mq("md") {
+    width: rem(46);
+    height: rem(46);
+  }
+}
+
+.sub-recruit__entry {
+  position: relative;
+  @include blue-grid-background;
+  background-color: $cyan;
+
+  @include mq("md") {
+  }
+}
+
+.sub-recruit__entry::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: rem(20);
+  background-color: $white;
+  pointer-events: none;
+
+  @include mq("md") {
+    height: rem(14);
+  }
+}
+
+.sub-recruit__entry-inner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  border-radius: rem(20);
+
+  @include mq("md") {
+    border-radius: rem(14);
+  }
+}
+
+.sub-recruit__entry-background {
+  width: 100%;
+}
+
+.sub-recruit__entry-background img {
+  width: 100%;
+  height: clamp(rem(600), 50vw, rem(1000));
+  object-fit: cover;
+
+  @include mq("md") {
+    height: rem(400);
+    object-position: 68% center;
+  }
+}
+
+.sub-recruit__entry-content {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: max(rem(110), calc((100vw - rem(1440)) / 2 + rem(110)));
+  width: min(rem(1200), calc(100% - rem(220)));
+  color: $white;
+  transform: translateY(-50%);
+
+  @include mq("md") {
+    left: rem(25);
+    width: calc(100% - rem(50));
+  }
+}
+
+.sub-recruit__entry-title {
+  line-height: 1;
+}
+
+.sub-recruit__entry-subtitle {
+  margin-top: rem(12);
+}
+
+.sub-recruit__entry-lead {
+  margin-top: rem(65);
+  @include font(42, 64, 0, $bold);
+
+  @include mq("md") {
+    margin-top: rem(42);
+    @include font(23, 36, 0, $bold);
+  }
+}
+
+.sub-recruit__entry-button {
+  margin-top: rem(60);
+  padding-left: rem(40);
+  gap: rem(12);
+
+  @include mq("md") {
+    max-width: rem(280);
+    min-height: rem(68);
+    padding-right: rem(10);
+    padding-left: rem(24);
+    margin-top: rem(40);
+    @include font(16, 26, 0, $bold);
+  }
+}
+
+.sub-recruit__entry-button .site-wide-button__icon {
+  @include mq("md") {
+    width: rem(46);
+    height: rem(46);
+  }
+}
+
+.sub-recruit__footer {
+  margin-top: 0;
+}
