@@ -1,0 +1,138 @@
+.sub-news {
+  background-color: $white;
+}
+
+
+.sub-news__fv-image img {
+
+  @include mq("md") {
+    object-position: 58% center;
+  }
+}
+
+.sub-news__breadcrumb {
+  z-index: 2;
+}
+
+.sub-news__archive {
+  margin-top: rem(115);
+
+  @include mq("md") {
+    margin-top: rem(72);
+  }
+}
+
+.sub-news__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(rem(320), 1fr));
+  column-gap: rem(35);
+  row-gap: rem(80);
+  justify-content: center;
+
+  @include mq("md") {
+    grid-template-columns: repeat(auto-fit, minmax(rem(280), 1fr));
+    column-gap: rem(16);
+    row-gap: rem(55);
+  }
+}
+
+.sub-news__card {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  width: 100%;
+  max-width: rem(376);
+  min-width: 0;
+}
+
+.sub-news__thumbnail img {
+  width: 100%;
+  aspect-ratio: 376 / 240;
+  object-fit: cover;
+}
+
+.sub-news__card-body {
+  display: flex;
+  align-items: flex-start;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+  padding: rem(30) rem(30) 0;
+
+  @include mq("md") {
+    padding: rem(24) rem(12) 0;
+  }
+}
+
+.sub-news__category {
+  display: inline-block;
+  padding: rem(9) rem(20);
+  border: rem(1) solid $blue;
+  border-radius: rem(18);
+  color: $blue;
+  @include font(14, 17, 0, $regular);
+
+  @include mq("md") {
+    padding: rem(7) rem(16);
+    @include font(12, 16, 0, $regular);
+  }
+}
+
+.sub-news__card-title {
+  display: -webkit-box;
+  width: 100%;
+  overflow: hidden;
+  margin-top: rem(34);
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  @include font(20, 30, -40, $medium);
+
+  @include mq("md") {
+    margin-top: rem(20);
+    @include font(15, 26, -40, $medium);
+  }
+}
+
+.sub-news__link {
+  display: flex;
+  align-items: center;
+  gap: rem(14);
+  width: fit-content;
+  padding-bottom: rem(12);
+  margin-top: rem(35);
+  border-bottom: rem(1) solid $blue;
+  color: $blue;
+  @include font(16, 20, 0, $medium);
+
+  @include mq("md") {
+    gap: rem(9);
+    padding-bottom: rem(9);
+    margin-top: rem(28);
+    @include font(13, 18, 0, $medium);
+  }
+}
+
+.sub-news__link:hover {
+  @media (hover: hover) {
+    opacity: 0.65;
+  }
+}
+
+.sub-news__link-icon {
+  width: rem(24);
+  height: rem(24);
+  background-color: $blue;
+
+  @include mq("md") {
+    width: rem(20);
+    height: rem(20);
+  }
+}
+
+.sub-news__link-icon img {
+  width: rem(10);
+
+  @include mq("md") {
+    width: rem(8);
+  }
+}

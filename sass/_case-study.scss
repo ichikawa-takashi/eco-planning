@@ -1,0 +1,159 @@
+.sub-case-study {
+  background-color: $white;
+}
+
+.sub-case-study__fv-image img {
+
+  @include mq("md") {
+    object-position: 58% center;
+  }
+}
+
+.sub-case-study__archive {
+  margin-top: rem(63);
+
+  @include mq("md") {
+    margin-top: rem(50);
+  }
+}
+
+.sub-case-study__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(rem(320), 1fr));
+  gap: rem(5);
+  justify-content: center;
+
+  @include mq("md") {
+    grid-template-columns: repeat(auto-fit, minmax(rem(280), 1fr));
+    gap: rem(10);
+  }
+}
+
+.sub-case-study__card {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  aspect-ratio: 396 / 600;
+  width: 100%;
+  max-width: rem(396);
+  min-width: 0;
+  padding: rem(8);
+  background-color: #f4f4f4;
+
+  @include mq('md'){
+    aspect-ratio: auto;
+  }
+}
+
+.sub-case-study__card:nth-child(3n + 2) {
+  background-color: #e7edef;
+}
+
+.sub-case-study__card:nth-child(3n) {
+  background-color: #d9e7e7;
+}
+
+.sub-case-study__thumbnail img {
+  width: 100%;
+  aspect-ratio: 380 / 240;
+  object-fit: cover;
+}
+
+.sub-case-study__card-body {
+  margin-top: 0;
+  display: flex;
+  align-items: flex-start;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+  padding: rem(40) rem(55) rem(66);
+
+  @include mq("md") {
+    padding: rem(30) rem(24) rem(32);
+  }
+}
+
+.sub-case-study__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: rem(8);
+}
+
+.sub-case-study__tag {
+  padding: rem(9.5) rem(20);
+  border-radius: rem(18);
+  background-color: $blue;
+  color: $white;
+  @include font(14, 17, 0, $regular);
+
+  @include mq("md") {
+    padding-right: rem(13);
+    padding-left: rem(13);
+    @include font(12, 16, 0, $regular);
+  }
+}
+
+.sub-case-study__company {
+  margin-top: rem(20);
+  color: #555;
+  @include font(13, 20, 0, $regular);
+}
+
+.sub-case-study__card-title {
+  display: -webkit-box;
+  width: 100%;
+  overflow: hidden;
+  margin-top: rem(28);
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  @include font(20, 30, -40, $medium);
+
+  @include mq("md") {
+    margin-top: rem(22);
+    @include font(16, 27, -40, $medium);
+  }
+}
+
+.sub-case-study__link {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: rem(13);
+  width: fit-content;
+  margin-top: rem(35);
+  padding-bottom: rem(12);
+  border-bottom: rem(1) solid $blue;
+  color: $blue;
+  @include font(16, 16, 0, $medium);
+
+  @include mq("md") {
+    gap: rem(9);
+    padding-bottom: rem(9);
+    @include font(13, 18, 0, $medium);
+  }
+}
+
+.sub-case-study__link:hover {
+  @media (hover: hover) {
+    opacity: 0.65;
+  }
+}
+
+.sub-case-study__link-icon {
+  width: rem(24);
+  height: rem(24);
+  background-color: $blue;
+
+  @include mq("md") {
+    width: rem(20);
+    height: rem(20);
+  }
+}
+
+.sub-case-study__link-icon img {
+  width: rem(10);
+
+  @include mq("md") {
+    width: rem(8);
+  }
+}
