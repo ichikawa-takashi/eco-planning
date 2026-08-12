@@ -24,15 +24,18 @@
 
 .sub-news__cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(rem(320), 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   column-gap: rem(35);
   row-gap: rem(80);
-  justify-content: center;
 
   @include mq("md") {
-    grid-template-columns: repeat(auto-fit, minmax(rem(280), 1fr));
+    grid-template-columns: minmax(0, 1fr);
     column-gap: rem(16);
     row-gap: rem(55);
+  }
+
+  @media screen and (min-width: 560px) and (max-width: 768px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -48,6 +51,7 @@
 .sub-news__thumbnail img {
   width: 100%;
   aspect-ratio: 376 / 240;
+  max-height: rem(240);
   object-fit: cover;
 }
 
@@ -62,6 +66,12 @@
   @include mq("md") {
     padding: rem(24) rem(12) 0;
   }
+}
+
+.sub-news__categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: rem(8);
 }
 
 .sub-news__category {

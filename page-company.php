@@ -1,89 +1,30 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&amp;family=Noto+Sans+JP:wght@100..900&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>会社概要 | ECO PLANNING</title>
-</head>
-
-<body class="sub-company">
-  <div class="sub-company__first-view site-subpage-first-view">
-    <header class="site-header">
-      <div class="site-header__inner">
-        <a class="site-header__logo" href="#">
-          <img src="./img/common/logo-white.png" alt="ECO PLANNING">
-        </a>
-
-        <nav class="site-header__nav js-drawer" aria-label="グローバルナビゲーション">
-          <ul class="site-header__nav-list">
-            <li class="site-header__nav-item"><a class="site-header__nav-link" href="#">私たちについて</a></li>
-            <li class="site-header__nav-item"><a class="site-header__nav-link" href="#">事業紹介</a></li>
-            <li class="site-header__nav-item"><a class="site-header__nav-link" href="#">実績・お客様の声</a></li>
-            <li class="site-header__nav-item"><a class="site-header__nav-link" href="#">ニュース／スタッフ紹介</a></li>
-          </ul>
-
-          <div class="site-header__buttons">
-            <a class="site-header__button" href="#">
-              <span>recruit</span>
-              <span class="site-arrow-icon site-header__button-icon" aria-hidden="true">
-                <img src="./img/common/arrow-blue.png" alt="">
-              </span>
-            </a>
-            <a class="site-header__button site-header__button--contact" href="#">
-              <span>contact</span>
-              <span class="site-arrow-icon site-header__button-icon" aria-hidden="true">
-                <img src="./img/common/arrow-blue.png" alt="">
-              </span>
-            </a>
+<?php get_header(); ?>
+<main>
+    <div class="sub-company__first-view site-subpage-first-view">
+      <section class="sub-company__fv site-subpage-fv">
+        <div class="sub-company__fv-image site-subpage-fv__image">
+          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/company/fv.jpg" alt="エコ・プランニングのヘルメット">
+        </div>
+  
+        <div class="sub-company__fv-heading site-subpage-fv__heading">
+          <h1 class="sub-company__fv-title site-subpage-fv__title">company</h1>
+          <p class="sub-company__fv-subtitle site-subpage-fv__subtitle site-heading-subtitle--default">会社概要</p>
+        </div>
+  
+        <?php if (function_exists('bcn_display')) { ?>
+          <div class="breadcrumb sub-company__breadcrumb site-subpage-fv__breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
+            <?php bcn_display(); ?>
           </div>
-        </nav>
+        <?php } ?>
+      </section>
+    </div>
 
-        <button class="site-header__hamburger js-hamburger" type="button" aria-label="メニューを開く">
-          <span class="site-header__hamburger-line"></span>
-          <span class="site-header__hamburger-line"></span>
-          <span class="site-header__hamburger-line"></span>
-        </button>
-      </div>
-    </header>
-
-    <section class="sub-company__fv site-subpage-fv">
-      <div class="sub-company__fv-image site-subpage-fv__image">
-        <img src="./img/company/fv.jpg" alt="エコ・プランニングのヘルメット">
-      </div>
-
-      <div class="sub-company__fv-heading site-subpage-fv__heading">
-        <h1 class="sub-company__fv-title site-subpage-fv__title">company</h1>
-        <p class="sub-company__fv-subtitle site-subpage-fv__subtitle site-heading-subtitle--default">会社概要</p>
-      </div>
-
-      <nav class="breadcrumb sub-company__breadcrumb site-subpage-fv__breadcrumb" aria-label="パンくずリスト">
-        <ol class="breadcrumb__list">
-          <li class="breadcrumb__item">
-            <a class="breadcrumb__home" href="#">
-              <img class="breadcrumb__home-icon" src="./img/common/icon-home.png" alt="">
-              <span>株式会社エコ・プランニングhome</span>
-            </a>
-          </li>
-          <li class="breadcrumb__separator" aria-hidden="true">&gt;</li>
-          <li class="breadcrumb__item" aria-current="page">会社概要</li>
-        </ol>
-      </nav>
-    </section>
-  </div>
-
-  <main>
-    <section class="sub-company__gallery site-loop-gallery" aria-label="エコ・プランニングの風景">
+  <section class="sub-company__gallery site-loop-gallery" aria-label="エコ・プランニングの風景">
       <div class="sub-company__gallery-track site-loop-gallery__track js-loop-gallery-track">
-        <div class="sub-company__gallery-item site-loop-gallery__item"><img src="./img/company/gallery-01.jpg" alt="エコ・プランニングの工場にあるモニュメント"></div>
-        <div class="sub-company__gallery-item site-loop-gallery__item"><img src="./img/company/gallery-02.jpg" alt="エコ・プランニングのユニフォーム"></div>
-        <div class="sub-company__gallery-item site-loop-gallery__item"><img src="./img/company/gallery-03.jpg" alt="コンテナに描かれたスタッフのイラスト"></div>
-        <div class="sub-company__gallery-item site-loop-gallery__item"><img src="./img/company/gallery-04.jpg" alt="エコ・プランニングの打ち合わせスペース"></div>
+        <div class="sub-company__gallery-item site-loop-gallery__item"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/company/gallery-01.jpg" alt="エコ・プランニングの工場にあるモニュメント"></div>
+        <div class="sub-company__gallery-item site-loop-gallery__item"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/company/gallery-02.jpg" alt="エコ・プランニングのユニフォーム"></div>
+        <div class="sub-company__gallery-item site-loop-gallery__item"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/company/gallery-03.jpg" alt="コンテナに描かれたスタッフのイラスト"></div>
+        <div class="sub-company__gallery-item site-loop-gallery__item"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/company/gallery-04.jpg" alt="エコ・プランニングの打ち合わせスペース"></div>
       </div>
     </section>
 
@@ -107,7 +48,7 @@
               <p class="sub-company__history-text">
                 大阪府寝屋川市にて吉田建設を創業。当時は家計を支えるべく、中学卒業後に自動車修理工や廃品回収など様々な職に就き、寝る間も惜しんで働く日々を過ごす。
               </p>
-              <img class="sub-company__history-image" src="./img/company/history-1966.png" alt="創業当時の回収車両">
+              <img class="sub-company__history-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/company/history-1966.png" alt="創業当時の回収車両">
             </article>
 
             <article class="sub-company__history-card swiper-slide">
@@ -115,7 +56,7 @@
               <p class="sub-company__history-text">
                 拠点を三重県亀山市へ移転。元請け業者と共に中ノ川の造成工事に携わる。工事完了後、大阪へは戻らずに三重県を拠点として新たな事業を起こすことを決意。
               </p>
-              <img class="sub-company__history-image" src="./img/company/history-1975.png" alt="造成工事に使用した車両">
+              <img class="sub-company__history-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/company/history-1975.png" alt="造成工事に使用した車両">
             </article>
 
             <article class="sub-company__history-card swiper-slide">
@@ -123,7 +64,7 @@
               <p class="sub-company__history-text">
                 亀山市にて解体事業を開始。当時は「解体工事」がビジネスとして確立されていない時代。いち早くその可能性に着目してスタートを切るなど、当時から「人がやっていないことに挑む」先見の明に長けていた。
               </p>
-              <img class="sub-company__history-image" src="./img/company/history-1976.png" alt="解体工事を行う当時のスタッフ">
+              <img class="sub-company__history-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/company/history-1976.png" alt="解体工事を行う当時のスタッフ">
             </article>
 
             <article class="sub-company__history-card swiper-slide">
@@ -131,7 +72,7 @@
               <p class="sub-company__history-text">
                 日本で初めて、ヘリコプターを用いた解体工事を実施。
               </p>
-              <img class="sub-company__history-image" src="./img/company/history-1983.png" alt="ヘリコプターを用いた解体工事">
+              <img class="sub-company__history-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/company/history-1983.png" alt="ヘリコプターを用いた解体工事">
             </article>
 
             <article class="sub-company__history-card swiper-slide">
@@ -139,7 +80,7 @@
               <p class="sub-company__history-text">
                 トンネル天井板撤去工事の特許製品を開発。さらに廃棄物分別装置や石膏ボードと紙の剥離装置でも特許を取得。顧客満足のために「便利」と「使いやすさ」を追求するチャレンジ精神や試行錯誤の姿勢は、この頃から深く根付いている。
               </p>
-              <img class="sub-company__history-image" src="./img/company/history-1991.png" alt="トンネル天井板撤去工事">
+              <img class="sub-company__history-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/company/history-1991.png" alt="トンネル天井板撤去工事">
             </article>
 
             <article class="sub-company__history-card swiper-slide">
@@ -147,7 +88,7 @@
               <p class="sub-company__history-text">
                 三重県内初となる、産業廃棄物開閉式コンテナによる回収サービスを開始。当時は廃材用コンテナが普及しておらず、現場の地面に置いた廃材をトラックへ積み替えて運ぶ手法が一般的だった時代に、業界に先駆けて導入。
               </p>
-              <img class="sub-company__history-image" src="./img/company/history-1995.png" alt="産業廃棄物開閉式コンテナによる回収">
+              <img class="sub-company__history-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/company/history-1995.png" alt="産業廃棄物開閉式コンテナによる回収">
             </article>
 
             <article class="sub-company__history-card swiper-slide">
@@ -155,7 +96,7 @@
               <p class="sub-company__history-text">
                 吉田實が代表取締役に就任。
               </p>
-              <img class="sub-company__history-image" src="./img/company/history-2011.png" alt="代表取締役に就任した吉田實">
+              <img class="sub-company__history-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/company/history-2011.png" alt="代表取締役に就任した吉田實">
             </article>
 
             <article class="sub-company__history-card swiper-slide">
@@ -163,7 +104,7 @@
               <p class="sub-company__history-text">
                 吉田工業株式会社より、解体工事事業および産業廃棄物処理事業の事業譲渡を受ける。
               </p>
-              <img class="sub-company__history-image" src="./img/company/history-2014.png" alt="解体工事の現場">
+              <img class="sub-company__history-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/company/history-2014.png" alt="解体工事の現場">
             </article>
 
             <article class="sub-company__history-card swiper-slide">
@@ -171,7 +112,7 @@
               <p class="sub-company__history-text">
                 吉田孔顕が代表取締役に就任。
               </p>
-              <img class="sub-company__history-image" src="./img/company/history-2014-02.png" alt="代表取締役に就任した吉田孔顕">
+              <img class="sub-company__history-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/company/history-2014-02.png" alt="代表取締役に就任した吉田孔顕">
             </article>
 
             <article class="sub-company__history-card swiper-slide">
@@ -179,15 +120,15 @@
               <p class="sub-company__history-text">
                 事業部制にし組織を再編。現在は解体事業部と環境事業部を中心に運営を行っている。
               </p>
-              <img class="sub-company__history-image" src="./img/company/history-2015.png" alt="エコ・プランニングのスタッフ">
+              <img class="sub-company__history-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/company/history-2015.png" alt="エコ・プランニングのスタッフ">
             </article>
           </div>
         </div>
         <button class="sub-company__history-navigation sub-company__history-navigation--prev" type="button" aria-label="前の沿革を見る">
-          <img src="./img/common/arrow-white.png" alt="">
+          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt="">
         </button>
         <button class="sub-company__history-navigation sub-company__history-navigation--next" type="button" aria-label="次の沿革を見る">
-          <img src="./img/common/arrow-white.png" alt="">
+          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt="">
         </button>
       </div>
     </section>
@@ -370,7 +311,7 @@
       </div>
     </section>
 
-    <section class="sub-company__privacy">
+    <section class="sub-company__privacy" id="privacy">
       <div class="sub-company__privacy-inner inner">
         <div class="sub-company__section-heading">
           <h2 class="sub-company__section-title site-heading--subpage-en">privacy policy</h2>
@@ -435,7 +376,7 @@
     <section class="site-contact-section sub-company__contact">
       <div class="site-contact site-contact--visual">
         <div class="site-contact__background">
-          <img src="./img/common/contact-bg.jpg" alt="">
+          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/contact-bg.jpg" alt="">
         </div>
         <div class="site-contact__visual-content">
           <div class="site-contact__heading">
@@ -450,30 +391,30 @@
 
           <div class="site-contact__list">
             <div class="site-contact__card site-contact__card--phone">
-              <img class="site-contact__icon" src="./img/common/icon-contact-phone.png" alt="">
+              <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-phone.png" alt="">
               <p class="site-contact__card-title">お電話でのお問い合わせ</p>
               <a class="site-contact__phone-number" href="tel:0595833330">0595-83-3330</a>
               <p class="site-contact__note">お電話の際に「ホームページを見て」<br>とお伝えください。</p>
             </div>
 
             <div class="site-contact__card site-contact__card--mail">
-              <img class="site-contact__icon" src="./img/common/icon-contact-mail.png" alt="">
+              <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-mail.png" alt="">
               <p class="site-contact__card-title">メールでのお問い合わせ</p>
-              <a class="site-contact__button" href="#">
+              <a class="site-contact__button" href="<?php echo esc_url(home_url('/contact/')); ?>">
                 <span>お問い合わせ</span>
                 <span class="site-arrow-icon site-contact__button-icon" aria-hidden="true">
-                  <img src="./img/common/arrow-blue.png" alt="">
+                  <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt="">
                 </span>
               </a>
             </div>
 
             <div class="site-contact__card site-contact__card--line">
-              <img class="site-contact__icon" src="./img/common/icon-contact-line.png" alt="">
+              <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-line.png" alt="">
               <p class="site-contact__card-title">LINEでのお問い合わせ</p>
               <a class="site-contact__button" href="#">
                 <span>LINE 友達追加</span>
                 <span class="site-arrow-icon site-contact__button-icon" aria-hidden="true">
-                  <img src="./img/common/arrow-blue.png" alt="">
+                  <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt="">
                 </span>
               </a>
             </div>
@@ -482,73 +423,4 @@
       </div>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <div class="site-footer__inner inner">
-      <div class="site-footer__top">
-        <div class="site-footer__brand">
-          <a class="site-footer__logo" href="#"><img src="./img/common/logo-blue.png" alt="ECO PLANNING"></a>
-          <div class="site-footer__certifications">
-            <img src="./img/common/logo-mems.png" alt="M-EMS">
-            <img src="./img/common/logo-sdgs.png" alt="SDGs">
-          </div>
-        </div>
-
-        <div class="site-footer__navigation">
-          <nav class="site-footer__nav" aria-label="フッターナビゲーション">
-            <div class="site-footer__nav-group">
-              <a class="site-footer__nav-heading" href="#">私たちについて</a>
-              <a class="site-footer__nav-link" href="#">会社概要</a>
-            </div>
-            <div class="site-footer__nav-group">
-              <a class="site-footer__nav-heading" href="#">事業紹介</a>
-              <a class="site-footer__nav-link" href="#">解体・アスベスト除去</a>
-              <a class="site-footer__nav-link" href="#">産業廃棄物回収</a>
-              <a class="site-footer__nav-link" href="#">産業廃棄物持ち込み</a>
-            </div>
-            <div class="site-footer__nav-group">
-              <a class="site-footer__nav-heading" href="#">実績 / お客様の声</a>
-              <a class="site-footer__nav-heading" href="#">ニュース / スタッフ紹介</a>
-              <a class="site-footer__nav-heading" href="#">募集要項一覧</a>
-            </div>
-          </nav>
-
-          <div class="site-footer__buttons">
-            <a class="site-footer__button site-footer__button--recruit" href="#">
-              <span>recruit</span>
-              <span class="site-arrow-icon site-footer__button-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span>
-            </a>
-            <a class="site-footer__button site-footer__button--contact" href="#">
-              <span>contact</span>
-              <span class="site-arrow-icon site-footer__button-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="site-footer__concept">
-        <img class="site-footer__concept-mark" src="./img/common/concept-mark.png" alt="">
-        <p class="site-footer__concept-copy">誠実に、<br>つくそう。</p>
-      </div>
-
-      <div class="site-footer__bottom">
-        <div class="site-footer__information">
-          <p class="site-footer__description">解体工事、収集運搬、産廃処理なら三重県津市の株式会社エコ・プランニング</p>
-          <p class="site-footer__copyright">Copyright © 2025 Eco planning. All right reserved.</p>
-        </div>
-        <div class="site-footer__socials">
-          <a class="site-footer__social-link" href="#" aria-label="Facebook"><img src="./img/common/icon-facebook.png" alt=""></a>
-          <a class="site-footer__social-link" href="#" aria-label="X"><img src="./img/common/icon-x.png" alt=""></a>
-          <a class="site-footer__social-link" href="#" aria-label="Instagram"><img src="./img/common/icon-instagram.png" alt=""></a>
-          <a class="site-footer__social-link" href="#" aria-label="YouTube"><img src="./img/common/icon-youtube.png" alt=""></a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="./js/script.js"></script>
-</body>
-
-</html>
+<?php get_footer(); ?>

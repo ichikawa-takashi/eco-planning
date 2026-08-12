@@ -60,15 +60,18 @@
 
 .sub-jobs__cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(rem(320), 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   column-gap: rem(25);
   row-gap: rem(65);
-  justify-content: center;
 
   @include mq("md") {
-    grid-template-columns: repeat(auto-fit, minmax(rem(280), 1fr));
+    grid-template-columns: minmax(0, 1fr);
     column-gap: rem(16);
     row-gap: rem(48);
+  }
+
+  @media screen and (min-width: 560px) and (max-width: 768px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -91,6 +94,7 @@
 .sub-jobs__image {
   width: 100%;
   aspect-ratio: 384 / 240;
+  max-height: rem(240);
   border-radius: rem(20);
   object-fit: cover;
 
@@ -101,6 +105,7 @@
 
 .sub-jobs__meta {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: rem(25);
   margin-top: rem(30);

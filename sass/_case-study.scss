@@ -19,13 +19,16 @@
 
 .sub-case-study__cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(rem(320), 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: rem(5);
-  justify-content: center;
 
   @include mq("md") {
-    grid-template-columns: repeat(auto-fit, minmax(rem(280), 1fr));
+    grid-template-columns: minmax(0, 1fr);
     gap: rem(10);
+  }
+
+  @media screen and (min-width: 560px) and (max-width: 768px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -56,6 +59,7 @@
 .sub-case-study__thumbnail img {
   width: 100%;
   aspect-ratio: 380 / 240;
+  max-height: rem(240);
   object-fit: cover;
 }
 

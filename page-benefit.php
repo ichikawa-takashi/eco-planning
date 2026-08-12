@@ -1,91 +1,25 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&amp;family=Noto+Sans+JP:wght@100..900&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>私たちについて | ECO PLANNING</title>
-</head>
-
-<body class="sub-about">
-  <div class="sub-about__first-view site-subpage-first-view">
-    <header class="site-header">
-      <div class="site-header__inner">
-        <a class="site-header__logo" href="#">
-          <img src="./img/common/logo-white.png" alt="ECO PLANNING">
-        </a>
-
-        <nav class="site-header__nav js-drawer" aria-label="グローバルナビゲーション">
-          <ul class="site-header__nav-list">
-            <li class="site-header__nav-item">
-              <a class="site-header__nav-link" href="#">私たちについて</a>
-            </li>
-            <li class="site-header__nav-item">
-              <a class="site-header__nav-link" href="#">事業紹介</a>
-            </li>
-            <li class="site-header__nav-item">
-              <a class="site-header__nav-link" href="#">実績・お客様の声</a>
-            </li>
-            <li class="site-header__nav-item">
-              <a class="site-header__nav-link" href="#">ニュース／スタッフ紹介</a>
-            </li>
-          </ul>
-
-          <div class="site-header__buttons">
-            <a class="site-header__button" href="#">
-              <span>recruit</span>
-              <span class="site-arrow-icon site-header__button-icon" aria-hidden="true">
-                <img src="./img/common/arrow-blue.png" alt="">
-              </span>
-            </a>
-            <a class="site-header__button site-header__button--contact" href="#">
-              <span>contact</span>
-              <span class="site-arrow-icon site-header__button-icon" aria-hidden="true">
-                <img src="./img/common/arrow-blue.png" alt="">
-              </span>
-            </a>
+<?php get_header(); ?>
+<main>
+    <div class="sub-about__first-view site-subpage-first-view">
+      <section class="sub-about__fv site-subpage-fv">
+        <div class="sub-about__fv-image site-subpage-fv__image">
+          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/about/fv.jpg" alt="夕日に染まる都市の風景">
+        </div>
+  
+        <div class="sub-about__fv-heading site-subpage-fv__heading">
+          <h1 class="sub-about__fv-title site-subpage-fv__title">about us</h1>
+          <p class="sub-about__fv-subtitle site-subpage-fv__subtitle site-heading-subtitle--default">私たちについて</p>
+        </div>
+  
+        <?php if (function_exists('bcn_display')) { ?>
+          <div class="breadcrumb site-subpage-fv__breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
+            <?php bcn_display(); ?>
           </div>
-        </nav>
+        <?php } ?>
+      </section>
+    </div>
 
-        <button class="site-header__hamburger js-hamburger" type="button" aria-label="メニューを開く">
-          <span class="site-header__hamburger-line"></span>
-          <span class="site-header__hamburger-line"></span>
-          <span class="site-header__hamburger-line"></span>
-        </button>
-      </div>
-    </header>
-
-    <section class="sub-about__fv site-subpage-fv">
-      <div class="sub-about__fv-image site-subpage-fv__image">
-        <img src="./img/about/fv.jpg" alt="夕日に染まる都市の風景">
-      </div>
-
-      <div class="sub-about__fv-heading site-subpage-fv__heading">
-        <h1 class="sub-about__fv-title site-subpage-fv__title">about us</h1>
-        <p class="sub-about__fv-subtitle site-subpage-fv__subtitle site-heading-subtitle--default">私たちについて</p>
-      </div>
-
-      <nav class="breadcrumb site-subpage-fv__breadcrumb" aria-label="パンくずリスト">
-        <ol class="breadcrumb__list">
-          <li class="breadcrumb__item">
-            <a class="breadcrumb__home" href="#">
-              <img class="breadcrumb__home-icon" src="./img/common/icon-home.png" alt="">
-              <span>株式会社エコ・プランニングhome</span>
-            </a>
-          </li>
-          <li class="breadcrumb__separator" aria-hidden="true">&gt;</li>
-          <li class="breadcrumb__item" aria-current="page">私たちについて</li>
-        </ol>
-      </nav>
-    </section>
-  </div>
-
-  <main>
-    <section class="sub-about__introduction">
+  <section class="sub-about__introduction">
       <div class="sub-about__introduction-inner inner">
         <div class="sub-about__introduction-heading">
           <h2 class="sub-about__introduction-title site-heading--page-jp">誠実に、つくそう</h2>
@@ -101,16 +35,16 @@
     <section class="sub-about__gallery site-loop-gallery" aria-label="私たちの取り組み">
       <div class="sub-about__gallery-track site-loop-gallery__track js-loop-gallery-track">
         <div class="sub-about__gallery-item site-loop-gallery__item">
-          <img src="./img/about/gallery-01.jpg" alt="都市の風景">
+          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/about/gallery-01.jpg" alt="都市の風景">
         </div>
         <div class="sub-about__gallery-item site-loop-gallery__item">
-          <img src="./img/about/gallery-02.jpg" alt="街を歩く女性">
+          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/about/gallery-02.jpg" alt="街を歩く女性">
         </div>
         <div class="sub-about__gallery-item site-loop-gallery__item">
-          <img src="./img/about/gallery-03.jpg" alt="資料を手渡す女性">
+          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/about/gallery-03.jpg" alt="資料を手渡す女性">
         </div>
         <div class="sub-about__gallery-item site-loop-gallery__item">
-          <img src="./img/about/gallery-04.jpg" alt="街を行き交う人々">
+          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/about/gallery-04.jpg" alt="街を行き交う人々">
         </div>
       </div>
     </section>
@@ -139,7 +73,7 @@
     <section class="sub-about__representative">
       <div class="sub-about__representative-inner">
         <div class="sub-about__representative-image">
-          <img src="./img/about/representative.jpg" alt="株式会社エコ・プランニング代表取締役 吉田孔顕">
+          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/about/representative.jpg" alt="株式会社エコ・プランニング代表取締役 吉田孔顕">
         </div>
 
         <div class="sub-about__representative-content">
@@ -176,7 +110,7 @@
     <section class="sub-about__principles">
       <article class="sub-about__principle">
         <div class="sub-about__principle-image">
-          <img src="./img/about/vision.jpg" alt="解体現場に立つエコ・プランニングのスタッフ">
+          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/about/vision.jpg" alt="解体現場に立つエコ・プランニングのスタッフ">
         </div>
         <div class="sub-about__principle-inner inner">
           <div class="sub-about__principle-heading">
@@ -194,7 +128,7 @@
 
       <article class="sub-about__principle">
         <div class="sub-about__principle-image">
-          <img src="./img/about/purpose.jpg" alt="街の風景">
+          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/about/purpose.jpg" alt="街の風景">
         </div>
         <div class="sub-about__principle-inner inner">
           <div class="sub-about__principle-heading">
@@ -215,7 +149,7 @@
 
       <article class="sub-about__principle">
         <div class="sub-about__principle-image">
-          <img src="./img/about/value.jpg" alt="解体現場で打ち合わせをするスタッフ">
+          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/about/value.jpg" alt="解体現場で打ち合わせをするスタッフ">
         </div>
         <div class="sub-about__principle-inner inner">
           <div class="sub-about__principle-heading">
@@ -239,7 +173,7 @@
     <section class="site-contact-section sub-about__contact">
       <div class="site-contact site-contact--visual">
         <div class="site-contact__background">
-          <img src="./img/common/contact-bg.jpg" alt="">
+          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/contact-bg.jpg" alt="">
         </div>
         <div class="site-contact__visual-content">
           <div class="site-contact__heading">
@@ -254,30 +188,30 @@
 
           <div class="site-contact__list">
             <div class="site-contact__card site-contact__card--phone">
-              <img class="site-contact__icon" src="./img/common/icon-contact-phone.png" alt="">
+              <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-phone.png" alt="">
               <p class="site-contact__card-title">お電話でのお問い合わせ</p>
               <a class="site-contact__phone-number" href="tel:0595833330">0595-83-3330</a>
               <p class="site-contact__note">お電話の際に「ホームページを見て」<br>とお伝えください。</p>
             </div>
 
             <div class="site-contact__card site-contact__card--mail">
-              <img class="site-contact__icon" src="./img/common/icon-contact-mail.png" alt="">
+              <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-mail.png" alt="">
               <p class="site-contact__card-title">メールでのお問い合わせ</p>
-              <a class="site-contact__button" href="#">
+              <a class="site-contact__button" href="<?php echo esc_url(home_url('/contact/')); ?>">
                 <span>お問い合わせ</span>
                 <span class="site-arrow-icon site-contact__button-icon" aria-hidden="true">
-                  <img src="./img/common/arrow-blue.png" alt="">
+                  <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt="">
                 </span>
               </a>
             </div>
 
             <div class="site-contact__card site-contact__card--line">
-              <img class="site-contact__icon" src="./img/common/icon-contact-line.png" alt="">
+              <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-line.png" alt="">
               <p class="site-contact__card-title">LINEでのお問い合わせ</p>
               <a class="site-contact__button" href="#">
                 <span>LINE 友達追加</span>
                 <span class="site-arrow-icon site-contact__button-icon" aria-hidden="true">
-                  <img src="./img/common/arrow-blue.png" alt="">
+                  <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt="">
                 </span>
               </a>
             </div>
@@ -286,90 +220,4 @@
       </div>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <div class="site-footer__inner inner">
-      <div class="site-footer__top">
-        <div class="site-footer__brand">
-          <a class="site-footer__logo" href="#">
-            <img src="./img/common/logo-blue.png" alt="ECO PLANNING">
-          </a>
-          <div class="site-footer__certifications">
-            <img src="./img/common/logo-mems.png" alt="M-EMS">
-            <img src="./img/common/logo-sdgs.png" alt="SDGs">
-          </div>
-        </div>
-
-        <div class="site-footer__navigation">
-          <nav class="site-footer__nav" aria-label="フッターナビゲーション">
-            <div class="site-footer__nav-group">
-              <a class="site-footer__nav-heading" href="#">私たちについて</a>
-              <a class="site-footer__nav-link" href="#">会社概要</a>
-            </div>
-            <div class="site-footer__nav-group">
-              <a class="site-footer__nav-heading" href="#">事業紹介</a>
-              <a class="site-footer__nav-link" href="#">解体・アスベスト除去</a>
-              <a class="site-footer__nav-link" href="#">産業廃棄物回収</a>
-              <a class="site-footer__nav-link" href="#">産業廃棄物持ち込み</a>
-            </div>
-            <div class="site-footer__nav-group">
-              <a class="site-footer__nav-heading" href="#">実績 / お客様の声</a>
-              <a class="site-footer__nav-heading" href="#">ニュース / スタッフ紹介</a>
-              <a class="site-footer__nav-heading" href="#">募集要項一覧</a>
-            </div>
-          </nav>
-
-          <div class="site-footer__buttons">
-            <a class="site-footer__button site-footer__button--recruit" href="#">
-              <span>recruit</span>
-              <span class="site-arrow-icon site-footer__button-icon" aria-hidden="true">
-                <img src="./img/common/arrow-white.png" alt="">
-              </span>
-            </a>
-            <a class="site-footer__button site-footer__button--contact" href="#">
-              <span>contact</span>
-              <span class="site-arrow-icon site-footer__button-icon" aria-hidden="true">
-                <img src="./img/common/arrow-white.png" alt="">
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="site-footer__concept">
-        <img class="site-footer__concept-mark" src="./img/common/concept-mark.png" alt="">
-        <p class="site-footer__concept-copy">
-          誠実に、<br>
-          つくそう。
-        </p>
-      </div>
-
-      <div class="site-footer__bottom">
-        <div class="site-footer__information">
-          <p class="site-footer__description">解体工事、収集運搬、産廃処理なら三重県津市の株式会社エコ・プランニング</p>
-          <p class="site-footer__copyright">Copyright © 2025 Eco planning. All right reserved.</p>
-        </div>
-
-        <div class="site-footer__socials">
-          <a class="site-footer__social-link" href="#" aria-label="Facebook">
-            <img src="./img/common/icon-facebook.png" alt="">
-          </a>
-          <a class="site-footer__social-link" href="#" aria-label="X">
-            <img src="./img/common/icon-x.png" alt="">
-          </a>
-          <a class="site-footer__social-link" href="#" aria-label="Instagram">
-            <img src="./img/common/icon-instagram.png" alt="">
-          </a>
-          <a class="site-footer__social-link" href="#" aria-label="YouTube">
-            <img src="./img/common/icon-youtube.png" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="./js/script.js"></script>
-</body>
-
-</html>
+<?php get_footer(); ?>

@@ -1,5 +1,5 @@
 .site-header {
-  position: absolute;
+  position: fixed;
   z-index: 10;
   top: rem(30);
   left: 0;
@@ -294,6 +294,10 @@
 
 .site-header--light .site-header__button--contact .site-header__button-icon {
   background-color: $blue;
+}
+
+.site-header--light .site-header__button-icon img {
+  filter: brightness(0) invert(1);
 }
 
 .site-header--light .site-header__button:not(.site-header__button--contact):hover {

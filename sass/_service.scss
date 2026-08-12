@@ -1449,7 +1449,7 @@ padding-inline: rem(25);
 }
 
 .sub-service-detail__application-panel {
-  padding: rem(110);
+  padding: rem(110) rem(25);
   border-radius: rem(30);
   @include blue-grid-background;
 
@@ -1471,20 +1471,24 @@ padding-inline: rem(25);
 }
 
 .sub-service-detail__application-list {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
   gap: rem(25);
   margin-top: rem(55);
+  max-width: 1180px;
+  margin-inline: auto;
 
   @include mq("md") {
+    display: grid;
     grid-template-columns: 1fr;
     gap: rem(16);
     margin-top: rem(35);
+    max-width: 300px;
   }
 }
 
 .sub-service-detail__application-link {
   justify-self: center;
+  padding-left: linear_func_clamp(1440,51,769,20);
 
   @include mq("md") {
     max-width: none;
@@ -1494,6 +1498,11 @@ padding-inline: rem(25);
     border-radius: rem(33);
     @include font(16, 25, 0, $bold);
   }
+}
+
+.sub-service-detail__application-link:last-child{
+  max-width: none;
+  white-space: nowrap;
 }
 
 .sub-service-detail__application-icon {

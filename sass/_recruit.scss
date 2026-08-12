@@ -134,6 +134,10 @@
 .sub-recruit__message {
   margin-top: rem(60);
   background-color: $white;
+
+  @include mq('md'){
+    margin-top: rem(45);
+  }
 }
 
 .sub-recruit__message-inner {
@@ -165,7 +169,7 @@
   object-position: left bottom;
 
   @include mq("md") {
-    width: min(92%, rem(350));
+    width: min(60%, rem(270));
     max-height: none;
     margin-right: auto;
     margin-left: auto;
@@ -729,6 +733,7 @@
 .sub-recruit__jobs-image {
   width: 100%;
   aspect-ratio: 384 / 240;
+  max-height: rem(240);
   border-radius: rem(20);
   object-fit: cover;
 
@@ -739,6 +744,7 @@
 
 .sub-recruit__jobs-meta {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: rem(25);
   margin-top: rem(30);

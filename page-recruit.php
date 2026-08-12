@@ -1,103 +1,45 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&amp;family=Noto+Sans+JP:wght@100..900&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>採用情報 | ECO PLANNING</title>
-</head>
-
-<body class="sub-recruit">
-  <div class="sub-recruit__first-view site-subpage-first-view">
-    <header class="site-header">
-      <div class="site-header__inner">
-        <a class="site-header__logo" href="#">
-          <img src="./img/common/logo-white.png" alt="ECO PLANNING">
-        </a>
-
-        <nav class="site-header__nav js-drawer" aria-label="グローバルナビゲーション">
-          <ul class="site-header__nav-list">
-            <li class="site-header__nav-item"><a class="site-header__nav-link" href="#">私たちについて</a></li>
-            <li class="site-header__nav-item"><a class="site-header__nav-link" href="#">事業紹介</a></li>
-            <li class="site-header__nav-item"><a class="site-header__nav-link" href="#">実績・お客様の声</a></li>
-            <li class="site-header__nav-item"><a class="site-header__nav-link" href="#">ニュース／スタッフ紹介</a></li>
-          </ul>
-
-          <div class="site-header__buttons">
-            <a class="site-header__button" href="#">
-              <span>recruit</span>
-              <span class="site-arrow-icon site-header__button-icon" aria-hidden="true">
-                <img src="./img/common/arrow-blue.png" alt="">
-              </span>
-            </a>
-            <a class="site-header__button site-header__button--contact" href="#">
-              <span>contact</span>
-              <span class="site-arrow-icon site-header__button-icon" aria-hidden="true">
-                <img src="./img/common/arrow-blue.png" alt="">
-              </span>
-            </a>
+<?php get_header(); ?>
+<main>
+    <div class="sub-recruit__first-view site-subpage-first-view">
+      <section class="sub-recruit__fv site-subpage-fv">
+        <div class="sub-recruit__fv-image site-subpage-fv__image">
+          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/fv.jpg" alt="エコ・プランニングで働くスタッフ">
+        </div>
+  
+        <div class="sub-recruit__fv-heading site-subpage-fv__heading">
+          <h1 class="sub-recruit__fv-title">
+            解体・産廃業界の常識を破り、<br>
+            「新3K」へ変革する
+          </h1>
+          <p class="sub-recruit__fv-copy">
+            Transforming the Norms of the Demolition and Industrial Waste Industry
+          </p>
+        </div>
+  
+        <?php if (function_exists('bcn_display')) { ?>
+          <div class="breadcrumb sub-recruit__breadcrumb site-subpage-fv__breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
+            <?php bcn_display(); ?>
           </div>
-        </nav>
+        <?php } ?>
+      </section>
+    </div>
 
-        <button class="site-header__hamburger js-hamburger" type="button" aria-label="メニューを開く">
-          <span class="site-header__hamburger-line"></span>
-          <span class="site-header__hamburger-line"></span>
-          <span class="site-header__hamburger-line"></span>
-        </button>
-      </div>
-    </header>
-
-    <section class="sub-recruit__fv site-subpage-fv">
-      <div class="sub-recruit__fv-image site-subpage-fv__image">
-        <img src="./img/recruit/fv.jpg" alt="エコ・プランニングで働くスタッフ">
-      </div>
-
-      <div class="sub-recruit__fv-heading site-subpage-fv__heading">
-        <h1 class="sub-recruit__fv-title">
-          解体・産廃業界の常識を破り、<br>
-          「新3K」へ変革する
-        </h1>
-        <p class="sub-recruit__fv-copy">
-          Transforming the Norms of the Demolition and Industrial Waste Industry
-        </p>
-      </div>
-
-      <nav class="breadcrumb sub-recruit__breadcrumb site-subpage-fv__breadcrumb" aria-label="パンくずリスト">
-        <ol class="breadcrumb__list">
-          <li class="breadcrumb__item">
-            <a class="breadcrumb__home" href="#">
-              <img class="breadcrumb__home-icon" src="./img/common/icon-home.png" alt="">
-              <span>株式会社エコ・プランニングhome</span>
-            </a>
-          </li>
-          <li class="breadcrumb__separator" aria-hidden="true">&gt;</li>
-          <li class="breadcrumb__item" aria-current="page">採用情報</li>
-        </ol>
-      </nav>
-    </section>
-  </div>
-
-  <main>
-    <section class="sub-recruit__gallery site-loop-gallery" aria-label="エコ・プランニングで働くスタッフ">
+  <section class="sub-recruit__gallery site-loop-gallery" aria-label="エコ・プランニングで働くスタッフ">
       <div class="sub-recruit__gallery-track site-loop-gallery__track js-loop-gallery-track">
         <div class="sub-recruit__gallery-item sub-recruit__gallery-item--01">
-          <img src="./img/recruit/gallery-01.jpg" alt="パソコンで仕事をするスタッフ">
+          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/gallery-01.jpg" alt="パソコンで仕事をするスタッフ">
         </div>
         <div class="sub-recruit__gallery-item sub-recruit__gallery-item--02">
-          <img src="./img/recruit/gallery-02.jpg" alt="現場スタッフのチームワーク">
+          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/gallery-02.jpg" alt="現場スタッフのチームワーク">
         </div>
         <div class="sub-recruit__gallery-item sub-recruit__gallery-item--03">
-          <img src="./img/recruit/gallery-03.jpg" alt="現場で働くスタッフ">
+          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/gallery-03.jpg" alt="現場で働くスタッフ">
         </div>
         <div class="sub-recruit__gallery-item sub-recruit__gallery-item--04">
-          <img src="./img/recruit/gallery-04.jpg" alt="打ち合わせをするスタッフ">
+          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/gallery-04.jpg" alt="打ち合わせをするスタッフ">
         </div>
         <div class="sub-recruit__gallery-item sub-recruit__gallery-item--05">
-          <img src="./img/recruit/gallery-05.jpg" alt="現場で働くスタッフ">
+          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/gallery-05.jpg" alt="現場で働くスタッフ">
         </div>
       </div>
     </section>
@@ -105,7 +47,7 @@
     <section class="sub-recruit__message">
       <div class="sub-recruit__message-inner">
         <div class="sub-recruit__message-visual">
-          <img src="./img/recruit/message-president.jpg" alt="株式会社エコ・プランニング 代表取締役 吉田孔顕">
+          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/message-president.jpg" alt="株式会社エコ・プランニング 代表取締役 吉田孔顕">
         </div>
 
         <div class="sub-recruit__message-content">
@@ -139,10 +81,11 @@
             <div class="sub-recruit__message-link-group">
               <p class="sub-recruit__message-link-title">follow sns</p>
               <div class="sub-recruit__message-socials">
-                <a class="sub-recruit__message-social-link" href="#" aria-label="Facebook"><img src="./img/common/icon-facebook.png" alt=""></a>
-                <a class="sub-recruit__message-social-link" href="#" aria-label="X"><img src="./img/common/icon-x.png" alt=""></a>
-                <a class="sub-recruit__message-social-link" href="#" aria-label="Instagram"><img src="./img/common/icon-instagram.png" alt=""></a>
-                <a class="sub-recruit__message-social-link" href="#" aria-label="YouTube"><img src="./img/common/icon-youtube.png" alt=""></a>
+                <a class="sub-recruit__message-social-link" href="https://line.me/R/ti/p/@lia0806h" target="_blank" rel="noopener noreferrer" aria-label="LINE"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-line.png" alt=""></a>
+                <a class="sub-recruit__message-social-link" href="https://www.facebook.com/ecopla123/?locale=ja_JP" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-facebook.png" alt=""></a>
+                <a class="sub-recruit__message-social-link" href="https://x.com/ecopla3003" target="_blank" rel="noopener noreferrer" aria-label="X"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-x.png" alt=""></a>
+                <a class="sub-recruit__message-social-link" href="https://www.instagram.com/ecoplanning_official/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-instagram.png" alt=""></a>
+                <a class="sub-recruit__message-social-link" href="https://www.youtube.com/@%E3%82%A8%E3%82%B3%E3%83%97%E3%83%A9%E3%81%A1%E3%82%83%E3%82%93%E3%81%AD%E3%82%8B%E3%83%BC%E4%B8%89%E9%87%8D%E3%81%8B%E3%82%89%E4%B8%96%E7%95%8C" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-youtube.png" alt=""></a>
               </div>
             </div>
 
@@ -164,7 +107,7 @@
 
         <div class="sub-recruit__culture-list">
           <article class="sub-recruit__culture-item">
-            <img class="sub-recruit__culture-image" src="./img/recruit/culture-01.jpg" alt="テーブルを囲んで談笑するスタッフ">
+            <img class="sub-recruit__culture-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/culture-01.jpg" alt="テーブルを囲んで談笑するスタッフ">
             <h3 class="sub-recruit__culture-item-title">髪型・髪色自由</h3>
             <p class="sub-recruit__culture-text">
               ヘアスタイルも服装も、お気に入りのスニーカーも、自由に❝らしさ❞を出して全然OK。形よりも「自分らしく」働ける環境を大事にしています。服選びが面倒な時は、パーカーやTシャツなどのオリジナルユニフォーム支給があるのでご安心を。
@@ -172,7 +115,7 @@
           </article>
 
           <article class="sub-recruit__culture-item">
-            <img class="sub-recruit__culture-image" src="./img/recruit/culture-02.jpg" alt="世界の街並み">
+            <img class="sub-recruit__culture-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/culture-02.jpg" alt="世界の街並み">
             <h3 class="sub-recruit__culture-item-title">世界中の仲間と繋がる日常</h3>
             <p class="sub-recruit__culture-text">
               ペルーやベトナム、インドネシアなど多国籍なメンバーが活躍中！文化の壁を越えた交流が当たり前の風景です。気さくな仲間ばかりなので、毎日良い刺激をもらいながら楽しく働けるのが魅力です。
@@ -180,7 +123,7 @@
           </article>
 
           <article class="sub-recruit__culture-item">
-            <img class="sub-recruit__culture-image" src="./img/recruit/culture-03.jpg" alt="私生活を楽しむ女性">
+            <img class="sub-recruit__culture-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/culture-03.jpg" alt="私生活を楽しむ女性">
             <h3 class="sub-recruit__culture-item-title">私生活ファーストな働き方</h3>
             <p class="sub-recruit__culture-text">
               有休や早退も「私用で！」と気兼ねなく言える雰囲気。残業は少なめで副業も自由です。自分の人生をしっかり楽しみながら、無理なくキャリアを築ける環境をしっかり整えています。
@@ -188,7 +131,7 @@
           </article>
 
           <article class="sub-recruit__culture-item">
-            <img class="sub-recruit__culture-image" src="./img/recruit/culture-04.jpg" alt="打ち合わせをするスタッフ">
+            <img class="sub-recruit__culture-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/culture-04.jpg" alt="打ち合わせをするスタッフ">
             <h3 class="sub-recruit__culture-item-title">壁を感じない、フラットな関係</h3>
             <p class="sub-recruit__culture-text">
               役職を気にせず、上司とも冗談を言い合えるほどフラット。会社持ちの食事会や差し入れのおやつを囲んで、新人さんもすぐに打ち解けられる。そんな気さくな雰囲気が自慢です。
@@ -196,7 +139,7 @@
           </article>
 
           <article class="sub-recruit__culture-item">
-            <img class="sub-recruit__culture-image" src="./img/recruit/culture-05.jpg" alt="笑顔の家族">
+            <img class="sub-recruit__culture-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/culture-05.jpg" alt="笑顔の家族">
             <h3 class="sub-recruit__culture-item-title">家族まで笑顔にする福利厚生</h3>
             <p class="sub-recruit__culture-text">
               本人だけでなく、配偶者の誕生日にもギフト券を贈るのがエコ流。GWやお盆、年末年始などの大型連休もしっかり休めます。社員だけでなく、その先の大切な人まで大切にしたいと考えている会社です。
@@ -204,7 +147,7 @@
           </article>
 
           <article class="sub-recruit__culture-item">
-            <img class="sub-recruit__culture-image" src="./img/recruit/culture-06.jpg" alt="意見を交わすスタッフ">
+            <img class="sub-recruit__culture-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/culture-06.jpg" alt="意見を交わすスタッフ">
             <h3 class="sub-recruit__culture-item-title">「やってみたい」を支える風土</h3>
             <p class="sub-recruit__culture-text">
               資格取得の支援はもちろん、誰でもプロジェクトのリーダーになれる文化。年次に関係なく意見を出せるので、自分の手で会社を面白くしていく手応えを存分に味わえるのが醍醐味です。
@@ -217,7 +160,7 @@
     <section class="sub-recruit__standard">
       <div class="sub-recruit__standard-visual-area">
         <div class="sub-recruit__standard-visual">
-          <img src="./img/recruit/standard.jpg" alt="エコ・プランニングで働くスタッフ">
+          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/standard.jpg" alt="エコ・プランニングで働くスタッフ">
         </div>
       </div>
 
@@ -345,7 +288,7 @@
 
         <div class="sub-recruit__welfare-list">
           <article class="sub-recruit__welfare-item">
-            <img class="sub-recruit__welfare-image" src="./img/recruit/welfare-01.jpg" alt="福利厚生制度の書類">
+            <img class="sub-recruit__welfare-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/welfare-01.jpg" alt="福利厚生制度の書類">
             <h3 class="sub-recruit__welfare-item-title">各種社会保険完備</h3>
             <p class="sub-recruit__welfare-text">
               健康保険や厚生年金など、社会保険を完備。万が一の時も本人や家族をしっかり守り、安心して長く働ける環境を当たり前に整えています。
@@ -353,14 +296,14 @@
           </article>
 
           <article class="sub-recruit__welfare-item">
-            <img class="sub-recruit__welfare-image" src="./img/recruit/welfare-02.jpg" alt="公園を歩く家族">
+            <img class="sub-recruit__welfare-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/welfare-02.jpg" alt="公園を歩く家族">
             <h3 class="sub-recruit__welfare-item-title">有給休暇・育休休暇</h3>
             <p class="sub-recruit__welfare-text">
               「私用で休みます」が普通に言える文化。家族の行事や趣味など、あなたの人生を大切にしてほしいから、取得を積極的に推奨しています。            </p>
           </article>
 
           <article class="sub-recruit__welfare-item">
-            <img class="sub-recruit__welfare-image" src="./img/recruit/welfare-03.jpg" alt="資格取得に向けて勉強する様子">
+            <img class="sub-recruit__welfare-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/welfare-03.jpg" alt="資格取得に向けて勉強する様子">
             <h3 class="sub-recruit__welfare-item-title">免許・資格取得支援制度</h3>
             <p class="sub-recruit__welfare-text">
               業務に必要な資格の取得費用は会社が全額サポート。あなたの「もっと成長したい」という向上心を、資金面から全力でバックアップします。
@@ -368,7 +311,7 @@
           </article>
 
           <article class="sub-recruit__welfare-item">
-            <img class="sub-recruit__welfare-image" src="./img/recruit/welfare-04.jpg" alt="退職祝いの花束">
+            <img class="sub-recruit__welfare-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/welfare-04.jpg" alt="退職祝いの花束">
             <h3 class="sub-recruit__welfare-item-title">退職金制度</h3>
             <p class="sub-recruit__welfare-text">
               長く貢献してくれる社員の将来を守るための制度です。安心して腰を据えてキャリアを築けるよう、社内規定に基づき退職金を支給しています。
@@ -376,7 +319,7 @@
           </article>
 
           <article class="sub-recruit__welfare-item">
-            <img class="sub-recruit__welfare-image" src="./img/recruit/welfare-05.jpg" alt="誕生日プレゼント">
+            <img class="sub-recruit__welfare-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/welfare-05.jpg" alt="誕生日プレゼント">
             <h3 class="sub-recruit__welfare-item-title">誕生日プレゼント（配偶者含む）</h3>
             <p class="sub-recruit__welfare-text">
               本人だけでなく配偶者の誕生日にもギフト券を贈呈！大切な人を大切にしてほしいという想いから生まれた、当社独自の温かな制度です。
@@ -384,7 +327,7 @@
           </article>
 
           <article class="sub-recruit__welfare-item">
-            <img class="sub-recruit__welfare-image" src="./img/recruit/welfare-06.jpg" alt="食事を楽しむ社員">
+            <img class="sub-recruit__welfare-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/welfare-06.jpg" alt="食事を楽しむ社員">
             <h3 class="sub-recruit__welfare-item-title">従業員間食事会補助</h3>
             <p class="sub-recruit__welfare-text">
               仲間との食事会や懇親会の費用を会社が補助。美味しいものを囲み、役職の壁なくフラットに笑い合える時間を会社がサポートしています。
@@ -392,7 +335,7 @@
           </article>
 
           <article class="sub-recruit__welfare-item">
-            <img class="sub-recruit__welfare-image" src="./img/recruit/welfare-07.jpg" alt="交通費を確認する様子">
+            <img class="sub-recruit__welfare-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/welfare-07.jpg" alt="交通費を確認する様子">
             <h3 class="sub-recruit__welfare-item-title">残業手当・交通費実費支給</h3>
             <p class="sub-recruit__welfare-text">
               頑張った分は手当としてしっかり還元。通勤にかかる費用も実費でお支払いします。クリーンで嘘のない、誠実な労働環境を徹底しています。
@@ -400,7 +343,7 @@
           </article>
 
           <article class="sub-recruit__welfare-item">
-            <img class="sub-recruit__welfare-image" src="./img/recruit/welfare-08.jpg" alt="健康診断の書類">
+            <img class="sub-recruit__welfare-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/welfare-08.jpg" alt="健康診断の書類">
             <h3 class="sub-recruit__welfare-item-title">健康診断</h3>
             <p class="sub-recruit__welfare-text">
               1年に1回、全従業員の健康診断を実施しています。体が資本の仕事だからこそ、日々の健康維持と安心を会社がしっかり支える仕組みです。
@@ -408,7 +351,7 @@
           </article>
 
           <article class="sub-recruit__welfare-item">
-            <img class="sub-recruit__welfare-image" src="./img/recruit/welfare-09.jpg" alt="握手をするビジネスパーソン">
+            <img class="sub-recruit__welfare-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/welfare-09.jpg" alt="握手をするビジネスパーソン">
             <h3 class="sub-recruit__welfare-item-title">正社員紹介制度</h3>
             <p class="sub-recruit__welfare-text">
               知人を紹介して入社が決まった場合に報奨金を支給。「大切な人を誘いたくなる会社」であることを、社員への還元という形で表しています。
@@ -416,7 +359,7 @@
           </article>
 
           <article class="sub-recruit__welfare-item">
-            <img class="sub-recruit__welfare-image" src="./img/recruit/welfare-10.jpg" alt="福利厚生を利用する様子">
+            <img class="sub-recruit__welfare-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/welfare-10.jpg" alt="福利厚生を利用する様子">
             <h3 class="sub-recruit__welfare-item-title">その他</h3>
             <p class="sub-recruit__welfare-text">
               上記以外に新福利厚生をいろいろ拡充準備中でして、今月中には運用開始予定です。決まり次第報告しますので反映させてほしいです。
@@ -434,45 +377,28 @@
         </div>
 
         <div class="sub-recruit__jobs-list">
-          <article class="sub-recruit__jobs-card">
-            <img class="sub-recruit__jobs-image" src="./img/recruit/jobs-01.jpg" alt="事務所で働くスタッフ">
-            <div class="sub-recruit__jobs-meta">
-              <span class="sub-recruit__jobs-area"><img src="./img/common/icon-map.png" alt="">勤務地エリア</span>
-              <span class="sub-recruit__jobs-tag">新卒採用</span>
-            </div>
-            <h3 class="sub-recruit__jobs-card-title">
-              ダミー：募集中の職種名を記事タイトルとして投稿できます
-            </h3>
-          </article>
-
-          <article class="sub-recruit__jobs-card">
-            <img class="sub-recruit__jobs-image" src="./img/recruit/jobs-02.jpg" alt="現場で働くスタッフ">
-            <div class="sub-recruit__jobs-meta">
-              <span class="sub-recruit__jobs-area"><img src="./img/common/icon-map.png" alt="">勤務地エリア</span>
-              <span class="sub-recruit__jobs-tag">新卒採用</span>
-            </div>
-            <h3 class="sub-recruit__jobs-card-title">
-              ダミー：募集中の職種名を記事タイトルとして投稿できます
-            </h3>
-          </article>
-
-          <article class="sub-recruit__jobs-card">
-            <img class="sub-recruit__jobs-image" src="./img/recruit/jobs-03.jpg" alt="現場で働くスタッフ">
-            <div class="sub-recruit__jobs-meta">
-              <span class="sub-recruit__jobs-area"><img src="./img/common/icon-map.png" alt="">勤務地エリア</span>
-              <span class="sub-recruit__jobs-tag">中途採用</span>
-            </div>
-            <h3 class="sub-recruit__jobs-card-title">
-              ダミー：募集中の職種名を記事タイトルとして投稿できます
-            </h3>
-          </article>
+          <?php
+          $recruit_jobs = new WP_Query([
+            'post_type'      => 'job',
+            'posts_per_page' => 3,
+            'no_found_rows'  => true,
+          ]);
+          ?>
+          <?php if ($recruit_jobs->have_posts()) : ?>
+            <?php while ($recruit_jobs->have_posts()) : $recruit_jobs->the_post(); ?>
+              <?php get_template_part('template-parts/card-job-related'); ?>
+            <?php endwhile; ?>
+          <?php else : ?>
+            <p class="site-archive__empty">現在、募集要項はありません。</p>
+          <?php endif; ?>
+          <?php wp_reset_postdata(); ?>
         </div>
 
         <div class="sub-recruit__jobs-bottom">
-          <a class="sub-recruit__jobs-button site-wide-button site-wide-button--blue" href="#">
+          <a class="sub-recruit__jobs-button site-wide-button site-wide-button--blue" href="<?php echo esc_url(get_post_type_archive_link('job')); ?>">
             <span>募集要項一覧</span>
             <span class="site-arrow-icon site-wide-button__icon" aria-hidden="true">
-              <img src="./img/common/arrow-white.png" alt="">
+              <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt="">
             </span>
           </a>
         </div>
@@ -482,7 +408,7 @@
     <section class="sub-recruit__entry">
       <div class="sub-recruit__entry-inner">
         <div class="sub-recruit__entry-background">
-          <img src="./img/recruit/entry.jpg" alt="現場で働くエコ・プランニングのスタッフ">
+          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/entry.jpg" alt="現場で働くエコ・プランニングのスタッフ">
         </div>
         <div class="sub-recruit__entry-content">
           <h2 class="sub-recruit__entry-title site-heading--section-en">entry</h2>
@@ -494,79 +420,11 @@
           <a class="sub-recruit__entry-button site-wide-button site-wide-button--white" href="#">
             <span>エントリーはこちら</span>
             <span class="site-arrow-icon site-wide-button__icon" aria-hidden="true">
-              <img src="./img/common/arrow-blue.png" alt="">
+              <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt="">
             </span>
           </a>
         </div>
       </div>
     </section>
   </main>
-
-  <footer class="site-footer sub-recruit__footer">
-    <div class="site-footer__inner inner">
-      <div class="site-footer__top">
-        <div class="site-footer__brand">
-          <a class="site-footer__logo" href="#"><img src="./img/common/logo-blue.png" alt="ECO PLANNING"></a>
-          <div class="site-footer__certifications">
-            <img src="./img/common/logo-mems.png" alt="M-EMS">
-            <img src="./img/common/logo-sdgs.png" alt="SDGs">
-          </div>
-        </div>
-
-        <div class="site-footer__navigation">
-          <nav class="site-footer__nav" aria-label="フッターナビゲーション">
-            <div class="site-footer__nav-group">
-              <a class="site-footer__nav-heading" href="#">私たちについて</a>
-              <a class="site-footer__nav-link" href="#">会社概要</a>
-            </div>
-            <div class="site-footer__nav-group">
-              <a class="site-footer__nav-heading" href="#">事業紹介</a>
-              <a class="site-footer__nav-link" href="#">解体・アスベスト除去</a>
-              <a class="site-footer__nav-link" href="#">産業廃棄物回収</a>
-              <a class="site-footer__nav-link" href="#">産業廃棄物持ち込み</a>
-            </div>
-            <div class="site-footer__nav-group">
-              <a class="site-footer__nav-heading" href="#">実績 / お客様の声</a>
-              <a class="site-footer__nav-heading" href="#">ニュース / スタッフ紹介</a>
-              <a class="site-footer__nav-heading" href="#">募集要項一覧</a>
-            </div>
-          </nav>
-
-          <div class="site-footer__buttons">
-            <a class="site-footer__button site-footer__button--recruit" href="#">
-              <span>recruit</span>
-              <span class="site-arrow-icon site-footer__button-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span>
-            </a>
-            <a class="site-footer__button site-footer__button--contact" href="#">
-              <span>contact</span>
-              <span class="site-arrow-icon site-footer__button-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="site-footer__concept">
-        <img class="site-footer__concept-mark" src="./img/common/concept-mark.png" alt="">
-        <p class="site-footer__concept-copy">誠実に、<br>つくそう。</p>
-      </div>
-
-      <div class="site-footer__bottom">
-        <div class="site-footer__information">
-          <p class="site-footer__description">解体工事、収集運搬、産廃処理なら三重県津市の株式会社エコ・プランニング</p>
-          <p class="site-footer__copyright">Copyright © 2025 Eco planning. All right reserved.</p>
-        </div>
-        <div class="site-footer__socials">
-          <a class="site-footer__social-link" href="#" aria-label="Facebook"><img src="./img/common/icon-facebook.png" alt=""></a>
-          <a class="site-footer__social-link" href="#" aria-label="X"><img src="./img/common/icon-x.png" alt=""></a>
-          <a class="site-footer__social-link" href="#" aria-label="Instagram"><img src="./img/common/icon-instagram.png" alt=""></a>
-          <a class="site-footer__social-link" href="#" aria-label="YouTube"><img src="./img/common/icon-youtube.png" alt=""></a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="./js/script.js"></script>
-</body>
-
-</html>
+<?php get_footer(); ?>

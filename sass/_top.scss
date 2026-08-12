@@ -185,6 +185,12 @@
   }
 }
 
+.top-about__button:hover .top-about__button-icon {
+  @media (hover: hover) {
+    background-color: $white;
+  }
+}
+
 .top-about__button-icon {
   @include mq("md") {
     width: rem(42);
@@ -1152,6 +1158,7 @@
 
 .top-voices__image img {
   aspect-ratio: 420 / 265;
+  max-height: rem(265);
   object-fit: cover;
 }
 
@@ -1497,16 +1504,18 @@
     position: relative;
     top: auto;
     width: 100%;
-    border-radius: rem(12) rem(12) 0 0;
+    border-radius: rem(12) rem(12) 0 rem(12);
   }
 }
 
 .top-works__image img {
   aspect-ratio: 480 / 360;
+  max-height: rem(360);
   object-fit: cover;
 
   @include mq("md") {
     aspect-ratio: 340 / 230;
+    max-height: rem(230);
   }
 }
 
@@ -1996,15 +2005,25 @@
   }
 }
 
-.top-staff__tags li {
+.top-staff__tags a {
+  display: block;
   padding: rem(9) rem(19);
   border-radius: rem(20);
   background-color: $white;
+  color: $blue;
+  transition: color 0.3s ease, background-color 0.3s ease;
   @include font(14, 18, 0, $regular);
 
   @include mq("md") {
     padding: rem(5) rem(12);
     @include font(11, 17, 0, $regular);
+  }
+}
+
+.top-staff__tags a:hover {
+  @media (hover: hover) {
+    color: $white;
+    background-color: $blue;
   }
 }
 
@@ -2124,9 +2143,11 @@
   aspect-ratio: 420 / 460;
   object-fit: cover;
   object-position: center;
+  max-height: rem(460);
 
   @include mq("md") {
     aspect-ratio: 330 / 340;
+    max-height: rem(340);
   }
 }
 
@@ -2424,9 +2445,11 @@
 .top-news__image img {
   aspect-ratio: 376 / 240;
   object-fit: cover;
+  max-height: rem(240);
 
   @include mq("md") {
     aspect-ratio: 345 / 220;
+    max-height: rem(220);
   }
 }
 

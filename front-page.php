@@ -1,76 +1,17 @@
-<!DOCTYPE html>
-<html lang="ja">
+<?php get_header(); ?>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&amp;family=Noto+Sans+JP:wght@100..900&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>ECO PLANNING</title>
-</head>
-
-<body class="home">
-  <header class="site-header">
-    <div class="site-header__inner">
-      <a class="site-header__logo" href="#">
-        <img src="./img/common/logo-white.png" alt="ECO PLANNING">
-      </a>
-
-      <nav class="site-header__nav js-drawer" aria-label="グローバルナビゲーション">
-        <ul class="site-header__nav-list">
-          <li class="site-header__nav-item">
-            <a class="site-header__nav-link" href="#">私たちについて</a>
-          </li>
-          <li class="site-header__nav-item">
-            <a class="site-header__nav-link" href="#">事業紹介</a>
-          </li>
-          <li class="site-header__nav-item">
-            <a class="site-header__nav-link" href="#">実績・お客様の声</a>
-          </li>
-          <li class="site-header__nav-item">
-            <a class="site-header__nav-link" href="#">ニュース／スタッフ紹介</a>
-          </li>
-        </ul>
-
-        <div class="site-header__buttons">
-          <a class="site-header__button" href="#">
-            <span>recruit</span>
-            <span class="site-arrow-icon site-header__button-icon" aria-hidden="true">
-              <img src="./img/common/arrow-blue.png" alt="">
-            </span>
-          </a>
-          <a class="site-header__button site-header__button--contact" href="#">
-            <span>contact</span>
-            <span class="site-arrow-icon site-header__button-icon" aria-hidden="true">
-              <img src="./img/common/arrow-blue.png" alt="">
-            </span>
-          </a>
-        </div>
-      </nav>
-
-      <button class="site-header__hamburger js-hamburger" type="button" aria-label="メニューを開く">
-        <span class="site-header__hamburger-line"></span>
-        <span class="site-header__hamburger-line"></span>
-        <span class="site-header__hamburger-line"></span>
-      </button>
-    </div>
-  </header>
-
-  <main>
+<main>
     <div class="top-hero-about">
       <div class="top-hero-about__background" aria-hidden="true">
         <div class="top-hero-about__background-sticky">
           <div class="top-hero-about__slide js-top-background-slide is-active">
-            <img src="./img/top/fv-01.jpg" alt="">
+            <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/fv-01.jpg" alt="">
           </div>
           <div class="top-hero-about__slide js-top-background-slide">
-            <img src="./img/top/fv-02.jpg" alt="">
+            <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/fv-02.jpg" alt="">
           </div>
           <div class="top-hero-about__slide js-top-background-slide">
-            <img src="./img/top/fv-03.jpg" alt="">
+            <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/fv-03.jpg" alt="">
           </div>
         </div>
       </div>
@@ -100,10 +41,10 @@
                 <p class="top-about__text">私たちが何より大切にしているのは、関わるすべての人に対して「誠実であること」です。解体や産業廃棄物の処分は、目の前の課題を解決する手段に過ぎません。お客様の不安や不満に寄り添い、その「困った」を心までスッキリさせるために動き続けること。それこそが私たちの存在意義です。未来を共にするパートナーとして、ぜひエコ・プランニングを頼ってください。</p>
               </div>
 
-              <a class="site-wide-button site-wide-button--white top-about__button" href="#">
+              <a class="site-wide-button site-wide-button--white top-about__button" href="<?php echo esc_url(home_url('/benefit/')); ?>">
                 <span>私たちについて</span>
                 <span class="site-arrow-icon site-wide-button__icon top-about__button-icon" aria-hidden="true">
-                  <img src="./img/common/arrow-blue.png" alt="">
+                  <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt="">
                 </span>
               </a>
             </div>
@@ -125,7 +66,7 @@
           <ol class="top-services__list">
             <li class="top-services__item">
               <div class="top-services__image">
-                <img src="./img/top/service-01.jpg" alt="解体工事を行うスタッフ">
+                <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/service-01.jpg" alt="解体工事を行うスタッフ">
               </div>
               <div class="top-services__item-body">
                 <div class="top-services__number">
@@ -135,10 +76,10 @@
                 <div class="top-services__item-content">
                   <h3 class="top-services__item-title">解体・アスベスト</h3>
                   <p class="top-services__item-text">解体工事とは、今まで家族が過ごした大切な家を壊す工事。または仲間と過ごした場所、切磋琢磨した会社や施設を壊す工事。そんな思い出が沢山つまった家を「ただ壊せばいい」そんな思いで仕事をしたくありません。</p>
-                  <a class="top-services__item-link" href="#">
+                  <a class="top-services__item-link" href="<?php echo esc_url(home_url('/dismantling/')); ?>">
                     <span>詳しくはこちら</span>
                     <span class="site-arrow-icon top-services__item-link-icon" aria-hidden="true">
-                      <img src="./img/common/arrow-white.png" alt="">
+                      <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt="">
                     </span>
                   </a>
                 </div>
@@ -147,7 +88,7 @@
 
             <li class="top-services__item">
               <div class="top-services__image">
-                <img src="./img/top/service-02.jpg" alt="産業廃棄物を回収する作業車">
+                <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/service-02.jpg" alt="産業廃棄物を回収する作業車">
               </div>
               <div class="top-services__item-body">
                 <div class="top-services__number">
@@ -157,10 +98,10 @@
                 <div class="top-services__item-content">
                   <h3 class="top-services__item-title">産業廃棄物回収</h3>
                   <p class="top-services__item-text">解体現場や建設現場から毎日排出される様々な産業廃棄物。エコ・プランニングは現場から産業廃棄物を速やかに回収し、処分することで、現場管理や美化のサポートをいたします。</p>
-                  <a class="top-services__item-link" href="#">
+                  <a class="top-services__item-link" href="<?php echo esc_url(home_url('/industrial/')); ?>">
                     <span>詳しくはこちら</span>
                     <span class="site-arrow-icon top-services__item-link-icon" aria-hidden="true">
-                      <img src="./img/common/arrow-white.png" alt="">
+                      <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt="">
                     </span>
                   </a>
                 </div>
@@ -169,7 +110,7 @@
 
             <li class="top-services__item">
               <div class="top-services__image">
-                <img src="./img/top/service-03.jpg" alt="産業廃棄物を運搬するトラック">
+                <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/service-03.jpg" alt="産業廃棄物を運搬するトラック">
               </div>
               <div class="top-services__item-body">
                 <div class="top-services__number">
@@ -179,10 +120,10 @@
                 <div class="top-services__item-content">
                   <h3 class="top-services__item-title">産業廃棄物持ち込み</h3>
                   <p class="top-services__item-text">通常時間中は予約なしで即日持ち込み対応可能です。また、ご予約いただければ早朝から夜間・休日に至るまで受け入れ可能ですので、まずはお気軽にご相談ください。</p>
-                  <a class="top-services__item-link" href="#">
+                  <a class="top-services__item-link" href="<?php echo esc_url(home_url('/waste/')); ?>">
                     <span>詳しくはこちら</span>
                     <span class="site-arrow-icon top-services__item-link-icon" aria-hidden="true">
-                      <img src="./img/common/arrow-white.png" alt="">
+                      <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt="">
                     </span>
                   </a>
                 </div>
@@ -191,7 +132,7 @@
 
             <li class="top-services__item">
               <div class="top-services__image">
-                <img src="./img/top/service-04.jpg" alt="不用品回収前の室内">
+                <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/service-04.jpg" alt="不用品回収前の室内">
               </div>
               <div class="top-services__item-body">
                 <div class="top-services__number">
@@ -201,10 +142,10 @@
                 <div class="top-services__item-content">
                   <h3 class="top-services__item-title">不用品回収・買取</h3>
                   <p class="top-services__item-text">解体工事や産廃処理の過程で回収した廃材・金属・木材などを再資源化し、リサイクル製品として販売しています。</p>
-                  <a class="top-services__item-link" href="#">
+                  <a class="top-services__item-link" href="<?php echo esc_url(home_url('/service/#unwanted-items')); ?>">
                     <span>詳しくはこちら</span>
                     <span class="site-arrow-icon top-services__item-link-icon" aria-hidden="true">
-                      <img src="./img/common/arrow-white.png" alt="">
+                      <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt="">
                     </span>
                   </a>
                 </div>
@@ -213,7 +154,7 @@
 
             <li class="top-services__item">
               <div class="top-services__image">
-                <img src="./img/top/service-05.jpg" alt="ハウスクリーニングの様子">
+                <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/service-05.jpg" alt="ハウスクリーニングの様子">
               </div>
               <div class="top-services__item-body">
                 <div class="top-services__number">
@@ -223,10 +164,10 @@
                 <div class="top-services__item-content">
                   <h3 class="top-services__item-title">ハウスクリーニング</h3>
                   <p class="top-services__item-text">元タレントの実業家・入江慎也氏が率いる清掃のプロ「ピカピカ」とのFC契約により実現した、ハウスクリーニング。解体・不用品回収との相乗効果を活かし、住まいの困りごと全般をワンストップで解決いたします。</p>
-                  <a class="top-services__item-link" href="#">
+                  <a class="top-services__item-link" href="<?php echo esc_url(home_url('/service/#house-cleaning')); ?>">
                     <span>詳しくはこちら</span>
                     <span class="site-arrow-icon top-services__item-link-icon" aria-hidden="true">
-                      <img src="./img/common/arrow-white.png" alt="">
+                      <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt="">
                     </span>
                   </a>
                 </div>
@@ -235,7 +176,7 @@
 
             <li class="top-services__item">
               <div class="top-services__image">
-                <img src="./img/top/service-06.jpg" alt="都市と握手を組み合わせたイメージ">
+                <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/service-06.jpg" alt="都市と握手を組み合わせたイメージ">
               </div>
               <div class="top-services__item-body">
                 <div class="top-services__number">
@@ -246,10 +187,10 @@
                   <h3 class="top-services__item-title">海外事業</h3>
                   <p class="top-services__item-text">JICAと連携し、南米ペルーのゴミ問題解決と雇用の創出を計画。将来的には中南米全域への技術移転を通して、グローバルな循環型社会の構築を目指しています。
                   </p>
-                  <a class="top-services__item-link" href="#">
+                  <a class="top-services__item-link" href="<?php echo esc_url(home_url('/service/#overseas-business')); ?>">
                     <span>詳しくはこちら</span>
                     <span class="site-arrow-icon top-services__item-link-icon" aria-hidden="true">
-                      <img src="./img/common/arrow-white.png" alt="">
+                      <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt="">
                     </span>
                   </a>
                 </div>
@@ -257,10 +198,10 @@
             </li>
           </ol>
 
-          <a class="site-wide-button site-wide-button--blue top-services__button" href="#">
+          <a class="site-wide-button site-wide-button--blue top-services__button" href="<?php echo esc_url(home_url('/service/')); ?>">
             <span>事業内容一覧</span>
             <span class="site-arrow-icon site-wide-button__icon top-services__button-icon" aria-hidden="true">
-              <img src="./img/common/arrow-white.png" alt="">
+              <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt="">
             </span>
           </a>
         </div>
@@ -282,7 +223,7 @@
                 <span class="top-reasons__number-value">01</span>
               </div>
               <div class="top-reasons__image">
-                <img src="./img/top/reason-01.jpg" alt="重機を操作するスタッフ">
+                <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/reason-01.jpg" alt="重機を操作するスタッフ">
               </div>
               <div class="top-reasons__content">
                 <p class="top-reasons__tag">エコ・プランニングが選ばれる理由</p>
@@ -299,7 +240,7 @@
                 <span class="top-reasons__number-value">02</span>
               </div>
               <div class="top-reasons__image">
-                <img src="./img/top/reason-02.jpg" alt="パソコンを使用するスタッフ">
+                <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/reason-02.jpg" alt="パソコンを使用するスタッフ">
               </div>
               <div class="top-reasons__content">
                 <p class="top-reasons__tag">エコ・プランニングが選ばれる理由</p>
@@ -316,7 +257,7 @@
                 <span class="top-reasons__number-value">03</span>
               </div>
               <div class="top-reasons__image">
-                <img src="./img/top/reason-03.jpg" alt="現場で働く3名のスタッフ">
+                <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/reason-03.jpg" alt="現場で働く3名のスタッフ">
               </div>
               <div class="top-reasons__content">
                 <p class="top-reasons__tag">エコ・プランニングが選ばれる理由</p>
@@ -333,7 +274,7 @@
                 <span class="top-reasons__number-value">04</span>
               </div>
               <div class="top-reasons__image">
-                <img src="./img/top/reason-04.jpg" alt="エコ・プランニングの処理工場">
+                <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/reason-04.jpg" alt="エコ・プランニングの処理工場">
               </div>
               <div class="top-reasons__content">
                 <p class="top-reasons__tag">エコ・プランニングが選ばれる理由</p>
@@ -350,7 +291,7 @@
                 <span class="top-reasons__number-value">05</span>
               </div>
               <div class="top-reasons__image">
-                <img src="./img/top/reason-05.jpg" alt="フォークリフトを操作するスタッフ">
+                <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/reason-05.jpg" alt="フォークリフトを操作するスタッフ">
               </div>
               <div class="top-reasons__content">
                 <p class="top-reasons__tag">エコ・プランニングが選ばれる理由</p>
@@ -362,18 +303,18 @@
         </div>
 
         <button class="top-reasons__navigation top-reasons__navigation--prev" type="button" aria-label="前の理由を表示">
-          <img src="./img/common/arrow-white.png" alt="">
+          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt="">
         </button>
         <button class="top-reasons__navigation top-reasons__navigation--next" type="button" aria-label="次の理由を表示">
-          <img src="./img/common/arrow-white.png" alt="">
+          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt="">
         </button>
         <div class="swiper-pagination top-reasons__pagination"></div>
       </div>
     </section>
 
     <section class="top-strengths">
-      <img class="top-strengths__pattern top-strengths__pattern--01" src="./img/top/strength-pattern-01.png" alt="" aria-hidden="true">
-      <img class="top-strengths__pattern top-strengths__pattern--02" src="./img/top/strength-pattern-02.png" alt="" aria-hidden="true">
+      <img class="top-strengths__pattern top-strengths__pattern--01" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/strength-pattern-01.png" alt="" aria-hidden="true">
+      <img class="top-strengths__pattern top-strengths__pattern--02" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/strength-pattern-02.png" alt="" aria-hidden="true">
 
       <div class="top-strengths__inner">
         <div class="top-strengths__heading inner">
@@ -384,7 +325,7 @@
         <ol class="top-strengths__list">
           <li class="top-strengths__item">
             <div class="top-strengths__image">
-              <img src="./img/top/strength-01.jpg" alt="解体現場に立つスタッフ">
+              <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/strength-01.jpg" alt="解体現場に立つスタッフ">
             </div>
             <div class="top-strengths__content">
               <div class="top-strengths__label">
@@ -412,13 +353,13 @@
               <p class="top-strengths__text">私たちが日々向き合っているのは、単なる「ゴミ」や「古い建物」ではありません。建物を解体し、廃棄物を適正に処理し、リサイクルして循環させることで、その先にある「地域の皆さまの安全で快適な暮らし」を支えています。「街の純度を高め、人々の暮らしを守る」というパーパスを胸に、地域社会に必要不可欠なインフラであるという強い自負を持っています。事業を通じた環境保全はもちろん、街全体を笑顔にし、人々の心までスッキリさせるような誠実な取り組みをこれからも地域と共に推進していきます。</p>
             </div>
             <div class="top-strengths__image">
-              <img src="./img/top/strength-02.jpg" alt="街を行き交う人々">
+              <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/strength-02.jpg" alt="街を行き交う人々">
             </div>
           </li>
 
           <li class="top-strengths__item">
             <div class="top-strengths__image">
-              <img src="./img/top/strength-03.jpg" alt="現場で打ち合わせを行うスタッフ">
+              <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/strength-03.jpg" alt="現場で打ち合わせを行うスタッフ">
             </div>
             <div class="top-strengths__content">
               <div class="top-strengths__label">
@@ -439,13 +380,13 @@
         <div class="top-strengths__keyword-loop js-keyword-loop">
           <div class="top-strengths__keyword-motion">
             <ul class="top-strengths__keyword-track">
-              <li class="top-strengths__keyword-item"><img src="./img/top/keyword-one-stop.png" alt=""><span>ワンストップ対応</span></li>
-              <li class="top-strengths__keyword-item"><img src="./img/top/keyword-demolition.png" alt=""><span>解体のプロ</span></li>
-              <li class="top-strengths__keyword-item"><img src="./img/top/keyword-industrial-waste.png" alt=""><span>産廃もおまかせ</span></li>
-              <li class="top-strengths__keyword-item"><img src="./img/top/keyword-contract.png" alt=""><span>電子契約OK</span></li>
-              <li class="top-strengths__keyword-item"><img src="./img/top/keyword-disposal-site.png" alt=""><span>自社処分場あり</span></li>
-              <li class="top-strengths__keyword-item"><img src="./img/top/keyword-night-work.png" alt=""><span>夜間工事対応</span></li>
-              <li class="top-strengths__keyword-item"><img src="./img/top/keyword-speed-collection.png" alt=""><span>スピード回収</span></li>
+              <li class="top-strengths__keyword-item"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/keyword-one-stop.png" alt=""><span>ワンストップ対応</span></li>
+              <li class="top-strengths__keyword-item"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/keyword-demolition.png" alt=""><span>解体のプロ</span></li>
+              <li class="top-strengths__keyword-item"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/keyword-industrial-waste.png" alt=""><span>産廃もおまかせ</span></li>
+              <li class="top-strengths__keyword-item"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/keyword-contract.png" alt=""><span>電子契約OK</span></li>
+              <li class="top-strengths__keyword-item"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/keyword-disposal-site.png" alt=""><span>自社処分場あり</span></li>
+              <li class="top-strengths__keyword-item"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/keyword-night-work.png" alt=""><span>夜間工事対応</span></li>
+              <li class="top-strengths__keyword-item"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/keyword-speed-collection.png" alt=""><span>スピード回収</span></li>
             </ul>
           </div>
         </div>
@@ -453,13 +394,13 @@
         <div class="top-strengths__keyword-loop top-strengths__keyword-loop--reverse js-keyword-loop">
           <div class="top-strengths__keyword-motion">
             <ul class="top-strengths__keyword-track">
-              <li class="top-strengths__keyword-item"><img src="./img/top/keyword-credit-card.png" alt=""><span>クレカ決済可</span></li>
-              <li class="top-strengths__keyword-item"><img src="./img/top/keyword-field.png" alt=""><span>現場に強い</span></li>
-              <li class="top-strengths__keyword-item"><img src="./img/top/keyword-documents.png" alt=""><span>書類も安心</span></li>
-              <li class="top-strengths__keyword-item"><img src="./img/top/keyword-recycled-stone.png" alt=""><span>再生砕石販売</span></li>
-              <li class="top-strengths__keyword-item"><img src="./img/top/keyword-local.png" alt=""><span>地元密着</span></li>
-              <li class="top-strengths__keyword-item"><img src="./img/top/keyword-foreign-language.png" alt=""><span>外国語対応OK</span></li>
-              <li class="top-strengths__keyword-item"><img src="./img/top/keyword-peru.png" alt=""><span>ペルー進出中</span></li>
+              <li class="top-strengths__keyword-item"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/keyword-credit-card.png" alt=""><span>クレカ決済可</span></li>
+              <li class="top-strengths__keyword-item"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/keyword-field.png" alt=""><span>現場に強い</span></li>
+              <li class="top-strengths__keyword-item"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/keyword-documents.png" alt=""><span>書類も安心</span></li>
+              <li class="top-strengths__keyword-item"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/keyword-recycled-stone.png" alt=""><span>再生砕石販売</span></li>
+              <li class="top-strengths__keyword-item"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/keyword-local.png" alt=""><span>地元密着</span></li>
+              <li class="top-strengths__keyword-item"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/keyword-foreign-language.png" alt=""><span>外国語対応OK</span></li>
+              <li class="top-strengths__keyword-item"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/keyword-peru.png" alt=""><span>ペルー進出中</span></li>
             </ul>
           </div>
         </div>
@@ -478,105 +419,66 @@
 
         <div class="swiper top-voices__slider js-top-voices-slider">
           <div class="swiper-wrapper">
-            <article class="swiper-slide top-voices__slide">
-              <div class="top-voices__image">
-                <img src="./img/service-drop-off/feature-total-support.jpg" alt="お客様へのインタビュー">
-              </div>
-              <div class="top-voices__card-body">
-                <p class="top-voices__number"><span>Interview</span><strong>#1</strong></p>
-                <div class="top-voices__content">
-                  <ul class="top-voices__tags">
-                    <li>不用品回収</li>
-                  </ul>
-                  <p class="top-voices__company">三重県　○○様</p>
-                  <h3 class="top-voices__card-title">ダミー：記事タイトルです 新着順でトップページにも表示します。</h3>
-                  <a class="top-voices__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-voices__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
+            <?php
+            $voices_query = new WP_Query([
+              'post_type'      => 'case',
+              'posts_per_page' => 10,
+              'no_found_rows'  => true,
+              'tax_query'      => [[
+                'taxonomy' => 'voice',
+                'operator' => 'EXISTS',
+              ]],
+            ]);
+            $voice_index = 0;
+            ?>
+            <?php while ($voices_query->have_posts()) : $voices_query->the_post(); ?>
+              <?php
+              $voice_index++;
+              $voice_terms = eco_planning_get_post_terms(get_the_ID(), ['voice']);
+              $voice_client_name = eco_planning_get_field_value('case_client_name');
+              ?>
+              <article class="swiper-slide top-voices__slide">
+                <div class="top-voices__image">
+                  <?php if (has_post_thumbnail()) : ?>
+                    <?php the_post_thumbnail('large', ['alt' => the_title_attribute(['echo' => false])]); ?>
+                  <?php else : ?>
+                    <img src="<?php echo esc_url(get_theme_file_uri('/img/common/no-image.jpg')); ?>" alt="">
+                  <?php endif; ?>
                 </div>
-              </div>
-            </article>
-
-            <article class="swiper-slide top-voices__slide">
-              <div class="top-voices__image">
-                <img src="./img/service-demolition/consultation.jpg" alt="施工を担当したスタッフ">
-              </div>
-              <div class="top-voices__card-body">
-                <p class="top-voices__number"><span>Interview</span><strong>#2</strong></p>
-                <div class="top-voices__content">
-                  <ul class="top-voices__tags">
-                    <li>解体工事</li>
-                    <li>産業廃棄物回収</li>
-                  </ul>
-                  <p class="top-voices__company">株式会社○○　○○様</p>
-                  <h3 class="top-voices__card-title">ダミー：記事タイトルです 新着順でトップページにも表示します。</h3>
-                  <a class="top-voices__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-voices__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
+                <div class="top-voices__card-body">
+                  <p class="top-voices__number"><span>Interview</span><strong>#<?php echo esc_html($voice_index); ?></strong></p>
+                  <div class="top-voices__content">
+                    <?php if ($voice_terms) : ?>
+                      <ul class="top-voices__tags">
+                        <?php foreach ($voice_terms as $voice_term) : ?>
+                          <li><?php echo esc_html($voice_term->name); ?></li>
+                        <?php endforeach; ?>
+                      </ul>
+                    <?php endif; ?>
+                    <?php if ($voice_client_name) : ?>
+                      <p class="top-voices__company"><?php echo esc_html($voice_client_name); ?></p>
+                    <?php endif; ?>
+                    <h3 class="top-voices__card-title"><?php the_title(); ?></h3>
+                    <a class="top-voices__link" href="<?php the_permalink(); ?>"><span>詳しくはこちら</span><span class="site-arrow-icon top-voices__link-icon" aria-hidden="true"><img src="<?php echo esc_url(get_theme_file_uri('/img/common/arrow-white.png')); ?>" alt=""></span></a>
+                  </div>
                 </div>
-              </div>
-            </article>
-
-            <article class="swiper-slide top-voices__slide">
-              <div class="top-voices__image">
-                <img src="./img/service-drop-off/feature-contract.jpg" alt="お客様対応を行うスタッフ">
-              </div>
-              <div class="top-voices__card-body">
-                <p class="top-voices__number"><span>Interview</span><strong>#3</strong></p>
-                <div class="top-voices__content">
-                  <ul class="top-voices__tags">
-                    <li>電子マニフェスト対応代行</li>
-                  </ul>
-                  <p class="top-voices__company">株式会社○○　○○様</p>
-                  <h3 class="top-voices__card-title">ダミー：記事タイトルです 新着順でトップページにも表示します。</h3>
-                  <a class="top-voices__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-voices__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
-                </div>
-              </div>
-            </article>
-
-            <article class="swiper-slide top-voices__slide">
-              <div class="top-voices__image">
-                <img src="./img/service-drop-off/feature-factories.jpg" alt="産業廃棄物の処理工場">
-              </div>
-              <div class="top-voices__card-body">
-                <p class="top-voices__number"><span>Interview</span><strong>#4</strong></p>
-                <div class="top-voices__content">
-                  <ul class="top-voices__tags">
-                    <li>産業廃棄物持込</li>
-                  </ul>
-                  <p class="top-voices__company">三重県　○○様</p>
-                  <h3 class="top-voices__card-title">ダミー：記事タイトルです 新着順でトップページにも表示します。</h3>
-                  <a class="top-voices__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-voices__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
-                </div>
-              </div>
-            </article>
-
-            <article class="swiper-slide top-voices__slide">
-              <div class="top-voices__image">
-                <img src="./img/service-industrial-waste/feature-demolition.jpg" alt="回収作業を行うスタッフ">
-              </div>
-              <div class="top-voices__card-body">
-                <p class="top-voices__number"><span>Interview</span><strong>#5</strong></p>
-                <div class="top-voices__content">
-                  <ul class="top-voices__tags">
-                    <li>産業廃棄物回収</li>
-                  </ul>
-                  <p class="top-voices__company">株式会社○○　○○様</p>
-                  <h3 class="top-voices__card-title">ダミー：記事タイトルです 新着順でトップページにも表示します。</h3>
-                  <a class="top-voices__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-voices__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
-                </div>
-              </div>
-            </article>
+              </article>
+            <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
           </div>
 
           <button class="top-voices__navigation top-voices__navigation--prev" type="button" aria-label="前のお客様の声を表示">
-            <img src="./img/common/arrow-blue.png" alt="">
+            <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt="">
           </button>
           <button class="top-voices__navigation top-voices__navigation--next" type="button" aria-label="次のお客様の声を表示">
-            <img src="./img/common/arrow-blue.png" alt="">
+            <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt="">
           </button>
         </div>
 
         <div class="top-voices__bottom inner">
-          <a class="site-wide-button site-wide-button--blue top-voices__button" href="#">
+          <a class="site-wide-button site-wide-button--blue top-voices__button" href="<?php echo esc_url(get_post_type_archive_link('case')); ?>">
             <span>お客様の声一覧</span>
-            <span class="site-arrow-icon site-wide-button__icon top-voices__button-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span>
+            <span class="site-arrow-icon site-wide-button__icon top-voices__button-icon" aria-hidden="true"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt=""></span>
           </a>
         </div>
       </div>
@@ -598,94 +500,64 @@
 
       <div class="swiper top-works__slider js-top-works-slider">
         <div class="swiper-wrapper">
-          <article class="swiper-slide top-works__slide">
-            <div class="top-works__image">
-              <img src="./img/service/service-demolition.jpg" alt="解体工事の施工実績">
-            </div>
-            <p class="top-works__number"><span>works</span><strong>01</strong></p>
-            <div class="top-works__content">
-              <div class="top-works__meta">
-                <span class="top-works__tag">解体工事</span>
-                <span class="top-works__company">株式会社○○　○○様</span>
+          <?php
+          $works_query = new WP_Query([
+            'post_type'      => 'case',
+            'posts_per_page' => 10,
+            'no_found_rows'  => true,
+            'tax_query'      => [[
+              'taxonomy' => 'works',
+              'operator' => 'EXISTS',
+            ]],
+          ]);
+          $work_index = 0;
+          ?>
+          <?php while ($works_query->have_posts()) : $works_query->the_post(); ?>
+            <?php
+            $work_index++;
+            $work_terms = eco_planning_get_post_terms(get_the_ID(), ['works']);
+            $work_client_name = eco_planning_get_field_value('case_client_name');
+            ?>
+            <article class="swiper-slide top-works__slide">
+              <div class="top-works__image">
+                <?php if (has_post_thumbnail()) : ?>
+                  <?php the_post_thumbnail('large', ['alt' => the_title_attribute(['echo' => false])]); ?>
+                <?php else : ?>
+                  <img src="<?php echo esc_url(get_theme_file_uri('/img/common/no-image.jpg')); ?>" alt="">
+                <?php endif; ?>
               </div>
-              <h3 class="top-works__card-title">ダミー：記事タイトルです 新着順でトップページにも表示します。</h3>
-              <a class="top-works__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-works__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
-            </div>
-          </article>
-
-          <article class="swiper-slide top-works__slide">
-            <div class="top-works__image">
-              <img src="./img/service-industrial-waste/disposal-thumbnail.jpg" alt="産業廃棄物回収の実績">
-            </div>
-            <p class="top-works__number"><span>works</span><strong>02</strong></p>
-            <div class="top-works__content">
-              <div class="top-works__meta">
-                <span class="top-works__tag">産業廃棄物回収</span>
-                <span class="top-works__company">株式会社○○　○○様</span>
+              <p class="top-works__number"><span>works</span><strong><?php echo esc_html(sprintf('%02d', $work_index)); ?></strong></p>
+              <div class="top-works__content">
+                <?php if ($work_terms || $work_client_name) : ?>
+                  <div class="top-works__meta">
+                    <?php foreach ($work_terms as $work_term) : ?>
+                      <span class="top-works__tag"><?php echo esc_html($work_term->name); ?></span>
+                    <?php endforeach; ?>
+                    <?php if ($work_client_name) : ?>
+                      <span class="top-works__company"><?php echo esc_html($work_client_name); ?></span>
+                    <?php endif; ?>
+                  </div>
+                <?php endif; ?>
+                <h3 class="top-works__card-title"><?php the_title(); ?></h3>
+                <a class="top-works__link" href="<?php the_permalink(); ?>"><span>詳しくはこちら</span><span class="site-arrow-icon top-works__link-icon" aria-hidden="true"><img src="<?php echo esc_url(get_theme_file_uri('/img/common/arrow-white.png')); ?>" alt=""></span></a>
               </div>
-              <h3 class="top-works__card-title">ダミー：記事タイトルです 新着順でトップページにも表示します。</h3>
-              <a class="top-works__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-works__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
-            </div>
-          </article>
-
-          <article class="swiper-slide top-works__slide">
-            <div class="top-works__image">
-              <img src="./img/service-drop-off/feature-factories.jpg" alt="工場への持ち込み実績">
-            </div>
-            <p class="top-works__number"><span>works</span><strong>03</strong></p>
-            <div class="top-works__content">
-              <div class="top-works__meta">
-                <span class="top-works__tag">産業廃棄物持込</span>
-                <span class="top-works__company">株式会社○○　○○様</span>
-              </div>
-              <h3 class="top-works__card-title">ダミー：記事タイトルです 新着順でトップページにも表示します。</h3>
-              <a class="top-works__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-works__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
-            </div>
-          </article>
-
-          <article class="swiper-slide top-works__slide">
-            <div class="top-works__image">
-              <img src="./img/service-industrial-waste/feature-demolition.jpg" alt="廃棄物処理の実績">
-            </div>
-            <p class="top-works__number"><span>works</span><strong>04</strong></p>
-            <div class="top-works__content">
-              <div class="top-works__meta">
-                <span class="top-works__tag">廃棄物処理</span>
-                <span class="top-works__company">株式会社○○　○○様</span>
-              </div>
-              <h3 class="top-works__card-title">ダミー：記事タイトルです 新着順でトップページにも表示します。</h3>
-              <a class="top-works__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-works__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
-            </div>
-          </article>
-
-          <article class="swiper-slide top-works__slide">
-            <div class="top-works__image">
-              <img src="./img/service-drop-off/feature-contract.jpg" alt="電子契約を活用した対応実績">
-            </div>
-            <p class="top-works__number"><span>works</span><strong>05</strong></p>
-            <div class="top-works__content">
-              <div class="top-works__meta">
-                <span class="top-works__tag">電子契約対応</span>
-                <span class="top-works__company">株式会社○○　○○様</span>
-              </div>
-              <h3 class="top-works__card-title">ダミー：記事タイトルです 新着順でトップページにも表示します。</h3>
-              <a class="top-works__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-works__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
-            </div>
-          </article>
+            </article>
+          <?php endwhile; ?>
+          <?php wp_reset_postdata(); ?>
         </div>
 
         <button class="top-works__navigation top-works__navigation--prev" type="button" aria-label="前の実績を表示">
-          <img src="./img/common/arrow-blue.png" alt="">
+          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt="">
         </button>
         <button class="top-works__navigation top-works__navigation--next" type="button" aria-label="次の実績を表示">
-          <img src="./img/common/arrow-blue.png" alt="">
+          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt="">
         </button>
       </div>
 
       <div class="top-works__bottom inner">
-        <a class="site-wide-button site-wide-button--blue top-works__button" href="#">
+        <a class="site-wide-button site-wide-button--blue top-works__button" href="<?php echo esc_url(get_post_type_archive_link('case')); ?>">
           <span>実績一覧</span>
-          <span class="site-arrow-icon site-wide-button__icon top-works__button-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span>
+          <span class="site-arrow-icon site-wide-button__icon top-works__button-icon" aria-hidden="true"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt=""></span>
         </a>
       </div>
     </section>
@@ -711,7 +583,7 @@
               <ol class="site-flow__list">
                 <li class="site-flow__item">
                   <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">01</span></div>
-                  <div class="site-flow__image"><img src="./img/common/flow-contact.jpg" alt="電話でお問い合わせを受けるスタッフ"></div>
+                  <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-contact.jpg" alt="電話でお問い合わせを受けるスタッフ"></div>
                   <div class="site-flow__content">
                     <h3 class="site-flow__title">お問い合わせ</h3>
                     <p class="site-flow__text">電話またはお問い合わせフォームより、<br>ご連絡お願いいたします。</p>
@@ -719,7 +591,7 @@
                 </li>
                 <li class="site-flow__item">
                   <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">02</span></div>
-                  <div class="site-flow__image"><img src="./img/common/flow-site-survey.jpg" alt="解体現場を調査するスタッフ"></div>
+                  <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-site-survey.jpg" alt="解体現場を調査するスタッフ"></div>
                   <div class="site-flow__content">
                     <h3 class="site-flow__title">現地調査・お見積り</h3>
                     <p class="site-flow__text">現地調査を行ない、詳細なお見積りを<br>ご提出させていただきます。</p>
@@ -727,7 +599,7 @@
                 </li>
                 <li class="site-flow__item">
                   <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">03</span></div>
-                  <div class="site-flow__image"><img src="./img/common/flow-contract.jpg" alt="契約を交わす様子"></div>
+                  <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-contract.jpg" alt="契約を交わす様子"></div>
                   <div class="site-flow__content">
                     <h3 class="site-flow__title">ご契約</h3>
                     <p class="site-flow__text">施工内容やお見積り金額に疑問や<br>不満がなければご契約成立となります。</p>
@@ -735,7 +607,7 @@
                 </li>
                 <li class="site-flow__item">
                   <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">04</span></div>
-                  <div class="site-flow__image"><img src="./img/common/flow-document-application.jpg" alt="申請書類を作成する様子"></div>
+                  <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-document-application.jpg" alt="申請書類を作成する様子"></div>
                   <div class="site-flow__content">
                     <h3 class="site-flow__title">リサイクル法届出書役所申請</h3>
                     <p class="site-flow__text">弊社にて各種提出書類を作成し、提出しますので、<br>お手を煩わせません。</p>
@@ -743,7 +615,7 @@
                 </li>
                 <li class="site-flow__item">
                   <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">05</span></div>
-                  <div class="site-flow__image"><img src="./img/common/flow-estimate.jpg" alt="近隣へ挨拶するスタッフ"></div>
+                  <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-estimate.jpg" alt="近隣へ挨拶するスタッフ"></div>
                   <div class="site-flow__content">
                     <h3 class="site-flow__title">近隣挨拶</h3>
                     <p class="site-flow__text">下記はすべてダミーテキストです。<br>この度は、弊社をご利用いただき誠にありがとうございます。</p>
@@ -751,7 +623,7 @@
                 </li>
                 <li class="site-flow__item">
                   <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">06</span></div>
-                  <div class="site-flow__image"><img src="./img/common/flow-demolition-work.jpg" alt="解体工事を行うスタッフ"></div>
+                  <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-demolition-work.jpg" alt="解体工事を行うスタッフ"></div>
                   <div class="site-flow__content">
                     <h3 class="site-flow__title">解体工事</h3>
                     <p class="site-flow__text">細心の注意を払い、慎重かつ迅速に解体工事を進めさせていただきます。</p>
@@ -759,7 +631,7 @@
                 </li>
                 <li class="site-flow__item">
                   <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">07</span></div>
-                  <div class="site-flow__image"><img src="./img/common/flow-completion-inspection.jpg" alt="解体工事完了後の立ち合い"></div>
+                  <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-completion-inspection.jpg" alt="解体工事完了後の立ち合い"></div>
                   <div class="site-flow__content">
                     <h3 class="site-flow__title">工事完了立ち合い</h3>
                     <p class="site-flow__text">解体後、お客様に現場を見ていただき、OKをいただきましたら、<br>完了となります。</p>
@@ -767,7 +639,7 @@
                 </li>
                 <li class="site-flow__item">
                   <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">08</span></div>
-                  <div class="site-flow__image"><img src="./img/common/flow-invoice-payment.jpg" alt="請求と支払いについて案内するスタッフ"></div>
+                  <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-invoice-payment.jpg" alt="請求と支払いについて案内するスタッフ"></div>
                   <div class="site-flow__content">
                     <h3 class="site-flow__title">請求書の発行・お支払</h3>
                     <p class="site-flow__text">後日、請求書を発行いたしますので、お支払いをお願いいたします。<br>現地調査を行ない、詳細なお見積りをご提出させていただきます。</p>
@@ -782,7 +654,7 @@
               <ol class="site-flow__list">
                 <li class="site-flow__item">
                   <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">01</span></div>
-                  <div class="site-flow__image"><img src="./img/common/flow-contact.jpg" alt="電話でお問い合わせを受けるスタッフ"></div>
+                  <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-contact.jpg" alt="電話でお問い合わせを受けるスタッフ"></div>
                   <div class="site-flow__content">
                     <h3 class="site-flow__title">お問い合わせ</h3>
                     <p class="site-flow__text">電話またはお問い合わせフォームより、<br>ご連絡お願いいたします。</p>
@@ -790,16 +662,16 @@
                 </li>
                 <li class="site-flow__item">
                   <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">02</span></div>
-                  <div class="site-flow__image"><img src="./img/common/flow-site-survey.jpg" alt="産業廃棄物を確認するスタッフ"></div>
+                  <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-site-survey.jpg" alt="産業廃棄物を確認するスタッフ"></div>
                   <div class="site-flow__content">
                     <h3 class="site-flow__title">訪問および現場確認</h3>
                     <p class="site-flow__text">現地、御社事務所等にて廃棄物の確認をさせていただきます。<br>設置場所の地図と設置箇所の図面等をお送りください。<br>契約や見積もりもその後提出いたします。</p>
-                    <p class="site-flow__text site-flow__note"><a href="#">お持込の方</a>については、これ以上の手続きは必要ありません。<br>予約不要でいつでも持込可能です。</p>
+                    <p class="site-flow__text site-flow__note"><a href="<?php echo esc_url(home_url('/waste/')); ?>">お持込の方</a>については、これ以上の手続きは必要ありません。<br>予約不要でいつでも持込可能です。</p>
                   </div>
                 </li>
                 <li class="site-flow__item">
                   <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">03</span></div>
-                  <div class="site-flow__image"><img src="./img/service-industrial-waste/feature-container.jpg" alt="産業廃棄物回収用のコンテナ"></div>
+                  <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-industrial-waste/feature-container.jpg" alt="産業廃棄物回収用のコンテナ"></div>
                   <div class="site-flow__content">
                     <h3 class="site-flow__title">コンテナ設置</h3>
                     <p class="site-flow__text">お電話、LINE、メールにて弊社事務所まで所定の依頼書をお送りいただき、その後現場にお伺いします。必要な情報をご提供いただき、使用用途に応じてご希望のサイズのコンテナを設置させていただきます。</p>
@@ -807,7 +679,7 @@
                 </li>
                 <li class="site-flow__item">
                   <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">04</span></div>
-                  <div class="site-flow__image"><img src="./img/common/flow-request.jpg" alt="電話で回収依頼を受けるスタッフ"></div>
+                  <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-request.jpg" alt="電話で回収依頼を受けるスタッフ"></div>
                   <div class="site-flow__content">
                     <h3 class="site-flow__title">回収依頼の連絡</h3>
                     <p class="site-flow__text">お電話、LINE、メールにて弊社事務所まで所定の依頼書をお送りいただき、その後現場にお伺いします。<br>最短で翌日〜3日にて回収にお伺いいたします。</p>
@@ -815,7 +687,7 @@
                 </li>
                 <li class="site-flow__item">
                   <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">05</span></div>
-                  <div class="site-flow__image"><img src="./img/common/flow-collection.jpg" alt="工場で産業廃棄物を回収する様子"></div>
+                  <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-collection.jpg" alt="工場で産業廃棄物を回収する様子"></div>
                   <div class="site-flow__content">
                     <h3 class="site-flow__title">回収</h3>
                     <p class="site-flow__text">内容物に応じて適切な工場に搬入し、処分いたします。</p>
@@ -830,7 +702,7 @@
               <ol class="site-flow__list">
                 <li class="site-flow__item">
                   <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">01</span></div>
-                  <div class="site-flow__image"><img src="./img/service-drop-off/feature-factories.jpg" alt="産業廃棄物を持ち込む工場"></div>
+                  <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-drop-off/feature-factories.jpg" alt="産業廃棄物を持ち込む工場"></div>
                   <div class="site-flow__content">
                     <h3 class="site-flow__title">工場へ持込</h3>
                     <p class="site-flow__text">予約不要でいつでも持込可能です。<br>搬入可能日：月曜日〜土曜日<br>搬入可能時間：8:00〜12:00、12:50〜17:00<br>土曜日や祝日も稼働しておりますので、他社に搬入ができない場合は安心してお持ち込みください。</p>
@@ -838,7 +710,7 @@
                 </li>
                 <li class="site-flow__item">
                   <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">02</span></div>
-                  <div class="site-flow__image"><img src="./img/common/flow-collection.jpg" alt="工場で産業廃棄物を回収する様子"></div>
+                  <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-collection.jpg" alt="工場で産業廃棄物を回収する様子"></div>
                   <div class="site-flow__content">
                     <h3 class="site-flow__title">回収</h3>
                     <p class="site-flow__text">内容物に応じて適切な工場に搬入し、処分いたします。</p>
@@ -853,7 +725,7 @@
               <ol class="site-flow__list">
                 <li class="site-flow__item">
                   <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">01</span></div>
-                  <div class="site-flow__image"><img src="./img/common/flow-contact.jpg" alt="電話でお問い合わせを受けるスタッフ"></div>
+                  <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-contact.jpg" alt="電話でお問い合わせを受けるスタッフ"></div>
                   <div class="site-flow__content">
                     <h3 class="site-flow__title">お問い合わせ</h3>
                     <p class="site-flow__text">電話またはお問い合わせフォームより、<br>ご連絡お願いいたします。</p>
@@ -861,7 +733,7 @@
                 </li>
                 <li class="site-flow__item">
                   <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">02</span></div>
-                  <div class="site-flow__image"><img src="./img/common/flow-estimate.jpg" alt="訪問先で見積もりを行うスタッフ"></div>
+                  <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-estimate.jpg" alt="訪問先で見積もりを行うスタッフ"></div>
                   <div class="site-flow__content">
                     <h3 class="site-flow__title">下見・お見積り</h3>
                     <p class="site-flow__text">下見を行ない、詳細なお見積りをご提出させていただきます。</p>
@@ -869,7 +741,7 @@
                 </li>
                 <li class="site-flow__item">
                   <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">03</span></div>
-                  <div class="site-flow__image"><img src="./img/common/flow-contract.jpg" alt="契約を交わす様子"></div>
+                  <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-contract.jpg" alt="契約を交わす様子"></div>
                   <div class="site-flow__content">
                     <h3 class="site-flow__title">ご契約</h3>
                     <p class="site-flow__text">お見積りにご納得頂けましたら、はじめてご契約となります。お見積りに不安が残る場合は、お気軽にご相談ください。また、この時点でのキャンセルも承っておりますので、ご安心ください。</p>
@@ -877,7 +749,7 @@
                 </li>
                 <li class="site-flow__item">
                   <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">04</span></div>
-                  <div class="site-flow__image"><img src="./img/common/flow-work.jpg" alt="不用品を回収するスタッフ"></div>
+                  <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-work.jpg" alt="不用品を回収するスタッフ"></div>
                   <div class="site-flow__content">
                     <h3 class="site-flow__title">作業開始</h3>
                     <p class="site-flow__text">スタッフが丁寧かつスピーディに不用品を回収・買取させていただきます。</p>
@@ -885,7 +757,7 @@
                 </li>
                 <li class="site-flow__item">
                   <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">05</span></div>
-                  <div class="site-flow__image"><img src="./img/common/flow-confirmation.jpg" alt="作業完了後に確認するお客様"></div>
+                  <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-confirmation.jpg" alt="作業完了後に確認するお客様"></div>
                   <div class="site-flow__content">
                     <h3 class="site-flow__title">作業確認</h3>
                     <p class="site-flow__text">不用品の回収・買取が終わったところで最終的にお客様に現場を確認いただき、作業終了となります。また、買取の場合は金額の確認もして頂きます。</p>
@@ -893,7 +765,7 @@
                 </li>
                 <li class="site-flow__item">
                   <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">06</span></div>
-                  <div class="site-flow__image"><img src="./img/common/flow-payment.jpg" alt="作業完了後の支払い"></div>
+                  <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-payment.jpg" alt="作業完了後の支払い"></div>
                   <div class="site-flow__content">
                     <h3 class="site-flow__title">お支払い</h3>
                     <p class="site-flow__text">作業完了をご確認いただいた後、お支払いとなります。お支払い方法は現金やクレジットカードにも対応しておりますので、お気軽にお申し出ください。買取の場合は、買取金額を確認して頂きお支払いになります。</p>
@@ -908,7 +780,7 @@
               <ol class="site-flow__list">
                 <li class="site-flow__item">
                   <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">01</span></div>
-                  <div class="site-flow__image"><img src="./img/common/flow-contact.jpg" alt="電話で相談を受けるスタッフ"></div>
+                  <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-contact.jpg" alt="電話で相談を受けるスタッフ"></div>
                   <div class="site-flow__content">
                     <h3 class="site-flow__title">お問い合わせ・ご相談</h3>
                     <p class="site-flow__text">まずはお電話またはLINE・メールフォームにてご連絡ください。<br>ご希望の品目や数量、納期、ご用途などをお伺いします。</p>
@@ -916,7 +788,7 @@
                 </li>
                 <li class="site-flow__item">
                   <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">02</span></div>
-                  <div class="site-flow__image"><img src="./img/common/flow-guide.jpg" alt="見積もりを作成する様子"></div>
+                  <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-guide.jpg" alt="見積もりを作成する様子"></div>
                   <div class="site-flow__content">
                     <h3 class="site-flow__title">ご案内・お見積もり</h3>
                     <p class="site-flow__text">お伺いした内容をもとに、在庫状況や価格、納品方法などをご案内します。<br>必要に応じてお見積書を発行いたします。</p>
@@ -924,7 +796,7 @@
                 </li>
                 <li class="site-flow__item">
                   <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">03</span></div>
-                  <div class="site-flow__image"><img src="./img/common/flow-contract.jpg" alt="注文を確定する様子"></div>
+                  <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-contract.jpg" alt="注文を確定する様子"></div>
                   <div class="site-flow__content">
                     <h3 class="site-flow__title">ご注文確定</h3>
                     <p class="site-flow__text">内容にご納得いただけましたら、ご注文確定となります。<br>支払方法についてもご相談可能です（現金・クレジットカードなど対応）。</p>
@@ -932,7 +804,7 @@
                 </li>
                 <li class="site-flow__item">
                   <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">04</span></div>
-                  <div class="site-flow__image"><img src="./img/common/flow-confirmation.jpg" alt="商品を引き渡す様子"></div>
+                  <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-confirmation.jpg" alt="商品を引き渡す様子"></div>
                   <div class="site-flow__content">
                     <h3 class="site-flow__title">お引き渡し・納品</h3>
                     <p class="site-flow__text">ご指定の日時に、現地引き取りまたは現場への配送にてお渡しいたします。<br>配送可能エリアはご相談ください。</p>
@@ -940,7 +812,7 @@
                 </li>
                 <li class="site-flow__item">
                   <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">05</span></div>
-                  <div class="site-flow__image"><img src="./img/common/flow-support.jpg" alt="アフターサポートを行うスタッフ"></div>
+                  <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-support.jpg" alt="アフターサポートを行うスタッフ"></div>
                   <div class="site-flow__content">
                     <h3 class="site-flow__title">アフターサポート</h3>
                     <p class="site-flow__text">納品後のご質問や、継続的なご発注にも迅速に対応いたします。<br>大量注文や定期購入のご相談も歓迎です。</p>
@@ -956,7 +828,7 @@
     <section class="site-contact-section">
       <div class="site-contact site-contact--visual">
         <div class="site-contact__background">
-          <img src="./img/common/contact-bg.jpg" alt="">
+          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/contact-bg.jpg" alt="">
         </div>
         <div class="site-contact__visual-content">
           <div class="site-contact__heading">
@@ -971,30 +843,30 @@
 
           <div class="site-contact__list">
             <div class="site-contact__card site-contact__card--phone">
-              <img class="site-contact__icon" src="./img/common/icon-contact-phone.png" alt="">
+              <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-phone.png" alt="">
               <p class="site-contact__card-title">お電話でのお問い合わせ</p>
               <a class="site-contact__phone-number" href="tel:0595833330">0595-83-3330</a>
               <p class="site-contact__note">お電話の際に「ホームページを見て」<br>とお伝えください。</p>
             </div>
 
             <div class="site-contact__card site-contact__card--mail">
-              <img class="site-contact__icon" src="./img/common/icon-contact-mail.png" alt="">
+              <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-mail.png" alt="">
               <p class="site-contact__card-title">メールでのお問い合わせ</p>
-              <a class="site-contact__button" href="#">
+              <a class="site-contact__button" href="<?php echo esc_url(home_url('/contact/')); ?>">
                 <span>お問い合わせ</span>
                 <span class="site-arrow-icon site-contact__button-icon" aria-hidden="true">
-                  <img src="./img/common/arrow-blue.png" alt="">
+                  <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt="">
                 </span>
               </a>
             </div>
 
             <div class="site-contact__card site-contact__card--line">
-              <img class="site-contact__icon" src="./img/common/icon-contact-line.png" alt="">
+              <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-line.png" alt="">
               <p class="site-contact__card-title">LINEでのお問い合わせ</p>
               <a class="site-contact__button" href="#">
                 <span>LINE 友達追加</span>
                 <span class="site-arrow-icon site-contact__button-icon" aria-hidden="true">
-                  <img src="./img/common/arrow-blue.png" alt="">
+                  <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt="">
                 </span>
               </a>
             </div>
@@ -1011,77 +883,76 @@
             <p class="top-staff__subtitle site-heading-subtitle--default">スタッフ紹介</p>
           </div>
 
-          <ul class="top-staff__tags">
-            <li>部署名など</li>
-            <li>タグは自由に登録</li>
-            <li>例：広報課など</li>
-            <li>例：現場管理</li>
-            <li>例：マネージャー職</li>
-            <li>例：メディア掲載</li>
-            <li>例：営業部</li>
-          </ul>
+          <?php
+          $staff_filter_terms = get_terms([
+            'taxonomy'   => 'staff',
+            'hide_empty' => true,
+          ]);
+          ?>
+          <?php if (!is_wp_error($staff_filter_terms) && $staff_filter_terms) : ?>
+            <ul class="top-staff__tags">
+              <?php foreach ($staff_filter_terms as $staff_filter_term) : ?>
+                <?php $staff_filter_url = get_term_link($staff_filter_term); ?>
+                <?php if (!is_wp_error($staff_filter_url)) : ?>
+                  <li><a href="<?php echo esc_url($staff_filter_url); ?>"><?php echo esc_html($staff_filter_term->name); ?></a></li>
+                <?php endif; ?>
+              <?php endforeach; ?>
+            </ul>
+          <?php endif; ?>
 
           <div class="top-staff__navigation">
             <button class="top-staff__navigation-button top-staff__navigation-button--prev" type="button" aria-label="前のスタッフを表示">
-              <img src="./img/common/arrow-blue.png" alt="">
+              <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt="">
             </button>
             <button class="top-staff__navigation-button top-staff__navigation-button--next" type="button" aria-label="次のスタッフを表示">
-              <img src="./img/common/arrow-blue.png" alt="">
+              <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt="">
             </button>
           </div>
 
-          <a class="site-wide-button site-wide-button--blue top-staff__button" href="#">
+          <a class="site-wide-button site-wide-button--blue top-staff__button" href="<?php echo esc_url(home_url('/news/')); ?>">
             <span>スタッフ紹介一覧</span>
-            <span class="site-arrow-icon site-wide-button__icon top-staff__button-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span>
+            <span class="site-arrow-icon site-wide-button__icon top-staff__button-icon" aria-hidden="true"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt=""></span>
           </a>
         </div>
 
         <div class="swiper top-staff__slider js-top-staff-slider">
           <div class="swiper-wrapper">
-            <article class="swiper-slide top-staff__slide">
-              <div class="top-staff__image"><img src="./img/common/flow-invoice-payment.jpg" alt="スタッフのプロフィール写真"></div>
-              <div class="top-staff__card-content">
-                <span class="top-staff__card-tag">部署名など</span>
-                <h3 class="top-staff__card-title">ダミー：インタビュー記事タイトルです 新着順でトップページにも表示します。</h3>
-                <a class="top-staff__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-staff__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
-              </div>
-            </article>
-
-            <article class="swiper-slide top-staff__slide">
-              <div class="top-staff__image"><img src="./img/service-industrial-waste/feature-trust.jpg" alt="スタッフのプロフィール写真"></div>
-              <div class="top-staff__card-content">
-                <span class="top-staff__card-tag">部署名など</span>
-                <h3 class="top-staff__card-title">ダミー：インタビュー記事タイトルです 新着順でトップページにも表示します。</h3>
-                <a class="top-staff__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-staff__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
-              </div>
-            </article>
-
-            <article class="swiper-slide top-staff__slide">
-              <div class="top-staff__image"><img src="./img/service-drop-off/feature-total-support.jpg" alt="スタッフのプロフィール写真"></div>
-              <div class="top-staff__card-content">
-                <span class="top-staff__card-tag">部署名など</span>
-                <h3 class="top-staff__card-title">ダミー：インタビュー記事タイトルです 新着順でトップページにも表示します。</h3>
-                <a class="top-staff__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-staff__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
-              </div>
-            </article>
-
-            <article class="swiper-slide top-staff__slide">
-              <div class="top-staff__image"><img src="./img/common/flow-request.jpg" alt="スタッフのプロフィール写真"></div>
-              <div class="top-staff__card-content">
-                <span class="top-staff__card-tag">部署名など</span>
-                <h3 class="top-staff__card-title">ダミー：インタビュー記事タイトルです 新着順でトップページにも表示します。</h3>
-                <a class="top-staff__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-staff__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
-              </div>
-            </article>
-
-            <article class="swiper-slide top-staff__slide">
-              <div class="top-staff__image"><img src="./img/service-demolition/strength-one-stop.jpg" alt="スタッフのプロフィール写真"></div>
-              <div class="top-staff__card-content">
-                <span class="top-staff__card-tag">部署名など</span>
-                <h3 class="top-staff__card-title">ダミー：インタビュー記事タイトルです 新着順でトップページにも表示します。</h3>
-                <a class="top-staff__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-staff__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
-              </div>
-            </article>
+            <?php
+            $staff_query = new WP_Query([
+              'post_type'           => 'post',
+              'posts_per_page'      => 10,
+              'no_found_rows'       => true,
+              'ignore_sticky_posts' => true,
+              'tax_query'      => [[
+                'taxonomy' => 'staff',
+                'operator' => 'EXISTS',
+              ]],
+            ]);
+            $staff_index = 0;
+            ?>
+            <?php while ($staff_query->have_posts()) : $staff_query->the_post(); ?>
+              <?php
+              $staff_index++;
+              $staff_terms = eco_planning_get_post_terms(get_the_ID(), ['staff']);
+              ?>
+              <article class="swiper-slide top-staff__slide">
+                <div class="top-staff__image">
+                  <?php if (has_post_thumbnail()) : ?>
+                    <?php the_post_thumbnail('large', ['alt' => the_title_attribute(['echo' => false])]); ?>
+                  <?php else : ?>
+                    <img src="<?php echo esc_url(get_theme_file_uri('/img/common/no-image.jpg')); ?>" alt="">
+                  <?php endif; ?>
+                </div>
+                <div class="top-staff__card-content">
+                  <?php foreach ($staff_terms as $staff_term) : ?>
+                    <span class="top-staff__card-tag"><?php echo esc_html($staff_term->name); ?></span>
+                  <?php endforeach; ?>
+                  <h3 class="top-staff__card-title"><?php the_title(); ?></h3>
+                  <a class="top-staff__link" href="<?php the_permalink(); ?>"><span>詳しくはこちら</span><span class="site-arrow-icon top-staff__link-icon" aria-hidden="true"><img src="<?php echo esc_url(get_theme_file_uri('/img/common/arrow-white.png')); ?>" alt=""></span></a>
+                </div>
+              </article>
+            <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
           </div>
         </div>
       </div>
@@ -1089,16 +960,16 @@
 
     <section class="top-recruit">
       <div class="top-recruit__visual">
-        <img class="top-recruit__image" src="./img/top/recruit-visual.jpg" alt="現場で働くスタッフ">
+        <img class="top-recruit__image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/recruit-visual.jpg" alt="現場で働くスタッフ">
         <div class="top-recruit__content">
           <div class="top-recruit__heading">
             <h2 class="top-recruit__title site-heading--section-en">recruit</h2>
             <p class="top-recruit__subtitle site-heading-subtitle--default">採用情報</p>
           </div>
           <p class="top-recruit__lead">エコ・プランニングの採用情報は、こちらをご覧ください。</p>
-          <a class="site-wide-button site-wide-button--blue top-recruit__button" href="#">
+          <a class="site-wide-button site-wide-button--blue top-recruit__button" href="<?php echo esc_url(home_url('/recruit/')); ?>">
             <span>採用情報</span>
-            <span class="site-arrow-icon site-wide-button__icon top-recruit__button-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span>
+            <span class="site-arrow-icon site-wide-button__icon top-recruit__button-icon" aria-hidden="true"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt=""></span>
           </a>
         </div>
       </div>
@@ -1112,59 +983,70 @@
             <p class="top-news__subtitle site-heading-subtitle--default">ニュース</p>
           </div>
 
-          <ul class="top-news__filter-list">
-            <li><a href="#">例：イベント</a></li>
-            <li><a href="#">例：プレスリリース</a></li>
-            <li><a href="#">タグは自由に登録</a></li>
-            <li><a href="#">例：メディア掲載</a></li>
-            <li><a href="#">例：イベント</a></li>
-            <li><a href="#">例：プレスリリース</a></li>
-            <li><a href="#">タグは自由に登録</a></li>
-            <li><a href="#">例：イベント</a></li>
-            <li><a href="#">例：プレスリリース</a></li>
-            <li><a href="#">タグは自由に登録</a></li>
-          </ul>
+          <?php
+          $news_filter_terms = get_terms([
+            'taxonomy'   => 'category',
+            'hide_empty' => true,
+            'exclude'    => [(int) get_option('default_category')],
+          ]);
+          ?>
+          <?php if (!is_wp_error($news_filter_terms) && $news_filter_terms) : ?>
+            <ul class="top-news__filter-list">
+              <?php foreach ($news_filter_terms as $news_filter_term) : ?>
+                <?php $news_filter_url = get_term_link($news_filter_term); ?>
+                <?php if (!is_wp_error($news_filter_url)) : ?>
+                  <li><a href="<?php echo esc_url($news_filter_url); ?>"><?php echo esc_html($news_filter_term->name); ?></a></li>
+                <?php endif; ?>
+              <?php endforeach; ?>
+            </ul>
+          <?php endif; ?>
         </div>
 
         <div class="top-news__list">
-          <article class="top-news__item">
-            <div class="top-news__image">
-              <img src="./img/common/flow-invoice-payment.jpg" alt="ニュース記事のイメージ">
-            </div>
-            <div class="top-news__content">
-              <span class="top-news__category">カテゴリー</span>
-              <h3 class="top-news__item-title">ダミー：記事タイトルです 新着順でトップページにも表示します。</h3>
-              <a class="top-news__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-news__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
-            </div>
-          </article>
+          <?php
+          $news_query_args = [
+            'post_type'           => 'post',
+            'posts_per_page'      => 3,
+            'no_found_rows'       => true,
+            'ignore_sticky_posts' => true,
+            'tax_query'           => [[
+              'taxonomy' => 'staff',
+              'operator' => 'NOT EXISTS',
+            ]],
+          ];
 
-          <article class="top-news__item">
-            <div class="top-news__image">
-              <img src="./img/service-drop-off/feature-total-support.jpg" alt="ニュース記事のイメージ">
-            </div>
-            <div class="top-news__content">
-              <span class="top-news__category">カテゴリー</span>
-              <h3 class="top-news__item-title">ダミー：記事タイトルです 新着順でトップページにも表示します。</h3>
-              <a class="top-news__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-news__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
-            </div>
-          </article>
-
-          <article class="top-news__item">
-            <div class="top-news__image">
-              <img src="./img/service-industrial-waste/feature-trust.jpg" alt="ニュース記事のイメージ">
-            </div>
-            <div class="top-news__content">
-              <span class="top-news__category">カテゴリー</span>
-              <h3 class="top-news__item-title">ダミー：記事タイトルです 新着順でトップページにも表示します。</h3>
-              <a class="top-news__link" href="#"><span>詳しくはこちら</span><span class="site-arrow-icon top-news__link-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span></a>
-            </div>
-          </article>
+          $news_query = new WP_Query($news_query_args);
+          $news_index = 0;
+          ?>
+          <?php while ($news_query->have_posts()) : $news_query->the_post(); ?>
+            <?php
+            $news_index++;
+            $news_terms = eco_planning_get_post_terms(get_the_ID(), ['category']);
+            ?>
+            <article class="top-news__item">
+              <div class="top-news__image">
+                <?php if (has_post_thumbnail()) : ?>
+                  <?php the_post_thumbnail('large', ['alt' => the_title_attribute(['echo' => false])]); ?>
+                <?php else : ?>
+                  <img src="<?php echo esc_url(get_theme_file_uri('/img/common/no-image.jpg')); ?>" alt="">
+                <?php endif; ?>
+              </div>
+              <div class="top-news__content">
+                <?php foreach ($news_terms as $news_term) : ?>
+                  <span class="top-news__category"><?php echo esc_html($news_term->name); ?></span>
+                <?php endforeach; ?>
+                <h3 class="top-news__item-title"><?php the_title(); ?></h3>
+                <a class="top-news__link" href="<?php the_permalink(); ?>"><span>詳しくはこちら</span><span class="site-arrow-icon top-news__link-icon" aria-hidden="true"><img src="<?php echo esc_url(get_theme_file_uri('/img/common/arrow-white.png')); ?>" alt=""></span></a>
+              </div>
+            </article>
+          <?php endwhile; ?>
+          <?php wp_reset_postdata(); ?>
         </div>
 
         <div class="top-news__bottom">
-          <a class="site-wide-button site-wide-button--blue top-news__button" href="#">
+          <a class="site-wide-button site-wide-button--blue top-news__button" href="<?php echo esc_url(home_url('/news/')); ?>">
             <span>ニュース一覧</span>
-            <span class="site-arrow-icon site-wide-button__icon top-news__button-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span>
+            <span class="site-arrow-icon site-wide-button__icon top-news__button-icon" aria-hidden="true"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt=""></span>
           </a>
         </div>
       </div>
@@ -1172,107 +1054,20 @@
 
     <section class="top-company">
       <div class="top-company__visual">
-        <img class="top-company__background" src="./img/top/company-bg.jpg" alt="">
+        <img class="top-company__background" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/company-bg.jpg" alt="">
         <div class="top-company__content">
           <div class="top-company__heading">
             <h2 class="top-company__title site-heading--section-en">company</h2>
             <p class="top-company__subtitle site-heading-subtitle--default">会社概要</p>
           </div>
           <p class="top-company__lead">エコ・プランニングの会社概要は、こちらをご覧ください。</p>
-          <a class="site-wide-button site-wide-button--blue top-company__button" href="#">
+          <a class="site-wide-button site-wide-button--blue top-company__button" href="<?php echo esc_url(home_url('/company/')); ?>">
             <span>会社概要</span>
-            <span class="site-arrow-icon site-wide-button__icon top-company__button-icon" aria-hidden="true"><img src="./img/common/arrow-white.png" alt=""></span>
+            <span class="site-arrow-icon site-wide-button__icon top-company__button-icon" aria-hidden="true"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt=""></span>
           </a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="site-footer__inner inner">
-      <div class="site-footer__top">
-        <div class="site-footer__brand">
-          <a class="site-footer__logo" href="#">
-            <img src="./img/common/logo-blue.png" alt="ECO PLANNING">
-          </a>
-          <div class="site-footer__certifications">
-            <img src="./img/common/logo-mems.png" alt="M-EMS">
-            <img src="./img/common/logo-sdgs.png" alt="SDGs">
-          </div>
-        </div>
-
-        <div class="site-footer__navigation">
-          <nav class="site-footer__nav" aria-label="フッターナビゲーション">
-            <div class="site-footer__nav-group">
-              <a class="site-footer__nav-heading" href="#">私たちについて</a>
-              <a class="site-footer__nav-link" href="#">会社概要</a>
-            </div>
-            <div class="site-footer__nav-group">
-              <a class="site-footer__nav-heading" href="#">事業紹介</a>
-              <a class="site-footer__nav-link" href="#">解体・アスベスト除去</a>
-              <a class="site-footer__nav-link" href="#">産業廃棄物回収</a>
-              <a class="site-footer__nav-link" href="#">産業廃棄物持ち込み</a>
-            </div>
-            <div class="site-footer__nav-group">
-              <a class="site-footer__nav-heading" href="#">実績 / お客様の声</a>
-              <a class="site-footer__nav-heading" href="#">ニュース / スタッフ紹介</a>
-              <a class="site-footer__nav-heading" href="#">募集要項一覧</a>
-            </div>
-          </nav>
-
-          <div class="site-footer__buttons">
-            <a class="site-footer__button site-footer__button--recruit" href="#">
-              <span>recruit</span>
-              <span class="site-arrow-icon site-footer__button-icon" aria-hidden="true">
-                <img src="./img/common/arrow-white.png" alt="">
-              </span>
-            </a>
-            <a class="site-footer__button site-footer__button--contact" href="#">
-              <span>contact</span>
-              <span class="site-arrow-icon site-footer__button-icon" aria-hidden="true">
-                <img src="./img/common/arrow-white.png" alt="">
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="site-footer__concept">
-        <img class="site-footer__concept-mark" src="./img/common/concept-mark.png" alt="">
-        <p class="site-footer__concept-copy">
-          誠実に、<br>
-          つくそう。
-        </p>
-      </div>
-
-      <div class="site-footer__bottom">
-        <div class="site-footer__information">
-          <p class="site-footer__description">解体工事、収集運搬、産廃処理なら三重県津市の株式会社エコ・プランニング</p>
-          <p class="site-footer__copyright">Copyright © 2025 Eco planning. All right reserved.</p>
-        </div>
-
-        <div class="site-footer__socials">
-          <a class="site-footer__social-link" href="#" aria-label="Facebook">
-            <img src="./img/common/icon-facebook.png" alt="">
-          </a>
-          <a class="site-footer__social-link" href="#" aria-label="X">
-            <img src="./img/common/icon-x.png" alt="">
-          </a>
-          <a class="site-footer__social-link" href="#" aria-label="Instagram">
-            <img src="./img/common/icon-instagram.png" alt="">
-          </a>
-          <a class="site-footer__social-link" href="#" aria-label="YouTube">
-            <img src="./img/common/icon-youtube.png" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="./js/script.js"></script>
-  <script src="./js/gsap.js"></script>
-</body>
-
-</html>
+<?php get_footer(); ?>
