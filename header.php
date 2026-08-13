@@ -28,7 +28,7 @@ $header_logo = $is_light_header ? 'logo-blue.png' : 'logo-white.png';
     <header class="<?php echo esc_attr(implode(' ', $header_classes)); ?>">
     <div class="site-header__inner">
       <a class="site-header__logo" href="<?php echo esc_url(home_url('/')); ?>">
-        <img src="<?php echo esc_url(get_theme_file_uri('/img/common/' . $header_logo)); ?>" alt="ECO PLANNING">
+        <img src="<?php echo esc_url(get_theme_file_uri('/img/common/' . $header_logo)); ?>" alt="ECO PLANNING"<?php if (!$is_light_header) : ?> data-logo-default="<?php echo esc_url(get_theme_file_uri('/img/common/logo-white.png')); ?>" data-logo-scrolled="<?php echo esc_url(get_theme_file_uri('/img/common/logo-blue.png')); ?>"<?php endif; ?>>
       </a>
 
       <nav class="site-header__nav js-drawer" aria-label="グローバルナビゲーション">

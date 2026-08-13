@@ -159,8 +159,20 @@
           <div class="sub-company__data-row">
             <dt class="sub-company__data-term">三重営業所（亀山工場）</dt>
             <dd class="sub-company__data-description">
-              <p>三重県亀山市中庄町630 <a class="sub-company__map-link" target="_blank" href="https://maps.app.goo.gl/auzxpNxQFkMa8PSK6">[Google Map]</a></p>
+              <p>〒519-0134 三重県亀山市中庄町630 <a class="sub-company__map-link" target="_blank" href="https://maps.app.goo.gl/auzxpNxQFkMa8PSK6">[Google Map]</a></p>
               <p class="sub-company__data-line">TEL：0595-83-3330 / FAX：0595-82-0401</p>
+            </dd>
+          </div>
+          <div class="sub-company__data-row">
+            <dt class="sub-company__data-term">東京オフィス</dt>
+            <dd class="sub-company__data-description">
+              <p>〒124-0023 東京都葛飾区東新小岩5-2-20伊藤テクノ(株)様内 <a class="sub-company__map-link" target="_blank" href="https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%91%9B%E9%A3%BE%E5%8C%BA%E6%9D%B1%E6%96%B0%E5%B0%8F%E5%B2%A95-2-20">[Google Map]</a></p>
+            </dd>
+          </div>
+          <div class="sub-company__data-row">
+            <dt class="sub-company__data-term">ペルーオフィス</dt>
+            <dd class="sub-company__data-description">
+              <p>Pio XII 449, Santiago de Surco 15023, Lima, Peru <a class="sub-company__map-link" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Pio+XII+449%2C+Santiago+de+Surco+15023%2C+Lima%2C+Peru">[Google Map]</a></p>
             </dd>
           </div>
           <div class="sub-company__data-row">
@@ -232,6 +244,7 @@
                 <li>産業廃棄物収集運搬・処分許可</li>
                 <li>認定番号 JIA14-003</li>
                 <li>・古物商許可</li>
+                <li>・特定建設業許可</li>
               </ul>
             </dd>
           </div>
@@ -411,7 +424,7 @@
             <div class="site-contact__card site-contact__card--line">
               <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-line.png" alt="">
               <p class="site-contact__card-title">LINEでのお問い合わせ</p>
-              <a class="site-contact__button" href="#">
+              <a class="site-contact__button" href="https://line.me/R/ti/p/@lia0806h" target="_blank" rel="noopener noreferrer">
                 <span>LINE 友達追加</span>
                 <span class="site-arrow-icon site-contact__button-icon" aria-hidden="true">
                   <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt="">

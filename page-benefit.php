@@ -26,9 +26,14 @@
           <p class="sub-about__introduction-subtitle site-heading-subtitle--en">Let's serve sincerely</p>
         </div>
 
-        <p class="sub-about__introduction-text">
-            エコ・プランニングは三重県を主とした中部圏にて、解体工事・産業廃棄物処理・リサイクル事業などを展開しており、全国のハウスメーカー様など1400社以上のお客様とお取引を行っています。創業から60年、亀山に根差して50年。お客様、取引業者様、近隣住民様すべてに「誠実につくす」ことが大切であるという考えのもと、事業を推進しています。
-        </p>
+        <div class="sub-about__introduction-texts">
+          <p class="sub-about__introduction-text">誠実に、つくそう。</p>
+          <p class="sub-about__introduction-text">街は集合体だ。</p>
+          <p class="sub-about__introduction-text">建物が建つ。人が集まる。<br>だからこそ、不要なモノも生まれる。</p>
+          <p class="sub-about__introduction-text">時間の流れと共に新陳代謝を繰り返す街を<br>持続化させる為に、私たちは存在している。</p>
+          <p class="sub-about__introduction-text">私たちは解体工事と産業廃棄物処理を<br>ワンストップで行う会社です。</p>
+          <p class="sub-about__introduction-text">いま目の前にある問題につくし、<br>街の純度を高め、人々の暮らしを守ります。</p>
+        </div>
       </div>
     </section>
 
@@ -208,7 +213,7 @@
             <div class="site-contact__card site-contact__card--line">
               <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-line.png" alt="">
               <p class="site-contact__card-title">LINEでのお問い合わせ</p>
-              <a class="site-contact__button" href="#">
+              <a class="site-contact__button" href="https://line.me/R/ti/p/@lia0806h" target="_blank" rel="noopener noreferrer">
                 <span>LINE 友達追加</span>
                 <span class="site-arrow-icon site-contact__button-icon" aria-hidden="true">
                   <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt="">

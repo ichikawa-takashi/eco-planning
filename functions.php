@@ -245,6 +245,9 @@ function enqueue_custom_styles_and_scripts() {
     // Swiper CSS
     wp_enqueue_style( 'swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css', [], null );
 
+    // Scroll Hint CSS
+    wp_enqueue_style( 'scroll-hint-css', 'https://cdn.jsdelivr.net/npm/scroll-hint@1.2.9/css/scroll-hint.css', [], null );
+
     // Main Stylesheet
     $main_style_path = get_template_directory() . '/css/style.css';
     wp_enqueue_style(
@@ -264,8 +267,11 @@ function enqueue_custom_styles_and_scripts() {
     // Swiper Script
     wp_enqueue_script( 'swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js', [], null, true );
 
+    // Scroll Hint Script
+    wp_enqueue_script( 'scroll-hint-js', 'https://cdn.jsdelivr.net/npm/scroll-hint@1.2.9/js/scroll-hint.min.js', [], null, true );
+
     // Custom Scripts
-    wp_enqueue_script( 'custom-script', get_template_directory_uri() . '/js/script.js', ['jquery-cdn'], null, true );
+    wp_enqueue_script( 'custom-script', get_template_directory_uri() . '/js/script.js', ['jquery-cdn', 'scroll-hint-js'], null, true );
     wp_enqueue_script( 'custom-gsap-script', get_template_directory_uri() . '/js/gsap.js', ['gsap-core', 'gsap-scrolltrigger'], null, true );
 
     wp_enqueue_script( 'form-validation-script', get_template_directory_uri() . '/js/form-validation.js', ['jquery-cdn'], null, true );

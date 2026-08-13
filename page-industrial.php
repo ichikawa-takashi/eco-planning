@@ -42,7 +42,7 @@
       <div class="sub-service-detail__introduction-inner inner">
         <h2 class="sub-service-detail__introduction-title site-heading--page-jp">
           廃棄物の運搬・処分<br>
-          年間取引件数10,000件の確かな信頼
+          年間取引件数12,000件の確かな信頼
         </h2>
         <p class="sub-service-detail__introduction-text">エコ・プランニングは解体工事だけでなく、産業廃棄物の回収から最終処分まで一貫対応しております。三重県下最大級となる1,400社もの取引実績を誇り、最初から最後まで責任を持って対応いたします。廃棄物の回収・処分はぜひ弊社にご相談ください。</p>
       </div>
@@ -165,7 +165,7 @@
             <p class="sub-service-industrial-waste__feature-number">09</p>
             <img class="sub-service-industrial-waste__feature-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-contact.jpg" alt="電話で回収依頼を受けるスタッフ">
             <h2 class="sub-service-industrial-waste__feature-title">県外でも回収できる</h2>
-            <p class="sub-service-industrial-waste__feature-text">回収範囲：<a class="sub-service-industrial-waste__feature-link" href="#">三重県、愛知県、岐阜県、奈良県、京都府、滋賀県</a>などなど、その他地域でも弊社提携先収集運搬業者とのマッチングが可能です。</p>
+            <p class="sub-service-industrial-waste__feature-text">回収範囲：<span class="sub-service-industrial-waste__feature-link">三重県、愛知県、岐阜県、奈良県、京都府、滋賀県</span>などなど、その他地域でも弊社提携先収集運搬業者とのマッチングが可能です。</p>
           </li>
         </ol>
       </div>
@@ -176,19 +176,19 @@
         <div class="sub-service-detail__application-panel">
           <h2 class="sub-service-detail__application-title site-heading--primary-jp">ご依頼・お申込はこちら</h2>
           <div class="sub-service-detail__application-list">
-            <a class="site-wide-button site-wide-button--white sub-service-detail__application-link" href="#">
+            <a class="site-wide-button site-wide-button--white sub-service-detail__application-link" href="https://form.run/@onegai" target="_blank" rel="noopener noreferrer">
               <span>取引登録</span>
               <span class="site-arrow-icon site-wide-button__icon sub-service-detail__application-icon" aria-hidden="true">
                 <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt="">
               </span>
             </a>
-            <a class="site-wide-button site-wide-button--white sub-service-detail__application-link" href="#">
+            <a class="site-wide-button site-wide-button--white sub-service-detail__application-link" href="https://form.run/@ecopla" target="_blank" rel="noopener noreferrer">
               <span>コンテナ回収依頼</span>
               <span class="site-arrow-icon site-wide-button__icon sub-service-detail__application-icon" aria-hidden="true">
                 <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt="">
               </span>
             </a>
-            <a class="site-wide-button site-wide-button--white sub-service-detail__application-link" href="#">
+            <a class="site-wide-button site-wide-button--white sub-service-detail__application-link" href="https://drive.google.com/drive/folders/1-CsTuzrJL0MWF80nJN5lf-SK7_PISETT" target="_blank" rel="noopener noreferrer">
               <span>契約書類ダウンロード</span>
               <span class="site-arrow-icon site-wide-button__icon sub-service-detail__application-icon" aria-hidden="true">
                 <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt="">
@@ -606,7 +606,7 @@
             <div class="site-contact__card site-contact__card--line">
               <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-line.png" alt="">
               <p class="site-contact__card-title">LINEでのお問い合わせ</p>
-              <a class="site-contact__button" href="#"><span>LINE 友達追加</span><span class="site-arrow-icon site-contact__button-icon" aria-hidden="true"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt=""></span></a>
+              <a class="site-contact__button" href="https://line.me/R/ti/p/@lia0806h" target="_blank" rel="noopener noreferrer"><span>LINE 友達追加</span><span class="site-arrow-icon site-contact__button-icon" aria-hidden="true"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt=""></span></a>
             </div>
           </div>
         </div>

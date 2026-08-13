@@ -16,9 +16,41 @@ body {
   overflow-x: hidden;
 }
 
+// #idへのアンカーリンクでジャンプした際、固定ヘッダーに見出しが隠れないように余白を確保
+:target {
+  scroll-margin-top: rem(127);
+
+  @include mq("lg") {
+    scroll-margin-top: rem(120);
+  }
+
+  @include mq("md") {
+    scroll-margin-top: rem(64);
+  }
+}
+
 .site-subpage-first-view {
   position: relative;
+
 }
+
+body:not(.single) .site-subpage-first-view {
+  height: 100vh;
+
+  @include mq('md') {
+    height: auto;
+  }
+}
+
+
+body:not(.single) .site-subpage-fv {
+  height: 100vh;
+
+  @include mq('md') {
+    height: max(50vw, rem(280));
+  }
+}
+
 
 .site-subpage-fv {
   position: relative;
@@ -26,7 +58,6 @@ body {
   aspect-ratio: 2 / 1;
   overflow: hidden;
   border-radius: 0 0 rem(30) rem(30);
-
   @include mq("md") {
     height: max(50vw, rem(280));
     aspect-ratio: auto;
@@ -450,6 +481,10 @@ html.is-fixed body {
   border: rem(1) solid transparent;
   border-radius: rem(48);
   @include font(24, 48, 0, $bold);
+}
+
+.site-wide-button br {
+  display: none;
 }
 
 .site-wide-button--white {

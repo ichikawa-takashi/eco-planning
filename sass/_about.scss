@@ -48,8 +48,21 @@
   @include font(20, 40, -20, $medium);
 
   @include mq("md") {
-    margin-top: rem(38);
     @include font(15, 29, -20, $regular);
+  }
+}
+
+.sub-about__introduction-texts {
+  @include mq("md") {
+    margin-top: rem(38);
+  }
+}
+
+.sub-about__introduction-text + .sub-about__introduction-text {
+  margin-top: rem(40);
+
+  @include mq("md") {
+    margin-top: rem(25);
   }
 }
 

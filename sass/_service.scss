@@ -1,5 +1,9 @@
 .sub-service__first-view {
   position: relative;
+  height: 100vh;
+  @include mq('md'){
+    height: auto;
+  }
 }
 
 .sub-service__fv {
@@ -7,9 +11,10 @@
   width: 100%;
   border-radius: 0 0 rem(30) rem(30);
   overflow: hidden;
-
+    height: 100vh;
   @include mq("md") {
     border-radius: 0 0 rem(15) rem(15);
+    height: auto;
   }
 }
 

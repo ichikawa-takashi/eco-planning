@@ -65,136 +65,148 @@
 
           <ol class="top-services__list">
             <li class="top-services__item">
-              <div class="top-services__image">
-                <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/service-01.jpg" alt="解体工事を行うスタッフ">
-              </div>
-              <div class="top-services__item-body">
-                <div class="top-services__number">
-                  <span class="top-services__number-label">service</span>
-                  <span class="top-services__number-value">01</span>
+              <a class="top-services__item-link-wrap" href="<?php echo esc_url(home_url('/dismantling/')); ?>">
+                <div class="top-services__image">
+                  <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/service-01.jpg" alt="解体工事を行うスタッフ">
                 </div>
-                <div class="top-services__item-content">
-                  <h3 class="top-services__item-title">解体・アスベスト</h3>
-                  <p class="top-services__item-text">解体工事とは、今まで家族が過ごした大切な家を壊す工事。または仲間と過ごした場所、切磋琢磨した会社や施設を壊す工事。そんな思い出が沢山つまった家を「ただ壊せばいい」そんな思いで仕事をしたくありません。</p>
-                  <a class="top-services__item-link" href="<?php echo esc_url(home_url('/dismantling/')); ?>">
-                    <span>詳しくはこちら</span>
-                    <span class="site-arrow-icon top-services__item-link-icon" aria-hidden="true">
-                      <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt="">
+                <div class="top-services__item-body">
+                  <div class="top-services__number">
+                    <span class="top-services__number-label">service</span>
+                    <span class="top-services__number-value">01</span>
+                  </div>
+                  <div class="top-services__item-content">
+                    <h3 class="top-services__item-title">解体・アスベスト</h3>
+                    <p class="top-services__item-text">解体工事とは、今まで家族が過ごした大切な家を壊す工事。または仲間と過ごした場所、切磋琢磨した会社や施設を壊す工事。そんな思い出が沢山つまった家を「ただ壊せばいい」そんな思いで仕事をしたくありません。</p>
+                    <span class="top-services__item-link">
+                      <span>詳しくはこちら</span>
+                      <span class="site-arrow-icon top-services__item-link-icon" aria-hidden="true">
+                        <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt="">
+                      </span>
                     </span>
-                  </a>
+                  </div>
                 </div>
-              </div>
+              </a>
             </li>
 
             <li class="top-services__item">
-              <div class="top-services__image">
-                <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/service-02.jpg" alt="産業廃棄物を回収する作業車">
-              </div>
-              <div class="top-services__item-body">
-                <div class="top-services__number">
-                  <span class="top-services__number-label">service</span>
-                  <span class="top-services__number-value">02</span>
+              <a class="top-services__item-link-wrap" href="<?php echo esc_url(home_url('/industrial/')); ?>">
+                <div class="top-services__image">
+                  <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/service-02.jpg" alt="産業廃棄物を回収する作業車">
                 </div>
-                <div class="top-services__item-content">
-                  <h3 class="top-services__item-title">産業廃棄物回収</h3>
-                  <p class="top-services__item-text">解体現場や建設現場から毎日排出される様々な産業廃棄物。エコ・プランニングは現場から産業廃棄物を速やかに回収し、処分することで、現場管理や美化のサポートをいたします。</p>
-                  <a class="top-services__item-link" href="<?php echo esc_url(home_url('/industrial/')); ?>">
-                    <span>詳しくはこちら</span>
-                    <span class="site-arrow-icon top-services__item-link-icon" aria-hidden="true">
-                      <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt="">
+                <div class="top-services__item-body">
+                  <div class="top-services__number">
+                    <span class="top-services__number-label">service</span>
+                    <span class="top-services__number-value">02</span>
+                  </div>
+                  <div class="top-services__item-content">
+                    <h3 class="top-services__item-title">産業廃棄物回収</h3>
+                    <p class="top-services__item-text">解体現場や建設現場から毎日排出される様々な産業廃棄物。エコ・プランニングは現場から産業廃棄物を速やかに回収し、処分することで、現場管理や美化のサポートをいたします。</p>
+                    <span class="top-services__item-link">
+                      <span>詳しくはこちら</span>
+                      <span class="site-arrow-icon top-services__item-link-icon" aria-hidden="true">
+                        <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt="">
+                      </span>
                     </span>
-                  </a>
+                  </div>
                 </div>
-              </div>
+              </a>
             </li>
 
             <li class="top-services__item">
-              <div class="top-services__image">
-                <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/service-03.jpg" alt="産業廃棄物を運搬するトラック">
-              </div>
-              <div class="top-services__item-body">
-                <div class="top-services__number">
-                  <span class="top-services__number-label">service</span>
-                  <span class="top-services__number-value">03</span>
+              <a class="top-services__item-link-wrap" href="<?php echo esc_url(home_url('/waste/')); ?>">
+                <div class="top-services__image">
+                  <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/service-03.jpg" alt="産業廃棄物を運搬するトラック">
                 </div>
-                <div class="top-services__item-content">
-                  <h3 class="top-services__item-title">産業廃棄物持ち込み</h3>
-                  <p class="top-services__item-text">通常時間中は予約なしで即日持ち込み対応可能です。また、ご予約いただければ早朝から夜間・休日に至るまで受け入れ可能ですので、まずはお気軽にご相談ください。</p>
-                  <a class="top-services__item-link" href="<?php echo esc_url(home_url('/waste/')); ?>">
-                    <span>詳しくはこちら</span>
-                    <span class="site-arrow-icon top-services__item-link-icon" aria-hidden="true">
-                      <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt="">
+                <div class="top-services__item-body">
+                  <div class="top-services__number">
+                    <span class="top-services__number-label">service</span>
+                    <span class="top-services__number-value">03</span>
+                  </div>
+                  <div class="top-services__item-content">
+                    <h3 class="top-services__item-title">産業廃棄物持ち込み</h3>
+                    <p class="top-services__item-text">通常時間中は予約なしで即日持ち込み対応可能です。また、ご予約いただければ早朝から夜間・休日に至るまで受け入れ可能ですので、まずはお気軽にご相談ください。</p>
+                    <span class="top-services__item-link">
+                      <span>詳しくはこちら</span>
+                      <span class="site-arrow-icon top-services__item-link-icon" aria-hidden="true">
+                        <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt="">
+                      </span>
                     </span>
-                  </a>
+                  </div>
                 </div>
-              </div>
+              </a>
             </li>
 
             <li class="top-services__item">
-              <div class="top-services__image">
-                <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/service-04.jpg" alt="不用品回収前の室内">
-              </div>
-              <div class="top-services__item-body">
-                <div class="top-services__number">
-                  <span class="top-services__number-label">service</span>
-                  <span class="top-services__number-value">04</span>
+              <a class="top-services__item-link-wrap" href="<?php echo esc_url(home_url('/service/#unwanted-items')); ?>">
+                <div class="top-services__image">
+                  <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/service-04.jpg" alt="不用品回収前の室内">
                 </div>
-                <div class="top-services__item-content">
-                  <h3 class="top-services__item-title">不用品回収・買取</h3>
-                  <p class="top-services__item-text">解体工事や産廃処理の過程で回収した廃材・金属・木材などを再資源化し、リサイクル製品として販売しています。</p>
-                  <a class="top-services__item-link" href="<?php echo esc_url(home_url('/service/#unwanted-items')); ?>">
-                    <span>詳しくはこちら</span>
-                    <span class="site-arrow-icon top-services__item-link-icon" aria-hidden="true">
-                      <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt="">
+                <div class="top-services__item-body">
+                  <div class="top-services__number">
+                    <span class="top-services__number-label">service</span>
+                    <span class="top-services__number-value">04</span>
+                  </div>
+                  <div class="top-services__item-content">
+                    <h3 class="top-services__item-title">不用品回収・買取</h3>
+                    <p class="top-services__item-text">解体工事や産廃処理の過程で回収した廃材・金属・木材などを再資源化し、リサイクル製品として販売しています。</p>
+                    <span class="top-services__item-link">
+                      <span>詳しくはこちら</span>
+                      <span class="site-arrow-icon top-services__item-link-icon" aria-hidden="true">
+                        <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt="">
+                      </span>
                     </span>
-                  </a>
+                  </div>
                 </div>
-              </div>
+              </a>
             </li>
 
             <li class="top-services__item">
-              <div class="top-services__image">
-                <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/service-05.jpg" alt="ハウスクリーニングの様子">
-              </div>
-              <div class="top-services__item-body">
-                <div class="top-services__number">
-                  <span class="top-services__number-label">service</span>
-                  <span class="top-services__number-value">05</span>
+              <a class="top-services__item-link-wrap" href="<?php echo esc_url(home_url('/service/#house-cleaning')); ?>">
+                <div class="top-services__image">
+                  <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/service-05.jpg" alt="ハウスクリーニングの様子">
                 </div>
-                <div class="top-services__item-content">
-                  <h3 class="top-services__item-title">ハウスクリーニング</h3>
-                  <p class="top-services__item-text">元タレントの実業家・入江慎也氏が率いる清掃のプロ「ピカピカ」とのFC契約により実現した、ハウスクリーニング。解体・不用品回収との相乗効果を活かし、住まいの困りごと全般をワンストップで解決いたします。</p>
-                  <a class="top-services__item-link" href="<?php echo esc_url(home_url('/service/#house-cleaning')); ?>">
-                    <span>詳しくはこちら</span>
-                    <span class="site-arrow-icon top-services__item-link-icon" aria-hidden="true">
-                      <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt="">
+                <div class="top-services__item-body">
+                  <div class="top-services__number">
+                    <span class="top-services__number-label">service</span>
+                    <span class="top-services__number-value">05</span>
+                  </div>
+                  <div class="top-services__item-content">
+                    <h3 class="top-services__item-title">ハウスクリーニング</h3>
+                    <p class="top-services__item-text">元タレントの実業家・入江慎也氏が率いる清掃のプロ「ピカピカ」とのFC契約により実現した、ハウスクリーニング。解体・不用品回収との相乗効果を活かし、住まいの困りごと全般をワンストップで解決いたします。</p>
+                    <span class="top-services__item-link">
+                      <span>詳しくはこちら</span>
+                      <span class="site-arrow-icon top-services__item-link-icon" aria-hidden="true">
+                        <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt="">
+                      </span>
                     </span>
-                  </a>
+                  </div>
                 </div>
-              </div>
+              </a>
             </li>
 
             <li class="top-services__item">
-              <div class="top-services__image">
-                <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/service-06.jpg" alt="都市と握手を組み合わせたイメージ">
-              </div>
-              <div class="top-services__item-body">
-                <div class="top-services__number">
-                  <span class="top-services__number-label">service</span>
-                  <span class="top-services__number-value">06</span>
+              <a class="top-services__item-link-wrap" href="<?php echo esc_url(home_url('/service/#overseas-business')); ?>">
+                <div class="top-services__image">
+                  <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/service-06.jpg" alt="都市と握手を組み合わせたイメージ">
                 </div>
-                <div class="top-services__item-content">
-                  <h3 class="top-services__item-title">海外事業</h3>
-                  <p class="top-services__item-text">JICAと連携し、南米ペルーのゴミ問題解決と雇用の創出を計画。将来的には中南米全域への技術移転を通して、グローバルな循環型社会の構築を目指しています。
-                  </p>
-                  <a class="top-services__item-link" href="<?php echo esc_url(home_url('/service/#overseas-business')); ?>">
-                    <span>詳しくはこちら</span>
-                    <span class="site-arrow-icon top-services__item-link-icon" aria-hidden="true">
-                      <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt="">
+                <div class="top-services__item-body">
+                  <div class="top-services__number">
+                    <span class="top-services__number-label">service</span>
+                    <span class="top-services__number-value">06</span>
+                  </div>
+                  <div class="top-services__item-content">
+                    <h3 class="top-services__item-title">海外事業</h3>
+                    <p class="top-services__item-text">JICAと連携し、南米ペルーのゴミ問題解決と雇用の創出を計画。将来的には中南米全域への技術移転を通して、グローバルな循環型社会の構築を目指しています。
+                    </p>
+                    <span class="top-services__item-link">
+                      <span>詳しくはこちら</span>
+                      <span class="site-arrow-icon top-services__item-link-icon" aria-hidden="true">
+                        <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt="">
+                      </span>
                     </span>
-                  </a>
+                  </div>
                 </div>
-              </div>
+              </a>
             </li>
           </ol>
 
@@ -319,7 +331,7 @@
       <div class="top-strengths__inner">
         <div class="top-strengths__heading inner">
           <h2 class="top-strengths__title site-heading--section-en">strengths</h2>
-          <p class="top-strengths__subtitle site-heading-subtitle--default">他社との違い</p>
+          <p class="top-strengths__subtitle site-heading-subtitle--default">強み</p>
         </div>
 
         <ol class="top-strengths__list">
@@ -335,8 +347,8 @@
                 </div>
                 <span class="top-strengths__keyword">challenge</span>
               </div>
-              <h3 class="top-strengths__item-title">「きつい・汚い・危険」を<br>ひっくり返す、常識破りの挑戦。</h3>
-              <p class="top-strengths__text">建築業界につきまとう「きつい・汚い・危険」という旧態依然としたイメージ。私たちはこれを「かっこいい・稼げる・感動」の新しいスタンダードへと変革すべく、常識にとらわれない挑戦を続けています。例えば、ペルーでの環境・リサイクル事業への進出や、地域を巻き込んだ大型フェスの開催など、同業他社が踏み込まない領域にも果敢に挑戦。「世間が抱く業界のイメージを打破しよう」という強い意志のもと、常にワクワクしながら新しい価値を創造し、業界の未来を面白く切り拓く開拓者であり続けます。		</p>
+              <h3 class="top-strengths__item-title">実績に裏打ちされた信頼と、未来へ挑戦し続ける企業</h3>
+              <p class="top-strengths__text">創業60年、三重県の街づくりと環境保全を支えてきたエコ・プランニング。解体工事から産業廃棄物の処分までを一貫対応する「ワンストップ体制」で、県内でも数少ない厚い信頼をいただいています。三重県建設業界初のDX認定、CO₂削減目標「SBT認定」を取得し、脱炭素経営とデジタル化を推進するとともに、全国への事業展開も進めています。ボリビアやペルー、ベトナムなど多様な国籍の社員が活躍し、能登半島地震の復興支援やペルーでの廃プラスチック再燃料化など、社会課題の解決に挑戦し、SDGsの実現にも貢献しています。60年の信頼を礎に、「解体」の枠を超えた総合環境ソリューション企業として、技術と信頼を世界へ広げてまいります。</p>
             </div>
           </li>
 
@@ -349,8 +361,8 @@
                 </div>
                 <span class="top-strengths__keyword">purity</span>
               </div>
-              <h3 class="top-strengths__item-title">街の純度を高める<br>「地域社会へのインフラ<br>としての自負」</h3>
-              <p class="top-strengths__text">私たちが日々向き合っているのは、単なる「ゴミ」や「古い建物」ではありません。建物を解体し、廃棄物を適正に処理し、リサイクルして循環させることで、その先にある「地域の皆さまの安全で快適な暮らし」を支えています。「街の純度を高め、人々の暮らしを守る」というパーパスを胸に、地域社会に必要不可欠なインフラであるという強い自負を持っています。事業を通じた環境保全はもちろん、街全体を笑顔にし、人々の心までスッキリさせるような誠実な取り組みをこれからも地域と共に推進していきます。</p>
+              <h3 class="top-strengths__item-title">ECO-PLANNINGに、できない解体はない<br>確かな技術力と60年の実績が支える、「NO」と言わないプロフェッショナル集団</h3>
+              <p class="top-strengths__text">全国どこからのご依頼でも、小さな納屋から大型商業施設・工場・ビル・橋梁まで、あらゆる解体工事に対応する技術力と60年にわたる実績があります。現場ごとの条件や課題を的確に見極め、安全性・効率性・周辺環境への配慮を踏まえた施工で、最後まで責任を持って完遂。他社に「難しい」と断られた特殊工事や高難度案件も、豊富な経験と柔軟な発想で一つひとつ解決し、「NOと言わない解体屋」として信頼をいただいています。騒音・振動・粉じん対策や近隣への配慮、法令遵守はすべての工事における基本。どのような規模・条件でも、まずはエコ・プランニングにご相談ください。</p>
             </div>
             <div class="top-strengths__image">
               <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/strength-02.jpg" alt="街を行き交う人々">
@@ -369,8 +381,8 @@
                 </div>
                 <span class="top-strengths__keyword">diversity</span>
               </div>
-              <h3 class="top-strengths__item-title">若い力と多様性が生み出す<br>「人に尽くすプロ集団」</h3>
-              <p class="top-strengths__text">エコ・プランニング最大の原動力は、年齢や国籍、経歴もバラバラな個性豊かな社員たちです。異業種から飛び込んできたメンバーも多く、従来の業界にはなかった柔軟な発想や高いホスピタリティを持ち合わせています。「自ら楽しみながら、関わる人達に尽くそう」という価値観を共有し、威圧感のない親しみやすい対応で、お客様の細かな「困った」に寄り添います。多様なバックグラウンドを持つメンバーが集まることで生まれる化学反応が、枠にとらわれない柔軟な課題解決力と、誠実で心温まるサービスを生み出しています。</p>
+              <h3 class="top-strengths__item-title">お客様の現場を止めない<br>圧倒的な対応力で、地域の環境インフラを支える環境事業部</h3>
+              <p class="top-strengths__text">産業廃棄物の処理は、廃棄物を片付ける仕事ではなく、お客様の事業を止めない仕事です。予約不要で受け入れており、一度ご相談いただいたお客様には24時間体制での受け入れも可能。急な持ち込みや収集依頼にも、最短翌日回収で対応します。さらに、遠方地域への出張回収、大量廃棄物の積み込み回収、他社で断られがちな処理困難物の受け入れにも幅広く対応。「急いでいる」「今日相談したい」「他社では間に合わない」——そんなお客様の声に応え続けることで、まず思い出していただける存在でありたい。また、新たな挑戦として、スマホで依頼できる「楽々さんぱい」の開発も進めながら、地域の環境インフラを支えてまいります。</p>
             </div>
           </li>
         </ol>
@@ -438,30 +450,32 @@
               $voice_client_name = eco_planning_get_field_value('case_client_name');
               ?>
               <article class="swiper-slide top-voices__slide">
-                <div class="top-voices__image">
-                  <?php if (has_post_thumbnail()) : ?>
-                    <?php the_post_thumbnail('large', ['alt' => the_title_attribute(['echo' => false])]); ?>
-                  <?php else : ?>
-                    <img src="<?php echo esc_url(get_theme_file_uri('/img/common/no-image.jpg')); ?>" alt="">
-                  <?php endif; ?>
-                </div>
-                <div class="top-voices__card-body">
-                  <p class="top-voices__number"><span>Interview</span><strong>#<?php echo esc_html($voice_index); ?></strong></p>
-                  <div class="top-voices__content">
-                    <?php if ($voice_terms) : ?>
-                      <ul class="top-voices__tags">
-                        <?php foreach ($voice_terms as $voice_term) : ?>
-                          <li><?php echo esc_html($voice_term->name); ?></li>
-                        <?php endforeach; ?>
-                      </ul>
+                <a class="top-voices__slide-link" href="<?php the_permalink(); ?>">
+                  <div class="top-voices__image">
+                    <?php if (has_post_thumbnail()) : ?>
+                      <?php the_post_thumbnail('large', ['alt' => the_title_attribute(['echo' => false])]); ?>
+                    <?php else : ?>
+                      <img src="<?php echo esc_url(get_theme_file_uri('/img/common/no-image.jpg')); ?>" alt="">
                     <?php endif; ?>
-                    <?php if ($voice_client_name) : ?>
-                      <p class="top-voices__company"><?php echo esc_html($voice_client_name); ?></p>
-                    <?php endif; ?>
-                    <h3 class="top-voices__card-title"><?php the_title(); ?></h3>
-                    <a class="top-voices__link" href="<?php the_permalink(); ?>"><span>詳しくはこちら</span><span class="site-arrow-icon top-voices__link-icon" aria-hidden="true"><img src="<?php echo esc_url(get_theme_file_uri('/img/common/arrow-white.png')); ?>" alt=""></span></a>
                   </div>
-                </div>
+                  <div class="top-voices__card-body">
+                    <p class="top-voices__number"><span>Interview</span><strong>#<?php echo esc_html($voice_index); ?></strong></p>
+                    <div class="top-voices__content">
+                      <?php if ($voice_terms) : ?>
+                        <ul class="top-voices__tags">
+                          <?php foreach ($voice_terms as $voice_term) : ?>
+                            <li><?php echo esc_html($voice_term->name); ?></li>
+                          <?php endforeach; ?>
+                        </ul>
+                      <?php endif; ?>
+                      <?php if ($voice_client_name) : ?>
+                        <p class="top-voices__company"><?php echo esc_html($voice_client_name); ?></p>
+                      <?php endif; ?>
+                      <h3 class="top-voices__card-title"><?php the_title(); ?></h3>
+                      <span class="top-voices__link"><span>詳しくはこちら</span><span class="site-arrow-icon top-voices__link-icon" aria-hidden="true"><img src="<?php echo esc_url(get_theme_file_uri('/img/common/arrow-white.png')); ?>" alt=""></span></span>
+                    </div>
+                  </div>
+                </a>
               </article>
             <?php endwhile; ?>
             <?php wp_reset_postdata(); ?>
@@ -519,28 +533,30 @@
             $work_client_name = eco_planning_get_field_value('case_client_name');
             ?>
             <article class="swiper-slide top-works__slide">
-              <div class="top-works__image">
-                <?php if (has_post_thumbnail()) : ?>
-                  <?php the_post_thumbnail('large', ['alt' => the_title_attribute(['echo' => false])]); ?>
-                <?php else : ?>
-                  <img src="<?php echo esc_url(get_theme_file_uri('/img/common/no-image.jpg')); ?>" alt="">
-                <?php endif; ?>
-              </div>
-              <p class="top-works__number"><span>works</span><strong><?php echo esc_html(sprintf('%02d', $work_index)); ?></strong></p>
-              <div class="top-works__content">
-                <?php if ($work_terms || $work_client_name) : ?>
-                  <div class="top-works__meta">
-                    <?php foreach ($work_terms as $work_term) : ?>
-                      <span class="top-works__tag"><?php echo esc_html($work_term->name); ?></span>
-                    <?php endforeach; ?>
-                    <?php if ($work_client_name) : ?>
-                      <span class="top-works__company"><?php echo esc_html($work_client_name); ?></span>
-                    <?php endif; ?>
-                  </div>
-                <?php endif; ?>
-                <h3 class="top-works__card-title"><?php the_title(); ?></h3>
-                <a class="top-works__link" href="<?php the_permalink(); ?>"><span>詳しくはこちら</span><span class="site-arrow-icon top-works__link-icon" aria-hidden="true"><img src="<?php echo esc_url(get_theme_file_uri('/img/common/arrow-white.png')); ?>" alt=""></span></a>
-              </div>
+              <a class="top-works__slide-link" href="<?php the_permalink(); ?>">
+                <div class="top-works__image">
+                  <?php if (has_post_thumbnail()) : ?>
+                    <?php the_post_thumbnail('large', ['alt' => the_title_attribute(['echo' => false])]); ?>
+                  <?php else : ?>
+                    <img src="<?php echo esc_url(get_theme_file_uri('/img/common/no-image.jpg')); ?>" alt="">
+                  <?php endif; ?>
+                </div>
+                <p class="top-works__number"><span>works</span><strong><?php echo esc_html(sprintf('%02d', $work_index)); ?></strong></p>
+                <div class="top-works__content">
+                  <?php if ($work_terms || $work_client_name) : ?>
+                    <div class="top-works__meta">
+                      <?php foreach ($work_terms as $work_term) : ?>
+                        <span class="top-works__tag"><?php echo esc_html($work_term->name); ?></span>
+                      <?php endforeach; ?>
+                      <?php if ($work_client_name) : ?>
+                        <span class="top-works__company"><?php echo esc_html($work_client_name); ?></span>
+                      <?php endif; ?>
+                    </div>
+                  <?php endif; ?>
+                  <h3 class="top-works__card-title"><?php the_title(); ?></h3>
+                  <span class="top-works__link"><span>詳しくはこちら</span><span class="site-arrow-icon top-works__link-icon" aria-hidden="true"><img src="<?php echo esc_url(get_theme_file_uri('/img/common/arrow-white.png')); ?>" alt=""></span></span>
+                </div>
+              </a>
             </article>
           <?php endwhile; ?>
           <?php wp_reset_postdata(); ?>
@@ -602,15 +618,15 @@
                   <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-contract.jpg" alt="契約を交わす様子"></div>
                   <div class="site-flow__content">
                     <h3 class="site-flow__title">ご契約</h3>
-                    <p class="site-flow__text">施工内容やお見積り金額に疑問や<br>不満がなければご契約成立となります。</p>
+                    <p class="site-flow__text">リサイクル法に関する書類作成や提出など、<br>手続きはすべて弊社にて行います。</p>
                   </div>
                 </li>
                 <li class="site-flow__item">
                   <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">04</span></div>
                   <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-document-application.jpg" alt="申請書類を作成する様子"></div>
                   <div class="site-flow__content">
-                    <h3 class="site-flow__title">リサイクル法届出書役所申請</h3>
-                    <p class="site-flow__text">弊社にて各種提出書類を作成し、提出しますので、<br>お手を煩わせません。</p>
+                    <h3 class="site-flow__title">各種書類作成・代行申請</h3>
+                    <p class="site-flow__text">施工内容やお見積りにご納得いただけましたら<br>契約成立です。</p>
                   </div>
                 </li>
                 <li class="site-flow__item">
@@ -618,7 +634,7 @@
                   <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-estimate.jpg" alt="近隣へ挨拶するスタッフ"></div>
                   <div class="site-flow__content">
                     <h3 class="site-flow__title">近隣挨拶</h3>
-                    <p class="site-flow__text">下記はすべてダミーテキストです。<br>この度は、弊社をご利用いただき誠にありがとうございます。</p>
+                    <p class="site-flow__text">工事前に近隣の皆さまへ工事内容や期間を説明し、<br>ご理解とご協力をいただけるよう丁寧にご案内します。</p>
                   </div>
                 </li>
                 <li class="site-flow__item">
@@ -863,7 +879,7 @@
             <div class="site-contact__card site-contact__card--line">
               <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-line.png" alt="">
               <p class="site-contact__card-title">LINEでのお問い合わせ</p>
-              <a class="site-contact__button" href="#">
+              <a class="site-contact__button" href="https://line.me/R/ti/p/@lia0806h" target="_blank" rel="noopener noreferrer">
                 <span>LINE 友達追加</span>
                 <span class="site-arrow-icon site-contact__button-icon" aria-hidden="true">
                   <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt="">
@@ -936,20 +952,22 @@
               $staff_terms = eco_planning_get_post_terms(get_the_ID(), ['staff']);
               ?>
               <article class="swiper-slide top-staff__slide">
-                <div class="top-staff__image">
-                  <?php if (has_post_thumbnail()) : ?>
-                    <?php the_post_thumbnail('large', ['alt' => the_title_attribute(['echo' => false])]); ?>
-                  <?php else : ?>
-                    <img src="<?php echo esc_url(get_theme_file_uri('/img/common/no-image.jpg')); ?>" alt="">
-                  <?php endif; ?>
-                </div>
-                <div class="top-staff__card-content">
-                  <?php foreach ($staff_terms as $staff_term) : ?>
-                    <span class="top-staff__card-tag"><?php echo esc_html($staff_term->name); ?></span>
-                  <?php endforeach; ?>
-                  <h3 class="top-staff__card-title"><?php the_title(); ?></h3>
-                  <a class="top-staff__link" href="<?php the_permalink(); ?>"><span>詳しくはこちら</span><span class="site-arrow-icon top-staff__link-icon" aria-hidden="true"><img src="<?php echo esc_url(get_theme_file_uri('/img/common/arrow-white.png')); ?>" alt=""></span></a>
-                </div>
+                <a class="top-staff__slide-link" href="<?php the_permalink(); ?>">
+                  <div class="top-staff__image">
+                    <?php if (has_post_thumbnail()) : ?>
+                      <?php the_post_thumbnail('large', ['alt' => the_title_attribute(['echo' => false])]); ?>
+                    <?php else : ?>
+                      <img src="<?php echo esc_url(get_theme_file_uri('/img/common/no-image.jpg')); ?>" alt="">
+                    <?php endif; ?>
+                  </div>
+                  <div class="top-staff__card-content">
+                    <?php foreach ($staff_terms as $staff_term) : ?>
+                      <span class="top-staff__card-tag"><?php echo esc_html($staff_term->name); ?></span>
+                    <?php endforeach; ?>
+                    <h3 class="top-staff__card-title"><?php the_title(); ?></h3>
+                    <span class="top-staff__link"><span>詳しくはこちら</span><span class="site-arrow-icon top-staff__link-icon" aria-hidden="true"><img src="<?php echo esc_url(get_theme_file_uri('/img/common/arrow-white.png')); ?>" alt=""></span></span>
+                  </div>
+                </a>
               </article>
             <?php endwhile; ?>
             <?php wp_reset_postdata(); ?>
@@ -1024,20 +1042,22 @@
             $news_terms = eco_planning_get_post_terms(get_the_ID(), ['category']);
             ?>
             <article class="top-news__item">
-              <div class="top-news__image">
-                <?php if (has_post_thumbnail()) : ?>
-                  <?php the_post_thumbnail('large', ['alt' => the_title_attribute(['echo' => false])]); ?>
-                <?php else : ?>
-                  <img src="<?php echo esc_url(get_theme_file_uri('/img/common/no-image.jpg')); ?>" alt="">
-                <?php endif; ?>
-              </div>
-              <div class="top-news__content">
-                <?php foreach ($news_terms as $news_term) : ?>
-                  <span class="top-news__category"><?php echo esc_html($news_term->name); ?></span>
-                <?php endforeach; ?>
-                <h3 class="top-news__item-title"><?php the_title(); ?></h3>
-                <a class="top-news__link" href="<?php the_permalink(); ?>"><span>詳しくはこちら</span><span class="site-arrow-icon top-news__link-icon" aria-hidden="true"><img src="<?php echo esc_url(get_theme_file_uri('/img/common/arrow-white.png')); ?>" alt=""></span></a>
-              </div>
+              <a class="top-news__item-link-wrap" href="<?php the_permalink(); ?>">
+                <div class="top-news__image">
+                  <?php if (has_post_thumbnail()) : ?>
+                    <?php the_post_thumbnail('large', ['alt' => the_title_attribute(['echo' => false])]); ?>
+                  <?php else : ?>
+                    <img src="<?php echo esc_url(get_theme_file_uri('/img/common/no-image.jpg')); ?>" alt="">
+                  <?php endif; ?>
+                </div>
+                <div class="top-news__content">
+                  <?php foreach ($news_terms as $news_term) : ?>
+                    <span class="top-news__category"><?php echo esc_html($news_term->name); ?></span>
+                  <?php endforeach; ?>
+                  <h3 class="top-news__item-title"><?php the_title(); ?></h3>
+                  <span class="top-news__link"><span>詳しくはこちら</span><span class="site-arrow-icon top-news__link-icon" aria-hidden="true"><img src="<?php echo esc_url(get_theme_file_uri('/img/common/arrow-white.png')); ?>" alt=""></span></span>
+                </div>
+              </a>
             </article>
           <?php endwhile; ?>
           <?php wp_reset_postdata(); ?>

@@ -145,7 +145,7 @@
                   （早朝や夕方以降でのお持ち込みをご希望の方はお問い合わせください）<br>
                   （ゴールデンウィーク・お盆・年末年始・日曜日は除きます）
                 </p>
-                <a class="site-wide-button site-wide-button--white sub-service-drop-off__factory-button" href="#">
+                <a class="site-wide-button site-wide-button--white sub-service-drop-off__factory-button" href="#compatible">
                   <span>対象品目について</span>
                   <span class="site-arrow-icon site-wide-button__icon sub-service-drop-off__factory-button-icon" aria-hidden="true">
                     <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt="">
@@ -175,7 +175,7 @@
                   （早朝や夕方以降でのお持ち込みをご希望の方はお問い合わせください）<br>
                   （ゴールデンウィーク・お盆・年末年始・日曜日は除きます）
                 </p>
-                <a class="site-wide-button site-wide-button--white sub-service-drop-off__factory-button" href="#">
+                <a class="site-wide-button site-wide-button--white sub-service-drop-off__factory-button" href="#compatible">
                   <span>対象品目について</span>
                   <span class="site-arrow-icon site-wide-button__icon sub-service-drop-off__factory-button-icon" aria-hidden="true">
                     <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt="">
@@ -197,7 +197,7 @@
       </article>
     </section>
 
-    <section class="sub-service-drop-off__compatible">
+    <section class="sub-service-drop-off__compatible" id="compatible">
       <div class="sub-service-drop-off__compatible-inner inner">
         <div class="sub-service-detail__section-heading">
           <h2 class="sub-service-detail__section-title site-heading--subpage-en">compatible range</h2>
@@ -380,7 +380,7 @@
             <div class="site-contact__card site-contact__card--line">
               <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-line.png" alt="">
               <p class="site-contact__card-title">LINEでのお問い合わせ</p>
-              <a class="site-contact__button" href="#"><span>LINE 友達追加</span><span class="site-arrow-icon site-contact__button-icon" aria-hidden="true"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt=""></span></a>
+              <a class="site-contact__button" href="https://line.me/R/ti/p/@lia0806h" target="_blank" rel="noopener noreferrer"><span>LINE 友達追加</span><span class="site-arrow-icon site-contact__button-icon" aria-hidden="true"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt=""></span></a>
             </div>
           </div>
         </div>

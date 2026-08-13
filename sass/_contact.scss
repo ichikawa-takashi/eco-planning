@@ -323,6 +323,7 @@
   border: 0;
   cursor: pointer;
   padding-left: rem(27);
+  transition: 0.3s;
 
   @include mq("md") {
     max-width: rem(310);
@@ -334,8 +335,20 @@
   }
 
   &:hover{
+    transition: 0.3s;
     border: 1px solid $blue;
   }
+}
+
+.sub-contact__submit .site-wide-button__icon {
+  background-image: url("../img/common/arrow-white.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: rem(20) auto;
+}
+
+.sub-contact__submit .site-wide-button__icon img {
+  display: none;
 }
 
 .sub-contact__form .wpcf7-form-control-wrap {

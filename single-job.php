@@ -74,7 +74,7 @@
         <?php endforeach; ?>
       </dl>
       <div class="sub-jobs-detail__requirements-button-wrap">
-        <a class="sub-jobs-detail__requirements-button site-wide-button site-wide-button--blue" href="#">
+        <a class="sub-jobs-detail__requirements-button site-wide-button site-wide-button--blue" href="<?php echo esc_url(home_url('/contact/?subject=recruit')); ?>">
           <span>エントリーはこちら</span>
           <span class="site-arrow-icon site-wide-button__icon" aria-hidden="true"><img src="<?php echo esc_url(get_theme_file_uri('/img/common/arrow-white.png')); ?>" alt=""></span>
         </a>

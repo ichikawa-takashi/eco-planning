@@ -3,6 +3,40 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     var topBtn = $('.pagetop');
     topBtn.hide();
 
+    // お問い合わせフォーム（プラグイン側の固定パスのリンク）のプライバシーポリシーリンクを
+    // サブディレクトリ環境でも正しく動作する絶対URLに書き換える
+    var contactFormWrap = $('.js-contact-form-wrap');
+    var privacyUrl = contactFormWrap.data('privacy-url');
+    if (privacyUrl) {
+        contactFormWrap.find('.sub-contact__privacy-text a').attr('href', privacyUrl);
+    }
+
+    // URLのGETパラメータ（?subject=recruit）でお問い合わせ項目「採用・エントリーについて」を自動選択
+    var contactSubject = new URLSearchParams(window.location.search).get('subject');
+    if (contactSubject === 'recruit') {
+        contactFormWrap.find('input[name="inquiry"][value="採用・エントリーについて"]').prop('checked', true);
+    }
+
+    // ヘッダー：少しスクロールしたら背景色をつけてロゴを縮小
+    var siteHeader = $('.site-header');
+    var siteHeaderLogo = siteHeader.find('.site-header__logo img[data-logo-scrolled]');
+
+    function updateHeaderScrolledState() {
+        var isScrolled = $(window).scrollTop() > 10;
+
+        siteHeader.toggleClass('is-scrolled', isScrolled);
+
+        if (siteHeaderLogo.length) {
+            var nextSrc = isScrolled ? siteHeaderLogo.data('logo-scrolled') : siteHeaderLogo.data('logo-default');
+            if (siteHeaderLogo.attr('src') !== nextSrc) {
+                siteHeaderLogo.attr('src', nextSrc);
+            }
+        }
+    }
+
+    updateHeaderScrolledState();
+    $(window).on('scroll', updateHeaderScrolledState);
+
     // ボタンの表示設定
     $(window).scroll(function () {
         if ($(this).scrollTop() > 70) {
@@ -268,6 +302,16 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
                 769: {
                     spaceBetween: 20
                 }
+            }
+        });
+    }
+
+    // 横スクロールできる表などにスクロール可能であることを示すヒントを表示
+    if (typeof ScrollHint !== "undefined") {
+        new ScrollHint(".sub-comparison, .sub-service-detail__table-scroll, .wp-block-table", {
+            suggestiveShadow: false,
+            i18n: {
+                scrollable: "スクロールできます"
             }
         });
     }

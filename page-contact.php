@@ -19,11 +19,13 @@
       <div class="sub-contact__inner inner">
         <div class="sub-contact__body">
           <p class="sub-contact__introduction">以下のフォームに必要事項をご入力の上、ご登録ください。<br>担当部署よりご回答いたします。</p>
-          <?php
+          <div class="js-contact-form-wrap" data-privacy-url="<?php echo esc_url(home_url('/company/#privacy')); ?>">
+            <?php
 echo do_shortcode(
   '[contact-form-7 id="5f31ae1" title="問い合わせフォーム" html_class="sub-contact__form"]'
 );
 ?>
+          </div>
         </div>
       </div>
     </section>
