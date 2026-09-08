@@ -37,18 +37,23 @@
 }
 
 .site-footer__certifications {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: rem(13);
+  gap: rem(13) rem(20);
   margin-top: rem(37);
 }
 
 .site-footer__certifications img {
-  width: 100%;
-  height: rem(71);
+  width: rem(90);
+  height: rem(48);
   object-fit: contain;
   object-position: left center;
+
+  @include mq("md") {
+    width: rem(75);
+    height: rem(40);
+  }
 }
 
 .site-footer__navigation {

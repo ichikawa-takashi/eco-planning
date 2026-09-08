@@ -3,7 +3,7 @@
     <div class="sub-about__first-view site-subpage-first-view">
       <section class="sub-about__fv site-subpage-fv">
         <div class="sub-about__fv-image site-subpage-fv__image">
-          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/about/fv.jpg" alt="夕日に染まる都市の風景">
+          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/about/fv.png" alt="夕日に染まる都市の風景">
         </div>
   
         <div class="sub-about__fv-heading site-subpage-fv__heading">
@@ -46,10 +46,10 @@
           <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/about/gallery-02.jpg" alt="街を歩く女性">
         </div>
         <div class="sub-about__gallery-item site-loop-gallery__item">
-          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/about/gallery-03.jpg" alt="資料を手渡す女性">
+          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/about/gallery-03.png" alt="資料を手渡す女性">
         </div>
         <div class="sub-about__gallery-item site-loop-gallery__item">
-          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/about/gallery-04.jpg" alt="街を行き交う人々">
+          <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/about/gallery-04.png" alt="街を行き交う人々">
         </div>
       </div>
     </section>
@@ -168,7 +168,10 @@
               無事故無災害を一番に考えよう
             </h3>
             <p class="sub-about__principle-text">
-                4つのバリューは「新3K（かっこいい・稼げる・感動）」実現への核です。安全の要である「無事故・無災害」を最優先として、「関わる人たちすべてに尽くす」誠実さを徹底。常識に縛られず、自ら仕事を楽しみながら「常に挑戦し、ワクワクし続けること」を忘れない姿勢で、業界につきまとう「3K（きつい・汚い・危険）」のイメージの払拭を目指しています。これらの言葉を通じて社員が仕事に誇りを持ち、社会に変化と感動を与えることがエコ・プランニングの目標です。
+                4つのバリューは「新3K（かっこいい・稼げる・感動）」実現への核です。<br><br>
+                安全の要である「無事故・無災害」を最優先として、「関わる人たちすべてに尽くす」誠実さを徹底。<br><br>
+                常識に縛られず、自ら仕事を楽しみながら「常に挑戦し、ワクワクし続けること」を忘れない姿勢で、業界につきまとう「3K（きつい・汚い・危険）」のイメージの払拭を目指しています。<br><br>
+                これらの言葉を通じて社員が仕事に誇りを持ち、社会に変化と感動を与えることがエコ・プランニングの目標です。
             </p>
           </div>
         </div>

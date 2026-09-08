@@ -106,6 +106,16 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         });
     });
 
+    // メガメニュー（事業紹介）：SPはアコーディオンで開閉
+    $(".js-mega-toggle").on("click", function () {
+        var toggle = $(this);
+        var mega = toggle.closest(".site-header__nav-item--mega").find(".site-header__mega");
+        var isOpen = toggle.toggleClass("is-open").hasClass("is-open");
+
+        mega.toggleClass("is-open", isOpen);
+        toggle.attr("aria-expanded", String(isOpen));
+    });
+
     function openDrawer() {
         $(".site-header").addClass("is-drawer-open");
         $(".js-drawer").addClass("is-open");
@@ -120,6 +130,8 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         $(".js-hamburger").removeClass("is-open");
         $(".js-hamburger").attr("aria-label", "メニューを開く");
         $("html").removeClass("is-fixed");
+        $(".js-mega-toggle").removeClass("is-open").attr("aria-expanded", "false");
+        $(".site-header__mega").removeClass("is-open");
     }
 
     // 共通ループギャラリー

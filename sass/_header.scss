@@ -158,6 +158,19 @@
   }
 }
 
+.site-header__nav-item--mega {
+  position: relative;
+}
+
+.site-header__nav-link-wrap {
+  display: flex;
+  align-items: center;
+
+  @include mq("md") {
+    justify-content: space-between;
+  }
+}
+
 .site-header__nav-link {
   display: block;
   @include font(16, 48, 0, $medium);
@@ -174,6 +187,131 @@
 }
 
 .site-header__nav-link:hover {
+  @media (hover: hover) {
+    opacity: 0.65;
+  }
+}
+
+// メガメニュー：サブメニューの開閉トグル（SPのみ表示）
+.site-header__mega-toggle {
+  display: none;
+
+  @include mq("md") {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: rem(48);
+    height: rem(48);
+  }
+}
+
+.site-header__mega-toggle-icon {
+  position: relative;
+  width: rem(12);
+  height: rem(12);
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: rem(1);
+    background-color: $white;
+    transition: transform 0.3s ease;
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
+}
+
+.site-header__mega-toggle.is-open .site-header__mega-toggle-icon::after {
+  transform: rotate(0deg);
+}
+
+// メガメニュー：PCはホバー、SPはアコーディオンで開閉
+.site-header__mega {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  z-index: 1;
+  min-width: rem(280);
+  padding: rem(30);
+  border-radius: rem(8);
+  background-color: $white;
+  box-shadow: 0 rem(4) rem(16) rgba($black, 0.1);
+  color: $black;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, rem(10));
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    transform 0.3s ease;
+
+  @include mq("md") {
+    position: static;
+    left: auto;
+    min-width: 0;
+    padding: 0;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+    color: inherit;
+    transform: none;
+    max-height: 0;
+    overflow: hidden;
+    visibility: visible;
+    transition: max-height 0.3s ease;
+  }
+}
+
+.site-header__mega.is-open {
+  @include mq("md") {
+    max-height: rem(300);
+  }
+}
+
+.site-header__nav-item--mega:hover .site-header__mega,
+.site-header__nav-item--mega:focus-within .site-header__mega {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+
+  @include mq("md") {
+    transform: none;
+  }
+}
+
+.site-header__mega-list {
+  display: flex;
+  flex-direction: column;
+  gap: rem(18);
+
+  @include mq("md") {
+    gap: 0;
+    padding-top: rem(6);
+  }
+}
+
+.site-header__mega-link {
+  display: block;
+  white-space: nowrap;
+  @include font(15, 24, 0, $medium);
+
+  @include mq("md") {
+    padding-top: rem(12);
+    padding-left: rem(15);
+    color: rgba($white, 0.85);
+    white-space: normal;
+    @include font(14, 22, 0, $medium);
+  }
+}
+
+.site-header__mega-link:hover {
   @media (hover: hover) {
     opacity: 0.65;
   }

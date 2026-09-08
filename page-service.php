@@ -540,7 +540,7 @@
       <div class="sub-service__house-cleaning-inner inner">
         <article class="sub-service__item" id="house-cleaning">
           <div class="sub-service__item-image">
-            <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/service-house-cleaning.jpg" alt="高圧洗浄機で窓を清掃する様子">
+            <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/service-house-cleaning.png" alt="高圧洗浄機で窓を清掃する様子">
           </div>
           <div class="sub-service__item-body">
             <div class="sub-service__item-number">

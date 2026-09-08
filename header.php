@@ -36,8 +36,26 @@ $header_logo = $is_light_header ? 'logo-blue.png' : 'logo-white.png';
           <li class="site-header__nav-item">
             <a class="site-header__nav-link" href="<?php echo esc_url(home_url('/benefit/')); ?>">私たちについて</a>
           </li>
-          <li class="site-header__nav-item">
-            <a class="site-header__nav-link" href="<?php echo esc_url(home_url('/service/')); ?>">事業紹介</a>
+          <li class="site-header__nav-item site-header__nav-item--mega">
+            <div class="site-header__nav-link-wrap">
+              <a class="site-header__nav-link" href="<?php echo esc_url(home_url('/service/')); ?>">事業紹介</a>
+              <button class="site-header__mega-toggle js-mega-toggle" type="button" aria-expanded="false" aria-controls="site-header-mega-service" aria-label="事業紹介のサブメニューを開く">
+                <span class="site-header__mega-toggle-icon" aria-hidden="true"></span>
+              </button>
+            </div>
+            <div class="site-header__mega" id="site-header-mega-service">
+              <ul class="site-header__mega-list">
+                <li class="site-header__mega-item">
+                  <a class="site-header__mega-link" href="<?php echo esc_url(home_url('/dismantling/')); ?>">解体・アスベスト除去</a>
+                </li>
+                <li class="site-header__mega-item">
+                  <a class="site-header__mega-link" href="<?php echo esc_url(home_url('/industrial/')); ?>">産業廃棄物回収</a>
+                </li>
+                <li class="site-header__mega-item">
+                  <a class="site-header__mega-link" href="<?php echo esc_url(home_url('/waste/')); ?>">産業廃棄物持ち込み</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="site-header__nav-item">
             <a class="site-header__nav-link" href="<?php echo esc_url(home_url('/case/')); ?>">実績・お客様の声</a>

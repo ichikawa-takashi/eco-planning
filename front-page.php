@@ -29,19 +29,19 @@
         <section class="top-about">
           <div class="top-about__inner inner">
             <div class="top-about__content">
-              <div class="top-about__heading">
+              <div class="top-about__heading js-fadein">
                 <h2 class="top-about__title">about us</h2>
                 <p class="site-heading-subtitle--default">私たちについて</p>
               </div>
 
-              <p class="top-about__lead">お客様と社会の課題に、<br>私たちはチャレンジし続けます</p>
+              <p class="top-about__lead js-fadein">お客様と社会の課題に、<br>私たちはチャレンジし続けます</p>
 
-              <div class="top-about__texts">
+              <div class="top-about__texts js-fadein">
                 <p class="top-about__text">2014年の事業スタート以来、三重から東海、関東、そして全国へ。私たちは解体工事や産業廃棄物処理、リサイクル事業のプロとして、全力で駆け抜けてきました。今では全国のハウスメーカー様など、1,400社を超えるお客様に選ばれる実績を築いています。</p>
                 <p class="top-about__text">私たちが何より大切にしているのは、関わるすべての人に対して「誠実であること」です。解体や産業廃棄物の処分は、目の前の課題を解決する手段に過ぎません。お客様の不安や不満に寄り添い、その「困った」を心までスッキリさせるために動き続けること。それこそが私たちの存在意義です。未来を共にするパートナーとして、ぜひエコ・プランニングを頼ってください。</p>
               </div>
 
-              <a class="site-wide-button site-wide-button--white top-about__button" href="<?php echo esc_url(home_url('/benefit/')); ?>">
+              <a class="site-wide-button site-wide-button--white top-about__button js-fadein" href="<?php echo esc_url(home_url('/benefit/')); ?>">
                 <span>私たちについて</span>
                 <span class="site-arrow-icon site-wide-button__icon top-about__button-icon" aria-hidden="true">
                   <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt="">
@@ -56,7 +56,7 @@
     <section class="top-services">
       <div class="site-raised-panel top-services__panel">
         <div class="top-services__inner inner">
-          <div class="top-services__heading">
+          <div class="top-services__heading js-slidein-left">
             <h2 class="top-services__title site-heading--section-en">services</h2>
             <p class="top-services__subtitle site-heading-subtitle--default">事業内容</p>
           </div>
@@ -163,7 +163,7 @@
             <li class="top-services__item">
               <a class="top-services__item-link-wrap" href="<?php echo esc_url(home_url('/service/#house-cleaning')); ?>">
                 <div class="top-services__image">
-                  <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/service-05.jpg" alt="ハウスクリーニングの様子">
+                  <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/service-05.png" alt="ハウスクリーニングの様子">
                 </div>
                 <div class="top-services__item-body">
                   <div class="top-services__number">
@@ -329,7 +329,7 @@
       <img class="top-strengths__pattern top-strengths__pattern--02" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/top/strength-pattern-02.png" alt="" aria-hidden="true">
 
       <div class="top-strengths__inner">
-        <div class="top-strengths__heading inner">
+        <div class="top-strengths__heading inner js-fadein">
           <h2 class="top-strengths__title site-heading--section-en">strengths</h2>
           <p class="top-strengths__subtitle site-heading-subtitle--default">強み</p>
         </div>
@@ -607,7 +607,7 @@
                 </li>
                 <li class="site-flow__item">
                   <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">02</span></div>
-                  <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-site-survey.jpg" alt="解体現場を調査するスタッフ"></div>
+                  <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-site-survey.png" alt="解体現場を調査するスタッフ"></div>
                   <div class="site-flow__content">
                     <h3 class="site-flow__title">現地調査・お見積り</h3>
                     <p class="site-flow__text">現地調査を行ない、詳細なお見積りを<br>ご提出させていただきます。</p>
@@ -647,7 +647,7 @@
                 </li>
                 <li class="site-flow__item">
                   <div class="site-flow__step"><span class="site-flow__step-label">step</span><span class="site-flow__step-number">07</span></div>
-                  <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-completion-inspection.jpg" alt="解体工事完了後の立ち合い"></div>
+                  <div class="site-flow__image"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-completion-inspection.png" alt="解体工事完了後の立ち合い"></div>
                   <div class="site-flow__content">
                     <h3 class="site-flow__title">工事完了立ち合い</h3>
                     <p class="site-flow__text">解体後、お客様に現場を見ていただき、OKをいただきましたら、<br>完了となります。</p>

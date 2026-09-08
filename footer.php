@@ -8,6 +8,8 @@
           <div class="site-footer__certifications">
             <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/logo-mems.png" alt="M-EMS">
             <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/logo-sdgs.png" alt="SDGs">
+            <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/logo-dx-nintei.png" alt="DX認定">
+            <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/logo-sbti.jpg" alt="SBTi">
           </div>
         </div>
 
