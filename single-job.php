@@ -47,6 +47,12 @@
         </div>
         <h1 class="sub-jobs-detail__article-title"><?php the_title(); ?></h1>
         <?php if (has_excerpt()) : ?><p class="sub-jobs-detail__article-lead"><?php echo esc_html(get_the_excerpt()); ?></p><?php endif; ?>
+        <div class="sub-jobs-detail__article-button-wrap">
+          <a class="sub-jobs-detail__article-button site-wide-button site-wide-button--blue" href="<?php echo esc_url(home_url('/contact/?subject=recruit')); ?>">
+            <span>エントリーはこちら</span>
+            <span class="site-arrow-icon site-wide-button__icon" aria-hidden="true"><img src="<?php echo esc_url(get_theme_file_uri('/img/common/arrow-white.png')); ?>" alt=""></span>
+          </a>
+        </div>
       </div>
       <figure class="sub-jobs-detail__main-visual">
         <?php if (has_post_thumbnail()) : ?>

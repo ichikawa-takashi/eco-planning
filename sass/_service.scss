@@ -1006,7 +1006,12 @@ padding-inline: rem(25);
 
 .sub-service-detail__visual-main img {
   width: 100%;
-  height: auto;
+  aspect-ratio: 1440 / 640;
+  object-fit: cover;
+
+  @include mq("md") {
+    aspect-ratio: 5 / 3;
+  }
 }
 
 .sub-service-detail__visual-gallery {

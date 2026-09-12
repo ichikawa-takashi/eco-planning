@@ -18,7 +18,7 @@
 
     <section class="sub-service-detail__visual">
       <div class="sub-service-detail__visual-main">
-        <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/service-collection.jpg" alt="産業廃棄物を回収するスタッフ">
+        <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/service-collection-industrial.jpg" alt="産業廃棄物を回収するスタッフ">
       </div>
       <div class="sub-service-detail__visual-gallery">
         <div class="sub-service-detail__visual-gallery-track site-loop-gallery__track js-loop-gallery-track">
@@ -107,7 +107,7 @@
           <li class="sub-service-industrial-waste__feature-item">
             <p class="sub-service-industrial-waste__feature-label">feature</p>
             <p class="sub-service-industrial-waste__feature-number">01</p>
-            <img class="sub-service-industrial-waste__feature-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-industrial-waste/feature-container.jpg" alt="現場に設置するコンテナ">
+            <img class="sub-service-industrial-waste__feature-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-industrial-waste/feature-container-industrial.jpg" alt="現場に設置するコンテナ">
             <h2 class="sub-service-industrial-waste__feature-title">現場に応じたコンテナを<br>置くことができる</h2>
             <p class="sub-service-industrial-waste__feature-text">弊社では大小合わせて6種類以上のコンテナを取り揃えており、幅広い現場に対応しています。</p>
           </li>
@@ -527,7 +527,7 @@
                 <span class="site-flow__step-number">02</span>
               </div>
               <div class="site-flow__image">
-                <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-site-survey.jpg" alt="産業廃棄物を確認するスタッフ">
+                <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-site-survey.png" alt="産業廃棄物を確認するスタッフ">
               </div>
               <div class="site-flow__content">
                 <h3 class="site-flow__title">訪問および現場確認</h3>
@@ -542,7 +542,7 @@
                 <span class="site-flow__step-number">03</span>
               </div>
               <div class="site-flow__image">
-                <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-industrial-waste/feature-container.jpg" alt="産業廃棄物回収用のコンテナ">
+                <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-industrial-waste/feature-container-industrial.jpg" alt="産業廃棄物回収用のコンテナ">
               </div>
               <div class="site-flow__content">
                 <h3 class="site-flow__title">コンテナ設置</h3>
@@ -570,7 +570,7 @@
                 <span class="site-flow__step-number">05</span>
               </div>
               <div class="site-flow__image">
-                <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-collection.jpg" alt="工場で産業廃棄物を回収する様子">
+                <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-collection-industrial.jpg" alt="工場で産業廃棄物を回収する様子">
               </div>
               <div class="site-flow__content">
                 <h3 class="site-flow__title">回収</h3>

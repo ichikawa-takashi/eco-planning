@@ -79,6 +79,34 @@
   }
 }
 
+.sub-jobs-detail__article-button-wrap {
+  margin-top: rem(50);
+
+  @include mq("md") {
+    margin-top: rem(25);
+  }
+}
+
+.sub-jobs-detail__article-button {
+  padding-left: rem(40);
+  gap: rem(12);
+
+  @include mq("md") {
+    max-width: rem(280);
+    min-height: rem(68);
+    padding-right: rem(10);
+    padding-left: rem(24);
+    @include font(17, 28, 0, $bold);
+  }
+}
+
+.sub-jobs-detail__article-button .site-wide-button__icon {
+  @include mq("md") {
+    width: rem(46);
+    height: rem(46);
+  }
+}
+
 .sub-jobs-detail__main-visual {
   display: flex;
   align-items: flex-start;

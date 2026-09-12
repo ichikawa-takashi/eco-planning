@@ -205,11 +205,10 @@
             <h3 class="site-section-heading__title site-heading--gradient">解体の基本料金</h3>
           </div>
           <div class="sub-service-detail__table-scroll">
-            <table class="sub-service-detail__table" style="--service-detail-table-label-width: 40%;">
+            <table class="sub-service-detail__table" style="--service-detail-table-label-width: 55%;">
               <thead>
                 <tr>
                   <th scope="col">施工対象</th>
-                  <th scope="col">料金表サンプル</th>
                   <th scope="col">料金表サンプル</th>
                 </tr>
               </thead>
@@ -217,31 +216,25 @@
                 <tr>
                   <th scope="row">木造（住宅など）</th>
                   <td>9,000円〜/平米</td>
-                  <td>9,000円〜/平米</td>
                 </tr>
                 <tr>
                   <th scope="row">鉄骨</th>
-                  <td>9,000円〜/平米</td>
                   <td>9,000円〜/平米</td>
                 </tr>
                 <tr>
                   <th scope="row">RC</th>
                   <td>12,000円〜/平米</td>
-                  <td>12,000円〜/平米</td>
                 </tr>
                 <tr>
                   <th scope="row">項目があれば追記します</th>
-                  <td>0,000円〜/平米</td>
-                  <td>0,000円〜/平米</td>
-                </tr>
-                <tr>
-                  <th scope="row">項目があれば追記します</th>
-                  <td>0,000円〜/平米</td>
                   <td>0,000円〜/平米</td>
                 </tr>
                 <tr>
                   <th scope="row">項目があれば追記します</th>
                   <td>0,000円〜/平米</td>
+                </tr>
+                <tr>
+                  <th scope="row">項目があれば追記します</th>
                   <td>0,000円〜/平米</td>
                 </tr>
               </tbody>
@@ -309,7 +302,7 @@
                 <span class="site-flow__step-number">02</span>
               </div>
               <div class="site-flow__image">
-                <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-site-survey.jpg" alt="解体現場を調査するスタッフ">
+                <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-site-survey.png" alt="解体現場を調査するスタッフ">
               </div>
               <div class="site-flow__content">
                 <h3 class="site-flow__title">現地調査・お見積り</h3>
@@ -374,7 +367,7 @@
                 <span class="site-flow__step-number">07</span>
               </div>
               <div class="site-flow__image">
-                <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-completion-inspection.jpg" alt="解体工事完了後の立ち合い">
+                <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-completion-inspection.png" alt="解体工事完了後の立ち合い">
               </div>
               <div class="site-flow__content">
                 <h3 class="site-flow__title">工事完了立ち合い</h3>
