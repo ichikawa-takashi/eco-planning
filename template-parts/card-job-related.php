@@ -5,14 +5,14 @@ $area_terms = eco_planning_get_post_terms(get_the_ID(), ['area']);
 $employment_terms = eco_planning_get_post_terms(get_the_ID(), ['employment']);
 ?>
 <article class="sub-recruit__jobs-card">
-  <a href="<?php the_permalink(); ?>">
+  <a class="js-slidein" href="<?php the_permalink(); ?>">
     <?php if (has_post_thumbnail()) : ?>
       <?php the_post_thumbnail('large', ['class' => 'sub-recruit__jobs-image', 'alt' => the_title_attribute(['echo' => false])]); ?>
     <?php else : ?>
       <img class="sub-recruit__jobs-image" src="<?php echo esc_url(get_theme_file_uri('/img/common/no-image.jpg')); ?>" alt="">
     <?php endif; ?>
   </a>
-  <div class="sub-recruit__jobs-meta">
+  <div class="sub-recruit__jobs-meta js-fadeup">
     <?php foreach ($area_terms as $area_term) : ?>
       <span class="sub-recruit__jobs-area"><img src="<?php echo esc_url(get_theme_file_uri('/img/common/icon-map.png')); ?>" alt=""><?php echo esc_html($area_term->name); ?></span>
     <?php endforeach; ?>
@@ -20,5 +20,5 @@ $employment_terms = eco_planning_get_post_terms(get_the_ID(), ['employment']);
       <span class="sub-recruit__jobs-tag"><?php echo esc_html($employment_term->name); ?></span>
     <?php endforeach; ?>
   </div>
-  <h3 class="sub-recruit__jobs-card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+  <h3 class="sub-recruit__jobs-card-title js-fadeup"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 </article>

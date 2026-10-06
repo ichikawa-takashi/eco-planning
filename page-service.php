@@ -19,7 +19,7 @@
 
   <section class="sub-service__intro">
       <div class="sub-service__intro-inner inner">
-        <div class="sub-service__intro-content">
+        <div class="sub-service__intro-content js-slidein">
           <h2 class="sub-service__intro-title site-heading--primary-jp">
             業界の常識を超え、<br>
             社会に新たな「ワクワク」を。<br>
@@ -31,7 +31,7 @@
           </p>
         </div>
 
-        <nav class="sub-service__contents" aria-label="事業紹介の目次">
+        <nav class="sub-service__contents js-slidein" aria-label="事業紹介の目次">
           <p class="sub-service__contents-title">Contents</p>
           <ul class="sub-service__contents-list">
             <li class="sub-service__contents-item">
@@ -89,17 +89,17 @@
 
     <section class="sub-service__overview">
       <div class="sub-service__overview-inner inner">
-        <div class="sub-service__section-heading">
+        <div class="sub-service__section-heading js-slidein">
           <h2 class="sub-service__section-title site-heading--subpage-en">services</h2>
           <p class="sub-service__section-subtitle site-heading-subtitle--default">事業紹介</p>
         </div>
 
         <div class="sub-service__list">
           <article class="sub-service__item" id="demolition-asbestos">
-            <div class="sub-service__item-image">
+            <div class="sub-service__item-image js-slidein">
               <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/service-demolition.jpg" alt="解体工事を行うスタッフ">
             </div>
-            <div class="sub-service__item-body">
+            <div class="sub-service__item-body js-slidein">
               <div class="sub-service__item-number">
                 <span class="sub-service__item-number-label">service</span>
                 <span class="sub-service__item-number-value site-heading--number">01</span>
@@ -121,10 +121,10 @@
           </article>
 
           <article class="sub-service__item" id="industrial-waste-collection">
-            <div class="sub-service__item-image">
+            <div class="sub-service__item-image js-slidein">
               <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/service-collection.jpg" alt="産業廃棄物を回収する作業車">
             </div>
-            <div class="sub-service__item-body">
+            <div class="sub-service__item-body js-slidein">
               <div class="sub-service__item-number">
                 <span class="sub-service__item-number-label">service</span>
                 <span class="sub-service__item-number-value site-heading--number">02</span>
@@ -145,10 +145,10 @@
           </article>
 
           <article class="sub-service__item" id="industrial-waste-drop-off">
-            <div class="sub-service__item-image">
+            <div class="sub-service__item-image js-slidein">
               <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/service-drop-off.jpg" alt="産業廃棄物を運搬するトラック">
             </div>
-            <div class="sub-service__item-body">
+            <div class="sub-service__item-body js-slidein">
               <div class="sub-service__item-number">
                 <span class="sub-service__item-number-label">service</span>
                 <span class="sub-service__item-number-value site-heading--number">03</span>
@@ -169,10 +169,10 @@
           </article>
 
           <article class="sub-service__item" id="unwanted-items">
-            <div class="sub-service__item-image">
+            <div class="sub-service__item-image js-slidein">
               <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/service-unwanted-items.jpg" alt="不用品回収前の室内">
             </div>
-            <div class="sub-service__item-body">
+            <div class="sub-service__item-body js-slidein">
               <div class="sub-service__item-number">
                 <span class="sub-service__item-number-label">service</span>
                 <span class="sub-service__item-number-value site-heading--number">04</span>
@@ -188,25 +188,25 @@
 
             <div class="sub-service__unwanted-details">
               <div class="sub-service__unwanted-features">
-                <div class="sub-service__unwanted-feature">
+                <div class="sub-service__unwanted-feature js-slidein">
                   <h4 class="sub-service__unwanted-feature-title">引越し等での不用品</h4>
                   <p class="sub-service__unwanted-feature-text">
                     引越し時に発生する粗大ごみや不用品。種類・量を問わず、まとめて対応いたします。
                   </p>
                 </div>
-                <div class="sub-service__unwanted-feature">
+                <div class="sub-service__unwanted-feature js-slidein">
                   <h4 class="sub-service__unwanted-feature-title">大型家具や電化製品</h4>
                   <p class="sub-service__unwanted-feature-text">
                     サイズの大きい電化製品や大型家具も、建物の種類を問わず最適な方法で搬出し、それぞれに合った適切な処分を行います。
                   </p>
                 </div>
-                <div class="sub-service__unwanted-feature">
+                <div class="sub-service__unwanted-feature js-slidein">
                   <h4 class="sub-service__unwanted-feature-title">事業用廃棄物も対応</h4>
                   <p class="sub-service__unwanted-feature-text">
                     事務所・オフィス・店舗・施設・工場などから発生する事業用廃棄物にも対応しています。産業廃棄物・一般廃棄物を問わず、エコ・プランニングにお任せください。
                   </p>
                 </div>
-                <div class="sub-service__unwanted-feature">
+                <div class="sub-service__unwanted-feature js-slidein">
                   <h4 class="sub-service__unwanted-feature-title">
                     解体撤去作業から回収・買取・リサイクルまで一貫対応！
                   </h4>
@@ -217,9 +217,9 @@
               </div>
 
               <div class="sub-service__collection">
-                <h4 class="sub-service__collection-title">おもな回収品目</h4>
+                <h4 class="sub-service__collection-title js-slidein">おもな回収品目</h4>
                 <div class="sub-service__collection-list">
-                  <div class="sub-service__collection-item">
+                  <div class="sub-service__collection-item js-slidein">
                     <div class="sub-service__collection-image">
                       <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/collection-household.jpg" alt="家庭から出る不用品">
                     </div>
@@ -228,7 +228,7 @@
                       家具・家電・生活雑貨など、ご家庭で不要になった物を幅広く回収します。
                     </p>
                   </div>
-                  <div class="sub-service__collection-item">
+                  <div class="sub-service__collection-item js-slidein">
                     <div class="sub-service__collection-image">
                       <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/collection-business.jpg" alt="オフィスから出る事業系不用品">
                     </div>
@@ -237,7 +237,7 @@
                       オフィス・店舗・工場から出る事業系廃棄物を適正に回収・処理します。
                     </p>
                   </div>
-                  <div class="sub-service__collection-item">
+                  <div class="sub-service__collection-item js-slidein">
                     <div class="sub-service__collection-image">
                       <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/collection-demolition.jpg" alt="解体や撤去に伴う不用品と廃材">
                     </div>
@@ -246,7 +246,7 @@
                       解体工事で発生する廃材や設備類を一括で回収・処分します。
                     </p>
                   </div>
-                  <div class="sub-service__collection-item">
+                  <div class="sub-service__collection-item js-slidein">
                     <div class="sub-service__collection-image">
                       <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/collection-recycle.jpg" alt="買取やリサイクルの対象となる機器">
                     </div>
@@ -262,27 +262,27 @@
               </div>
 
               <div class="sub-service__price">
-                <div class="site-section-heading">
+                <div class="site-section-heading js-slidein">
                   <h4 class="site-section-heading__title site-heading--gradient">料金プラン</h4>
                   <span class="site-section-heading__en">price</span>
                 </div>
 
                 <div class="sub-service__price-list">
-                  <div class="sub-service__price-item">
+                  <div class="sub-service__price-item js-slidein">
                     <div class="sub-service__price-image">
                       <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/price-light-truck.jpg" alt="軽トラック">
                     </div>
                     <p class="sub-service__price-title">軽トラ載せ放題</p>
                     <p class="sub-service__price-value">￥9,800 〜</p>
                   </div>
-                  <div class="sub-service__price-item">
+                  <div class="sub-service__price-item js-slidein">
                     <div class="sub-service__price-image">
                       <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/price-truck.jpg" alt="1.5トン・2トントラック">
                     </div>
                     <p class="sub-service__price-title">1.5・2tトラック積み放題</p>
                     <p class="sub-service__price-value">￥39,800 ～</p>
                   </div>
-                  <div class="sub-service__price-item">
+                  <div class="sub-service__price-item js-slidein">
                     <div class="sub-service__price-image">
                       <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/price-whole-house.jpg" alt="家屋や事業所から回収した不用品">
                     </div>
@@ -291,19 +291,19 @@
                   </div>
                 </div>
 
-                <div class="sub-service__price-notes">
+                <div class="sub-service__price-notes js-slidein">
                   <p class="sub-service__price-note">※搬出作業費や車両費・交通費すべて込みになります。</p>
                   <p class="sub-service__price-note">※お見積り後の追加費用は一切発生しません。</p>
                 </div>
               </div>
 
               <div class="sub-service__comparison">
-                <div class="site-section-heading">
+                <div class="site-section-heading js-slidein">
                   <h4 class="site-section-heading__title site-heading--gradient">他社との比較</h4>
                   <span class="site-section-heading__en">comparison</span>
                 </div>
 
-                <div class="sub-comparison" tabindex="0" role="region" aria-label="他社とのサービス比較表">
+                <div class="sub-comparison js-slidein" tabindex="0" role="region" aria-label="他社とのサービス比較表">
                   <table class="sub-comparison__table">
                     <thead>
                       <tr>
@@ -392,13 +392,13 @@
 
               <div class="sub-service__flow">
                 <div class="site-flow">
-                  <div class="site-section-heading">
+                  <div class="site-section-heading js-slidein">
                     <h4 class="site-section-heading__title site-heading--gradient">不用品回収・買取の流れ</h4>
                   <span class="site-section-heading__en">flow</span>
                   </div>
 
                   <ol class="site-flow__list">
-                    <li class="site-flow__item">
+                    <li class="site-flow__item js-fadeup">
                       <div class="site-flow__step">
                         <span class="site-flow__step-label">step</span>
                         <span class="site-flow__step-number">01</span>
@@ -411,7 +411,7 @@
                         <p class="site-flow__text">電話またはお問い合わせフォームより、<br>ご連絡お願いいたします。</p>
                       </div>
                     </li>
-                    <li class="site-flow__item">
+                    <li class="site-flow__item js-fadeup">
                       <div class="site-flow__step">
                         <span class="site-flow__step-label">step</span>
                         <span class="site-flow__step-number">02</span>
@@ -424,7 +424,7 @@
                         <p class="site-flow__text">下見を行ない、詳細なお見積りをご提出させていただきます。</p>
                       </div>
                     </li>
-                    <li class="site-flow__item">
+                    <li class="site-flow__item js-fadeup">
                       <div class="site-flow__step">
                         <span class="site-flow__step-label">step</span>
                         <span class="site-flow__step-number">03</span>
@@ -439,7 +439,7 @@
                         </p>
                       </div>
                     </li>
-                    <li class="site-flow__item">
+                    <li class="site-flow__item js-fadeup">
                       <div class="site-flow__step">
                         <span class="site-flow__step-label">step</span>
                         <span class="site-flow__step-number">04</span>
@@ -452,7 +452,7 @@
                         <p class="site-flow__text">スタッフが丁寧かつスピーディに不用品を回収・買取させていただきます。</p>
                       </div>
                     </li>
-                    <li class="site-flow__item">
+                    <li class="site-flow__item js-fadeup">
                       <div class="site-flow__step">
                         <span class="site-flow__step-label">step</span>
                         <span class="site-flow__step-number">05</span>
@@ -467,7 +467,7 @@
                         </p>
                       </div>
                     </li>
-                    <li class="site-flow__item">
+                    <li class="site-flow__item js-fadeup">
                       <div class="site-flow__step">
                         <span class="site-flow__step-label">step</span>
                         <span class="site-flow__step-number">06</span>
@@ -494,23 +494,23 @@
     <section class="sub-service__contact">
       <div class="inner">
         <div class="site-contact">
-          <div class="site-contact__heading">
+          <div class="site-contact__heading js-slidein">
             <h2 class="site-contact__title site-heading--subpage-en">contact</h2>
             <p class="site-contact__subtitle site-heading-subtitle--default">お問い合わせ</p>
           </div>
-          <p class="site-contact__lead">
+          <p class="site-contact__lead js-slidein">
             解体、産業廃棄物回収・持込、不用品回収からハウスクリーニングまで、お困りごとは何でもご相談ください。
           </p>
 
           <div class="site-contact__list">
-            <div class="site-contact__card site-contact__card--phone">
+            <div class="site-contact__card site-contact__card--phone js-slidein-stagger">
               <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-phone.png" alt="">
               <p class="site-contact__card-title">お電話でのお問い合わせ</p>
               <a class="site-contact__phone-number" href="tel:0595833330">0595-83-3330</a>
               <p class="site-contact__note">お電話の際に「ホームページを見て」<br>とお伝えください。</p>
             </div>
 
-            <div class="site-contact__card site-contact__card--mail">
+            <div class="site-contact__card site-contact__card--mail js-slidein-stagger">
               <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-mail.png" alt="">
               <p class="site-contact__card-title">メールでのお問い合わせ</p>
               <a class="site-contact__button" href="<?php echo esc_url(home_url('/contact/')); ?>">
@@ -521,7 +521,7 @@
               </a>
             </div>
 
-            <div class="site-contact__card site-contact__card--line">
+            <div class="site-contact__card site-contact__card--line js-slidein-stagger">
               <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-line.png" alt="">
               <p class="site-contact__card-title">LINEでのお問い合わせ</p>
               <a class="site-contact__button" href="https://line.me/R/ti/p/@lia0806h" target="_blank" rel="noopener noreferrer">
@@ -539,10 +539,10 @@
     <section class="sub-service__house-cleaning">
       <div class="sub-service__house-cleaning-inner inner">
         <article class="sub-service__item" id="house-cleaning">
-          <div class="sub-service__item-image">
+          <div class="sub-service__item-image js-slidein">
             <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/service-house-cleaning.png" alt="高圧洗浄機で窓を清掃する様子">
           </div>
-          <div class="sub-service__item-body">
+          <div class="sub-service__item-body js-slidein">
             <div class="sub-service__item-number">
               <span class="sub-service__item-number-label">service</span>
               <span class="sub-service__item-number-value site-heading--number">05</span>
@@ -557,69 +557,69 @@
           </div>
 
           <div class="sub-service__recycled-products">
-            <h3 class="sub-service__recycled-products-heading">自社リサイクル製品</h3>
+            <h3 class="sub-service__recycled-products-heading js-slidein">自社リサイクル製品</h3>
             <div class="sub-service__recycled-products-list">
               <article class="sub-service__recycled-product">
-                <div class="sub-service__recycled-product-image">
+                <div class="sub-service__recycled-product-image js-slidein">
                   <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/recycled-new-eco-soil.jpg" alt="ニューエコソイル">
                 </div>
-                <h4 class="sub-service__recycled-product-title">ニューエコソイル</h4>
-                <div class="sub-service__recycled-product-information">
+                <h4 class="sub-service__recycled-product-title js-fadeup">ニューエコソイル</h4>
+                <div class="sub-service__recycled-product-information js-fadeup">
                   <p class="sub-service__recycled-product-label">［商品詳細情報］</p>
                   <p>原料：陶磁器・タイル・ガラス</p>
                   <p>粒度：0～12MM</p>
                   <p>用途：路盤材・粒度調整材・埋め戻し材　等</p>
                 </div>
-                <div class="sub-service__recycled-product-description">
+                <div class="sub-service__recycled-product-description js-fadeup">
                   <p class="sub-service__recycled-product-label">［商品説明］</p>
                   <p>ニューエコソイルはセメント系の資材を原料としているため、地盤の締まりが大変よく、又下層路盤の水分も吸着し、雨の日は道路が汚れにくい利点があります。また、山砂などと比べ約1/3程度と大変安価となっており御社のコスト削減に大いにお役に立てます。
                   </p>
                 </div>
-                <div class="sub-service__recycled-product-price">
+                <div class="sub-service__recycled-product-price js-fadeup">
                   <p class="sub-service__recycled-product-label">［料金］</p>
                   <p>￥300/t</p>
                 </div>
               </article>
 
               <article class="sub-service__recycled-product">
-                <div class="sub-service__recycled-product-image">
+                <div class="sub-service__recycled-product-image js-slidein">
                   <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/recycled-tile-sand.jpg" alt="瓦砂">
                 </div>
-                <h4 class="sub-service__recycled-product-title">瓦砂</h4>
-                <div class="sub-service__recycled-product-information">
+                <h4 class="sub-service__recycled-product-title js-fadeup">瓦砂</h4>
+                <div class="sub-service__recycled-product-information js-fadeup">
                   <p class="sub-service__recycled-product-label">［商品詳細情報］</p>
                   <p>原料：瓦</p>
                   <p>粒度：0～5MM</p>
                   <p>用途：路盤材・管防砂・管巻き材・下地調整材・運動場（グランド）基盤材 ・防草材　等</p>
                 </div>
-                <div class="sub-service__recycled-product-description">
+                <div class="sub-service__recycled-product-description js-fadeup">
                   <p class="sub-service__recycled-product-label">［商品説明］</p>
                   <p>
                     瓦砂は、瓦を破砕し粒度調整したリサイクル資材です。ライフライン、埋設物の埋め戻し材等に利用が出来ます。また、水はけが良い為水分の多い土地に敷いていただくだけで水分を吸水し、ぬかるみを改良します。山砂に比べ、多種多様に使用出来ます。
                   </p>
                 </div>
-                <div class="sub-service__recycled-product-price">
+                <div class="sub-service__recycled-product-price js-fadeup">
                   <p class="sub-service__recycled-product-label">［料金］</p>
                   <p>￥1,000/T</p>
                 </div>
               </article>
 
               <article class="sub-service__recycled-product">
-                <div class="sub-service__recycled-product-image">
+                <div class="sub-service__recycled-product-image js-slidein">
                   <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/recycled-rc40.jpg" alt="再生砕石RC-40">
                 </div>
-                <h4 class="sub-service__recycled-product-title">再生砕石RC-40</h4>
-                <div class="sub-service__recycled-product-information">
+                <h4 class="sub-service__recycled-product-title js-fadeup">再生砕石RC-40</h4>
+                <div class="sub-service__recycled-product-information js-fadeup">
                   <p class="sub-service__recycled-product-label">［商品詳細情報］</p>
                   <p>原料： 粒度： 用途：</p>
                 </div>
-                <div class="sub-service__recycled-product-description">
+                <div class="sub-service__recycled-product-description js-fadeup">
                   <p class="sub-service__recycled-product-label">［商品説明］</p>
                   <p>
                     エコ・プランニングに持ち込まれたコンクリートなどのがれき類は、細かく粉砕し、路面剤や道路、駐車場などに使用できる再生砕石にしています。その再生砕石を弊社オリジナル商品「RC-40」として販売することで、資源の循環に貢献しております。
                   </p>
                 </div>
-                <div class="sub-service__recycled-product-price">
+                <div class="sub-service__recycled-product-price js-fadeup">
                   <p class="sub-service__recycled-product-label">［料金］</p>
                   <p>￥1,000/T</p>
                 </div>
@@ -629,13 +629,13 @@
 
           <div class="sub-service__house-cleaning-flow">
             <div class="site-flow">
-              <div class="site-section-heading">
+              <div class="site-section-heading js-slidein">
                 <h3 class="site-section-heading__title site-heading--gradient">ご依頼の流れ</h3>
                 <span class="site-section-heading__en">flow</span>
               </div>
 
               <ol class="site-flow__list">
-                <li class="site-flow__item">
+                <li class="site-flow__item js-fadeup">
                   <div class="site-flow__step">
                     <span class="site-flow__step-label">step</span>
                     <span class="site-flow__step-number">01</span>
@@ -650,7 +650,7 @@
                     </p>
                   </div>
                 </li>
-                <li class="site-flow__item">
+                <li class="site-flow__item js-fadeup">
                   <div class="site-flow__step">
                     <span class="site-flow__step-label">step</span>
                     <span class="site-flow__step-number">02</span>
@@ -665,7 +665,7 @@
                     </p>
                   </div>
                 </li>
-                <li class="site-flow__item">
+                <li class="site-flow__item js-fadeup">
                   <div class="site-flow__step">
                     <span class="site-flow__step-label">step</span>
                     <span class="site-flow__step-number">03</span>
@@ -680,7 +680,7 @@
                     </p>
                   </div>
                 </li>
-                <li class="site-flow__item">
+                <li class="site-flow__item js-fadeup">
                   <div class="site-flow__step">
                     <span class="site-flow__step-label">step</span>
                     <span class="site-flow__step-number">04</span>
@@ -695,7 +695,7 @@
                     </p>
                   </div>
                 </li>
-                <li class="site-flow__item">
+                <li class="site-flow__item js-fadeup">
                   <div class="site-flow__step">
                     <span class="site-flow__step-label">step</span>
                     <span class="site-flow__step-number">05</span>
@@ -720,23 +720,23 @@
     <section class="sub-service__contact">
       <div class="inner">
         <div class="site-contact">
-          <div class="site-contact__heading">
+          <div class="site-contact__heading js-slidein">
             <h2 class="site-contact__title site-heading--subpage-en">contact</h2>
             <p class="site-contact__subtitle site-heading-subtitle--default">お問い合わせ</p>
           </div>
-          <p class="site-contact__lead">
+          <p class="site-contact__lead js-slidein">
             お客様がお抱えの課題、サービスに関するご質問など、お気軽にお問い合わせください。
           </p>
 
           <div class="site-contact__list">
-            <div class="site-contact__card site-contact__card--phone">
+            <div class="site-contact__card site-contact__card--phone js-slidein-stagger">
               <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-phone.png" alt="">
               <p class="site-contact__card-title">お電話でのお問い合わせ</p>
               <a class="site-contact__phone-number" href="tel:0595833330">0595-83-3330</a>
               <p class="site-contact__note">お電話の際に「ホームページを見て」<br>とお伝えください。</p>
             </div>
 
-            <div class="site-contact__card site-contact__card--mail">
+            <div class="site-contact__card site-contact__card--mail js-slidein-stagger">
               <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-mail.png" alt="">
               <p class="site-contact__card-title">メールでのお問い合わせ</p>
               <a class="site-contact__button" href="<?php echo esc_url(home_url('/contact/')); ?>">
@@ -747,7 +747,7 @@
               </a>
             </div>
 
-            <div class="site-contact__card site-contact__card--line">
+            <div class="site-contact__card site-contact__card--line js-slidein-stagger">
               <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-line.png" alt="">
               <p class="site-contact__card-title">LINEでのお問い合わせ</p>
               <a class="site-contact__button" href="https://line.me/R/ti/p/@lia0806h" target="_blank" rel="noopener noreferrer">
@@ -765,10 +765,10 @@
     <section class="sub-service__overseas">
       <div class="sub-service__overseas-inner inner">
         <article class="sub-service__item" id="overseas-business">
-          <div class="sub-service__item-image">
+          <div class="sub-service__item-image js-slidein">
             <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/service-overseas.jpg" alt="都市とビジネスのグローバルネットワーク">
           </div>
-          <div class="sub-service__item-body">
+          <div class="sub-service__item-body js-slidein">
             <div class="sub-service__item-number">
               <span class="sub-service__item-number-label">service</span>
               <span class="sub-service__item-number-value site-heading--number">06</span>
@@ -784,16 +784,16 @@
 
           <div class="sub-service__overseas-details">
             <section class="sub-service__overseas-section">
-              <div class="site-section-heading">
+              <div class="site-section-heading js-slidein">
                 <h3 class="site-section-heading__title site-heading--gradient">当事業の背景</h3>
               </div>
-              <p class="sub-service__overseas-text">
+              <p class="sub-service__overseas-text js-slidein">
                 国内廃棄物業界では過当競争と労働者不足が深刻な課題となっています。外国人採用にも高いハードルがある中、エコ・プランニングは拡大する海外市場に活路を見出しました。本社で長年活躍するペルー出身スタッフとの強い信頼関係をもとにペルーへの進出を決断。長年培った技術で現地のごみ問題を解決しながら、新たな成長基盤の構築に取り組んでいます。
               </p>
-              <div class="sub-service__overseas-wide-image">
+              <div class="sub-service__overseas-wide-image js-slidein">
                 <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/overseas-background.jpg" alt="ペルーの廃棄物処理施設を調査するスタッフ">
               </div>
-              <div class="sub-service__overseas-text sub-service__overseas-text--after-image">
+              <div class="sub-service__overseas-text sub-service__overseas-text--after-image js-slidein">
                 <p>
                   2019年、JICA（独立行政法人国際協力機構）より、ペルーのリマ市およびその周辺における廃プラスチック適正処理技術に関する案件化調査の委託を受け、現地調査を開始しました。調査の結果、廃棄物の多くが野積み状態で放置されており、リサイクルや適切な資源回収・管理がほとんど行われていない実態が明らかになりました。
                 </p>
@@ -809,10 +809,10 @@
             </section>
 
             <section class="sub-service__overseas-section">
-              <div class="site-section-heading">
+              <div class="site-section-heading js-slidein">
                 <h3 class="site-section-heading__title site-heading--gradient">なぜペルー？</h3>
               </div>
-              <div class="sub-service__overseas-text">
+              <div class="sub-service__overseas-text js-slidein">
                 <p>
                   2019年、代表の吉田はペルー人従業員・友人との夢を叶えるため、初めてペルーを訪問しました。かねてよりペルー人の友人から現地の廃棄物問題について聞かされており、「いつか国外でも社会貢献性の高い事業を展開したい」という想いを長年持ち続けていた人物です。
                 </p>
@@ -823,17 +823,17 @@
             </section>
 
             <section class="sub-service__overseas-section">
-              <div class="site-section-heading">
+              <div class="site-section-heading js-slidein">
                 <h3 class="site-section-heading__title site-heading--gradient">ペルー国での年間優秀企業表彰式</h3>
               </div>
               <div class="sub-service__overseas-gallery">
-                <figure class="sub-service__overseas-gallery-item">
+                <figure class="sub-service__overseas-gallery-item js-slidein">
                   <div class="sub-service__overseas-gallery-image">
                     <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/overseas-award-01.jpg" alt="ペルー国での年間優秀企業表彰式の様子">
                   </div>
                   <figcaption class="sub-service__overseas-caption">写真のキャプションをここに</figcaption>
                 </figure>
-                <figure class="sub-service__overseas-gallery-item">
+                <figure class="sub-service__overseas-gallery-item js-slidein">
                   <div class="sub-service__overseas-gallery-image">
                     <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/overseas-award-02.jpg" alt="年間優秀企業表彰式での記念撮影">
                   </div>
@@ -843,12 +843,12 @@
             </section>
 
             <section class="sub-service__overseas-section">
-              <div class="site-section-heading">
+              <div class="site-section-heading js-slidein">
                 <h3 class="site-section-heading__title site-heading--gradient">現地パートナー企業紹介</h3>
                 <span class="site-section-heading__en">ECO PLANING S.A.C.</span>
               </div>
 
-              <div class="sub-service__partner-intro">
+              <div class="sub-service__partner-intro js-slidein">
                 <div class="sub-service__partner-image">
                   <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/overseas-partner.jpg" alt="ECO PLANING S.A.C.の代表者">
                 </div>
@@ -865,7 +865,7 @@
                 </div>
               </div>
 
-              <dl class="sub-service__partner-profile">
+              <dl class="sub-service__partner-profile js-slidein">
                 <div class="sub-service__partner-profile-row">
                   <dt class="sub-service__partner-profile-term">会社名</dt>
                   <dd class="sub-service__partner-profile-description">ECO PLANING S.A.C.</dd>
@@ -892,7 +892,7 @@
                 </div>
               </dl>
 
-              <div class="sub-service__partner-map">
+              <div class="sub-service__partner-map js-slidein">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.022352028735!2d-79.0275239662838!3d-8.099202456003775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3d8c01e9c8e3%3A0xf9ca13f55d0629b9!2zQXYuIFNhbHZhZG9yIExhcmEgOTQwLCBUcnVqaWxsbyAxMzAwMSDjg5rjg6vjg7w!5e0!3m2!1sja!2sjp!4v1784948651353!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
               </div>
             </section>
@@ -907,25 +907,25 @@
           <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/contact-bg.jpg" alt="">
         </div>
         <div class="site-contact__visual-content">
-          <div class="site-contact__heading">
+          <div class="site-contact__heading js-slidein">
             <h2 class="site-contact__title site-heading--section-en">contact</h2>
             <p class="site-contact__subtitle site-heading-subtitle--default">お問い合わせ</p>
           </div>
-          <p class="site-contact__lead">
+          <p class="site-contact__lead js-slidein">
             解体、産業廃棄物回収・持込、<br>
             不用品回収からハウスクリーニングまで<br>
             お困りごとは何でもお気軽にご相談ください。
           </p>
 
           <div class="site-contact__list">
-            <div class="site-contact__card site-contact__card--phone">
+            <div class="site-contact__card site-contact__card--phone js-slidein-stagger">
               <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-phone.png" alt="">
               <p class="site-contact__card-title">お電話でのお問い合わせ</p>
               <a class="site-contact__phone-number" href="tel:0595833330">0595-83-3330</a>
               <p class="site-contact__note">お電話の際に「ホームページを見て」<br>とお伝えください。</p>
             </div>
 
-            <div class="site-contact__card site-contact__card--mail">
+            <div class="site-contact__card site-contact__card--mail js-slidein-stagger">
               <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-mail.png" alt="">
               <p class="site-contact__card-title">メールでのお問い合わせ</p>
               <a class="site-contact__button" href="<?php echo esc_url(home_url('/contact/')); ?>">
@@ -936,7 +936,7 @@
               </a>
             </div>
 
-            <div class="site-contact__card site-contact__card--line">
+            <div class="site-contact__card site-contact__card--line js-slidein-stagger">
               <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-line.png" alt="">
               <p class="site-contact__card-title">LINEでのお問い合わせ</p>
               <a class="site-contact__button" href="https://line.me/R/ti/p/@lia0806h" target="_blank" rel="noopener noreferrer">

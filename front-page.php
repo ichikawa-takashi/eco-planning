@@ -19,7 +19,7 @@
       <div class="top-hero-about__content">
         <section class="top-fv">
           <div class="top-fv__inner">
-            <div class="top-fv__copy">
+            <div class="top-fv__copy js-fadeup">
               <p class="top-fv__copy-jp">街の純度を高め、人々の暮らしを守る</p>
               <h1 class="top-fv__copy-en">clean cities.<br>safe lives.</h1>
             </div>
@@ -1022,21 +1022,11 @@
 
         <div class="top-news__list">
           <?php
-          $news_query_args = [
-            'post_type'           => 'post',
-            'posts_per_page'      => 3,
-            'no_found_rows'       => true,
-            'ignore_sticky_posts' => true,
-            'tax_query'           => [[
-              'taxonomy' => 'staff',
-              'operator' => 'NOT EXISTS',
-            ]],
-          ];
-
-          $news_query = new WP_Query($news_query_args);
+          global $post;
+          $news_posts = eco_planning_get_top_news_posts(3);
           $news_index = 0;
           ?>
-          <?php while ($news_query->have_posts()) : $news_query->the_post(); ?>
+          <?php foreach ($news_posts as $post) : setup_postdata($post); ?>
             <?php
             $news_index++;
             $news_terms = eco_planning_get_post_terms(get_the_ID(), ['category']);
@@ -1059,7 +1049,7 @@
                 </div>
               </a>
             </article>
-          <?php endwhile; ?>
+          <?php endforeach; ?>
           <?php wp_reset_postdata(); ?>
         </div>
 

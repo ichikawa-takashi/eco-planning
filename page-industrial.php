@@ -17,7 +17,7 @@
     </section>
 
     <section class="sub-service-detail__visual">
-      <div class="sub-service-detail__visual-main">
+      <div class="sub-service-detail__visual-main js-slidein">
         <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/service-collection-industrial.jpg" alt="産業廃棄物を回収するスタッフ">
       </div>
       <div class="sub-service-detail__visual-gallery">
@@ -40,33 +40,33 @@
 
     <section class="sub-service-detail__introduction">
       <div class="sub-service-detail__introduction-inner inner">
-        <h2 class="sub-service-detail__introduction-title site-heading--page-jp">
+        <h2 class="sub-service-detail__introduction-title site-heading--page-jp js-fadein">
           廃棄物の運搬・処分<br>
           年間取引件数12,000件の確かな信頼
         </h2>
-        <p class="sub-service-detail__introduction-text">エコ・プランニングは解体工事だけでなく、産業廃棄物の回収から最終処分まで一貫対応しております。三重県下最大級となる1,400社もの取引実績を誇り、最初から最後まで責任を持って対応いたします。廃棄物の回収・処分はぜひ弊社にご相談ください。</p>
+        <p class="sub-service-detail__introduction-text js-fadein">エコ・プランニングは解体工事だけでなく、産業廃棄物の回収から最終処分まで一貫対応しております。三重県下最大級となる1,400社もの取引実績を誇り、最初から最後まで責任を持って対応いたします。廃棄物の回収・処分はぜひ弊社にご相談ください。</p>
       </div>
     </section>
 
     <section class="sub-service-industrial-waste__recommended">
       <div class="sub-service-industrial-waste__recommended-inner inner">
-        <h2 class="sub-service-detail__band-title site-gradient-heading site-gradient-heading--left site-heading--gradient">産廃の回収はこんなお客様におススメです</h2>
+        <h2 class="sub-service-detail__band-title site-gradient-heading site-gradient-heading--left site-heading--gradient js-slidein">産廃の回収はこんなお客様におススメです</h2>
         <ul class="sub-service-industrial-waste__recommended-list">
-          <li class="sub-service-industrial-waste__recommended-item">
+          <li class="sub-service-industrial-waste__recommended-item js-fadeup">
             <h3 class="sub-service-industrial-waste__recommended-heading">
               <span class="sub-service-detail__check" aria-hidden="true"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-check.png" alt=""></span>
               <span>三重県外の業者の方</span>
             </h3>
             <p class="sub-service-industrial-waste__recommended-text">どこの業者に頼めばいいかわからない、きちんと処理してもらえるか不安、といったお悩みにも丁寧に対応します。リサイクル率の向上やコスト削減など、廃棄物処理の最適なご提案も可能です。クラウド上での電子契約システムを導入しており、県外からでも約2〜3分で委託契約を締結いただけます。</p>
           </li>
-          <li class="sub-service-industrial-waste__recommended-item">
+          <li class="sub-service-industrial-waste__recommended-item js-fadeup">
             <h3 class="sub-service-industrial-waste__recommended-heading">
               <span class="sub-service-detail__check" aria-hidden="true"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-check.png" alt=""></span>
               <span>解体業者様</span>
             </h3>
             <p class="sub-service-industrial-waste__recommended-text">人手不足・ドライバー不足による廃棄物搬出の遅れは、工期やコストに直結します。弊社に回収を依頼することで搬出の回転率が上がり、分別・運搬の手間を削減できます。ぜひご相談ください。</p>
           </li>
-          <li class="sub-service-industrial-waste__recommended-item">
+          <li class="sub-service-industrial-waste__recommended-item js-fadeup">
             <h3 class="sub-service-industrial-waste__recommended-heading">
               <span class="sub-service-detail__check" aria-hidden="true"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-check.png" alt=""></span>
               <span>工務店様</span>
@@ -79,22 +79,22 @@
 
     <section class="sub-service-industrial-waste__concerns">
       <div class="sub-service-industrial-waste__concerns-inner inner">
-        <h2 class="sub-service-detail__band-title site-gradient-heading site-heading--gradient">廃棄物でお困りごとはないですか？</h2>
+        <h2 class="sub-service-detail__band-title site-gradient-heading site-heading--gradient js-slidein">廃棄物でお困りごとはないですか？</h2>
         <ul class="sub-service-detail__concern-list">
-          <li class="sub-service-detail__concern-item">
+          <li class="sub-service-detail__concern-item js-slidein-stagger">
             <div class="sub-service-detail__concern-icon"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/concern-selection.jpg" alt=""></div>
             <p class="sub-service-detail__concern-text">廃棄物の種類や<br>処分業者の選び方がわからない</p>
           </li>
-          <li class="sub-service-detail__concern-item">
+          <li class="sub-service-detail__concern-item js-slidein-stagger">
             <div class="sub-service-detail__concern-icon"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/concern-procedure.jpg" alt=""></div>
             <p class="sub-service-detail__concern-text">手続きや<br>書類対応が煩わしい</p>
           </li>
-          <li class="sub-service-detail__concern-item">
+          <li class="sub-service-detail__concern-item js-slidein-stagger">
             <div class="sub-service-detail__concern-icon"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/concern-neighbor.jpg" alt=""></div>
             <p class="sub-service-detail__concern-text">不法投棄や<br>法令違反が心配だ</p>
           </li>
         </ul>
-        <div class="sub-service-detail__solution">
+        <div class="sub-service-detail__solution js-slidein">
           <h3 class="sub-service-detail__solution-title site-heading--primary-jp">そんなお困りごとはエコプランニングにおまかせください</h3>
           <p class="sub-service-detail__solution-text">県内外に1,400社以上の取引先があり、年間12,000件の廃棄物回収・受入実績を誇る産業廃棄物処理業のエキスパートです！創業半世紀以上の歴史と信頼を基に、お客様に最適なソリューションを提供します。</p>
         </div>
@@ -105,67 +105,67 @@
       <div class="sub-service-industrial-waste__features-inner inner">
         <ol class="sub-service-industrial-waste__feature-list">
           <li class="sub-service-industrial-waste__feature-item">
-            <p class="sub-service-industrial-waste__feature-label">feature</p>
-            <p class="sub-service-industrial-waste__feature-number">01</p>
-            <img class="sub-service-industrial-waste__feature-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-industrial-waste/feature-container-industrial.jpg" alt="現場に設置するコンテナ">
-            <h2 class="sub-service-industrial-waste__feature-title">現場に応じたコンテナを<br>置くことができる</h2>
-            <p class="sub-service-industrial-waste__feature-text">弊社では大小合わせて6種類以上のコンテナを取り揃えており、幅広い現場に対応しています。</p>
+            <p class="sub-service-industrial-waste__feature-label js-slidein">feature</p>
+            <p class="sub-service-industrial-waste__feature-number js-slidein">01</p>
+            <img class="sub-service-industrial-waste__feature-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-industrial-waste/feature-container-industrial.jpg" alt="現場に設置するコンテナ">
+            <h2 class="sub-service-industrial-waste__feature-title js-slidein">現場に応じたコンテナを<br>置くことができる</h2>
+            <p class="sub-service-industrial-waste__feature-text js-slidein">弊社では大小合わせて6種類以上のコンテナを取り揃えており、幅広い現場に対応しています。</p>
           </li>
           <li class="sub-service-industrial-waste__feature-item">
-            <p class="sub-service-industrial-waste__feature-label">feature</p>
-            <p class="sub-service-industrial-waste__feature-number">02</p>
-            <img class="sub-service-industrial-waste__feature-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-industrial-waste/feature-rebar.jpg" alt="コンテナで回収できる鉄筋">
-            <h2 class="sub-service-industrial-waste__feature-title">長物が入る</h2>
-            <p class="sub-service-industrial-waste__feature-text">弊社のコンテナは標準で長さ2.4m³と他社より一回り大きく、鉄筋・鋼板・木材などの長物もそのまま投入できます。無駄に大きいコンテナを設置したり、長物を切断する手間が不要です。</p>
+            <p class="sub-service-industrial-waste__feature-label js-slidein">feature</p>
+            <p class="sub-service-industrial-waste__feature-number js-slidein">02</p>
+            <img class="sub-service-industrial-waste__feature-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-industrial-waste/feature-rebar.jpg" alt="コンテナで回収できる鉄筋">
+            <h2 class="sub-service-industrial-waste__feature-title js-slidein">長物が入る</h2>
+            <p class="sub-service-industrial-waste__feature-text js-slidein">弊社のコンテナは標準で長さ2.4m³と他社より一回り大きく、鉄筋・鋼板・木材などの長物もそのまま投入できます。無駄に大きいコンテナを設置したり、長物を切断する手間が不要です。</p>
           </li>
           <li class="sub-service-industrial-waste__feature-item">
-            <p class="sub-service-industrial-waste__feature-label">feature</p>
-            <p class="sub-service-industrial-waste__feature-number">03</p>
-            <img class="sub-service-industrial-waste__feature-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-support.jpg" alt="産業廃棄物の事務処理を行うスタッフ">
-            <h2 class="sub-service-industrial-waste__feature-title">産業廃棄物の処理する際の面倒な<br>事務処理や手続きのノウハウがある</h2>
-            <p class="sub-service-industrial-waste__feature-text">グループ会社を含め1,400社以上のお客様と産業廃棄物関連のお取引があるため、細かな手続きや書類対応にも豊富なノウハウで対応できます。</p>
+            <p class="sub-service-industrial-waste__feature-label js-slidein">feature</p>
+            <p class="sub-service-industrial-waste__feature-number js-slidein">03</p>
+            <img class="sub-service-industrial-waste__feature-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-support.jpg" alt="産業廃棄物の事務処理を行うスタッフ">
+            <h2 class="sub-service-industrial-waste__feature-title js-slidein">産業廃棄物の処理する際の面倒な<br>事務処理や手続きのノウハウがある</h2>
+            <p class="sub-service-industrial-waste__feature-text js-slidein">グループ会社を含め1,400社以上のお客様と産業廃棄物関連のお取引があるため、細かな手続きや書類対応にも豊富なノウハウで対応できます。</p>
           </li>
           <li class="sub-service-industrial-waste__feature-item">
-            <p class="sub-service-industrial-waste__feature-label">feature</p>
-            <p class="sub-service-industrial-waste__feature-number">04</p>
-            <img class="sub-service-industrial-waste__feature-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-industrial-waste/feature-asbestos-waste.jpg" alt="適正に処理される石綿含有廃棄物">
-            <h2 class="sub-service-industrial-waste__feature-title">スレートやカラーベストなどの<br>石綿含有廃棄物を<br>安心して処分ができる</h2>
-            <p class="sub-service-industrial-waste__feature-text">弊社ではグループ会社にて最終埋立処分場を保有しているため、処理体制も整っており、マニフェストの返却もスムーズで最短で当日最終のE票の返却が可能です。</p>
+            <p class="sub-service-industrial-waste__feature-label js-slidein">feature</p>
+            <p class="sub-service-industrial-waste__feature-number js-slidein">04</p>
+            <img class="sub-service-industrial-waste__feature-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-industrial-waste/feature-asbestos-waste.jpg" alt="適正に処理される石綿含有廃棄物">
+            <h2 class="sub-service-industrial-waste__feature-title js-slidein">スレートやカラーベストなどの<br>石綿含有廃棄物を<br>安心して処分ができる</h2>
+            <p class="sub-service-industrial-waste__feature-text js-slidein">弊社ではグループ会社にて最終埋立処分場を保有しているため、処理体制も整っており、マニフェストの返却もスムーズで最短で当日最終のE票の返却が可能です。</p>
           </li>
           <li class="sub-service-industrial-waste__feature-item">
-            <p class="sub-service-industrial-waste__feature-label">feature</p>
-            <p class="sub-service-industrial-waste__feature-number">05</p>
-            <img class="sub-service-industrial-waste__feature-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-document-application.jpg" alt="電子マニフェストを操作するスタッフ">
-            <h2 class="sub-service-industrial-waste__feature-title">電子マニフェストにも<br>対応している</h2>
-            <p class="sub-service-industrial-waste__feature-text">すでに弊社お客様の3割以上が電子マニフェストを導入済みで、全体取引の電子マニフェスト使用率は7割ほどになってきております。導入をご検討の方には、担当者が使用方法や費用についてご説明いたします。お気軽にお問い合わせください。</p>
+            <p class="sub-service-industrial-waste__feature-label js-slidein">feature</p>
+            <p class="sub-service-industrial-waste__feature-number js-slidein">05</p>
+            <img class="sub-service-industrial-waste__feature-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-document-application.jpg" alt="電子マニフェストを操作するスタッフ">
+            <h2 class="sub-service-industrial-waste__feature-title js-slidein">電子マニフェストにも<br>対応している</h2>
+            <p class="sub-service-industrial-waste__feature-text js-slidein">すでに弊社お客様の3割以上が電子マニフェストを導入済みで、全体取引の電子マニフェスト使用率は7割ほどになってきております。導入をご検討の方には、担当者が使用方法や費用についてご説明いたします。お気軽にお問い合わせください。</p>
           </li>
           <li class="sub-service-industrial-waste__feature-item">
-            <p class="sub-service-industrial-waste__feature-label">feature</p>
-            <p class="sub-service-industrial-waste__feature-number">06</p>
-            <img class="sub-service-industrial-waste__feature-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-industrial-waste/feature-trust.jpg" alt="コンテナ回収を担当するスタッフ">
-            <h2 class="sub-service-industrial-waste__feature-title">信用・信頼・実績</h2>
-            <p class="sub-service-industrial-waste__feature-text">約25年前、三重県で初めてユニッククレーン式コンテナ回収システムを開発。現在では三重県内を中心に年間12,000件のコンテナ回収、1,400社以上のお客様とお取引しております。長年培った実績と信頼で、今後もお客様の廃棄物処理を支えてまいります。</p>
+            <p class="sub-service-industrial-waste__feature-label js-slidein">feature</p>
+            <p class="sub-service-industrial-waste__feature-number js-slidein">06</p>
+            <img class="sub-service-industrial-waste__feature-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-industrial-waste/feature-trust.jpg" alt="コンテナ回収を担当するスタッフ">
+            <h2 class="sub-service-industrial-waste__feature-title js-slidein">信用・信頼・実績</h2>
+            <p class="sub-service-industrial-waste__feature-text js-slidein">約25年前、三重県で初めてユニッククレーン式コンテナ回収システムを開発。現在では三重県内を中心に年間12,000件のコンテナ回収、1,400社以上のお客様とお取引しております。長年培った実績と信頼で、今後もお客様の廃棄物処理を支えてまいります。</p>
           </li>
           <li class="sub-service-industrial-waste__feature-item">
-            <p class="sub-service-industrial-waste__feature-label">feature</p>
-            <p class="sub-service-industrial-waste__feature-number">07</p>
-            <img class="sub-service-industrial-waste__feature-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-industrial-waste/feature-demolition.jpg" alt="解体工事を行うスタッフ">
-            <h2 class="sub-service-industrial-waste__feature-title">解体工事も承っております</h2>
-            <p class="sub-service-industrial-waste__feature-text">三重を拠点に全国対応する解体工事のプロとして、産廃処理と一体でお任せください。犬小屋や物置、ビル・大型施設の解体に至るまで、電話・LINE・お問い合わせフォームよりお気軽にご相談ください。</p>
+            <p class="sub-service-industrial-waste__feature-label js-slidein">feature</p>
+            <p class="sub-service-industrial-waste__feature-number js-slidein">07</p>
+            <img class="sub-service-industrial-waste__feature-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-industrial-waste/feature-demolition.jpg" alt="解体工事を行うスタッフ">
+            <h2 class="sub-service-industrial-waste__feature-title js-slidein">解体工事も承っております</h2>
+            <p class="sub-service-industrial-waste__feature-text js-slidein">三重を拠点に全国対応する解体工事のプロとして、産廃処理と一体でお任せください。犬小屋や物置、ビル・大型施設の解体に至るまで、電話・LINE・お問い合わせフォームよりお気軽にご相談ください。</p>
           </li>
           <li class="sub-service-industrial-waste__feature-item">
-            <p class="sub-service-industrial-waste__feature-label">feature</p>
-            <p class="sub-service-industrial-waste__feature-number">08</p>
-            <img class="sub-service-industrial-waste__feature-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/service-drop-off.jpg" alt="産業廃棄物を受け入れる工場の車両">
-            <h2 class="sub-service-industrial-waste__feature-title">直接、工場に搬入もできます</h2>
-            <p class="sub-service-industrial-waste__feature-text">廃棄物を直接弊社工場へ持ち込むことも可能です。予約不要で受け入れており、電子契約システムにより契約もその場で迅速に締結できます。</p>
+            <p class="sub-service-industrial-waste__feature-label js-slidein">feature</p>
+            <p class="sub-service-industrial-waste__feature-number js-slidein">08</p>
+            <img class="sub-service-industrial-waste__feature-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/service-drop-off.jpg" alt="産業廃棄物を受け入れる工場の車両">
+            <h2 class="sub-service-industrial-waste__feature-title js-slidein">直接、工場に搬入もできます</h2>
+            <p class="sub-service-industrial-waste__feature-text js-slidein">廃棄物を直接弊社工場へ持ち込むことも可能です。予約不要で受け入れており、電子契約システムにより契約もその場で迅速に締結できます。</p>
           </li>
           <li class="sub-service-industrial-waste__feature-item">
-            <p class="sub-service-industrial-waste__feature-label">feature</p>
-            <p class="sub-service-industrial-waste__feature-number">09</p>
-            <img class="sub-service-industrial-waste__feature-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-contact.jpg" alt="電話で回収依頼を受けるスタッフ">
-            <h2 class="sub-service-industrial-waste__feature-title">県外でも回収できる</h2>
-            <p class="sub-service-industrial-waste__feature-text">回収範囲：<span class="sub-service-industrial-waste__feature-link">三重県、愛知県、岐阜県、奈良県、京都府、滋賀県</span>などなど、その他地域でも弊社提携先収集運搬業者とのマッチングが可能です。</p>
+            <p class="sub-service-industrial-waste__feature-label js-slidein">feature</p>
+            <p class="sub-service-industrial-waste__feature-number js-slidein">09</p>
+            <img class="sub-service-industrial-waste__feature-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/flow-contact.jpg" alt="電話で回収依頼を受けるスタッフ">
+            <h2 class="sub-service-industrial-waste__feature-title js-slidein">県外でも回収できる</h2>
+            <p class="sub-service-industrial-waste__feature-text js-slidein">回収範囲：<span class="sub-service-industrial-waste__feature-link">三重県、愛知県、岐阜県、奈良県、京都府、滋賀県</span>などなど、その他地域でも弊社提携先収集運搬業者とのマッチングが可能です。</p>
           </li>
         </ol>
       </div>
@@ -174,21 +174,21 @@
     <section class="sub-service-detail__application">
       <div class="sub-service-detail__application-inner inner">
         <div class="sub-service-detail__application-panel">
-          <h2 class="sub-service-detail__application-title site-heading--primary-jp">ご依頼・お申込はこちら</h2>
+          <h2 class="sub-service-detail__application-title site-heading--primary-jp js-slidein">ご依頼・お申込はこちら</h2>
           <div class="sub-service-detail__application-list">
-            <a class="site-wide-button site-wide-button--white sub-service-detail__application-link" href="https://form.run/@onegai" target="_blank" rel="noopener noreferrer">
+            <a class="site-wide-button site-wide-button--white sub-service-detail__application-link js-slidein-stagger" href="https://form.run/@onegai" target="_blank" rel="noopener noreferrer">
               <span>取引登録</span>
               <span class="site-arrow-icon site-wide-button__icon sub-service-detail__application-icon" aria-hidden="true">
                 <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt="">
               </span>
             </a>
-            <a class="site-wide-button site-wide-button--white sub-service-detail__application-link" href="https://form.run/@ecopla" target="_blank" rel="noopener noreferrer">
+            <a class="site-wide-button site-wide-button--white sub-service-detail__application-link js-slidein-stagger" href="https://form.run/@ecopla" target="_blank" rel="noopener noreferrer">
               <span>コンテナ回収依頼</span>
               <span class="site-arrow-icon site-wide-button__icon sub-service-detail__application-icon" aria-hidden="true">
                 <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt="">
               </span>
             </a>
-            <a class="site-wide-button site-wide-button--white sub-service-detail__application-link" href="https://drive.google.com/drive/folders/1-CsTuzrJL0MWF80nJN5lf-SK7_PISETT" target="_blank" rel="noopener noreferrer">
+            <a class="site-wide-button site-wide-button--white sub-service-detail__application-link js-slidein-stagger" href="https://drive.google.com/drive/folders/1-CsTuzrJL0MWF80nJN5lf-SK7_PISETT" target="_blank" rel="noopener noreferrer">
               <span>契約書類ダウンロード</span>
               <span class="site-arrow-icon site-wide-button__icon sub-service-detail__application-icon" aria-hidden="true">
                 <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt="">
@@ -201,14 +201,14 @@
 
     <section class="sub-service-industrial-waste__compatible">
       <div class="sub-service-industrial-waste__compatible-inner inner">
-        <div class="sub-service-detail__section-heading">
+        <div class="sub-service-detail__section-heading js-slidein">
           <h2 class="sub-service-detail__section-title site-heading--subpage-en">compatible range</h2>
           <p class="sub-service-detail__section-subtitle site-heading-subtitle--default">受入品目一覧</p>
         </div>
-        <p class="sub-service-industrial-waste__compatible-description">掲載の商品はあくまで過去施工事例に基づく参考価格になりますので、くわしい内容や見積もりはお気軽にお問い合わせください</p>
+        <p class="sub-service-industrial-waste__compatible-description js-slidein">掲載の商品はあくまで過去施工事例に基づく参考価格になりますので、くわしい内容や見積もりはお気軽にお問い合わせください</p>
 
         <div class="sub-service-industrial-waste__compatible-groups">
-          <details class="sub-service-detail__data-group" open>
+          <details class="sub-service-detail__data-group js-fadeup" open>
             <summary class="sub-service-detail__data-summary">受入品目一覧</summary>
             <div class="sub-service-detail__table-scroll">
               <table class="sub-service-detail__table" style="--service-detail-table-label-width: 55%;">
@@ -234,7 +234,7 @@
             </div>
           </details>
 
-          <details class="sub-service-detail__data-group" open>
+          <details class="sub-service-detail__data-group js-fadeup" open>
             <summary class="sub-service-detail__data-summary">受入可能特殊廃材</summary>
             <div class="sub-service-detail__table-scroll">
               <table class="sub-service-detail__table" style="--service-detail-table-label-width: 50%;">
@@ -280,7 +280,7 @@
             <p class="sub-service-detail__table-note">※複合素材については材質、形状を協議の上、別途料金を請求させて頂きます。<br>※混合物の中に指定された以外の廃棄物が混入されている場合別途料金を頂きます。</p>
           </details>
 
-          <details class="sub-service-detail__data-group" open>
+          <details class="sub-service-detail__data-group js-fadeup" open>
             <summary class="sub-service-detail__data-summary">販売</summary>
             <div class="sub-service-detail__table-scroll">
               <table class="sub-service-detail__table sub-service-industrial-waste__sales-table" style="--service-detail-table-label-width: 33.333%;">
@@ -300,7 +300,7 @@
 
     <section class="sub-service-industrial-waste__process">
       <div class="sub-service-industrial-waste__process-inner inner">
-        <div class="sub-service-detail__section-heading">
+        <div class="sub-service-detail__section-heading js-slidein">
           <h2 class="sub-service-detail__section-title site-heading--subpage-en">process</h2>
           <p class="sub-service-detail__section-subtitle site-heading-subtitle--default">処分の流れ・仕組み</p>
         </div>
@@ -308,21 +308,21 @@
         <div class="sub-service-industrial-waste__process-panel">
           <div class="sub-service-industrial-waste__process-layout">
             <div class="sub-service-industrial-waste__process-list sub-service-industrial-waste__process-list--top">
-              <article class="sub-service-industrial-waste__process-item sub-service-industrial-waste__process-item--transport">
+              <article class="sub-service-industrial-waste__process-item sub-service-industrial-waste__process-item--transport js-slidein-stagger">
                 <div class="sub-service-industrial-waste__process-heading">
                   <img class="sub-service-industrial-waste__process-icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-industrial-waste/process-transport.jpg" alt="">
                   <h3 class="sub-service-industrial-waste__process-title">運搬</h3>
                 </div>
                 <p class="sub-service-industrial-waste__process-text">解体現場で発生した産業廃棄物などを、弊社中間処理場へと運搬します。※持ち込みも対応。</p>
               </article>
-              <article class="sub-service-industrial-waste__process-item sub-service-industrial-waste__process-item--intermediate">
+              <article class="sub-service-industrial-waste__process-item sub-service-industrial-waste__process-item--intermediate js-slidein-stagger">
                 <div class="sub-service-industrial-waste__process-heading">
                   <img class="sub-service-industrial-waste__process-icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-industrial-waste/process-intermediate.jpg" alt="">
                   <h3 class="sub-service-industrial-waste__process-title">中間処理</h3>
                 </div>
                 <p class="sub-service-industrial-waste__process-text">種類に合わせて、自社処理場にて適切な方法を用いて処分作業を行います。</p>
               </article>
-              <article class="sub-service-industrial-waste__process-item sub-service-industrial-waste__process-item--recycle">
+              <article class="sub-service-industrial-waste__process-item sub-service-industrial-waste__process-item--recycle js-slidein-stagger">
                 <div class="sub-service-industrial-waste__process-heading">
                   <img class="sub-service-industrial-waste__process-icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-industrial-waste/process-recycle.jpg" alt="">
                   <h3 class="sub-service-industrial-waste__process-title">リサイクル</h3>
@@ -336,14 +336,14 @@
             <p class="sub-service-industrial-waste__process-mobile-label">処理内容に応じて</p>
 
             <div class="sub-service-industrial-waste__process-list sub-service-industrial-waste__process-list--bottom">
-              <article class="sub-service-industrial-waste__process-item sub-service-industrial-waste__process-item--secondary">
+              <article class="sub-service-industrial-waste__process-item sub-service-industrial-waste__process-item--secondary js-slidein-stagger">
                 <div class="sub-service-industrial-waste__process-heading">
                   <img class="sub-service-industrial-waste__process-icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-industrial-waste/process-secondary.jpg" alt="">
                   <h3 class="sub-service-industrial-waste__process-title">二次処理委託</h3>
                 </div>
                 <p class="sub-service-industrial-waste__process-text">自社でリサイクル処理ができない廃棄物は2次処理先に委託し、リサイクルします。</p>
               </article>
-              <article class="sub-service-industrial-waste__process-item sub-service-industrial-waste__process-item--final">
+              <article class="sub-service-industrial-waste__process-item sub-service-industrial-waste__process-item--final js-slidein-stagger">
                 <div class="sub-service-industrial-waste__process-heading">
                   <img class="sub-service-industrial-waste__process-icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-industrial-waste/process-final.jpg" alt="">
                   <h3 class="sub-service-industrial-waste__process-title">最終処分場<small>（安定型）</small></h3>
@@ -358,13 +358,13 @@
 
     <section class="sub-service-industrial-waste__recycling">
       <div class="sub-service-industrial-waste__recycling-inner inner">
-        <div class="sub-service-detail__section-heading">
+        <div class="sub-service-detail__section-heading js-slidein">
           <h2 class="sub-service-detail__section-title site-heading--subpage-en">disposal and recycling</h2>
           <p class="sub-service-detail__section-subtitle site-heading-subtitle--default">各品目の処分方法とリサイクル後</p>
         </div>
 
         <div class="sub-service-industrial-waste__recycling-list">
-          <article class="sub-service-industrial-waste__recycling-card">
+          <article class="sub-service-industrial-waste__recycling-card js-slidein">
             <div class="sub-service-industrial-waste__recycling-heading">
               <img class="sub-service-industrial-waste__recycling-thumbnail" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-industrial-waste/disposal-thumbnail.jpg" alt="">
               <h3 class="sub-service-industrial-waste__recycling-title">廃プラスチック類</h3>
@@ -384,7 +384,7 @@
             </div>
           </article>
 
-          <article class="sub-service-industrial-waste__recycling-card">
+          <article class="sub-service-industrial-waste__recycling-card js-slidein">
             <div class="sub-service-industrial-waste__recycling-heading">
               <img class="sub-service-industrial-waste__recycling-thumbnail" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-industrial-waste/disposal-thumbnail.jpg" alt="">
               <h3 class="sub-service-industrial-waste__recycling-title">紙くず</h3>
@@ -399,7 +399,7 @@
             </div>
           </article>
 
-          <article class="sub-service-industrial-waste__recycling-card">
+          <article class="sub-service-industrial-waste__recycling-card js-slidein">
             <div class="sub-service-industrial-waste__recycling-heading">
               <img class="sub-service-industrial-waste__recycling-thumbnail" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-industrial-waste/disposal-thumbnail.jpg" alt="">
               <h3 class="sub-service-industrial-waste__recycling-title">木くず</h3>
@@ -415,7 +415,7 @@
             </div>
           </article>
 
-          <article class="sub-service-industrial-waste__recycling-card">
+          <article class="sub-service-industrial-waste__recycling-card js-slidein">
             <div class="sub-service-industrial-waste__recycling-heading">
               <img class="sub-service-industrial-waste__recycling-thumbnail" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-industrial-waste/disposal-thumbnail.jpg" alt="">
               <h3 class="sub-service-industrial-waste__recycling-title">繊維くず</h3>
@@ -430,7 +430,7 @@
             </div>
           </article>
 
-          <article class="sub-service-industrial-waste__recycling-card">
+          <article class="sub-service-industrial-waste__recycling-card js-slidein">
             <div class="sub-service-industrial-waste__recycling-heading">
               <img class="sub-service-industrial-waste__recycling-thumbnail" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-industrial-waste/disposal-thumbnail.jpg" alt="">
               <h3 class="sub-service-industrial-waste__recycling-title">金属くず</h3>
@@ -445,7 +445,7 @@
             </div>
           </article>
 
-          <article class="sub-service-industrial-waste__recycling-card">
+          <article class="sub-service-industrial-waste__recycling-card js-slidein">
             <div class="sub-service-industrial-waste__recycling-heading">
               <img class="sub-service-industrial-waste__recycling-thumbnail" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-industrial-waste/disposal-thumbnail.jpg" alt="">
               <h3 class="sub-service-industrial-waste__recycling-title">ガラス陶磁器くず</h3>
@@ -460,7 +460,7 @@
             </div>
           </article>
 
-          <article class="sub-service-industrial-waste__recycling-card">
+          <article class="sub-service-industrial-waste__recycling-card js-slidein">
             <div class="sub-service-industrial-waste__recycling-heading">
               <img class="sub-service-industrial-waste__recycling-thumbnail" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-industrial-waste/disposal-thumbnail.jpg" alt="">
               <h3 class="sub-service-industrial-waste__recycling-title">がれき類</h3>
@@ -480,7 +480,7 @@
             </div>
           </article>
 
-          <article class="sub-service-industrial-waste__recycling-card">
+          <article class="sub-service-industrial-waste__recycling-card js-slidein">
             <div class="sub-service-industrial-waste__recycling-heading">
               <img class="sub-service-industrial-waste__recycling-thumbnail" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-industrial-waste/disposal-thumbnail.jpg" alt="">
               <h3 class="sub-service-industrial-waste__recycling-title">石膏ボード</h3>
@@ -500,14 +500,14 @@
 
     <section class="sub-service-detail__flow sub-service-industrial-waste__flow">
       <div class="sub-service-detail__flow-inner inner">
-        <div class="sub-service-detail__section-heading">
+        <div class="sub-service-detail__section-heading js-slidein">
           <h2 class="sub-service-detail__section-title site-heading--subpage-en">flow</h2>
           <p class="sub-service-detail__section-subtitle site-heading-subtitle--default">ご依頼の流れ</p>
         </div>
 
         <div class="site-flow">
           <ol class="site-flow__list">
-            <li class="site-flow__item">
+            <li class="site-flow__item js-fadeup">
               <div class="site-flow__step">
                 <span class="site-flow__step-label">step</span>
                 <span class="site-flow__step-number">01</span>
@@ -521,7 +521,7 @@
               </div>
             </li>
 
-            <li class="site-flow__item">
+            <li class="site-flow__item js-fadeup">
               <div class="site-flow__step">
                 <span class="site-flow__step-label">step</span>
                 <span class="site-flow__step-number">02</span>
@@ -536,7 +536,7 @@
               </div>
             </li>
 
-            <li class="site-flow__item">
+            <li class="site-flow__item js-fadeup">
               <div class="site-flow__step">
                 <span class="site-flow__step-label">step</span>
                 <span class="site-flow__step-number">03</span>
@@ -550,7 +550,7 @@
               </div>
             </li>
 
-            <li class="site-flow__item">
+            <li class="site-flow__item js-fadeup">
               <div class="site-flow__step">
                 <span class="site-flow__step-label">step</span>
                 <span class="site-flow__step-number">04</span>
@@ -564,7 +564,7 @@
               </div>
             </li>
 
-            <li class="site-flow__item">
+            <li class="site-flow__item js-fadeup">
               <div class="site-flow__step">
                 <span class="site-flow__step-label">step</span>
                 <span class="site-flow__step-number">05</span>
@@ -586,24 +586,24 @@
       <div class="site-contact site-contact--visual">
         <div class="site-contact__background"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/contact-bg.jpg" alt=""></div>
         <div class="site-contact__visual-content">
-          <div class="site-contact__heading">
+          <div class="site-contact__heading js-slidein">
             <h2 class="site-contact__title site-heading--section-en">contact</h2>
             <p class="site-contact__subtitle site-heading-subtitle--default">お問い合わせ</p>
           </div>
-          <p class="site-contact__lead">解体、産業廃棄物回収・持込、<br>不用品回収からハウスクリーニングまで<br>お困りごとは何でもお気軽にご相談ください。</p>
+          <p class="site-contact__lead js-slidein">解体、産業廃棄物回収・持込、<br>不用品回収からハウスクリーニングまで<br>お困りごとは何でもお気軽にご相談ください。</p>
           <div class="site-contact__list">
-            <div class="site-contact__card site-contact__card--phone">
+            <div class="site-contact__card site-contact__card--phone js-slidein-stagger">
               <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-phone.png" alt="">
               <p class="site-contact__card-title">お電話でのお問い合わせ</p>
               <a class="site-contact__phone-number" href="tel:0595833330">0595-83-3330</a>
               <p class="site-contact__note">お電話の際に「ホームページを見て」<br>とお伝えください。</p>
             </div>
-            <div class="site-contact__card site-contact__card--mail">
+            <div class="site-contact__card site-contact__card--mail js-slidein-stagger">
               <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-mail.png" alt="">
               <p class="site-contact__card-title">メールでのお問い合わせ</p>
               <a class="site-contact__button" href="<?php echo esc_url(home_url('/contact/')); ?>"><span>お問い合わせ</span><span class="site-arrow-icon site-contact__button-icon" aria-hidden="true"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt=""></span></a>
             </div>
-            <div class="site-contact__card site-contact__card--line">
+            <div class="site-contact__card site-contact__card--line js-slidein-stagger">
               <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-line.png" alt="">
               <p class="site-contact__card-title">LINEでのお問い合わせ</p>
               <a class="site-contact__button" href="https://line.me/R/ti/p/@lia0806h" target="_blank" rel="noopener noreferrer"><span>LINE 友達追加</span><span class="site-arrow-icon site-contact__button-icon" aria-hidden="true"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt=""></span></a>

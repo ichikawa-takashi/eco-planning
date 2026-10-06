@@ -46,17 +46,17 @@
 
     <section class="sub-recruit__message">
       <div class="sub-recruit__message-inner">
-        <div class="sub-recruit__message-visual">
+        <div class="sub-recruit__message-visual js-slidein">
           <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/message-president.jpg" alt="株式会社エコ・プランニング 代表取締役 吉田孔顕">
         </div>
 
         <div class="sub-recruit__message-content">
-          <h2 class="sub-recruit__message-title site-heading--primary-jp">
+          <h2 class="sub-recruit__message-title site-heading--primary-jp js-slidein">
             誰もが誇れる<br>
             「かっこいい」解体屋へ
           </h2>
 
-          <div class="sub-recruit__message-text">
+          <div class="sub-recruit__message-text js-slidein">
             <p>
               エコ・プランニングは、解体・産廃業界に根付く「きつい・汚い・危険」という3Kのイメージを、「かっこいい・稼げる・感動」の新3Kへと塗り替える挑戦をしています。「こんなに面白い仕事をやっているんだ」と世界に発信し、常識を覆すことにワクワクできる会社でありたい。そのために、既存の枠にとらわれない「多様性」と「逆張り」の発想を、私は何より大切にしています。
             </p>
@@ -72,12 +72,12 @@
             </p>
           </div>
 
-          <div class="sub-recruit__message-signature">
+          <div class="sub-recruit__message-signature js-slidein">
             <p class="sub-recruit__message-position">代表取締役</p>
             <p class="sub-recruit__message-name">吉田 孔顕</p>
           </div>
 
-          <div class="sub-recruit__message-links">
+          <div class="sub-recruit__message-links js-slidein">
             <div class="sub-recruit__message-link-group">
               <p class="sub-recruit__message-link-title">follow sns</p>
               <div class="sub-recruit__message-socials">
@@ -100,56 +100,56 @@
 
     <section class="sub-recruit__culture">
       <div class="sub-recruit__culture-inner inner">
-        <div class="sub-recruit__culture-heading">
+        <div class="sub-recruit__culture-heading js-slidein">
           <h2 class="sub-recruit__culture-title site-heading--subpage-en">culture</h2>
           <p class="sub-recruit__culture-subtitle site-heading-subtitle--default">社風・文化</p>
         </div>
 
         <div class="sub-recruit__culture-list">
           <article class="sub-recruit__culture-item">
-            <img class="sub-recruit__culture-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/culture-01.jpg" alt="テーブルを囲んで談笑するスタッフ">
-            <h3 class="sub-recruit__culture-item-title">髪型・髪色自由</h3>
-            <p class="sub-recruit__culture-text">
+            <img class="sub-recruit__culture-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/culture-01.jpg" alt="テーブルを囲んで談笑するスタッフ">
+            <h3 class="sub-recruit__culture-item-title js-fadeup">髪型・髪色自由</h3>
+            <p class="sub-recruit__culture-text js-fadeup">
               ヘアスタイルも服装も、お気に入りのスニーカーも、自由に❝らしさ❞を出して全然OK。形よりも「自分らしく」働ける環境を大事にしています。服選びが面倒な時は、パーカーやTシャツなどのオリジナルユニフォーム支給があるのでご安心を。
             </p>
           </article>
 
           <article class="sub-recruit__culture-item">
-            <img class="sub-recruit__culture-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/culture-02.jpg" alt="世界の街並み">
-            <h3 class="sub-recruit__culture-item-title">世界中の仲間と繋がる日常</h3>
-            <p class="sub-recruit__culture-text">
+            <img class="sub-recruit__culture-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/culture-02.jpg" alt="世界の街並み">
+            <h3 class="sub-recruit__culture-item-title js-fadeup">世界中の仲間と繋がる日常</h3>
+            <p class="sub-recruit__culture-text js-fadeup">
               ペルーやベトナム、インドネシアなど多国籍なメンバーが活躍中！文化の壁を越えた交流が当たり前の風景です。気さくな仲間ばかりなので、毎日良い刺激をもらいながら楽しく働けるのが魅力です。
             </p>
           </article>
 
           <article class="sub-recruit__culture-item">
-            <img class="sub-recruit__culture-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/culture-03.jpg" alt="私生活を楽しむ女性">
-            <h3 class="sub-recruit__culture-item-title">私生活ファーストな働き方</h3>
-            <p class="sub-recruit__culture-text">
+            <img class="sub-recruit__culture-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/culture-03.jpg" alt="私生活を楽しむ女性">
+            <h3 class="sub-recruit__culture-item-title js-fadeup">私生活ファーストな働き方</h3>
+            <p class="sub-recruit__culture-text js-fadeup">
               有休や早退も「私用で！」と気兼ねなく言える雰囲気。残業は少なめで副業も自由です。自分の人生をしっかり楽しみながら、無理なくキャリアを築ける環境をしっかり整えています。
             </p>
           </article>
 
           <article class="sub-recruit__culture-item">
-            <img class="sub-recruit__culture-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/culture-04.jpg" alt="打ち合わせをするスタッフ">
-            <h3 class="sub-recruit__culture-item-title">壁を感じない、フラットな関係</h3>
-            <p class="sub-recruit__culture-text">
+            <img class="sub-recruit__culture-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/culture-04.jpg" alt="打ち合わせをするスタッフ">
+            <h3 class="sub-recruit__culture-item-title js-fadeup">壁を感じない、フラットな関係</h3>
+            <p class="sub-recruit__culture-text js-fadeup">
               役職を気にせず、上司とも冗談を言い合えるほどフラット。会社持ちの食事会や差し入れのおやつを囲んで、新人さんもすぐに打ち解けられる。そんな気さくな雰囲気が自慢です。
             </p>
           </article>
 
           <article class="sub-recruit__culture-item">
-            <img class="sub-recruit__culture-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/culture-05.jpg" alt="笑顔の家族">
-            <h3 class="sub-recruit__culture-item-title">家族まで笑顔にする福利厚生</h3>
-            <p class="sub-recruit__culture-text">
+            <img class="sub-recruit__culture-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/culture-05.jpg" alt="笑顔の家族">
+            <h3 class="sub-recruit__culture-item-title js-fadeup">家族まで笑顔にする福利厚生</h3>
+            <p class="sub-recruit__culture-text js-fadeup">
               本人だけでなく、配偶者の誕生日にもギフト券を贈るのがエコ流。GWやお盆、年末年始などの大型連休もしっかり休めます。社員だけでなく、その先の大切な人まで大切にしたいと考えている会社です。
             </p>
           </article>
 
           <article class="sub-recruit__culture-item">
-            <img class="sub-recruit__culture-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/culture-06.jpg" alt="意見を交わすスタッフ">
-            <h3 class="sub-recruit__culture-item-title">「やってみたい」を支える風土</h3>
-            <p class="sub-recruit__culture-text">
+            <img class="sub-recruit__culture-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/culture-06.jpg" alt="意見を交わすスタッフ">
+            <h3 class="sub-recruit__culture-item-title js-fadeup">「やってみたい」を支える風土</h3>
+            <p class="sub-recruit__culture-text js-fadeup">
               資格取得の支援はもちろん、誰でもプロジェクトのリーダーになれる文化。年次に関係なく意見を出せるので、自分の手で会社を面白くしていく手応えを存分に味わえるのが醍醐味です。
             </p>
           </article>
@@ -159,7 +159,7 @@
 
     <section class="sub-recruit__standard">
       <div class="sub-recruit__standard-visual-area">
-        <div class="sub-recruit__standard-visual">
+        <div class="sub-recruit__standard-visual js-slidein">
           <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/standard.jpg" alt="エコ・プランニングで働くスタッフ">
         </div>
       </div>
@@ -167,12 +167,12 @@
       <div class="sub-recruit__standard-content">
         <div class="sub-recruit__standard-inner inner">
           <div class="sub-recruit__standard-header">
-            <div class="sub-recruit__standard-heading">
+            <div class="sub-recruit__standard-heading js-slidein">
               <h2 class="sub-recruit__standard-title site-heading--subpage-en">recruiting<br>standard</h2>
               <p class="sub-recruit__standard-subtitle site-heading-subtitle--default">求める人物像</p>
             </div>
 
-            <div class="sub-recruit__standard-introduction">
+            <div class="sub-recruit__standard-introduction js-slidein">
               <h3 class="sub-recruit__standard-lead">私たちは、多様性を大切にします</h3>
               <p class="sub-recruit__standard-en">We Welcome The Diversity.</p>
               <p class="sub-recruit__standard-description">
@@ -184,7 +184,7 @@
           </div>
 
           <div class="sub-recruit__standard-list">
-            <article class="sub-recruit__standard-item">
+            <article class="sub-recruit__standard-item js-fadeup">
               <div class="sub-recruit__standard-number">
                 <span>culture</span>
                 <strong>01</strong>
@@ -197,7 +197,7 @@
               </div>
             </article>
 
-            <article class="sub-recruit__standard-item">
+            <article class="sub-recruit__standard-item js-fadeup">
               <div class="sub-recruit__standard-number">
                 <span>culture</span>
                 <strong>02</strong>
@@ -210,7 +210,7 @@
               </div>
             </article>
 
-            <article class="sub-recruit__standard-item">
+            <article class="sub-recruit__standard-item js-fadeup">
               <div class="sub-recruit__standard-number">
                 <span>culture</span>
                 <strong>03</strong>
@@ -223,7 +223,7 @@
               </div>
             </article>
 
-            <article class="sub-recruit__standard-item">
+            <article class="sub-recruit__standard-item js-fadeup">
               <div class="sub-recruit__standard-number">
                 <span>culture</span>
                 <strong>04</strong>
@@ -236,7 +236,7 @@
               </div>
             </article>
 
-            <article class="sub-recruit__standard-item">
+            <article class="sub-recruit__standard-item js-fadeup">
               <div class="sub-recruit__standard-number">
                 <span>culture</span>
                 <strong>05</strong>
@@ -249,7 +249,7 @@
               </div>
             </article>
 
-            <article class="sub-recruit__standard-item">
+            <article class="sub-recruit__standard-item js-fadeup">
               <div class="sub-recruit__standard-number">
                 <span>culture</span>
                 <strong>06</strong>
@@ -262,7 +262,7 @@
               </div>
             </article>
 
-            <article class="sub-recruit__standard-item">
+            <article class="sub-recruit__standard-item js-fadeup">
               <div class="sub-recruit__standard-number">
                 <span>culture</span>
                 <strong>07</strong>
@@ -281,87 +281,87 @@
 
     <section class="sub-recruit__welfare">
       <div class="sub-recruit__welfare-inner inner">
-        <div class="sub-recruit__welfare-heading">
+        <div class="sub-recruit__welfare-heading js-slidein">
           <h2 class="sub-recruit__welfare-title site-heading--subpage-en">welfare</h2>
           <p class="sub-recruit__welfare-subtitle site-heading-subtitle--default">福利厚生</p>
         </div>
 
         <div class="sub-recruit__welfare-list">
           <article class="sub-recruit__welfare-item">
-            <img class="sub-recruit__welfare-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/welfare-01.jpg" alt="福利厚生制度の書類">
-            <h3 class="sub-recruit__welfare-item-title">各種社会保険完備</h3>
-            <p class="sub-recruit__welfare-text">
+            <img class="sub-recruit__welfare-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/welfare-01.jpg" alt="福利厚生制度の書類">
+            <h3 class="sub-recruit__welfare-item-title js-fadeup">各種社会保険完備</h3>
+            <p class="sub-recruit__welfare-text js-fadeup">
               健康保険や厚生年金など、社会保険を完備。万が一の時も本人や家族をしっかり守り、安心して長く働ける環境を当たり前に整えています。
             </p>
           </article>
 
           <article class="sub-recruit__welfare-item">
-            <img class="sub-recruit__welfare-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/welfare-02.jpg" alt="公園を歩く家族">
-            <h3 class="sub-recruit__welfare-item-title">有給休暇・育休休暇</h3>
-            <p class="sub-recruit__welfare-text">
+            <img class="sub-recruit__welfare-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/welfare-02.jpg" alt="公園を歩く家族">
+            <h3 class="sub-recruit__welfare-item-title js-fadeup">有給休暇・育休休暇</h3>
+            <p class="sub-recruit__welfare-text js-fadeup">
               「私用で休みます」が普通に言える文化。家族の行事や趣味など、あなたの人生を大切にしてほしいから、取得を積極的に推奨しています。            </p>
           </article>
 
           <article class="sub-recruit__welfare-item">
-            <img class="sub-recruit__welfare-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/welfare-03.jpg" alt="資格取得に向けて勉強する様子">
-            <h3 class="sub-recruit__welfare-item-title">免許・資格取得支援制度</h3>
-            <p class="sub-recruit__welfare-text">
+            <img class="sub-recruit__welfare-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/welfare-03.jpg" alt="資格取得に向けて勉強する様子">
+            <h3 class="sub-recruit__welfare-item-title js-fadeup">免許・資格取得支援制度</h3>
+            <p class="sub-recruit__welfare-text js-fadeup">
               業務に必要な資格の取得費用は会社が全額サポート。あなたの「もっと成長したい」という向上心を、資金面から全力でバックアップします。
             </p>
           </article>
 
           <article class="sub-recruit__welfare-item">
-            <img class="sub-recruit__welfare-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/welfare-04.jpg" alt="退職祝いの花束">
-            <h3 class="sub-recruit__welfare-item-title">退職金制度</h3>
-            <p class="sub-recruit__welfare-text">
+            <img class="sub-recruit__welfare-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/welfare-04.jpg" alt="退職祝いの花束">
+            <h3 class="sub-recruit__welfare-item-title js-fadeup">退職金制度</h3>
+            <p class="sub-recruit__welfare-text js-fadeup">
               長く貢献してくれる社員の将来を守るための制度です。安心して腰を据えてキャリアを築けるよう、社内規定に基づき退職金を支給しています。
             </p>
           </article>
 
           <article class="sub-recruit__welfare-item">
-            <img class="sub-recruit__welfare-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/welfare-05.jpg" alt="誕生日プレゼント">
-            <h3 class="sub-recruit__welfare-item-title">誕生日プレゼント（配偶者含む）</h3>
-            <p class="sub-recruit__welfare-text">
+            <img class="sub-recruit__welfare-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/welfare-05.jpg" alt="誕生日プレゼント">
+            <h3 class="sub-recruit__welfare-item-title js-fadeup">誕生日プレゼント（配偶者含む）</h3>
+            <p class="sub-recruit__welfare-text js-fadeup">
               本人だけでなく配偶者の誕生日にもギフト券を贈呈！大切な人を大切にしてほしいという想いから生まれた、当社独自の温かな制度です。
             </p>
           </article>
 
           <article class="sub-recruit__welfare-item">
-            <img class="sub-recruit__welfare-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/welfare-06.jpg" alt="食事を楽しむ社員">
-            <h3 class="sub-recruit__welfare-item-title">従業員間食事会補助</h3>
-            <p class="sub-recruit__welfare-text">
+            <img class="sub-recruit__welfare-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/welfare-06.jpg" alt="食事を楽しむ社員">
+            <h3 class="sub-recruit__welfare-item-title js-fadeup">従業員間食事会補助</h3>
+            <p class="sub-recruit__welfare-text js-fadeup">
               仲間との食事会や懇親会の費用を会社が補助。美味しいものを囲み、役職の壁なくフラットに笑い合える時間を会社がサポートしています。
             </p>
           </article>
 
           <article class="sub-recruit__welfare-item">
-            <img class="sub-recruit__welfare-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/welfare-07.jpg" alt="交通費を確認する様子">
-            <h3 class="sub-recruit__welfare-item-title">残業手当・交通費実費支給</h3>
-            <p class="sub-recruit__welfare-text">
+            <img class="sub-recruit__welfare-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/welfare-07.jpg" alt="交通費を確認する様子">
+            <h3 class="sub-recruit__welfare-item-title js-fadeup">残業手当・交通費実費支給</h3>
+            <p class="sub-recruit__welfare-text js-fadeup">
               頑張った分は手当としてしっかり還元。通勤にかかる費用も実費でお支払いします。クリーンで嘘のない、誠実な労働環境を徹底しています。
             </p>
           </article>
 
           <article class="sub-recruit__welfare-item">
-            <img class="sub-recruit__welfare-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/welfare-08.jpg" alt="健康診断の書類">
-            <h3 class="sub-recruit__welfare-item-title">健康診断</h3>
-            <p class="sub-recruit__welfare-text">
+            <img class="sub-recruit__welfare-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/welfare-08.jpg" alt="健康診断の書類">
+            <h3 class="sub-recruit__welfare-item-title js-fadeup">健康診断</h3>
+            <p class="sub-recruit__welfare-text js-fadeup">
               1年に1回、全従業員の健康診断を実施しています。体が資本の仕事だからこそ、日々の健康維持と安心を会社がしっかり支える仕組みです。
             </p>
           </article>
 
           <article class="sub-recruit__welfare-item">
-            <img class="sub-recruit__welfare-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/welfare-09.jpg" alt="握手をするビジネスパーソン">
-            <h3 class="sub-recruit__welfare-item-title">正社員紹介制度</h3>
-            <p class="sub-recruit__welfare-text">
+            <img class="sub-recruit__welfare-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/welfare-09.jpg" alt="握手をするビジネスパーソン">
+            <h3 class="sub-recruit__welfare-item-title js-fadeup">正社員紹介制度</h3>
+            <p class="sub-recruit__welfare-text js-fadeup">
               知人を紹介して入社が決まった場合に報奨金を支給。「大切な人を誘いたくなる会社」であることを、社員への還元という形で表しています。
             </p>
           </article>
 
           <article class="sub-recruit__welfare-item">
-            <img class="sub-recruit__welfare-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/welfare-10.jpg" alt="福利厚生を利用する様子">
-            <h3 class="sub-recruit__welfare-item-title">その他</h3>
-            <p class="sub-recruit__welfare-text">
+            <img class="sub-recruit__welfare-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/welfare-10.jpg" alt="福利厚生を利用する様子">
+            <h3 class="sub-recruit__welfare-item-title js-fadeup">その他</h3>
+            <p class="sub-recruit__welfare-text js-fadeup">
               上記以外に新福利厚生をいろいろ拡充準備中でして、今月中には運用開始予定です。決まり次第報告しますので反映させてほしいです。
             </p>
           </article>
@@ -371,7 +371,7 @@
 
     <section class="sub-recruit__jobs">
       <div class="sub-recruit__jobs-inner inner">
-        <div class="sub-recruit__jobs-heading">
+        <div class="sub-recruit__jobs-heading js-slidein">
           <h2 class="sub-recruit__jobs-title site-heading--subpage-en">jobs</h2>
           <p class="sub-recruit__jobs-subtitle site-heading-subtitle--default">募集要項</p>
         </div>
@@ -395,7 +395,7 @@
         </div>
 
         <div class="sub-recruit__jobs-bottom">
-          <a class="sub-recruit__jobs-button site-wide-button site-wide-button--blue" href="<?php echo esc_url(get_post_type_archive_link('job')); ?>">
+          <a class="sub-recruit__jobs-button site-wide-button site-wide-button--blue js-slidein" href="<?php echo esc_url(get_post_type_archive_link('job')); ?>">
             <span>募集要項一覧</span>
             <span class="site-arrow-icon site-wide-button__icon" aria-hidden="true">
               <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt="">
@@ -407,17 +407,17 @@
 
     <section class="sub-recruit__entry">
       <div class="sub-recruit__entry-inner">
-        <div class="sub-recruit__entry-background">
+        <div class="sub-recruit__entry-background js-slidein">
           <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/recruit/entry.jpg" alt="現場で働くエコ・プランニングのスタッフ">
         </div>
         <div class="sub-recruit__entry-content">
-          <h2 class="sub-recruit__entry-title site-heading--section-en">entry</h2>
-          <p class="sub-recruit__entry-subtitle site-heading-subtitle--default">エントリー</p>
-          <p class="sub-recruit__entry-lead">
+          <h2 class="sub-recruit__entry-title site-heading--section-en js-slidein">entry</h2>
+          <p class="sub-recruit__entry-subtitle site-heading-subtitle--default js-slidein">エントリー</p>
+          <p class="sub-recruit__entry-lead js-slidein">
             常に変化し続けて<br>
             私たちと成長しませんか
           </p>
-          <a class="sub-recruit__entry-button site-wide-button site-wide-button--white" href="<?php echo esc_url(home_url('/contact/?subject=recruit')); ?>">
+          <a class="sub-recruit__entry-button site-wide-button site-wide-button--white js-slidein" href="<?php echo esc_url(home_url('/contact/?subject=recruit')); ?>">
             <span>エントリーはこちら</span>
             <span class="site-arrow-icon site-wide-button__icon" aria-hidden="true">
               <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-blue.png" alt="">

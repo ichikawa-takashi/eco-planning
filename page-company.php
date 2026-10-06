@@ -30,18 +30,18 @@
 
     <section class="sub-company__history">
       <div class="sub-company__history-header inner">
-        <div class="sub-company__history-heading">
+        <div class="sub-company__history-heading js-slidein">
           <h2 class="sub-company__history-title site-heading--subpage-en">history</h2>
           <p class="sub-company__history-subtitle site-heading-subtitle--default">沿革</p>
         </div>
-        <p class="sub-company__history-lead">
+        <p class="sub-company__history-lead js-slidein">
           エコプランニングは創業50年、亀山に根差して40年<br>
           解体工事、産業廃棄物という業界で、環境や社会の為に様々な変化と挑戦をし続けて参りました。
         </p>
       </div>
 
       <div class="sub-company__history-slider-shell inner">
-        <div class="sub-company__history-slider swiper js-company-history-slider">
+        <div class="sub-company__history-slider swiper js-company-history-slider js-fadein">
           <div class="swiper-wrapper">
             <article class="sub-company__history-card swiper-slide">
               <p class="sub-company__history-year">1966</p>
@@ -122,6 +122,62 @@
               </p>
               <img class="sub-company__history-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/company/history-2015.png" alt="エコ・プランニングのスタッフ">
             </article>
+
+            <article class="sub-company__history-card swiper-slide">
+              <p class="sub-company__history-year">2018</p>
+              <p class="sub-company__history-text">
+                ペルーでの海外事業展開を開始。現地における廃棄物の適正処理・リサイクル事業を通じ、国際的な循環型社会の実現に向けた取り組みを推進。
+              </p>
+              <img class="sub-company__history-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/no-image.jpg" alt="">
+            </article>
+
+            <article class="sub-company__history-card swiper-slide">
+              <p class="sub-company__history-year">2023</p>
+              <p class="sub-company__history-text">
+                「みえWAKUWAKUフェスティバル」を初開催。以降、毎年開催。
+              </p>
+              <img class="sub-company__history-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/no-image.jpg" alt="">
+            </article>
+
+            <article class="sub-company__history-card swiper-slide">
+              <p class="sub-company__history-year">2024</p>
+              <p class="sub-company__history-text">
+                石川県の災害復興支援に参画。現地での解体工事を通じ、復旧・復興に貢献。
+              </p>
+              <img class="sub-company__history-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/no-image.jpg" alt="">
+            </article>
+
+            <article class="sub-company__history-card swiper-slide">
+              <p class="sub-company__history-year">2025</p>
+              <p class="sub-company__history-text">
+                三重県内の建設業界で初となる「DX認定」を取得。デジタル技術を活用した業務変革・サービス向上への取り組みを本格化。
+              </p>
+              <img class="sub-company__history-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/no-image.jpg" alt="">
+            </article>
+
+            <article class="sub-company__history-card swiper-slide">
+              <p class="sub-company__history-year">2026</p>
+              <p class="sub-company__history-text">
+                ミャンマーからのインターンシップ生を受け入れ。人材育成と国際交流を通じた支援・社会貢献に取り組む。
+              </p>
+              <img class="sub-company__history-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/no-image.jpg" alt="">
+            </article>
+
+            <article class="sub-company__history-card swiper-slide">
+              <p class="sub-company__history-year">2026</p>
+              <p class="sub-company__history-text">
+                温室効果ガス排出削減目標について「SBTi認定」を取得。持続可能な社会の実現に向けた環境への取り組みを推進。
+              </p>
+              <img class="sub-company__history-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/no-image.jpg" alt="">
+            </article>
+
+            <article class="sub-company__history-card swiper-slide">
+              <p class="sub-company__history-year">2026</p>
+              <p class="sub-company__history-text">
+                「健康事業所宣言」を実施。従業員の健康づくりと働きやすい職場環境の実現に向けた取り組みを推進。
+              </p>
+              <img class="sub-company__history-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/no-image.jpg" alt="">
+            </article>
           </div>
         </div>
         <button class="sub-company__history-navigation sub-company__history-navigation--prev" type="button" aria-label="前の沿革を見る">
@@ -135,59 +191,59 @@
 
     <section class="sub-company__data">
       <div class="sub-company__data-inner inner">
-        <div class="sub-company__section-heading">
+        <div class="sub-company__section-heading js-slidein">
           <h2 class="sub-company__section-title site-heading--subpage-en">company data</h2>
           <p class="sub-company__section-subtitle site-heading-subtitle--default">会社概要</p>
         </div>
 
         <dl class="sub-company__data-list">
-          <div class="sub-company__data-row">
+          <div class="sub-company__data-row js-fadeup">
             <dt class="sub-company__data-term">会社名</dt>
             <dd class="sub-company__data-description">株式会社 エコ・プランニング</dd>
           </div>
-          <div class="sub-company__data-row">
+          <div class="sub-company__data-row js-fadeup">
             <dt class="sub-company__data-term">代表者</dt>
             <dd class="sub-company__data-description">吉田 孔顕</dd>
           </div>
-          <div class="sub-company__data-row">
+          <div class="sub-company__data-row js-fadeup">
             <dt class="sub-company__data-term">本社事務所（津工場）</dt>
             <dd class="sub-company__data-description">
               <p>〒514-1254 三重県津市森町2343 <a class="sub-company__map-link" target="_blank" href="https://maps.app.goo.gl/psASZtC7WQiid4r76">[Google Map]</a></p>
               <p class="sub-company__data-line">TEL：059-256-3003 / FAX：059-256-3290</p>
             </dd>
           </div>
-          <div class="sub-company__data-row">
+          <div class="sub-company__data-row js-fadeup">
             <dt class="sub-company__data-term">三重営業所（亀山工場）</dt>
             <dd class="sub-company__data-description">
               <p>〒519-0134 三重県亀山市中庄町630 <a class="sub-company__map-link" target="_blank" href="https://maps.app.goo.gl/auzxpNxQFkMa8PSK6">[Google Map]</a></p>
               <p class="sub-company__data-line">TEL：0595-83-3330 / FAX：0595-82-0401</p>
             </dd>
           </div>
-          <div class="sub-company__data-row">
+          <div class="sub-company__data-row js-fadeup">
             <dt class="sub-company__data-term">東京オフィス</dt>
             <dd class="sub-company__data-description">
               <p>〒124-0023 東京都葛飾区東新小岩5-2-20伊藤テクノ(株)様内 <a class="sub-company__map-link" target="_blank" href="https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%91%9B%E9%A3%BE%E5%8C%BA%E6%9D%B1%E6%96%B0%E5%B0%8F%E5%B2%A95-2-20">[Google Map]</a></p>
             </dd>
           </div>
-          <div class="sub-company__data-row">
+          <div class="sub-company__data-row js-fadeup">
             <dt class="sub-company__data-term">ペルーオフィス</dt>
             <dd class="sub-company__data-description">
               <p>Pio XII 449, Santiago de Surco 15023, Lima, Peru <a class="sub-company__map-link" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Pio+XII+449%2C+Santiago+de+Surco+15023%2C+Lima%2C+Peru">[Google Map]</a></p>
             </dd>
           </div>
-          <div class="sub-company__data-row">
+          <div class="sub-company__data-row js-fadeup">
             <dt class="sub-company__data-term">設立</dt>
             <dd class="sub-company__data-description">平成10年4月13日</dd>
           </div>
-          <div class="sub-company__data-row">
+          <div class="sub-company__data-row js-fadeup">
             <dt class="sub-company__data-term">資本金</dt>
             <dd class="sub-company__data-description">30,000千円</dd>
           </div>
-          <div class="sub-company__data-row">
+          <div class="sub-company__data-row js-fadeup">
             <dt class="sub-company__data-term">従業員数</dt>
             <dd class="sub-company__data-description">25名（専属従事者30名）</dd>
           </div>
-          <div class="sub-company__data-row">
+          <div class="sub-company__data-row js-fadeup">
             <dt class="sub-company__data-term">取引銀行</dt>
             <dd class="sub-company__data-description">
               <ul class="sub-company__data-lines">
@@ -196,7 +252,7 @@
               </ul>
             </dd>
           </div>
-          <div class="sub-company__data-row">
+          <div class="sub-company__data-row js-fadeup">
             <dt class="sub-company__data-term">関連会社</dt>
             <dd class="sub-company__data-description">
               <ul class="sub-company__data-lines">
@@ -204,11 +260,11 @@
               </ul>
             </dd>
           </div>
-          <div class="sub-company__data-row">
+          <div class="sub-company__data-row js-fadeup">
             <dt class="sub-company__data-term">取引業者数</dt>
             <dd class="sub-company__data-description">約1400社</dd>
           </div>
-          <div class="sub-company__data-row">
+          <div class="sub-company__data-row js-fadeup">
             <dt class="sub-company__data-term">主要取引先</dt>
             <dd class="sub-company__data-description">
               <ul class="sub-company__data-lines">
@@ -221,7 +277,7 @@
               </ul>
             </dd>
           </div>
-          <div class="sub-company__data-row">
+          <div class="sub-company__data-row js-fadeup">
             <dt class="sub-company__data-term">加盟団体</dt>
             <dd class="sub-company__data-description">
               <ul class="sub-company__data-lines">
@@ -235,7 +291,7 @@
               </ul>
             </dd>
           </div>
-          <div class="sub-company__data-row">
+          <div class="sub-company__data-row js-fadeup">
             <dt class="sub-company__data-term">資格・許認可</dt>
             <dd class="sub-company__data-description">
               <ul class="sub-company__data-lines">
@@ -248,19 +304,19 @@
               </ul>
             </dd>
           </div>
-          <div class="sub-company__data-row">
+          <div class="sub-company__data-row js-fadeup">
             <dt class="sub-company__data-term">車両台数</dt>
             <dd class="sub-company__data-description">42台</dd>
           </div>
-          <div class="sub-company__data-row">
+          <div class="sub-company__data-row js-fadeup">
             <dt class="sub-company__data-term">保有重機</dt>
             <dd class="sub-company__data-description">32台</dd>
           </div>
-          <div class="sub-company__data-row">
+          <div class="sub-company__data-row js-fadeup">
             <dt class="sub-company__data-term">廃棄物 コンテナ設置数</dt>
             <dd class="sub-company__data-description">約1000箇所</dd>
           </div>
-          <div class="sub-company__data-row">
+          <div class="sub-company__data-row js-fadeup">
             <dt class="sub-company__data-term">事業内容</dt>
             <dd class="sub-company__data-description">
               <ul class="sub-company__data-lines">
@@ -272,7 +328,7 @@
               </ul>
             </dd>
           </div>
-          <div class="sub-company__data-row">
+          <div class="sub-company__data-row js-fadeup">
             <dt class="sub-company__data-term">営業時間・定休日</dt>
             <dd class="sub-company__data-description">
               <ul class="sub-company__data-lines">
@@ -281,7 +337,7 @@
               </ul>
             </dd>
           </div>
-          <div class="sub-company__data-row">
+          <div class="sub-company__data-row js-fadeup">
             <dt class="sub-company__data-term">対応エリア</dt>
             <dd class="sub-company__data-description">
               <p>解体工事 / アスベスト調査・除去工事 / 不用品回収</p>
@@ -297,28 +353,28 @@
 
     <section class="sub-company__access">
       <div class="sub-company__access-inner inner">
-        <div class="sub-company__section-heading sub-company__section-heading--white">
+        <div class="sub-company__section-heading sub-company__section-heading--white js-slidein">
           <h2 class="sub-company__section-title site-heading--section-en">access</h2>
           <p class="sub-company__section-subtitle site-heading-subtitle--default">アクセス</p>
         </div>
 
         <div class="sub-company__access-list">
           <article class="sub-company__access-item">
-            <div class="sub-company__access-map">
+            <div class="sub-company__access-map js-slidein-stagger">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.550744499713!2d136.42306107609824!3d34.691286383717156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60040e961e9a6ebf%3A0xa7f8cfaef1b3c023!2z44CSNTE0LTEyNTQg5LiJ6YeN55yM5rSl5biC5qOu55S677yS77yT77yU77yT!5e0!3m2!1sja!2sjp!4v1785066251277!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
             </div>
-            <h3 class="sub-company__access-name">本社（津工場）</h3>
-            <p class="sub-company__access-address">三重県津市森町2343 <a class="sub-company__map-link sub-company__map-link--white" target="_blank" href="https://maps.app.goo.gl/f6KtPGsMH84fD15B9">[Google Map]</a></p>
-            <p class="sub-company__access-tel">TEL：059-256-3003 / FAX：059-256-3290</p>
+            <h3 class="sub-company__access-name js-fadeup">本社（津工場）</h3>
+            <p class="sub-company__access-address js-fadeup">三重県津市森町2343 <a class="sub-company__map-link sub-company__map-link--white" target="_blank" href="https://maps.app.goo.gl/f6KtPGsMH84fD15B9">[Google Map]</a></p>
+            <p class="sub-company__access-tel js-fadeup">TEL：059-256-3003 / FAX：059-256-3290</p>
           </article>
 
           <article class="sub-company__access-item">
-            <div class="sub-company__access-map">
+            <div class="sub-company__access-map js-slidein-stagger">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.192586474655!2d136.47286187610288!3d34.82625007646545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6003f5a72814af5b%3A0x93a92b2a299c4964!2z44CSNTE5LTAxMzQg5LiJ6YeN55yM5LqA5bGx5biC5Lit5bqE55S677yW77yT77yQ!5e0!3m2!1sja!2sjp!4v1785066289484!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
             </div>
-            <h3 class="sub-company__access-name">三重営業所（亀山工場）</h3>
-            <p class="sub-company__access-address">三重県亀山市中庄町630 <a class="sub-company__map-link sub-company__map-link--white" target="_blank" href="https://maps.app.goo.gl/auzxpNxQFkMa8PSK6">[Google Map]</a></p>
-            <p class="sub-company__access-tel">TEL：0595-83-3330 / FAX：0595-82-0401</p>
+            <h3 class="sub-company__access-name js-fadeup">三重営業所（亀山工場）</h3>
+            <p class="sub-company__access-address js-fadeup">三重県亀山市中庄町630 <a class="sub-company__map-link sub-company__map-link--white" target="_blank" href="https://maps.app.goo.gl/auzxpNxQFkMa8PSK6">[Google Map]</a></p>
+            <p class="sub-company__access-tel js-fadeup">TEL：0595-83-3330 / FAX：0595-82-0401</p>
           </article>
         </div>
       </div>
@@ -326,17 +382,17 @@
 
     <section class="sub-company__privacy" id="privacy">
       <div class="sub-company__privacy-inner inner">
-        <div class="sub-company__section-heading">
+        <div class="sub-company__section-heading js-slidein">
           <h2 class="sub-company__section-title site-heading--subpage-en">privacy policy</h2>
           <p class="sub-company__section-subtitle site-heading-subtitle--default">プライバシーポリシー</p>
         </div>
 
-        <p class="sub-company__privacy-introduction">
+        <p class="sub-company__privacy-introduction js-slidein">
           株式会社 エコ・プランニング（以下「弊社」）は、弊社の運営するウェブサイトをご利用いただくお客様のプライバシーの保護に努めています。 弊社が、サービスを提供するためには、お客様個人に関する情報（以下、「個人情報」といいます）を集めなければなりませんが、弊社でその情報のプライバシーを守り、秘密を保持するために様々な手段を講じています。弊社ではお客様のプライバシーを尊重しています。 弊社は個人情報を売買したり、交換したり、その他の方法で不正使用することには一切関与しておりません。 このウェブサイトをご利用になり、個人情報を供与することで、あなたはこのプライバシーポリシーに説明されている個人情報の取り扱い等について受諾し、承認したものとみなされます。
         </p>
 
         <div class="sub-company__privacy-content">
-          <section class="sub-company__privacy-block">
+          <section class="sub-company__privacy-block js-fadeup">
             <h3 class="sub-company__privacy-heading">個人情報収集の目的</h3>
             <p class="sub-company__privacy-text">お客様から集めた個人情報は、以下の目的で利用します。</p>
             <ul class="sub-company__privacy-list">
@@ -346,7 +402,7 @@
             </ul>
           </section>
 
-          <section class="sub-company__privacy-block">
+          <section class="sub-company__privacy-block js-fadeup">
             <h3 class="sub-company__privacy-heading">個人情報収集の個人情報の開示目的</h3>
             <p class="sub-company__privacy-text">
               下記の場合には、お客様の事前の同意なく弊社はお客様の個人情報を開示できるものとします。<br>
@@ -355,28 +411,28 @@
             </p>
           </section>
 
-          <section class="sub-company__privacy-block">
+          <section class="sub-company__privacy-block js-fadeup">
             <h3 class="sub-company__privacy-heading">個人情報の管理</h3>
             <p class="sub-company__privacy-text">
               お客様の個人情報は、弊社が適切な管理を行なうとともに、漏洩、滅失、毀損の防止のために最大限の注意を払っております。尚、弊社ではお客様によりよいサービスを提供するため、個人情報を適切に取り扱っていると認められる外部の委託先に、個人情報の取り扱いの一部を委託しています。委託先は、委託業務を行なうために必要な範囲で個人情報を利用します。この場合、弊社は、委託先との間で個人情報の取り扱いについて適切な契約を締結し、適切な管理を要求いたします。
             </p>
           </section>
 
-          <section class="sub-company__privacy-block">
+          <section class="sub-company__privacy-block js-fadeup">
             <h3 class="sub-company__privacy-heading">従業員の監督方法</h3>
             <p class="sub-company__privacy-text">
               個人情報保護の重要性について、適時または定期的に適切な教育を行っております。また、弊社が個人情報を管理する際は、管理責任者を置き、適切な管理を行うとともに、外部への流出防止に努めます。さらに、外部からの不正アクセス、改ざん等の危険に対しては、適切かつ合理的な範囲の安全対策を実施し、お客様の個人情報保護に努めます。個人情報に係るデータベース等のアクセスについては、アクセス権を有するものを限定し、社内においても不正な利用がなされないように厳重に管理します。
             </p>
           </section>
 
-          <section class="sub-company__privacy-block">
+          <section class="sub-company__privacy-block js-fadeup">
             <h3 class="sub-company__privacy-heading">リンク先</h3>
             <p class="sub-company__privacy-text">
               リンク先での個人情報の利用については、弊社のプライバシーの考え方ではなく、リンク先自身のプライバシーの考え方に従って行われます。
             </p>
           </section>
 
-          <section class="sub-company__privacy-block">
+          <section class="sub-company__privacy-block js-fadeup">
             <h3 class="sub-company__privacy-heading">このプライバシーの改訂</h3>
             <p class="sub-company__privacy-text">
               弊社では、お客様に提供するサービス向上のため、上記各項目の内容を適宜見直し、改善してまいります。本書を変更する場合は、この変更について本ウェブサイトに掲載します。最新のプライバシー・ステートメントをサイトに掲載することにより、常にプライバシー情報の収集や使用方法を知ることができます。定期的にご確認くださいますようお願い申し上げます。また、当初情報が収集された時点で述べた内容と異なった方法で個人情報を使用する場合も、本ウェブサイトに掲載または電子メールにてご連絡させていただきます。<br>本ウェブサイトが当初と異なった方法で個人情報の使用をしてよいかどうかについての選択権は、お客様が有しております。
@@ -392,25 +448,25 @@
           <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/contact-bg.jpg" alt="">
         </div>
         <div class="site-contact__visual-content">
-          <div class="site-contact__heading">
+          <div class="site-contact__heading js-slidein">
             <h2 class="site-contact__title site-heading--section-en">contact</h2>
             <p class="site-contact__subtitle site-heading-subtitle--default">お問い合わせ</p>
           </div>
-          <p class="site-contact__lead">
+          <p class="site-contact__lead js-slidein">
             解体、産業廃棄物回収・持込、<br>
             不用品回収からハウスクリーニングまで<br>
             お困りごとは何でもお気軽にご相談ください。
           </p>
 
           <div class="site-contact__list">
-            <div class="site-contact__card site-contact__card--phone">
+            <div class="site-contact__card site-contact__card--phone js-slidein-stagger">
               <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-phone.png" alt="">
               <p class="site-contact__card-title">お電話でのお問い合わせ</p>
               <a class="site-contact__phone-number" href="tel:0595833330">0595-83-3330</a>
               <p class="site-contact__note">お電話の際に「ホームページを見て」<br>とお伝えください。</p>
             </div>
 
-            <div class="site-contact__card site-contact__card--mail">
+            <div class="site-contact__card site-contact__card--mail js-slidein-stagger">
               <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-mail.png" alt="">
               <p class="site-contact__card-title">メールでのお問い合わせ</p>
               <a class="site-contact__button" href="<?php echo esc_url(home_url('/contact/')); ?>">
@@ -421,7 +477,7 @@
               </a>
             </div>
 
-            <div class="site-contact__card site-contact__card--line">
+            <div class="site-contact__card site-contact__card--line js-slidein-stagger">
               <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-line.png" alt="">
               <p class="site-contact__card-title">LINEでのお問い合わせ</p>
               <a class="site-contact__button" href="https://line.me/R/ti/p/@lia0806h" target="_blank" rel="noopener noreferrer">

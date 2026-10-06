@@ -2,6 +2,11 @@
   background-color: #dae5ea;
 }
 
+body:not(.single) .sub-jobs__first-view,
+body:not(.single) .sub-jobs__fv {
+  height: auto;
+}
+
 .sub-jobs__fv {
   aspect-ratio: auto;
   min-height: 0;

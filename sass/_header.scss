@@ -1,5 +1,5 @@
 .site-header {
-  position: fixed;
+  position: absolute;
   z-index: 10;
   top: rem(30);
   left: 0;
@@ -17,6 +17,7 @@
 }
 
 .site-header.is-scrolled {
+  position: fixed;
   top: 0;
   background-color: $white;
   color: $black;

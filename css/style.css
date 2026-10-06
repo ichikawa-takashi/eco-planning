@@ -1758,7 +1758,7 @@ a[href]::after {
 }
 
 .site-header {
-  position: fixed;
+  position: absolute;
   z-index: 10;
   top: 1.875rem;
   left: 0;
@@ -1773,6 +1773,7 @@ a[href]::after {
 }
 
 .site-header.is-scrolled {
+  position: fixed;
   top: 0;
   background-color: #ffffff;
   color: #000;
@@ -10700,7 +10701,8 @@ ol.sub-service-industrial-waste__recycling-result {
   margin-top: auto;
   margin-right: auto;
   margin-left: auto;
-  object-fit: contain;
+  border-radius: 50%;
+  object-fit: cover;
 }
 @media screen and (max-width: 768px) {
   .sub-company__history-image {
@@ -12682,6 +12684,11 @@ ol.sub-service-industrial-waste__recycling-result {
 
 .sub-jobs {
   background-color: #dae5ea;
+}
+
+body:not(.single) .sub-jobs__first-view,
+body:not(.single) .sub-jobs__fv {
+  height: auto;
 }
 
 .sub-jobs__fv {

@@ -232,6 +232,38 @@ function eco_planning_resource_hints($urls, $relation_type) {
 }
 add_filter('wp_resource_hints', 'eco_planning_resource_hints', 10, 2);
 
+/**
+ * OGP画像：アイキャッチや個別設定がないページはテーマの ogp.png を使用（SEO SIMPLE PACK）
+ */
+function eco_planning_default_og_image($og_image)
+{
+    $site_og_image = class_exists('SSP_Data') ? SSP_Data::$ogp['og_image'] : '';
+
+    if (!$og_image || $og_image === $site_og_image) {
+        return get_template_directory_uri() . '/img/ogp.png';
+    }
+
+    return $og_image;
+}
+add_filter('ssp_output_og_image', 'eco_planning_default_og_image');
+
+/**
+ * ファビコン（カスタマイザーでサイトアイコン設定時はそちらを優先）
+ */
+function eco_planning_favicon()
+{
+    if (has_site_icon()) {
+        return;
+    }
+
+    $favicon = get_template_directory_uri() . '/img/favicon.png';
+    ?>
+    <link rel="icon" href="<?php echo esc_url($favicon); ?>" type="image/png">
+    <link rel="apple-touch-icon" href="<?php echo esc_url($favicon); ?>">
+    <?php
+}
+add_action('wp_head', 'eco_planning_favicon');
+
 
 function enqueue_custom_styles_and_scripts() {
     // Google Fonts
@@ -446,6 +478,103 @@ function eco_planning_render_pagination()
         </ol>
     </nav>
     <?php
+}
+
+/**
+ * トップページのニュース欄への固定表示チェックボックス
+ */
+function eco_planning_register_top_news_pin_meta_box()
+{
+    add_meta_box(
+        'eco_planning_top_news_pin',
+        'トップページ新着情報への固定表示',
+        'eco_planning_render_top_news_pin_meta_box',
+        'post',
+        'side',
+        'default'
+    );
+}
+add_action('add_meta_boxes', 'eco_planning_register_top_news_pin_meta_box');
+
+function eco_planning_render_top_news_pin_meta_box($post)
+{
+    wp_nonce_field('eco_planning_save_top_news_pin', 'eco_planning_top_news_pin_nonce');
+    $is_pinned = (bool) get_post_meta($post->ID, '_eco_planning_top_news_pinned', true);
+    ?>
+    <label>
+        <input type="checkbox" name="eco_planning_top_news_pinned" value="1" <?php checked($is_pinned); ?>>
+        トップページの新着情報に固定表示する
+    </label>
+    <p class="description">最大3件表示中、選択した記事が新しい順に先頭表示され、残りの枠は最新記事で埋まります。</p>
+    <?php
+}
+
+function eco_planning_save_top_news_pin_meta($post_id)
+{
+    if (!isset($_POST['eco_planning_top_news_pin_nonce']) || !wp_verify_nonce($_POST['eco_planning_top_news_pin_nonce'], 'eco_planning_save_top_news_pin')) {
+        return;
+    }
+
+    if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) {
+        return;
+    }
+
+    if (!current_user_can('edit_post', $post_id)) {
+        return;
+    }
+
+    if ('post' !== get_post_type($post_id)) {
+        return;
+    }
+
+    if (!empty($_POST['eco_planning_top_news_pinned'])) {
+        update_post_meta($post_id, '_eco_planning_top_news_pinned', '1');
+    } else {
+        delete_post_meta($post_id, '_eco_planning_top_news_pinned');
+    }
+}
+add_action('save_post', 'eco_planning_save_top_news_pin_meta');
+
+/**
+ * トップページの新着情報に表示する記事を取得
+ * 固定表示に選択された記事（新しい順）を先頭に、残りの枠を最新記事で埋める
+ */
+function eco_planning_get_top_news_posts($limit = 3)
+{
+    $base_args = [
+        'post_type'           => 'post',
+        'post_status'         => 'publish',
+        'no_found_rows'       => true,
+        'ignore_sticky_posts' => true,
+        'orderby'             => 'date',
+        'order'               => 'DESC',
+        'tax_query'           => [[
+            'taxonomy' => 'staff',
+            'operator' => 'NOT EXISTS',
+        ]],
+    ];
+
+    $pinned_query = new WP_Query(array_merge($base_args, [
+        'posts_per_page' => $limit,
+        'meta_key'       => '_eco_planning_top_news_pinned',
+        'meta_value'     => '1',
+    ]));
+    $pinned_posts = $pinned_query->posts;
+
+    $remaining = $limit - count($pinned_posts);
+    if ($remaining <= 0) {
+        return $pinned_posts;
+    }
+
+    $latest_query = new WP_Query(array_merge($base_args, [
+        'posts_per_page' => $remaining,
+        'meta_query'     => [[
+            'key'     => '_eco_planning_top_news_pinned',
+            'compare' => 'NOT EXISTS',
+        ]],
+    ]));
+
+    return array_merge($pinned_posts, $latest_query->posts);
 }
 
 function eco_planning_render_term_links($taxonomy, $show_all = false)

@@ -16,7 +16,7 @@
     </section>
 
     <section class="sub-service-detail__visual">
-      <div class="sub-service-detail__visual-main">
+      <div class="sub-service-detail__visual-main js-slidein">
         <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/service-demolition.jpg" alt="解体工事を行うスタッフ">
       </div>
 
@@ -40,11 +40,11 @@
 
     <section class="sub-service-detail__introduction">
       <div class="sub-service-detail__introduction-inner inner">
-        <h2 class="sub-service-detail__introduction-title site-heading--page-jp">
+        <h2 class="sub-service-detail__introduction-title site-heading--page-jp js-fadein">
           特許技術が証明する高い解体スキルと、<br>
           ワンストップ体制で実現する手続きゼロの安心感
         </h2>
-        <p class="sub-service-detail__introduction-text">
+        <p class="sub-service-detail__introduction-text js-fadein">
           エコ・プランニングは、40年を超える歴史の中で多種多様な解体工事を手掛けてきました。一般的な木造住宅・戸建から店舗、工場設備、橋梁まで幅広く対応し、過去にはヘリコプターを活用した高層ホテルの解体や独自の特許技術によるトンネル撤去など、高度な専門知識を要する案件も多数経験しています。弊社の最大の強みは、解体施工から廃棄物の運搬、自社中間処理場および関連会社での最終処分まで一貫して担う「ワンストップ体制」です。複雑な処理計画の策定や現地確認、マニフェスト管理といった煩雑な手続きをすべて弊社が代行するため、お客様は余計な手間をかけることなく工事の完了を迎えていただけます。電子マニフェスト・電子契約にも完全対応し、迅速かつ正確な事務処理を実現。自社施工中心の体制により現場への指示伝達もスムーズで、急な仕様変更にも柔軟かつ迅速に対応いたします。大規模ビルから小規模な家屋・付属建物まで、安心してお任せください。
         </p>
       </div>
@@ -52,22 +52,22 @@
 
     <section class="sub-service-demolition__concerns">
       <div class="sub-service-demolition__concerns-inner inner">
-        <h2 class="sub-service-demolition__section-title">解体・アスベストでお困りごとはないですか？</h2>
+        <h2 class="sub-service-demolition__section-title js-slidein">解体・アスベストでお困りごとはないですか？</h2>
 
         <ul class="sub-service-demolition__concern-list">
-          <li class="sub-service-demolition__concern-item">
+          <li class="sub-service-demolition__concern-item js-slidein-stagger">
             <div class="sub-service-demolition__concern-icon">
               <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/concern-procedure.jpg" alt="">
             </div>
             <p class="sub-service-demolition__concern-text">業者調整や<br>書類手続きが煩雑</p>
           </li>
-          <li class="sub-service-demolition__concern-item">
+          <li class="sub-service-demolition__concern-item js-slidein-stagger">
             <div class="sub-service-demolition__concern-icon">
               <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/concern-asbestos.jpg" alt="">
             </div>
             <p class="sub-service-demolition__concern-text">アスベストの<br>法令対応が不安</p>
           </li>
-          <li class="sub-service-demolition__concern-item">
+          <li class="sub-service-demolition__concern-item js-slidein-stagger">
             <div class="sub-service-demolition__concern-icon">
               <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/concern-neighbor.jpg" alt="">
             </div>
@@ -75,7 +75,7 @@
           </li>
         </ul>
 
-        <div class="sub-service-demolition__solution">
+        <div class="sub-service-demolition__solution js-slidein">
           <h3 class="sub-service-demolition__solution-title site-heading--primary-jp">そんなお困りごとはエコプランニングにおまかせください</h3>
           <p class="sub-service-demolition__solution-text">
             通常、廃棄物の処分業者と解体工事業者は別の場合が多く、解体工事で発生した廃棄物の処理計画書や現地確認、適正処理を証明するマニフェスト管理など、手続きが非常に煩雑です。エコ・プランニングなら解体から廃棄物処理まで一括対応するため、複雑な手続きをすべてお任せいただけます。
@@ -84,105 +84,105 @@
 
         <ul class="sub-service-demolition__strength-list">
           <li class="sub-service-demolition__strength-item">
-            <span class="sub-service-demolition__check" aria-hidden="true">
+            <span class="sub-service-demolition__check js-slidein" aria-hidden="true">
               <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-check.png" alt="">
             </span>
-            <img class="sub-service-demolition__strength-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-demolition/strength-one-stop.jpg" alt="スタッフによる打ち合わせの様子">
-            <h3 class="sub-service-demolition__strength-title">「ワンストップ体制」で<br>手続きの手間をゼロに</h3>
-            <p class="sub-service-demolition__strength-text">解体工事の施工から発生した廃棄物の運搬、そして最終処分までを自社およびグループで一貫して対応することで、煩雑な調整作業を解消します。</p>
+            <img class="sub-service-demolition__strength-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-demolition/strength-one-stop.jpg" alt="スタッフによる打ち合わせの様子">
+            <h3 class="sub-service-demolition__strength-title js-fadeup">「ワンストップ体制」で<br>手続きの手間をゼロに</h3>
+            <p class="sub-service-demolition__strength-text js-fadeup">解体工事の施工から発生した廃棄物の運搬、そして最終処分までを自社およびグループで一貫して対応することで、煩雑な調整作業を解消します。</p>
           </li>
           <li class="sub-service-demolition__strength-item">
-            <span class="sub-service-demolition__check" aria-hidden="true">
+            <span class="sub-service-demolition__check js-slidein" aria-hidden="true">
               <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-check.png" alt="">
             </span>
-            <img class="sub-service-demolition__strength-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-demolition/strength-asbestos.jpg" alt="アスベスト除去作業の様子">
-            <h3 class="sub-service-demolition__strength-title">有資格者と自社職人による<br>「安心のアスベスト対応」</h3>
-            <p class="sub-service-demolition__strength-text">初期の調査から高難度な除去作業まで、すべて自社の専門チームが責任を持って対応するため、品質と安全性を一貫して確保できます。</p>
+            <img class="sub-service-demolition__strength-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-demolition/strength-asbestos.jpg" alt="アスベスト除去作業の様子">
+            <h3 class="sub-service-demolition__strength-title js-fadeup">有資格者と自社職人による<br>「安心のアスベスト対応」</h3>
+            <p class="sub-service-demolition__strength-text js-fadeup">初期の調査から高難度な除去作業まで、すべて自社の専門チームが責任を持って対応するため、品質と安全性を一貫して確保できます。</p>
           </li>
           <li class="sub-service-demolition__strength-item">
-            <span class="sub-service-demolition__check" aria-hidden="true">
+            <span class="sub-service-demolition__check js-slidein" aria-hidden="true">
               <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-check.png" alt="">
             </span>
-            <img class="sub-service-demolition__strength-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-demolition/strength-compliance.jpg" alt="解体現場を確認するスタッフ">
-            <h3 class="sub-service-demolition__strength-title">豊富な実績と徹底した<br>「安全・コンプライアンス管理」</h3>
-            <p class="sub-service-demolition__strength-text">長年の経験に裏打ちされた技術力と社内の厳格なチェック体制により、不法投棄リスクの排除と近隣への配慮を徹底します。</p>
+            <img class="sub-service-demolition__strength-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-demolition/strength-compliance.jpg" alt="解体現場を確認するスタッフ">
+            <h3 class="sub-service-demolition__strength-title js-fadeup">豊富な実績と徹底した<br>「安全・コンプライアンス管理」</h3>
+            <p class="sub-service-demolition__strength-text js-fadeup">長年の経験に裏打ちされた技術力と社内の厳格なチェック体制により、不法投棄リスクの排除と近隣への配慮を徹底します。</p>
           </li>
         </ul>
       </div>
     </section>
 
     <section class="sub-service-demolition__consultation">
-      <div class="sub-service-demolition__consultation-image">
+      <div class="sub-service-demolition__consultation-image js-slidein">
         <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-demolition/consultation.jpg" alt="産業廃棄物を運搬するスタッフ">
       </div>
       <div class="sub-service-demolition__consultation-inner inner">
-        <h2 class="sub-service-demolition__section-title">個人・法人を問わずご相談を承ります。</h2>
+        <h2 class="sub-service-demolition__section-title js-slidein">個人・法人を問わずご相談を承ります。</h2>
         <ul class="sub-service-demolition__consultation-list">
-          <li class="sub-service-demolition__consultation-item">「どこに、何を、<br>どう頼めばいいのか」<br>という漠然とした不安</li>
-          <li class="sub-service-demolition__consultation-item">「あちこち高い請求が<br>来るのではないか」という<br>費用への不安</li>
-          <li class="sub-service-demolition__consultation-item">「近隣住民とのトラブルに<br>なるのではないか」<br>という心配</li>
-          <li class="sub-service-demolition__consultation-item">「こんな小さな<br>（あるいは特殊な）工事<br>でも受けてもらえるのか」<br>という遠慮</li>
+          <li class="sub-service-demolition__consultation-item js-slidein-stagger">「どこに、何を、<br>どう頼めばいいのか」<br>という漠然とした不安</li>
+          <li class="sub-service-demolition__consultation-item js-slidein-stagger">「あちこち高い請求が<br>来るのではないか」という<br>費用への不安</li>
+          <li class="sub-service-demolition__consultation-item js-slidein-stagger">「近隣住民とのトラブルに<br>なるのではないか」<br>という心配</li>
+          <li class="sub-service-demolition__consultation-item js-slidein-stagger">「こんな小さな<br>（あるいは特殊な）工事<br>でも受けてもらえるのか」<br>という遠慮</li>
         </ul>
-        <p class="sub-service-demolition__consultation-text">創業40年超の実績と自社処分場を強みに、解体から処分まで一貫対応します。煩雑な調整を窓口一本で解消し、明確な見積もりによる透明性のある価格をご提示します。有資格者による安全なアスベスト除去や徹底した近隣配慮はもちろん、小規模から特殊な工事まで、どうぞお気軽にご相談ください。</p>
+        <p class="sub-service-demolition__consultation-text js-slidein">創業40年超の実績と自社処分場を強みに、解体から処分まで一貫対応します。煩雑な調整を窓口一本で解消し、明確な見積もりによる透明性のある価格をご提示します。有資格者による安全なアスベスト除去や徹底した近隣配慮はもちろん、小規模から特殊な工事まで、どうぞお気軽にご相談ください。</p>
       </div>
     </section>
 
     <section class="sub-service-demolition__range">
       <div class="sub-service-demolition__range-inner inner">
-        <div class="sub-service-detail__section-heading">
+        <div class="sub-service-detail__section-heading js-slidein">
           <h2 class="sub-service-detail__section-title site-heading--subpage-en">compatible range</h2>
           <p class="sub-service-detail__section-subtitle site-heading-subtitle--default">対応範囲</p>
         </div>
 
         <ol class="sub-service-demolition__range-list">
           <li class="sub-service-demolition__range-item">
-            <img class="sub-service-demolition__range-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-demolition/range-wooden.jpg" alt="木造建築物の解体工事">
-            <h3 class="sub-service-demolition__range-item-title">
+            <img class="sub-service-demolition__range-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-demolition/range-wooden.jpg" alt="木造建築物の解体工事">
+            <h3 class="sub-service-demolition__range-item-title js-slidein">
               <span class="sub-service-demolition__range-number">01</span>
               <span>木造解体（住宅等）</span>
             </h3>
-            <p class="sub-service-demolition__range-text">一般的な戸建て住宅をはじめ、店舗などの木造建築物の解体に幅広く対応しています。40年超の実績に基づく確かな技術で、騒音・振動・粉塵を最小限に抑え、近隣住民への配慮を徹底。建物の全解体はもちろん、内装のみのスケルトン工事やリフォームに伴う部分解体にも柔軟に対応いたします。		</p>
+            <p class="sub-service-demolition__range-text js-slidein">一般的な戸建て住宅をはじめ、店舗などの木造建築物の解体に幅広く対応しています。40年超の実績に基づく確かな技術で、騒音・振動・粉塵を最小限に抑え、近隣住民への配慮を徹底。建物の全解体はもちろん、内装のみのスケルトン工事やリフォームに伴う部分解体にも柔軟に対応いたします。		</p>
           </li>
           <li class="sub-service-demolition__range-item">
-            <img class="sub-service-demolition__range-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-demolition/range-steel.jpg" alt="鉄骨建築物の解体工事">
-            <h3 class="sub-service-demolition__range-item-title">
+            <img class="sub-service-demolition__range-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-demolition/range-steel.jpg" alt="鉄骨建築物の解体工事">
+            <h3 class="sub-service-demolition__range-item-title js-slidein">
               <span class="sub-service-demolition__range-number">02</span>
               <span>鉄骨解体</span>
             </h3>
-            <p class="sub-service-demolition__range-text">倉庫や工場、店舗などの鉄骨造建築物の解体にも対応しています。建物の規模や周辺環境を綿密に調査し、最適な重機と工法を選定することで、安全かつ迅速な解体を実現します。自社処分場を活かしたワンストップ体制により、解体で発生する鉄骨・廃材などの産業廃棄物も適正かつスムーズに処理いたします。</p>
+            <p class="sub-service-demolition__range-text js-slidein">倉庫や工場、店舗などの鉄骨造建築物の解体にも対応しています。建物の規模や周辺環境を綿密に調査し、最適な重機と工法を選定することで、安全かつ迅速な解体を実現します。自社処分場を活かしたワンストップ体制により、解体で発生する鉄骨・廃材などの産業廃棄物も適正かつスムーズに処理いたします。</p>
           </li>
           <li class="sub-service-demolition__range-item">
-            <img class="sub-service-demolition__range-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-demolition/range-rc.jpg" alt="RC造建築物の解体工事">
-            <h3 class="sub-service-demolition__range-item-title">
+            <img class="sub-service-demolition__range-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-demolition/range-rc.jpg" alt="RC造建築物の解体工事">
+            <h3 class="sub-service-demolition__range-item-title js-slidein">
               <span class="sub-service-demolition__range-number">03</span>
               <span>RC解体</span>
             </h3>
-            <p class="sub-service-demolition__range-text">堅固なマンションや大型ビルなど、RC造（鉄筋コンクリート造）の解体にも豊富な実績があります。大型重機の活用に加え、ヘリコプターを活用した高所・特殊解体や独自特許による撤去工事の経験も有しています。高度な技術力で騒音・振動への対策を徹底し、難易度の高い現場でも安全かつ確実な工事を実現します。</p>
+            <p class="sub-service-demolition__range-text js-slidein">堅固なマンションや大型ビルなど、RC造（鉄筋コンクリート造）の解体にも豊富な実績があります。大型重機の活用に加え、ヘリコプターを活用した高所・特殊解体や独自特許による撤去工事の経験も有しています。高度な技術力で騒音・振動への対策を徹底し、難易度の高い現場でも安全かつ確実な工事を実現します。</p>
           </li>
           <li class="sub-service-demolition__range-item">
-            <img class="sub-service-demolition__range-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-demolition/range-asbestos.jpg" alt="アスベスト除去工事">
-            <h3 class="sub-service-demolition__range-item-title">
+            <img class="sub-service-demolition__range-image js-slidein" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-demolition/range-asbestos.jpg" alt="アスベスト除去工事">
+            <h3 class="sub-service-demolition__range-item-title js-slidein">
               <span class="sub-service-demolition__range-number">04</span>
               <span>アスベスト除去工事</span>
             </h3>
-            <p class="sub-service-demolition__range-text">営業担当全員が「一般建築物 石綿含有建材調査者」の資格を保有しており、初期調査から正確な診断が可能です。除去作業も法を熟知した自社の熟練監督と職人がレベル1から3まですべて対応。調査から施工、最終処理まで自社で責任を持って一貫管理し、安心の環境をご提供します。</p>
+            <p class="sub-service-demolition__range-text js-slidein">営業担当全員が「一般建築物 石綿含有建材調査者」の資格を保有しており、初期調査から正確な診断が可能です。除去作業も法を熟知した自社の熟練監督と職人がレベル1から3まですべて対応。調査から施工、最終処理まで自社で責任を持って一貫管理し、安心の環境をご提供します。</p>
           </li>
         </ol>
 
         <div class="sub-service-demolition__other-range">
-          <h2 class="sub-service-demolition__other-range-heading">その他の解体</h2>
+          <h2 class="sub-service-demolition__other-range-heading js-slidein">その他の解体</h2>
           <ul class="sub-service-demolition__other-range-list">
-            <li class="sub-service-demolition__other-range-item">
+            <li class="sub-service-demolition__other-range-item js-slidein">
               <img class="sub-service-demolition__other-range-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-demolition/range-interior.jpg" alt="内装の解体工事">
               <h3 class="sub-service-demolition__other-range-title">内装解体</h3>
               <p class="sub-service-demolition__other-range-text">店舗やテナントの退去時に伴う、内装のみの解体工事もエコ・プランニングにお任せください。	</p>
             </li>
-            <li class="sub-service-demolition__other-range-item">
+            <li class="sub-service-demolition__other-range-item js-slidein">
               <img class="sub-service-demolition__other-range-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-demolition/range-exterior.jpg" alt="外構の解体工事">
               <h3 class="sub-service-demolition__other-range-title">外構解体</h3>
               <p class="sub-service-demolition__other-range-text">お庭のブロック塀をはじめとした、外構・エクステリアの解体工事も承っております。</p>
             </li>
-            <li class="sub-service-demolition__other-range-item">
+            <li class="sub-service-demolition__other-range-item js-slidein">
               <img class="sub-service-demolition__other-range-image" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-demolition/range-civil-engineering.jpg" alt="樹木の伐採工事">
               <h3 class="sub-service-demolition__other-range-title">土木・その他付帯工事</h3>
               <p class="sub-service-demolition__other-range-text">木や樹木などの伐採・抜根をはじめ、産業廃棄物処理などの付帯工事も承っております。</p>
@@ -194,13 +194,13 @@
 
     <section class="sub-service-detail__price">
       <div class="sub-service-detail__price-inner inner">
-        <div class="sub-service-detail__section-heading">
+        <div class="sub-service-detail__section-heading js-slidein">
           <h2 class="sub-service-detail__section-title site-heading--subpage-en">price</h2>
           <p class="sub-service-detail__section-subtitle site-heading-subtitle--default">参考価格・オプション</p>
         </div>
-        <p class="sub-service-detail__price-description">掲載の費用はあくまで過去施工事例に基づく参考価格になりますので、くわしい施工内容や<br>見積もりはお気軽にお問い合わせください</p>
+        <p class="sub-service-detail__price-description js-slidein">掲載の費用はあくまで過去施工事例に基づく参考価格になりますので、くわしい施工内容や<br>見積もりはお気軽にお問い合わせください</p>
 
-        <div class="sub-service-detail__table-group">
+        <div class="sub-service-detail__table-group js-fadeup">
           <div class="site-section-heading">
             <h3 class="site-section-heading__title site-heading--gradient">解体の基本料金</h3>
           </div>
@@ -242,7 +242,7 @@
           </div>
         </div>
 
-        <div class="sub-service-detail__table-group">
+        <div class="sub-service-detail__table-group js-fadeup">
           <div class="site-section-heading">
             <h3 class="site-section-heading__title site-heading--gradient">オプション</h3>
           </div>
@@ -276,14 +276,14 @@
 
     <section class="sub-service-detail__flow">
       <div class="sub-service-detail__flow-inner inner">
-        <div class="sub-service-detail__section-heading">
+        <div class="sub-service-detail__section-heading js-slidein">
           <h2 class="sub-service-detail__section-title site-heading--subpage-en">flow</h2>
           <p class="sub-service-detail__section-subtitle site-heading-subtitle--default">ご依頼の流れ</p>
         </div>
 
         <div class="site-flow">
           <ol class="site-flow__list">
-            <li class="site-flow__item">
+            <li class="site-flow__item js-fadeup">
               <div class="site-flow__step">
                 <span class="site-flow__step-label">step</span>
                 <span class="site-flow__step-number">01</span>
@@ -296,7 +296,7 @@
                 <p class="site-flow__text">電話またはお問い合わせフォームより、<br>ご連絡お願いいたします。</p>
               </div>
             </li>
-            <li class="site-flow__item">
+            <li class="site-flow__item js-fadeup">
               <div class="site-flow__step">
                 <span class="site-flow__step-label">step</span>
                 <span class="site-flow__step-number">02</span>
@@ -309,7 +309,7 @@
                 <p class="site-flow__text">現地調査を行ない、詳細なお見積りを<br>ご提出させていただきます。</p>
               </div>
             </li>
-            <li class="site-flow__item">
+            <li class="site-flow__item js-fadeup">
               <div class="site-flow__step">
                 <span class="site-flow__step-label">step</span>
                 <span class="site-flow__step-number">03</span>
@@ -322,7 +322,7 @@
                 <p class="site-flow__text">施工内容やお見積り金額に疑問や<br>不満がなければご契約成立となります。</p>
               </div>
             </li>
-            <li class="site-flow__item">
+            <li class="site-flow__item js-fadeup">
               <div class="site-flow__step">
                 <span class="site-flow__step-label">step</span>
                 <span class="site-flow__step-number">04</span>
@@ -335,7 +335,7 @@
                 <p class="site-flow__text">弊社にて各種提出書類を作成し、提出しますので、<br>お手を煩わせません。</p>
               </div>
             </li>
-            <li class="site-flow__item">
+            <li class="site-flow__item js-fadeup">
               <div class="site-flow__step">
                 <span class="site-flow__step-label">step</span>
                 <span class="site-flow__step-number">05</span>
@@ -348,7 +348,7 @@
                 <p class="site-flow__text">下記はすべてダミーテキストです。<br>この度は、弊社をご利用いただき誠にありがとうございます。</p>
               </div>
             </li>
-            <li class="site-flow__item">
+            <li class="site-flow__item js-fadeup">
               <div class="site-flow__step">
                 <span class="site-flow__step-label">step</span>
                 <span class="site-flow__step-number">06</span>
@@ -361,7 +361,7 @@
                 <p class="site-flow__text">細心の注意を払い、慎重かつ迅速に解体工事を進めさせていただきます。</p>
               </div>
             </li>
-            <li class="site-flow__item">
+            <li class="site-flow__item js-fadeup">
               <div class="site-flow__step">
                 <span class="site-flow__step-label">step</span>
                 <span class="site-flow__step-number">07</span>
@@ -374,7 +374,7 @@
                 <p class="site-flow__text">解体後、お客様に現場を見ていただき、OKをいただきましたら、<br>完了となります。</p>
               </div>
             </li>
-            <li class="site-flow__item">
+            <li class="site-flow__item js-fadeup">
               <div class="site-flow__step">
                 <span class="site-flow__step-label">step</span>
                 <span class="site-flow__step-number">08</span>
@@ -393,27 +393,27 @@
     </section>
 
     <section class="sub-service-demolition__aftercare">
-      <div class="sub-service-demolition__aftercare-image">
+      <div class="sub-service-demolition__aftercare-image js-slidein">
         <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service-demolition/aftercare.jpg" alt="解体工事を担当するスタッフ">
       </div>
       <div class="sub-service-demolition__aftercare-inner inner">
-        <h2 class="sub-service-demolition__section-title">工事後もおまかせください</h2>
-        <h3 class="sub-service-demolition__aftercare-title site-heading--primary-jp">エコ・プランニングでは解体後の工事にも対応しております。</h3>
-        <p class="sub-service-demolition__aftercare-lead">下記の様な工事もご要望にお応えします。お気軽にお問い合わせください。</p>
+        <h2 class="sub-service-demolition__section-title js-slidein">工事後もおまかせください</h2>
+        <h3 class="sub-service-demolition__aftercare-title site-heading--primary-jp js-slidein">エコ・プランニングでは解体後の工事にも対応しております。</h3>
+        <p class="sub-service-demolition__aftercare-lead js-slidein">下記の様な工事もご要望にお応えします。お気軽にお問い合わせください。</p>
         <ul class="sub-service-demolition__aftercare-list">
-          <li class="sub-service-demolition__aftercare-item">
+          <li class="sub-service-demolition__aftercare-item js-slidein-stagger">
             <div class="sub-service-demolition__aftercare-icon">
               <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/aftercare-parking.jpg" alt="">
             </div>
             <p class="sub-service-demolition__aftercare-text">駐車場を新設したい</p>
           </li>
-          <li class="sub-service-demolition__aftercare-item">
+          <li class="sub-service-demolition__aftercare-item js-slidein-stagger">
             <div class="sub-service-demolition__aftercare-icon">
               <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/aftercare-exterior.jpg" alt="">
             </div>
             <p class="sub-service-demolition__aftercare-text">外構工事をしてほしい</p>
           </li>
-          <li class="sub-service-demolition__aftercare-item">
+          <li class="sub-service-demolition__aftercare-item js-slidein-stagger">
             <div class="sub-service-demolition__aftercare-icon">
               <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/service/aftercare-land-development.jpg" alt="">
             </div>
@@ -429,25 +429,25 @@
           <img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/contact-bg.jpg" alt="">
         </div>
         <div class="site-contact__visual-content">
-          <div class="site-contact__heading">
+          <div class="site-contact__heading js-slidein">
             <h2 class="site-contact__title site-heading--section-en">contact</h2>
             <p class="site-contact__subtitle site-heading-subtitle--default">お問い合わせ</p>
           </div>
-          <p class="site-contact__lead">
+          <p class="site-contact__lead js-slidein">
             解体、産業廃棄物回収・持込、<br>
             不用品回収からハウスクリーニングまで<br>
             お困りごとは何でもお気軽にご相談ください。
           </p>
 
           <div class="site-contact__list">
-            <div class="site-contact__card site-contact__card--phone">
+            <div class="site-contact__card site-contact__card--phone js-slidein-stagger">
               <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-phone.png" alt="">
               <p class="site-contact__card-title">お電話でのお問い合わせ</p>
               <a class="site-contact__phone-number" href="tel:0595833330">0595-83-3330</a>
               <p class="site-contact__note">お電話の際に「ホームページを見て」<br>とお伝えください。</p>
             </div>
 
-            <div class="site-contact__card site-contact__card--mail">
+            <div class="site-contact__card site-contact__card--mail js-slidein-stagger">
               <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-mail.png" alt="">
               <p class="site-contact__card-title">メールでのお問い合わせ</p>
               <a class="site-contact__button" href="<?php echo esc_url(home_url('/contact/')); ?>">
@@ -458,7 +458,7 @@
               </a>
             </div>
 
-            <div class="site-contact__card site-contact__card--line">
+            <div class="site-contact__card site-contact__card--line js-slidein-stagger">
               <img class="site-contact__icon" src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/icon-contact-line.png" alt="">
               <p class="site-contact__card-title">LINEでのお問い合わせ</p>
               <a class="site-contact__button" href="https://line.me/R/ti/p/@lia0806h" target="_blank" rel="noopener noreferrer">

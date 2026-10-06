@@ -17,8 +17,8 @@
 
   <section class="sub-thanks__message">
       <div class="sub-thanks__message-inner inner">
-        <h2 class="sub-thanks__message-title">お問い合わせありがとうございます</h2>
-        <p class="sub-thanks__message-text">この度は弊社へお問い合わせいただき、誠にありがとうございます。<br>3営業日までに弊社担当者から返信をさせていただきますので、今しばらくお待ちください。</p>
+        <h2 class="sub-thanks__message-title">お問い合わせいただきありがとうございました。</h2>
+        <p class="sub-thanks__message-text">ご入力いただきましたメールアドレス宛に確認メールを自動的に送信しております。<br>しばらく経過してもメールが受け取れない場合は、メールアドレスの入力に誤記があったか、もしくは、弊社からのご連絡アドレスが迷惑メールフォルダに入っている可能性もございます。<br>再度、ご確認いただきまして、お電話でお問い合わせいただければ対応させていただきます。</p>
         <a class="sub-thanks__back-button site-wide-button site-wide-button--blue" href="<?php echo esc_url(home_url('/')); ?>">
           <span>TOPへ戻る</span>
           <span class="site-arrow-icon site-wide-button__icon" aria-hidden="true"><img src="<?php echo esc_url(get_theme_file_uri()); ?>/img/common/arrow-white.png" alt=""></span>

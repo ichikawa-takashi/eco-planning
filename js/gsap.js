@@ -8,7 +8,7 @@ gsap.utils.toArray(".js-fadeup").forEach(function (el) {
     {
       autoAlpha: 1,
       y: 0,
-      duration: 0.8,
+      duration: 1.4,
       ease: "power2.out",
       scrollTrigger: { trigger: el, start: "top 75%" },
     }
@@ -23,7 +23,7 @@ gsap.utils.toArray(".js-slidein").forEach(function (el) {
     {
       autoAlpha: 1,
       x: 0,
-      duration: 0.8,
+      duration: 1.4,
       ease: "power2.out",
       scrollTrigger: { trigger: el, start: "top 75%" },
     }
@@ -44,7 +44,7 @@ slideinStaggerGroups.forEach(function (els) {
     {
       autoAlpha: 1,
       x: 0,
-      duration: 0.8,
+      duration: 1.4,
       ease: "power2.out",
       stagger: 0.15,
       scrollTrigger: { trigger: els[0], start: "top 75%" },
@@ -69,7 +69,7 @@ function animateTopFlowPanel(panel) {
       {
         autoAlpha: 1,
         y: 0,
-        duration: 0.8,
+        duration: 1.4,
         ease: "power2.out",
         scrollTrigger: { trigger: item, start: "top 75%" },
       }
@@ -96,7 +96,7 @@ gsap.utils.toArray(".js-fadein").forEach(function (el) {
     { autoAlpha: 0 },
     {
       autoAlpha: 1,
-      duration: 0.8,
+      duration: 1.4,
       ease: "power2.out",
       scrollTrigger: { trigger: el, start: "top 75%" },
     }

@@ -17,12 +17,22 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         contactFormWrap.find('input[name="inquiry"][value="採用・エントリーについて"]').prop('checked', true);
     }
 
-    // ヘッダー：少しスクロールしたら背景色をつけてロゴを縮小
+    // ヘッダー：スクロールしたら背景色をつけてロゴを縮小
+    // トップページは「about us（メッセージ）」セクションを過ぎてサービスセクションに入ったタイミング、
+    // その他のページはFV（メインビジュアル）セクションを過ぎたタイミングで背景を表示する
     var siteHeader = $('.site-header');
     var siteHeaderLogo = siteHeader.find('.site-header__logo img[data-logo-scrolled]');
+    var headerScrolledRefEl = $('.top-about, .site-subpage-fv, .sub-service__intro, .sub-service-detail__hero').first();
+    var headerScrolledThreshold = 10;
+
+    function updateHeaderScrolledThreshold() {
+        if (headerScrolledRefEl.length) {
+            headerScrolledThreshold = headerScrolledRefEl.offset().top + headerScrolledRefEl.outerHeight();
+        }
+    }
 
     function updateHeaderScrolledState() {
-        var isScrolled = $(window).scrollTop() > 10;
+        var isScrolled = $(window).scrollTop() > headerScrolledThreshold;
 
         siteHeader.toggleClass('is-scrolled', isScrolled);
 
@@ -34,8 +44,13 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         }
     }
 
+    updateHeaderScrolledThreshold();
     updateHeaderScrolledState();
     $(window).on('scroll', updateHeaderScrolledState);
+    $(window).on('load resize', function () {
+        updateHeaderScrolledThreshold();
+        updateHeaderScrolledState();
+    });
 
     // ボタンの表示設定
     $(window).scroll(function () {
